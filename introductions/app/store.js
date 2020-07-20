@@ -19,6 +19,6 @@ module.exports = gsheets.then((data) => {
 
     // initialize state
     state.profiles = data;
-    console.log(data);
+    // console.log(data);
   };
 });

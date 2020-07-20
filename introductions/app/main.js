@@ -6,6 +6,7 @@ var profile = require('./profile.js')
 
 // export module
 module.exports = function (state, emit) {
+  console.log(state.params.profile)
   return html`
 <div class="container">
   ${profile(state.profiles[state.page])}

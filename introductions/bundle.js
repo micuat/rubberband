@@ -53,6 +53,7 @@ storePromise.then(store => {
   var main = require("./main.js");
 
   app.route("/introductions", main);
+  app.route("/introductions/:profile", main);
 
   // start app
   app.mount("div");
@@ -67,6 +68,7 @@ var profile = require('./profile.js')
 
 // export module
 module.exports = function (state, emit) {
+  console.log(state.params.profile)
   return html`
 <div class="container">
   ${profile(state.profiles[state.page])}
@@ -149,7 +151,7 @@ module.exports = gsheets.then((data) => {
 
     // initialize state
     state.profiles = data;
-    console.log(data);
+    // console.log(data);
   };
 });
 
