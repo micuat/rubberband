@@ -9,28 +9,27 @@ const SHEET =
   // "https://spreadsheets.google.com/feeds/cells/16BgHLLN8qBLNxHXj1ArapXdBB0W_FsHL3-pi_HS2TfM/1/public/full?alt=json";
   // form response
   "https://spreadsheets.google.com/feeds/cells/1q1P03MrBkqlWDjZ5ZI2z85wcgJNzpQ_scZAIGD-tzPc/1/public/full?alt=json";
-  const columns = [];
-  const links = [];
-  const init = data => {
-    data.forEach(entry => {
-      const cell = entry["gs$cell"];
-      if (cell.row === "1") {
-        columns.push(cell.inputValue);
-      } else {
-        const slideIndex = parseFloat(cell.row) - 2;
-        const col = parseFloat(cell.col) - 1;
-        console.log("col", col);
-        if (!links[slideIndex]) {
-          links[slideIndex] = {};
-          columns.forEach(column => (links[slideIndex][column] = ""));
-        }
-        links[slideIndex][columns[col]] = cell.inputValue;
+const columns = [];
+const links = [];
+const init = data => {
+  data.forEach(entry => {
+    const cell = entry["gs$cell"];
+    if (cell.row === "1") {
+      columns.push(cell.inputValue);
+    } else {
+      const slideIndex = parseFloat(cell.row) - 2;
+      const col = parseFloat(cell.col) - 1;
+      console.log("col", col);
+      if (!links[slideIndex]) {
+        links[slideIndex] = {};
+        columns.forEach(column => (links[slideIndex][column] = ""));
       }
-    });
-  };
+      links[slideIndex][columns[col]] = cell.inputValue;
+    }
+  });
+};
 
-  fetch(SHEET)
-    .then(response => response.json())
-    .then(data => init(data.feed.entry));
-  // .then(() => console.log(columns));
-
+module.exports = fetch(SHEET)
+  .then(response => response.json())
+  .then(data => init(data.feed.entry))
+  .then(()=>console.log(columns));

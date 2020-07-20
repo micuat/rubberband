@@ -8,12 +8,10 @@ module.exports = function (profile) {
   // create html template
   return html`
 <iframe></iframe>
-  <h2>${name}</h2>
-  <div>email</div>
-  <div>${twitter}</div>
-  <div>${instagram} ${state.page}</div>
-  <div>comments </div>
-
-    <div>  </div>
-  `
+<h2>${name}</h2>
+<div>email: </div>
+<div>tw: ${twitter}</div>
+<div>ig: ${instagram}</div>
+<div>comments </div>
+`
 }

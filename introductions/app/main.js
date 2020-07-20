@@ -9,7 +9,7 @@ module.exports = function (state, emit) {
   return html`
 <div class="container">
   ${profile(state.profiles[state.page])}
-  <div>${state.page} / ${state.profiles.length}</div>
+  <div>${state.page + 1} / ${state.profiles.length}</div>
   <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
 </div>
 `

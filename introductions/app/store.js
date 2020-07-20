@@ -1,4 +1,5 @@
-// const gsheets = require('./google-sheets.js')()
+const gsheets = require('./google-sheets.js');
+console.log(gsheets)
 
 // module.exports = (state, emitter) => {
 //   state.links = []
