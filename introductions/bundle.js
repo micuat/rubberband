@@ -46,16 +46,17 @@ var app = choo();
 
 var storePromise = require("./store.js");
 
-store
-app.use(store);
+storePromise.then(store => {
+  app.use(store);
 
-// import a template
-var main = require("./main.js");
+  // import a template
+  var main = require("./main.js");
 
-app.route("/introductions", main);
+  app.route("/introductions", main);
 
-// start app
-app.mount("div");
+  // start app
+  app.mount("div");
+});
 
 },{"./main.js":3,"./store.js":5,"choo":8,"choo/html":7}],3:[function(require,module,exports){
 // import choo's template helper
@@ -86,16 +87,24 @@ var html = require('choo/html')
 
 // export module
 module.exports = function (profile) {
-  var {name, twitter, instagram } = profile;
+  // var {name, twitter, instagram } = profile;
+  var name = profile["Your name"];
+  var email = profile["Email address"];
+  var twitter = profile["Twitter account"];
+  var instagram = profile["Instagram account"];
+  var url = profile["URL of what you want to share"];
+  var availability = profile["can you make it to the meetup on August 1?"];
+  var comments = profile["A few words about you"];
 
   // create html template
   return html`
-<iframe></iframe>
+<iframe src="${url}" width="800" height="600"></iframe>
 <h2>${name}</h2>
-<div>email: </div>
+<div>email: ${email}</div>
 <div>tw: ${twitter}</div>
 <div>ig: ${instagram}</div>
-<div>comments </div>
+<div>can you make it to the meetup? ${availability}</div>
+<div>${comments}</div>
 `
 }
 },{"choo/html":7}],5:[function(require,module,exports){
@@ -119,10 +128,8 @@ module.exports = gsheets.then((data) => {
     });
 
     // initialize state
-    state.profiles = [
-      { name: data[0]["Your name"], twitter: "lioness", instagram: "li_o" },
-      { name: "crocodile", twitter: "alligator", instagram: "wani" }
-    ];
+    state.profiles = data;
+    console.log(data);
   };
 });
 

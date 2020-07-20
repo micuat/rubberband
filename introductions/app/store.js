@@ -18,9 +18,7 @@ module.exports = gsheets.then((data) => {
     });
 
     // initialize state
-    state.profiles = [
-      { name: data[0]["Your name"], twitter: "lioness", instagram: "li_o" },
-      { name: "crocodile", twitter: "alligator", instagram: "wani" }
-    ];
+    state.profiles = data;
+    console.log(data);
   };
 });
