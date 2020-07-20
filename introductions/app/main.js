@@ -6,14 +6,39 @@ var profile = require("./profile.js");
 
 // export module
 module.exports = function(state, emit) {
+  if (state.profiles.length == 0) {
+    return html`
+      <div class="container">
+        no profiles yet!!!
+      </div>
+    `;
+  }
   console.log(state.params.profile);
-  var page = parseInt(state.params.profile === undefined ? 1 : state.params.profile);
+  var page = 1;
+  if (state.params.profile !== undefined) {
+    if (state.params.profile == "random") {
+      var N = state.profiles.length;
+      page = (Math.floor(Math.random() * N) % N) + 1;
+      emit("replaceState", `/introductions/${page}`);
+    } else {
+      page = parseInt(state.params.profile);
+    }
+  } else {
+    page = 1;
+    emit("replaceState", `/introductions/${page}`);
+  }
+
+  emit(
+    "DOMTitleChange",
+    `hydra meetup 0.0: ${state.profiles[page - 1]["Your name"]}`
+  );
 
   return html`
     <div class="container">
       ${profile(state.profiles[page - 1])}
       <div>
-        <a href="/introductions/${prev(page)}">＜</a> <a href="/introductions/${next(page)}">＞</a>
+        <a href="./${prev(page)}">＜</a>
+        <a href="./${next(page)}">＞</a>
       </div>
       <div>${page} / ${state.profiles.length}</div>
       <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
@@ -21,9 +46,9 @@ module.exports = function(state, emit) {
   `;
   // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
   function prev(page) {
-    return (page - 2 + state.profiles.length) % state.profiles.length + 1;
+    return ((page - 2 + state.profiles.length) % state.profiles.length) + 1;
   }
   function next(page) {
-    return page = page % state.profiles.length + 1;
+    return (page = (page % state.profiles.length) + 1);
   }
 };
