@@ -25,12 +25,18 @@ iframe.width = 800;
 iframe.height = 600;
 
 const name = document.createElement("h2");
+const email = document.createElement("div");
+const twitter = document.createElement("div");
+const instagram = document.createElement("div");
 const info = document.createElement("div");
 const slideNumber = document.createElement("div");
 const customHTML = document.createElement("div");
 
 document.body.appendChild(iframe);
 document.body.appendChild(name);
+document.body.appendChild(email);
+document.body.appendChild(twitter);
+document.body.appendChild(instagram);
 document.body.appendChild(customHTML);
 document.body.appendChild(info);
 document.body.appendChild(slideNumber);
@@ -56,6 +62,9 @@ const init = data => {
   const showSlide = () => {
     iframe.src = links[slideIndex]["URL of what you want to share"];
     name.innerText = links[slideIndex]["Your name"];
+    email.innerHTML = links[slideIndex]["Email address"] !== undefined ? links[slideIndex]["Email address"] : "";
+    twitter.innerHTML = links[slideIndex]["Twitter account"] !== undefined ? links[slideIndex]["Twitter account"] : "";
+    instagram.innerHTML = links[slideIndex]["Instagram account"] !== undefined ? links[slideIndex]["Instagram account"] : "";
     info.innerText = links[slideIndex]["A few words about you"];
     // iframe.src = links[slideIndex].URL0;
     // info.innerText = links[slideIndex].TEXT0;
