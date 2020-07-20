@@ -7,7 +7,6 @@
 const SHEET =
   "https://spreadsheets.google.com/feeds/cells/16BgHLLN8qBLNxHXj1ArapXdBB0W_FsHL3-pi_HS2TfM/1/public/full?alt=json";
 
-
   const columns = [];
   const links = [];
   const init = data => {
