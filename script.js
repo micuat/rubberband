@@ -25,10 +25,8 @@ iframe.height = 600;
 
 const info = document.createElement("div");
 const slideNumber = document.createElement("div");
-const userHTML = document.createElement("div")
 
 document.body.appendChild(iframe);
-document.body.appendChild(userHTML)
 document.body.appendChild(info);
 document.body.appendChild(slideNumber);
 
@@ -54,7 +52,6 @@ const init = data => {
     iframe.src = links[slideIndex].URL0;
     info.innerText = links[slideIndex].TEXT0;
     slideNumber.innerHTML = `${slideIndex + 1}/${links.length}`;
-    userHTML.innerHTML = links[slideIndex]['HTML']
   };
 
   const showNext = () => {
