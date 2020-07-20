@@ -3,7 +3,7 @@
 
 let links = [
   { url: "https://hydra.ojack.xyz/?code=JTJGJTJGJTIwJTIyZWdnJTIwb2YlMjB0aGUlMjBwaG9lbml4JTIyJTBBJTJGJTJGJTIwQWxleGFuZHJlJTIwUmFuZ2VsJTBBJTJGJTJGJTIwd3d3LmFsZXhhbmRyZXJhbmdlbC5hcnQuYnIlMkZoeWRyYS5odG1sJTBBJTBBc3BlZWQlM0QxLjIlMEFzaGFwZSg5OSUyQy4xNSUyQy41KS5jb2xvcigwJTJDMSUyQzIpJTBBJTBBLmRpZmYoJTIwc2hhcGUoMjQwJTJDLjUlMkMwKS5zY3JvbGxYKC4wNSkucm90YXRlKCUyMCgpJTNEJTNFdGltZSUyRjEwJTIwKS5jb2xvcigxJTJDMCUyQy43NSklMjApJTBBLmRpZmYoJTIwc2hhcGUoOTklMkMuNCUyQy4wMDIpLnNjcm9sbFgoLjEwKS5yb3RhdGUoJTIwKCklM0QlM0V0aW1lJTJGMjAlMjApLmNvbG9yKDElMkMwJTJDLjc1KSUyMCklMEEuZGlmZiglMjBzaGFwZSg5OSUyQy4zJTJDLjAwMikuc2Nyb2xsWCguMTUpLnJvdGF0ZSglMjAoKSUzRCUzRXRpbWUlMkYzMCUyMCkuY29sb3IoMSUyQzAlMkMuNzUpJTIwKSUwQS5kaWZmKCUyMHNoYXBlKDk5JTJDLjIlMkMuMDAyKS5zY3JvbGxYKC4yMCkucm90YXRlKCUyMCgpJTNEJTNFdGltZSUyRjQwJTIwKS5jb2xvcigxJTJDMCUyQy43NSklMjApJTBBLmRpZmYoJTIwc2hhcGUoOTklMkMuMSUyQy4wMDIpLnNjcm9sbFgoLjI1KS5yb3RhdGUoJTIwKCklM0QlM0V0aW1lJTJGNTAlMjApLmNvbG9yKDElMkMwJTJDLjc1KSUyMCklMEElMEEubW9kdWxhdGVTY2FsZSglMEElMjAlMjBzaGFwZSgyNDAlMkMuNSUyQzApLnNjcm9sbFgoLjA1KS5yb3RhdGUoJTIwKCklM0QlM0V0aW1lJTJGMTAlMjApJTBBJTIwJTIwJTJDJTIwKCklM0QlM0UoTWF0aC5zaW4odGltZSUyRjMpKi4yKSUyQi4yJTIwKSUwQSUwQS5zY2FsZSgxLjYlMkMuNiUyQzEpJTBBLm91dCgp",
-    text: "here is a test hydra sketch"
+    text: "hi my name is olivia and this is a test"
   }, {
     url: "https://i.giphy.com/media/l41m6YZzaqxZQp4IM/giphy.mp4",
     text: "does media work?"
@@ -19,11 +19,14 @@ iframe.width = 800
 iframe.height = 600
 
 const info = document.createElement("div")
+const slideNumber = document.createElement("div")
+
 // info.innerHTML = `A sentence about me with a link https://ojack.xyz`
 
 const showSlide = () => {
    iframe.src = links[slideIndex].url
    info.innerText = links[slideIndex].text
+  slideNumber.innerHTML = `${slideIndex+1}/${links.length}`
 }
 
 const showNext = () => {
@@ -32,18 +35,27 @@ const showNext = () => {
   showSlide()
 }
 
+const showPrevious = () => {
+   slideIndex--
+  if (slideIndex < 0) slideIndex = links.length - 1
+  showSlide()
+}
+
 showSlide()
 
 
-const nextButton = document.createElement("div")
+document.body.appendChild(iframe)
+document.body.appendChild(info)
+
+const previousButton = document.createElement("button")
+previousButton.innerHTML = '<'
+document.body.appendChild(previousButton)
+previousButton.onclick = showPrevious
+
+const nextButton = document.createElement("button")
 nextButton.innerHTML = '>'
-
 document.body.appendChild(nextButton)
-
 nextButton.onclick = showNext
 
-document.body.appendChild(iframe)
 
-
-
-document.body.appendChild(info)
+document.body.appendChild(slideNumber)

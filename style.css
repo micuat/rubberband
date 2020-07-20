@@ -3,7 +3,9 @@
 body {
   font-family: monospace;
   margin: 2em;
-  
+  color: #ff0066;
+  background-color: #44ff99;
+  font-size: 30px;
 }
 
 h1 {
