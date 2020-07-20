@@ -24,7 +24,7 @@ const iframe = document.createElement("iframe");
 iframe.width = 800;
 iframe.height = 600;
 
-const name = document.createElement("div");
+const name = document.createElement("h2");
 const info = document.createElement("div");
 const slideNumber = document.createElement("div");
 const customHTML = document.createElement("div");
