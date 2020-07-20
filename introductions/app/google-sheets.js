@@ -5,7 +5,9 @@
 // json api:
 // https://spreadsheets.google.com/feeds/cells/16BgHLLN8qBLNxHXj1ArapXdBB0W_FsHL3-pi_HS2TfM/1/public/full?alt=json
 const SHEET =
+  // olivia's original sheet
   // "https://spreadsheets.google.com/feeds/cells/16BgHLLN8qBLNxHXj1ArapXdBB0W_FsHL3-pi_HS2TfM/1/public/full?alt=json";
+  // form response
   "https://spreadsheets.google.com/feeds/cells/1q1P03MrBkqlWDjZ5ZI2z85wcgJNzpQ_scZAIGD-tzPc/1/public/full?alt=json";
   const columns = [];
   const links = [];
@@ -31,4 +33,4 @@ const SHEET =
     .then(response => response.json())
     .then(data => init(data.feed.entry));
   // .then(() => console.log(columns));
-};
+
