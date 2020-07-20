@@ -10,7 +10,7 @@ function notFound () {
   return html`
     <div>
       <a href="https://hydra-meetup-0.glitch.me/">
-        Route not found. Navigate back.
+        404 with ${<>} back to top!
       </a>
     </div>
   `

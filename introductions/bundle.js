@@ -49,7 +49,7 @@ function notFound () {
   return html`
     <div>
       <a href="https://hydra-meetup-0.glitch.me/">
-        Route not found. Navigate back.
+        404 with <3 back to top!
       </a>
     </div>
   `
@@ -80,26 +80,24 @@ var profile = require("./profile.js");
 // export module
 module.exports = function(state, emit) {
   console.log(state.params.profile);
-  var page = parseInt(state.params.profile);
+  var page = parseInt(state.params.profile === undefined ? 1 : state.params.profile);
 
   return html`
     <div class="container">
-      ${profile(state.profiles[page])}
+      ${profile(state.profiles[page - 1])}
       <div>
-        <a href="./${prev(page)}">＜</a> <a href="./${next(page)}">＞</a>
+        <a href="/introductions/${prev(page)}">＜</a> <a href="/introductions/${next(page)}">＞</a>
       </div>
-      <div>${page + 1} / ${state.profiles.length}</div>
+      <div>${page} / ${state.profiles.length}</div>
       <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
     </div>
   `;
-        // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
+  // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
   function prev(page) {
-          return (page - 1 + state.profiles.length) % state.profiles.length;
-
+    return (page - 2 + state.profiles.length) % state.profiles.length + 1;
   }
   function next(page) {
-      page = (page + 1) % state.profiles.length;
-    
+    return page = page % state.profiles.length + 1;
   }
 };
 
