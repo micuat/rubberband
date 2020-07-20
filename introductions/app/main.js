@@ -9,8 +9,11 @@ module.exports = function (state, emit) {
   return html`
 <div class="container">
   ${profile(state.profiles[state.page])}
+  <div>
+    <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
+  </div>
   <div>${state.page + 1} / ${state.profiles.length}</div>
-  <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
+  <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
 </div>
 `
   function prev () {
