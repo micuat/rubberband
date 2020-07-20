@@ -136,7 +136,7 @@ function showEmbedIfNotEmpty(link) {
       <iframe src="${link}" width="800" height="600"></iframe>
     `;
   else return html`
-      <div width="800" height="600">no link provided</div>
+      <div style="width:800px; height:600px;border: 2px solid white;">no link provided</div>
     `;
 }
 
