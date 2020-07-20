@@ -5,6 +5,17 @@ var html = require("choo/html");
 // initialize choo
 var app = choo();
 
+app.route('/*', notFound);
+function notFound () {
+  return html`
+    <div>
+      <a href="https://hydra-meetup-0.glitch.me/">
+        Route not found. Navigate back.
+      </a>
+    </div>
+  `
+}
+
 var storePromise = require("./store.js");
 
 storePromise.then(store => {

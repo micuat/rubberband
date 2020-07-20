@@ -44,6 +44,17 @@ var html = require("choo/html");
 // initialize choo
 var app = choo();
 
+app.route('/*', notFound);
+function notFound () {
+  return html`
+    <div>
+      <a href="https://hydra-meetup-0.glitch.me/">
+        Route not found. Navigate back.
+      </a>
+    </div>
+  `
+}
+
 var storePromise = require("./store.js");
 
 storePromise.then(store => {
@@ -61,31 +72,37 @@ storePromise.then(store => {
 
 },{"./main.js":3,"./store.js":5,"choo":8,"choo/html":7}],3:[function(require,module,exports){
 // import choo's template helper
-var html = require('choo/html')
+var html = require("choo/html");
 
 // import template
-var profile = require('./profile.js')
+var profile = require("./profile.js");
 
 // export module
-module.exports = function (state, emit) {
-  console.log(state.params.profile)
+module.exports = function(state, emit) {
+  console.log(state.params.profile);
+  var page = parseInt(state.params.profile);
+
   return html`
-<div class="container">
-  ${profile(state.profiles[state.page])}
-  <div>
-    <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
-  </div>
-  <div>${state.page + 1} / ${state.profiles.length}</div>
-  <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
-</div>
-`
-  function prev () {
-    emit('prev')
+    <div class="container">
+      ${profile(state.profiles[page])}
+      <div>
+        <a href="./${prev(page)}">＜</a> <a href="./${next(page)}">＞</a>
+      </div>
+      <div>${page + 1} / ${state.profiles.length}</div>
+      <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
+    </div>
+  `;
+        // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
+  function prev(page) {
+          return (page - 1 + state.profiles.length) % state.profiles.length;
+
   }
-  function next () {
-    emit('next')
+  function next(page) {
+      page = (page + 1) % state.profiles.length;
+    
   }
-}
+};
+
 },{"./profile.js":4,"choo/html":7}],4:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
