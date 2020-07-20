@@ -1,0 +1,28 @@
+{
+  "name": "hydra-meetup-w",
+  "version": "0.0.1",
+  "description": "What am I about?",
+  "main": "index.html",
+  "scripts": {
+    "serve": "static-server -p 8000 .",
+    "start": "npm run watch & npm run serve",
+    "watch": "watchify introductions/app/index.js -o introductions/bundle.js"
+  },
+  "dependencies": {
+    "static-server": "^3.0.0",
+    "watchify": "^3.11.1",
+    "choo": "^7.1.0"
+  },
+  "engines": {
+    "node": "8.1.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/static-server"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "static"
+  ]
+}
