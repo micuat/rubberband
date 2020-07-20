@@ -27,9 +27,10 @@ const init = data => {
       links[slideIndex][columns[col]] = cell.inputValue;
     }
   });
+  return links;
 };
 
 module.exports = fetch(SHEET)
   .then(response => response.json())
   .then(data => init(data.feed.entry))
-  .then(()=>console.log(columns));
+  // .then(()=>links);
