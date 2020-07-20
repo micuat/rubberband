@@ -11,7 +11,8 @@
 
 const columns = [];
 fetch(
-  "https://spreadsheets.google.com/feeds/cells/16BgHLLN8qBLNxHXj1ArapXdBB0W_FsHL3-pi_HS2TfM/1/public/full?alt=json"
+  // "https://spreadsheets.google.com/feeds/cells/16BgHLLN8qBLNxHXj1ArapXdBB0W_FsHL3-pi_HS2TfM/1/public/full?alt=json"
+  "https://spreadsheets.google.com/feeds/cells/1q1P03MrBkqlWDjZ5ZI2z85wcgJNzpQ_scZAIGD-tzPc/1/public/full?alt=json"
 )
   .then(response => response.json())
   .then(data => init(data.feed.entry));
@@ -23,11 +24,13 @@ const iframe = document.createElement("iframe");
 iframe.width = 800;
 iframe.height = 600;
 
+const name = document.createElement("div");
 const info = document.createElement("div");
 const slideNumber = document.createElement("div");
 const customHTML = document.createElement("div");
 
 document.body.appendChild(iframe);
+document.body.appendChild(name);
 document.body.appendChild(customHTML);
 document.body.appendChild(info);
 document.body.appendChild(slideNumber);
@@ -51,10 +54,13 @@ const init = data => {
   // info.innerHTML = `A sentence about me with a link https://ojack.xyz`
 
   const showSlide = () => {
-    iframe.src = links[slideIndex].URL0;
-    info.innerText = links[slideIndex].TEXT0;
+    iframe.src = links[slideIndex]["URL of what you want to share"];
+    name.innerText = links[slideIndex]["Your name"];
+    info.innerText = links[slideIndex]["A few words about you"];
+    // iframe.src = links[slideIndex].URL0;
+    // info.innerText = links[slideIndex].TEXT0;
     slideNumber.innerHTML = `${slideIndex + 1}/${links.length}`;
-    customHTML.innerHTML = links[slideIndex].HTML
+    customHTML.innerHTML = links[slideIndex].HTML !== undefined ? links[slideIndex].HTML : "";
   };
 
   const showNext = () => {
