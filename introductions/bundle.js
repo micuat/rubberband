@@ -6,32 +6,8 @@ var html = require("choo/html");
 // initialize choo
 var app = choo();
 
-app.use(function(state, emitter) {
-  state.number = 1;
-
-  emitter.on("prev", function() {
-    state.number--;
-    emitter.emit("render");
-  });
-  emitter.on("next", function() {
-    state.number++;
-    emitter.emit("render");
-  });
-
-  // initialize state
-  state.animals = [
-    { type: "lion", x: 200, y: 100 },
-    { type: "crocodile", x: 50, y: 300 }
-  ];
-
-  // add animal
-  emitter.on("addAnimal", function() {
-    var obj = { type: "lion", x: 100, y: 200 };
-    state.animals.push(obj);
-
-    emitter.emit("render");
-  });
-});
+var store = require("./store.js");
+app.use(store);
 
 // import a template
 var main = require("./main.js");
@@ -41,7 +17,7 @@ app.route("/introductions", main);
 // start app
 app.mount("div");
 
-},{"./main.js":2,"choo":6,"choo/html":5}],2:[function(require,module,exports){
+},{"./main.js":2,"./store.js":4,"choo":7,"choo/html":6}],2:[function(require,module,exports){
 // import choo's template helper
 var html = require('choo/html')
 
@@ -50,17 +26,10 @@ var profile = require('./profile.js')
 
 // export module
 module.exports = function (state, emit) {
-  var type = state.animals.type
-  var x = state.animals.x
-  var y = state.animals.y
   return html`
 <div class="container">
-  <iframe></iframe>
-  <h2>name</h2>
-  <div>email</div>
-  <div>twitter</div>
-  <div>instagram ${state.number}</div>
-  <div>comments ${state.animals.map(profile)}</div>
+  ${profile(state.profiles[state.page])}
+  <div>${state.page} / ${state.profiles.length}</div>
   <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
 </div>
 `
@@ -71,22 +40,46 @@ module.exports = function (state, emit) {
     emit('next')
   }
 }
-},{"./profile.js":3,"choo/html":5}],3:[function(require,module,exports){
+},{"./profile.js":3,"choo/html":6}],3:[function(require,module,exports){
 // import choo's template helper
 var html = require('choo/html')
 
 // export module
 module.exports = function (profile) {
-  var type = profile.type
-  var x = profile.x
-  var y = profile.y
+  var {name, twitter, instagram } = profile;
 
   // create html template
   return html`
-    <div>${type} ${x} ${y}</div>
+
+    <div>${name} ${twitter} ${instagram}</div>
   `
 }
-},{"choo/html":5}],4:[function(require,module,exports){
+},{"choo/html":6}],4:[function(require,module,exports){
+// const gsheets = require('./google-sheets.js')()
+
+// module.exports = (state, emitter) => {
+//   state.links = []
+// }
+
+module.exports = function(state, emitter) {
+  state.page = 0;
+
+  emitter.on("prev", function() {
+    state.page = (state.page - 1 + state.profiles.length) % state.profiles.length;
+    emitter.emit("render");
+  });
+  emitter.on("next", function() {
+    state.page = (state.page + 1) % state.profiles.length;
+    emitter.emit("render");
+  });
+
+  // initialize state
+  state.profiles = [
+    { name: "lion", twitter: "lioness", instagram: "li_o" },
+    { name: "crocodile", twitter: "alligator", instagram: "wani" }
+  ];
+}
+},{}],5:[function(require,module,exports){
 var assert = require('assert')
 var LRU = require('nanolru')
 
@@ -129,10 +122,10 @@ function newCall (Cls) {
   return new (Cls.bind.apply(Cls, arguments)) // eslint-disable-line
 }
 
-},{"assert":10,"nanolru":19}],5:[function(require,module,exports){
+},{"assert":11,"nanolru":20}],6:[function(require,module,exports){
 module.exports = require('nanohtml')
 
-},{"nanohtml":15}],6:[function(require,module,exports){
+},{"nanohtml":16}],7:[function(require,module,exports){
 var scrollToAnchor = require('scroll-to-anchor')
 var documentReady = require('document-ready')
 var nanotiming = require('nanotiming')
@@ -416,7 +409,7 @@ Choo.prototype._setCache = function (state) {
   }
 }
 
-},{"./component/cache":4,"assert":10,"document-ready":7,"nanobus":11,"nanohref":12,"nanomorph":20,"nanoquery":23,"nanoraf":24,"nanorouter":25,"nanotiming":27,"scroll-to-anchor":29}],7:[function(require,module,exports){
+},{"./component/cache":5,"assert":11,"document-ready":8,"nanobus":12,"nanohref":13,"nanomorph":21,"nanoquery":24,"nanoraf":25,"nanorouter":26,"nanotiming":28,"scroll-to-anchor":30}],8:[function(require,module,exports){
 'use strict'
 
 module.exports = ready
@@ -435,7 +428,7 @@ function ready (callback) {
   })
 }
 
-},{}],8:[function(require,module,exports){
+},{}],9:[function(require,module,exports){
 module.exports = attributeToProperty
 
 var transform = {
@@ -456,7 +449,7 @@ function attributeToProperty (h) {
   }
 }
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 var attrToProp = require('hyperscript-attribute-to-property')
 
 var VAR = 0, TEXT = 1, OPEN = 2, CLOSE = 3, ATTR = 4
@@ -753,7 +746,7 @@ var closeRE = RegExp('^(' + [
 ].join('|') + ')(?:[\.#][a-zA-Z0-9\u007F-\uFFFF_:-]+)*$')
 function selfClosing (tag) { return closeRE.test(tag) }
 
-},{"hyperscript-attribute-to-property":8}],10:[function(require,module,exports){
+},{"hyperscript-attribute-to-property":9}],11:[function(require,module,exports){
 assert.notEqual = notEqual
 assert.notOk = notOk
 assert.equal = equal
@@ -777,7 +770,7 @@ function assert (t, m) {
   if (!t) throw new Error(m || 'AssertionError')
 }
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 var splice = require('remove-array-items')
 var nanotiming = require('nanotiming')
 var assert = require('assert')
@@ -941,7 +934,7 @@ Nanobus.prototype._emit = function (arr, eventName, data, uuid) {
   }
 }
 
-},{"assert":10,"nanotiming":27,"remove-array-items":28}],12:[function(require,module,exports){
+},{"assert":11,"nanotiming":28,"remove-array-items":29}],13:[function(require,module,exports){
 var assert = require('assert')
 
 var safeExternalLink = /(noopener|noreferrer) (noopener|noreferrer)/
@@ -986,7 +979,7 @@ function href (cb, root) {
   })
 }
 
-},{"assert":10}],13:[function(require,module,exports){
+},{"assert":11}],14:[function(require,module,exports){
 'use strict'
 
 var trailingNewlineRegex = /\n[\s]+$/
@@ -1120,7 +1113,7 @@ module.exports = function appendChild (el, childs) {
   }
 }
 
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 'use strict'
 
 module.exports = [
@@ -1130,17 +1123,17 @@ module.exports = [
   'readonly', 'required', 'reversed', 'selected'
 ]
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 module.exports = require('./dom')(document)
 
-},{"./dom":17}],16:[function(require,module,exports){
+},{"./dom":18}],17:[function(require,module,exports){
 'use strict'
 
 module.exports = [
   'indeterminate'
 ]
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 'use strict'
 
 var hyperx = require('hyperx')
@@ -1258,7 +1251,7 @@ module.exports = function (document) {
   return exports
 }
 
-},{"./append-child":13,"./bool-props":14,"./direct-props":16,"./svg-tags":18,"hyperx":9}],18:[function(require,module,exports){
+},{"./append-child":14,"./bool-props":15,"./direct-props":17,"./svg-tags":19,"hyperx":10}],19:[function(require,module,exports){
 'use strict'
 
 module.exports = [
@@ -1278,7 +1271,7 @@ module.exports = [
   'tspan', 'use', 'view', 'vkern'
 ]
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 module.exports = LRU
 
 function LRU (opts) {
@@ -1416,7 +1409,7 @@ LRU.prototype.evict = function () {
   this.remove(this.tail)
 }
 
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 var assert = require('nanoassert')
 var morph = require('./lib/morph')
 
@@ -1581,7 +1574,7 @@ function same (a, b) {
   return false
 }
 
-},{"./lib/morph":22,"nanoassert":10}],21:[function(require,module,exports){
+},{"./lib/morph":23,"nanoassert":11}],22:[function(require,module,exports){
 module.exports = [
   // attribute events (can be set with attributes)
   'onclick',
@@ -1625,7 +1618,7 @@ module.exports = [
   'onfocusout'
 ]
 
-},{}],22:[function(require,module,exports){
+},{}],23:[function(require,module,exports){
 var events = require('./events')
 var eventsLength = events.length
 
@@ -1800,7 +1793,7 @@ function updateAttribute (newNode, oldNode, name) {
   }
 }
 
-},{"./events":21}],23:[function(require,module,exports){
+},{"./events":22}],24:[function(require,module,exports){
 var reg = /([^?=&]+)(=([^&]*))?/g
 var assert = require('assert')
 
@@ -1824,7 +1817,7 @@ function qs (url) {
   return obj
 }
 
-},{"assert":10}],24:[function(require,module,exports){
+},{"assert":11}],25:[function(require,module,exports){
 'use strict'
 
 var assert = require('assert')
@@ -1861,7 +1854,7 @@ function nanoraf (render, raf) {
   }
 }
 
-},{"assert":10}],25:[function(require,module,exports){
+},{"assert":11}],26:[function(require,module,exports){
 var assert = require('assert')
 var wayfarer = require('wayfarer')
 
@@ -1917,7 +1910,7 @@ function pathname (routename, isElectron) {
   return decodeURI(routename.replace(suffix, '').replace(normalize, '/'))
 }
 
-},{"assert":10,"wayfarer":30}],26:[function(require,module,exports){
+},{"assert":11,"wayfarer":31}],27:[function(require,module,exports){
 var assert = require('assert')
 
 var hasWindow = typeof window !== 'undefined'
@@ -1974,7 +1967,7 @@ NanoScheduler.prototype.setTimeout = function (cb) {
 
 module.exports = createScheduler
 
-},{"assert":10}],27:[function(require,module,exports){
+},{"assert":11}],28:[function(require,module,exports){
 var scheduler = require('nanoscheduler')()
 var assert = require('assert')
 
@@ -2024,7 +2017,7 @@ function noop (cb) {
   }
 }
 
-},{"assert":10,"nanoscheduler":26}],28:[function(require,module,exports){
+},{"assert":11,"nanoscheduler":27}],29:[function(require,module,exports){
 'use strict'
 
 /**
@@ -2053,7 +2046,7 @@ module.exports = function removeItems (arr, startIdx, removeCount) {
   arr.length = len
 }
 
-},{}],29:[function(require,module,exports){
+},{}],30:[function(require,module,exports){
 module.exports = scrollToAnchor
 
 function scrollToAnchor (anchor, options) {
@@ -2065,7 +2058,7 @@ function scrollToAnchor (anchor, options) {
   }
 }
 
-},{}],30:[function(require,module,exports){
+},{}],31:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var assert = require('assert')
 var trie = require('./trie')
@@ -2140,7 +2133,7 @@ function Wayfarer (dft) {
   }
 }
 
-},{"./trie":31,"assert":10}],31:[function(require,module,exports){
+},{"./trie":32,"assert":11}],32:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var assert = require('assert')
 
@@ -2281,4 +2274,4 @@ function has (object, property) {
   return Object.prototype.hasOwnProperty.call(object, property)
 }
 
-},{"assert":10}]},{},[1]);
+},{"assert":11}]},{},[1]);

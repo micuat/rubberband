@@ -6,17 +6,10 @@ var profile = require('./profile.js')
 
 // export module
 module.exports = function (state, emit) {
-  var type = state.animals.type
-  var x = state.animals.x
-  var y = state.animals.y
   return html`
 <div class="container">
-  <iframe></iframe>
-  <h2>name</h2>
-  <div>email</div>
-  <div>twitter</div>
-  <div>instagram ${state.number}</div>
-  <div>comments ${state.animals.map(profile)}</div>
+  ${profile(state.profiles[state.page])}
+  <div>${state.page} / ${state.profiles.length}</div>
   <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
 </div>
 `
