@@ -1,6 +1,16 @@
 // import choo's template helper
 var html = require("choo/html");
 
+function showEmbedIfNotEmpty(link) {
+  if (link !== undefined && link.length > 0)
+    return html`
+      <iframe src="${link}" width="800" height="600"></iframe>
+    `;
+  else return html`
+      <div width="800" height="600">no link provided</div>
+    `;
+}
+
 function showEmailIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
@@ -30,7 +40,7 @@ module.exports = function(profile) {
 
   // create html template
   return html`
-    <iframe src="${url}" width="800" height="600"></iframe>
+    ${showEmbedIfNotEmpty(url)}
     <h2>${name}</h2>
     ${showEmailIfNotEmpty(email)}
     ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)}
