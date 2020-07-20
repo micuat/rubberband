@@ -3,6 +3,8 @@
 var choo = require('choo')
 var html = require('choo/html')
 
+var profile = require('./profile.js')
+
 // initialize choo
 var app = choo()
 
@@ -23,20 +25,24 @@ app.use(function (state, emitter) {
 })
 
 // create a template
-var main = function (state) {
+var main = function (state, emit) {
   var type = state.animals.type
   var x = state.animals.x
   var y = state.animals.y
   return html`
-<div class="container">
+<div class="container" onclick=${add}>
   <iframe></iframe>
   <h2>name</h2>
   <div>email</div>
   <div>twitter</div>
   <div>instagram</div>
-  <div>comments ${type}</div>
+  <div>comments ${state.animals.map(profile)}</div>
+  <button onclick=${back}>＜</button><button onclick=${add}>＞</button>
 </div>
 `
+  function add () {
+    emit('addAnimal')
+  }
   // return html`<div>choo animals</div>`
 }
 
@@ -44,7 +50,22 @@ app.route('/introductions', main)
 
 // start app
 app.mount('div')
-},{"choo":4,"choo/html":3}],2:[function(require,module,exports){
+},{"./profile.js":2,"choo":5,"choo/html":4}],2:[function(require,module,exports){
+// import choo's template helper
+var html = require('choo/html')
+
+// export module
+module.exports = function (profile) {
+  var type = profile.type
+  var x = profile.x
+  var y = profile.y
+
+  // create html template
+  return html`
+    <div>${type} ${x} ${y}</div>
+  `
+}
+},{"choo/html":4}],3:[function(require,module,exports){
 var assert = require('assert')
 var LRU = require('nanolru')
 
@@ -87,10 +108,10 @@ function newCall (Cls) {
   return new (Cls.bind.apply(Cls, arguments)) // eslint-disable-line
 }
 
-},{"assert":8,"nanolru":17}],3:[function(require,module,exports){
+},{"assert":9,"nanolru":18}],4:[function(require,module,exports){
 module.exports = require('nanohtml')
 
-},{"nanohtml":13}],4:[function(require,module,exports){
+},{"nanohtml":14}],5:[function(require,module,exports){
 var scrollToAnchor = require('scroll-to-anchor')
 var documentReady = require('document-ready')
 var nanotiming = require('nanotiming')
@@ -374,7 +395,7 @@ Choo.prototype._setCache = function (state) {
   }
 }
 
-},{"./component/cache":2,"assert":8,"document-ready":5,"nanobus":9,"nanohref":10,"nanomorph":18,"nanoquery":21,"nanoraf":22,"nanorouter":23,"nanotiming":25,"scroll-to-anchor":27}],5:[function(require,module,exports){
+},{"./component/cache":3,"assert":9,"document-ready":6,"nanobus":10,"nanohref":11,"nanomorph":19,"nanoquery":22,"nanoraf":23,"nanorouter":24,"nanotiming":26,"scroll-to-anchor":28}],6:[function(require,module,exports){
 'use strict'
 
 module.exports = ready
@@ -393,7 +414,7 @@ function ready (callback) {
   })
 }
 
-},{}],6:[function(require,module,exports){
+},{}],7:[function(require,module,exports){
 module.exports = attributeToProperty
 
 var transform = {
@@ -414,7 +435,7 @@ function attributeToProperty (h) {
   }
 }
 
-},{}],7:[function(require,module,exports){
+},{}],8:[function(require,module,exports){
 var attrToProp = require('hyperscript-attribute-to-property')
 
 var VAR = 0, TEXT = 1, OPEN = 2, CLOSE = 3, ATTR = 4
@@ -711,7 +732,7 @@ var closeRE = RegExp('^(' + [
 ].join('|') + ')(?:[\.#][a-zA-Z0-9\u007F-\uFFFF_:-]+)*$')
 function selfClosing (tag) { return closeRE.test(tag) }
 
-},{"hyperscript-attribute-to-property":6}],8:[function(require,module,exports){
+},{"hyperscript-attribute-to-property":7}],9:[function(require,module,exports){
 assert.notEqual = notEqual
 assert.notOk = notOk
 assert.equal = equal
@@ -735,7 +756,7 @@ function assert (t, m) {
   if (!t) throw new Error(m || 'AssertionError')
 }
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 var splice = require('remove-array-items')
 var nanotiming = require('nanotiming')
 var assert = require('assert')
@@ -899,7 +920,7 @@ Nanobus.prototype._emit = function (arr, eventName, data, uuid) {
   }
 }
 
-},{"assert":8,"nanotiming":25,"remove-array-items":26}],10:[function(require,module,exports){
+},{"assert":9,"nanotiming":26,"remove-array-items":27}],11:[function(require,module,exports){
 var assert = require('assert')
 
 var safeExternalLink = /(noopener|noreferrer) (noopener|noreferrer)/
@@ -944,7 +965,7 @@ function href (cb, root) {
   })
 }
 
-},{"assert":8}],11:[function(require,module,exports){
+},{"assert":9}],12:[function(require,module,exports){
 'use strict'
 
 var trailingNewlineRegex = /\n[\s]+$/
@@ -1078,7 +1099,7 @@ module.exports = function appendChild (el, childs) {
   }
 }
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 'use strict'
 
 module.exports = [
@@ -1088,17 +1109,17 @@ module.exports = [
   'readonly', 'required', 'reversed', 'selected'
 ]
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 module.exports = require('./dom')(document)
 
-},{"./dom":15}],14:[function(require,module,exports){
+},{"./dom":16}],15:[function(require,module,exports){
 'use strict'
 
 module.exports = [
   'indeterminate'
 ]
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 'use strict'
 
 var hyperx = require('hyperx')
@@ -1216,7 +1237,7 @@ module.exports = function (document) {
   return exports
 }
 
-},{"./append-child":11,"./bool-props":12,"./direct-props":14,"./svg-tags":16,"hyperx":7}],16:[function(require,module,exports){
+},{"./append-child":12,"./bool-props":13,"./direct-props":15,"./svg-tags":17,"hyperx":8}],17:[function(require,module,exports){
 'use strict'
 
 module.exports = [
@@ -1236,7 +1257,7 @@ module.exports = [
   'tspan', 'use', 'view', 'vkern'
 ]
 
-},{}],17:[function(require,module,exports){
+},{}],18:[function(require,module,exports){
 module.exports = LRU
 
 function LRU (opts) {
@@ -1374,7 +1395,7 @@ LRU.prototype.evict = function () {
   this.remove(this.tail)
 }
 
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 var assert = require('nanoassert')
 var morph = require('./lib/morph')
 
@@ -1539,7 +1560,7 @@ function same (a, b) {
   return false
 }
 
-},{"./lib/morph":20,"nanoassert":8}],19:[function(require,module,exports){
+},{"./lib/morph":21,"nanoassert":9}],20:[function(require,module,exports){
 module.exports = [
   // attribute events (can be set with attributes)
   'onclick',
@@ -1583,7 +1604,7 @@ module.exports = [
   'onfocusout'
 ]
 
-},{}],20:[function(require,module,exports){
+},{}],21:[function(require,module,exports){
 var events = require('./events')
 var eventsLength = events.length
 
@@ -1758,7 +1779,7 @@ function updateAttribute (newNode, oldNode, name) {
   }
 }
 
-},{"./events":19}],21:[function(require,module,exports){
+},{"./events":20}],22:[function(require,module,exports){
 var reg = /([^?=&]+)(=([^&]*))?/g
 var assert = require('assert')
 
@@ -1782,7 +1803,7 @@ function qs (url) {
   return obj
 }
 
-},{"assert":8}],22:[function(require,module,exports){
+},{"assert":9}],23:[function(require,module,exports){
 'use strict'
 
 var assert = require('assert')
@@ -1819,7 +1840,7 @@ function nanoraf (render, raf) {
   }
 }
 
-},{"assert":8}],23:[function(require,module,exports){
+},{"assert":9}],24:[function(require,module,exports){
 var assert = require('assert')
 var wayfarer = require('wayfarer')
 
@@ -1875,7 +1896,7 @@ function pathname (routename, isElectron) {
   return decodeURI(routename.replace(suffix, '').replace(normalize, '/'))
 }
 
-},{"assert":8,"wayfarer":28}],24:[function(require,module,exports){
+},{"assert":9,"wayfarer":29}],25:[function(require,module,exports){
 var assert = require('assert')
 
 var hasWindow = typeof window !== 'undefined'
@@ -1932,7 +1953,7 @@ NanoScheduler.prototype.setTimeout = function (cb) {
 
 module.exports = createScheduler
 
-},{"assert":8}],25:[function(require,module,exports){
+},{"assert":9}],26:[function(require,module,exports){
 var scheduler = require('nanoscheduler')()
 var assert = require('assert')
 
@@ -1982,7 +2003,7 @@ function noop (cb) {
   }
 }
 
-},{"assert":8,"nanoscheduler":24}],26:[function(require,module,exports){
+},{"assert":9,"nanoscheduler":25}],27:[function(require,module,exports){
 'use strict'
 
 /**
@@ -2011,7 +2032,7 @@ module.exports = function removeItems (arr, startIdx, removeCount) {
   arr.length = len
 }
 
-},{}],27:[function(require,module,exports){
+},{}],28:[function(require,module,exports){
 module.exports = scrollToAnchor
 
 function scrollToAnchor (anchor, options) {
@@ -2023,7 +2044,7 @@ function scrollToAnchor (anchor, options) {
   }
 }
 
-},{}],28:[function(require,module,exports){
+},{}],29:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var assert = require('assert')
 var trie = require('./trie')
@@ -2098,7 +2119,7 @@ function Wayfarer (dft) {
   }
 }
 
-},{"./trie":29,"assert":8}],29:[function(require,module,exports){
+},{"./trie":30,"assert":9}],30:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var assert = require('assert')
 
@@ -2239,4 +2260,4 @@ function has (object, property) {
   return Object.prototype.hasOwnProperty.call(object, property)
 }
 
-},{"assert":8}]},{},[1]);
+},{"assert":9}]},{},[1]);

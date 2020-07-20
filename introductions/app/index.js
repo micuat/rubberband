@@ -2,6 +2,8 @@
 var choo = require('choo')
 var html = require('choo/html')
 
+var profile = require('./profile.js')
+
 // initialize choo
 var app = choo()
 
@@ -22,20 +24,27 @@ app.use(function (state, emitter) {
 })
 
 // create a template
-var main = function (state) {
+var main = function (state, emit) {
   var type = state.animals.type
   var x = state.animals.x
   var y = state.animals.y
   return html`
-<div class="container">
+<div class="container" onclick=${add}>
   <iframe></iframe>
   <h2>name</h2>
   <div>email</div>
   <div>twitter</div>
   <div>instagram</div>
-  <div>comments ${type}</div>
+  <div>comments ${state.animals.map(profile)}</div>
+  <button onclick=${back}>＜</button><button onclick=${next}>＞</button>
 </div>
 `
+  function back () {
+    emit('addAnimal')
+  }
+  function back () {
+    emit('addAnimal')
+  }
   // return html`<div>choo animals</div>`
 }
 
