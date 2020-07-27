@@ -39,7 +39,7 @@ module.exports = function(state, emit) {
         <a href="./${randomize(page)}">random!</a>
       </div>
       <div>${page} / ${state.profiles.length}</div>
-      <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
+      <div><a href="/">back to top</a></div>
     </div>
   `;
   // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
@@ -50,6 +50,12 @@ module.exports = function(state, emit) {
     return (page = (page % state.profiles.length) + 1);
   }
   function randomize(page) {
-    return Math.floor(Math.random() * state.profiles.length) + 1;
+    var index = 1;
+    if(state.profile.length > 1) {
+      do {
+        index = Math.floor(Math.random() * state.profiles.length) + 1;
+      } while(index == page)
+    }
+    return index;
   }
 };

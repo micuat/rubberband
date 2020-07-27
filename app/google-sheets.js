@@ -8,22 +8,25 @@ const SHEET =
   // olivia's original sheet
   // "https://spreadsheets.google.com/feeds/cells/16BgHLLN8qBLNxHXj1ArapXdBB0W_FsHL3-pi_HS2TfM/1/public/full?alt=json";
   // form response
-  "https://spreadsheets.google.com/feeds/cells/1q1P03MrBkqlWDjZ5ZI2z85wcgJNzpQ_scZAIGD-tzPc/1/public/full?alt=json";
+  "https://spreadsheets.google.com/feeds/cells/140ghrVXD_7DrWGC71i9ych6h-Rg7p9ZGn9eW1V6-Rso/1/public/full?alt=json";
 const columns = [];
 const links = [];
+const baseRow = 9;
 const init = data => {
   data.forEach(entry => {
     const cell = entry["gs$cell"];
-    if (cell.row === "1") {
+    if (parseInt(cell.row) == baseRow) {
+      // console.log(cell.inputValue);
       columns.push(cell.inputValue);
-    } else {
-      const slideIndex = parseFloat(cell.row) - 2;
+    } else if (parseInt(cell.row) > baseRow) {
+      const slideIndex = parseFloat(cell.row) - baseRow - 1;
       const col = parseFloat(cell.col) - 1;
       console.log("col", col);
       if (!links[slideIndex]) {
         links[slideIndex] = {};
         columns.forEach(column => (links[slideIndex][column] = ""));
       }
+      console.log(cell.inputValue);
       links[slideIndex][columns[col]] = cell.inputValue;
     }
   });
