@@ -25,6 +25,7 @@ storePromise.then(store => {
   var main = require("./main.js");
 
   app.route("/introductions", main);
+  app.route("/introductions/list", require("./list.js"));
   app.route("/introductions/:profile", main);
 
   // start app
