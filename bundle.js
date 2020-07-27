@@ -63,9 +63,9 @@ storePromise.then(store => {
   // import a template
   var main = require("./main.js");
 
-  app.route("/introductions", main);
+  app.route("/", main);
   // app.route("/introductions/list", require("./list.js"));
-  app.route("/introductions/:profile", main);
+  app.route("/:profile", main);
 
   // start app
   app.mount("div");
@@ -93,13 +93,13 @@ module.exports = function(state, emit) {
     if (state.params.profile == "random") {
       var N = state.profiles.length;
       page = (Math.floor(Math.random() * N) % N) + 1;
-      emit("replaceState", `/introductions/${page}`);
+      emit("replaceState", `/${page}`);
     } else {
       page = parseInt(state.params.profile);
     }
   } else {
     page = 1;
-    emit("replaceState", `/introductions/${page}`);
+    emit("replaceState", `/${page}`);
   }
 
   emit(

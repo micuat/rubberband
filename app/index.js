@@ -24,9 +24,9 @@ storePromise.then(store => {
   // import a template
   var main = require("./main.js");
 
-  app.route("/introductions", main);
+  app.route("/", main);
   // app.route("/introductions/list", require("./list.js"));
-  app.route("/introductions/:profile", main);
+  app.route("/:profile", main);
 
   // start app
   app.mount("div");

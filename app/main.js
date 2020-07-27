@@ -19,13 +19,13 @@ module.exports = function(state, emit) {
     if (state.params.profile == "random") {
       var N = state.profiles.length;
       page = (Math.floor(Math.random() * N) % N) + 1;
-      emit("replaceState", `/introductions/${page}`);
+      emit("replaceState", `/${page}`);
     } else {
       page = parseInt(state.params.profile);
     }
   } else {
     page = 1;
-    emit("replaceState", `/introductions/${page}`);
+    emit("replaceState", `/${page}`);
   }
 
   emit(
