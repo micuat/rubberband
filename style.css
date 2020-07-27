@@ -13,16 +13,14 @@ h1 {
   color: #373fff;
 }
 
+.participants {
+  line-height: 150%;
+}
 .participant {
-  margin-left: 1em;
   margin-right: 1em;
+/*   white-space: pre; */
 }
 
 .organizer {
   background-color: #ffff20;
-}
-
-.participant:first-child {
-  margin-left: 0em;
-  margin-right: 1em;
 }

@@ -15,7 +15,7 @@ module.exports = function(state, emit) {
   for(var i = 0; i < state.profiles.length; i++) {
     var profile = state.profiles[i];
     var badge = profile["organizer"] === "y" ? "organizer" : "normal";
-    participants.push(html`<a class="participant ${badge}" href="/introductions/${i+1}">${profile["Your name"]}</a>`);
+    participants.push(html`<span class="participant ${badge}"><a href="/introductions/${i+1}">${profile["Your name"]}</a></span> `);
   }
   
   return html`
@@ -30,7 +30,7 @@ module.exports = function(state, emit) {
     </ul>
     <div>
       <p>Participants:</p>
-      <p>${participants}</p>
+      <p class="participants">${participants}</p>
     </div>
 </div>`;
 };
