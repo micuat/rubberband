@@ -18,6 +18,10 @@ h1 {
   margin-right: 1em;
 }
 
+.organizer {
+  background-color: #ffff20;
+}
+
 .participant:first-child {
   margin-left: 0em;
   margin-right: 1em;

@@ -51,7 +51,7 @@ module.exports = function(state, emit) {
   }
   function randomize(page) {
     var index = 1;
-    if(state.profile.length > 1) {
+    if(state.profiles.length > 1) {
       do {
         index = Math.floor(Math.random() * state.profiles.length) + 1;
       } while(index == page)

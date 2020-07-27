@@ -128,7 +128,7 @@ module.exports = function(state, emit) {
   }
   function randomize(page) {
     var index = 1;
-    if(state.profile.length > 1) {
+    if(state.profiles.length > 1) {
       do {
         index = Math.floor(Math.random() * state.profiles.length) + 1;
       } while(index == page)
@@ -153,7 +153,9 @@ module.exports = function(state, emit) {
   
   var participants = [];
   for(var i = 0; i < state.profiles.length; i++) {
-    participants.push(html`<a class="participant" href="/introductions/${i+1}">${state.profiles[i]["Your name"]}</a>`);
+    var profile = state.profiles[i];
+    var badge = profile["organizer"] === "y" ? "organizer" : "normal";
+    participants.push(html`<a class="participant ${badge}" href="/introductions/${i+1}">${profile["Your name"]}</a>`);
   }
   
   return html`
