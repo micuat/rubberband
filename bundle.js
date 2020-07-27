@@ -44,16 +44,16 @@ var html = require("choo/html");
 // initialize choo
 var app = choo();
 
-// app.route('/*', notFound);
-// function notFound () {
-//   return html`
-//     <div>
-//       <a href="https://hydra-meetup-0.glitch.me/">
-//         404 with love ❤ back to top!
-//       </a>
-//     </div>
-//   `
-// }
+app.route('/*', notFound);
+function notFound () {
+  return html`
+    <div>
+      <a href="https://hydra-meetup-0.glitch.me/">
+        404 with love ❤ back to top!
+      </a>
+    </div>
+  `
+}
 
 var storePromise = require("./store.js");
 
@@ -161,15 +161,16 @@ module.exports = function(state, emit) {
       <p>Participants:</p>
       <p>${participants}</p>
     </div>
-    <div>
-      directory:
-    <ul>
-      <li><a href="/timetable"> timetable</a></li>
-      <li><a href="/links"> useful links</a></li>
-    </ul>
-    </div>
 </div>`;
 };
+
+    // <div>
+    //   directory:
+    // <ul>
+    //   <li><a href="/timetable"> timetable</a></li>
+    //   <li><a href="/links"> useful links</a></li>
+    // </ul>
+    // </div>
 
 },{"choo/html":8}],5:[function(require,module,exports){
 // import choo's template helper

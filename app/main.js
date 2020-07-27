@@ -30,12 +30,13 @@ module.exports = function(state, emit) {
       <p>Participants:</p>
       <p>${participants}</p>
     </div>
-    <div>
-      directory:
-    <ul>
-      <li><a href="/timetable"> timetable</a></li>
-      <li><a href="/links"> useful links</a></li>
-    </ul>
-    </div>
 </div>`;
 };
+
+    // <div>
+    //   directory:
+    // <ul>
+    //   <li><a href="/timetable"> timetable</a></li>
+    //   <li><a href="/links"> useful links</a></li>
+    // </ul>
+    // </div>

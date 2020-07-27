@@ -5,16 +5,16 @@ var html = require("choo/html");
 // initialize choo
 var app = choo();
 
-// app.route('/*', notFound);
-// function notFound () {
-//   return html`
-//     <div>
-//       <a href="https://hydra-meetup-0.glitch.me/">
-//         404 with love ❤ back to top!
-//       </a>
-//     </div>
-//   `
-// }
+app.route('/*', notFound);
+function notFound () {
+  return html`
+    <div>
+      <a href="https://hydra-meetup-0.glitch.me/">
+        404 with love ❤ back to top!
+      </a>
+    </div>
+  `
+}
 
 var storePromise = require("./store.js");
 
