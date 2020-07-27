@@ -14,11 +14,14 @@ h1 {
 }
 
 .participants {
-  line-height: 150%;
+  display: block;
 }
 .participant {
   margin-right: 1em;
-/*   white-space: pre; */
+  margin-top: .1em;
+  margin-bottom: .1em;
+  white-space: pre;
+  float: left;
 }
 
 .organizer {

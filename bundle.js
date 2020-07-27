@@ -213,6 +213,14 @@ function showLinkIfNotEmpty(text, prefix, link) {
   else return "";
 }
 
+function showAvailabilityIfNotEmpty(text, yn) {
+  if (yn !== undefined && yn.length > 0)
+    return html`
+      <div>${text} ${yn}</div>
+    `;
+  else return "";
+}
+
 // export module
 module.exports = function(profile) {
   // var {name, twitter, instagram } = profile;
@@ -231,7 +239,7 @@ module.exports = function(profile) {
     ${showEmailIfNotEmpty(email)}
     ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)}
     ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
-    <div>can you make it to the meetup? ${availability}</div>
+    ${showAvailabilityIfNotEmpty("can you make it to the meetup?", availability)}
     <div>${comments}</div>
   `;
 };
