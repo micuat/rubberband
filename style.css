@@ -12,3 +12,8 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
+
+.participant {
+  margin-left: 1em;
+  margin-right: 1em;
+}

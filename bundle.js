@@ -137,6 +137,12 @@ module.exports = function(state, emit) {
       </div>
     `;
   }
+  
+  var participants = [];
+  for(var i = 0; i < state.profiles.length; i++) {
+    participants.push(html`<a class="participant" href="/${i+1}">${state.profiles[i]["Your name"]}</a>`);
+  }
+  
   return html`
 <div class="container">
     <p>
@@ -148,13 +154,17 @@ module.exports = function(state, emit) {
       <li>19:30 - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
     </ul>
     <div>
-      Participants: 
+      <p>Participants:</p>
+      <p>${participants}</p>
     </div>
+    <div>
+      directory:
     <ul>
       <li><a href="/introductions"> introductions</a></li>
       <li><a href="/timetable"> timetable</a></li>
       <li><a href="/links"> useful links</a></li>
     </ul>
+    </div>
 </div>`;
 };
 
