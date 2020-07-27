@@ -110,6 +110,7 @@ module.exports = function(state, emit) {
       <div>
         <a href="./${prev(page)}">＜</a>
         <a href="./${next(page)}">＞</a>
+        <a href="./${randomize(page)}">random!</a>
       </div>
       <div>${page} / ${state.profiles.length}</div>
       <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
@@ -121,6 +122,9 @@ module.exports = function(state, emit) {
   }
   function next(page) {
     return (page = (page % state.profiles.length) + 1);
+  }
+  function randomize(page) {
+    return Math.floor(Math.random() * state.profiles.length) + 1;
   }
 };
 

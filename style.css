@@ -17,3 +17,8 @@ h1 {
   margin-left: 1em;
   margin-right: 1em;
 }
+
+.participant:first-child {
+  margin-left: 0em;
+  margin-right: 1em;
+}
