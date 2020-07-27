@@ -13,7 +13,7 @@ module.exports = function(state, emit) {
   
   var participants = [];
   for(var i = 0; i < state.profiles.length; i++) {
-    participants.push(html`<a class="participant" href="/${i+1}">${state.profiles[i]["Your name"]}</a>`);
+    participants.push(html`<a class="participant" href="/introductions/${i+1}">${state.profiles[i]["Your name"]}</a>`);
   }
   
   return html`
@@ -33,7 +33,6 @@ module.exports = function(state, emit) {
     <div>
       directory:
     <ul>
-      <li><a href="/introductions"> introductions</a></li>
       <li><a href="/timetable"> timetable</a></li>
       <li><a href="/links"> useful links</a></li>
     </ul>
