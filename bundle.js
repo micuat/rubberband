@@ -104,7 +104,7 @@ module.exports = function(state, emit) {
 
   emit(
     "DOMTitleChange",
-    `hydra meetup 0.0: ${state.profiles[page - 1]["Your name"]}`
+    `hydra meetup 1: ${state.profiles[page - 1]["Your name"]}`
   );
 
   return html`
@@ -157,6 +157,11 @@ module.exports = function(state, emit) {
     var badge = profile["organizer"] === "y" ? "organizer" : "normal";
     participants.push(html`<span class="participant ${badge}"><a href="/introductions/${i+1}">${profile["Your name"]}</a></span> `);
   }
+
+  emit(
+    "DOMTitleChange",
+    `hydra meetup 1`
+  );
   
   return html`
 <div class="container">
@@ -213,7 +218,7 @@ function showLinkIfNotEmpty(text, prefix, link) {
   else return "";
 }
 
-function showAvailabilityIfNotEmpty(text, yn) {
+function showQIfNotEmpty(text, yn) {
   if (yn !== undefined && yn.length > 0)
     return html`
       <div>${text} ${yn}</div>
@@ -230,6 +235,7 @@ module.exports = function(profile) {
   var instagram = profile["Instagram account"];
   var url = profile["URL of what you want to share"];
   var availability = profile["can you make it to the meetup on August 1?"];
+  var breakout = profile["Which breakout room do you want to join?"];
   var comments = profile["A few words about you"];
 
   // create html template
@@ -239,7 +245,8 @@ module.exports = function(profile) {
     ${showEmailIfNotEmpty(email)}
     ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)}
     ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
-    ${showAvailabilityIfNotEmpty("can you make it to the meetup?", availability)}
+    ${showQIfNotEmpty("can you make it to the meetup?", availability)}
+    ${showQIfNotEmpty("Which breakout room do you want to join?", breakout)}
     <div>${comments}</div>
   `;
 };

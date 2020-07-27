@@ -27,7 +27,7 @@ module.exports = function(state, emit) {
 
   emit(
     "DOMTitleChange",
-    `hydra meetup 0.0: ${state.profiles[page - 1]["Your name"]}`
+    `hydra meetup 1: ${state.profiles[page - 1]["Your name"]}`
   );
 
   return html`

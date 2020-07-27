@@ -17,6 +17,11 @@ module.exports = function(state, emit) {
     var badge = profile["organizer"] === "y" ? "organizer" : "normal";
     participants.push(html`<span class="participant ${badge}"><a href="/introductions/${i+1}">${profile["Your name"]}</a></span> `);
   }
+
+  emit(
+    "DOMTitleChange",
+    `hydra meetup 1`
+  );
   
   return html`
 <div class="container">
