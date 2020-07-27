@@ -23,10 +23,10 @@ storePromise.then(store => {
 
   // import a template
   var main = require("./main.js");
+  var introduction = require("./introduction.js");
 
   app.route("/", main);
-  // app.route("/introductions/list", require("./list.js"));
-  app.route("/:profile", main);
+  app.route("/:profile", introduction);
 
   // start app
   app.mount("div");

@@ -1,9 +1,6 @@
 // import choo's template helper
 var html = require("choo/html");
 
-// import template
-var profile = require("./profile.js");
-
 // export module
 module.exports = function(state, emit) {
   if (state.profiles.length == 0) {
@@ -13,42 +10,28 @@ module.exports = function(state, emit) {
       </div>
     `;
   }
-  console.log(state.params.profile);
-  var page = 1;
-  if (state.params.profile !== undefined) {
-    if (state.params.profile == "random") {
-      var N = state.profiles.length;
-      page = (Math.floor(Math.random() * N) % N) + 1;
-      emit("replaceState", `/${page}`);
-    } else {
-      page = parseInt(state.params.profile);
-    }
-  } else {
-    page = 1;
-    emit("replaceState", `/${page}`);
-  }
-
-  emit(
-    "DOMTitleChange",
-    `hydra meetup 0.0: ${state.profiles[page - 1]["Your name"]}`
-  );
-
   return html`
-    <div class="container">
-      ${profile(state.profiles[page - 1])}
-      <div>
-        <a href="./${prev(page)}">＜</a>
-        <a href="./${next(page)}">＞</a>
-      </div>
-      <div>${page} / ${state.profiles.length}</div>
-      <div><a href="https://hydra-meetup-0.glitch.me/">back to top</a></div>
+<div class="container">
+    <p>
+       1st August (Saturday) 18:00 UTC (20:00 CEST / 14:00 EDT)
+    </p>
+    <ul>
+      <li>18:00 - 18:30: Introduction from Olivia + words from organizers</li>
+      <li>18:30 - 19:30: Show and tell. Say hi and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone! </li>
+      <li>19:30 - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
+    </ul>
+    <div>
+      Participants: 
+    <ul>
+      <li><a href="/introductions"> introductions</a></li>
+      <li><a href="/timetable"> timetable</a></li>
+      <li><a href="/links"> useful links</a></li>
+    </ul>
     </div>
-  `;
-  // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
-  function prev(page) {
-    return ((page - 2 + state.profiles.length) % state.profiles.length) + 1;
-  }
-  function next(page) {
-    return (page = (page % state.profiles.length) + 1);
-  }
+    <ul>
+      <li><a href="/introductions"> introductions</a></li>
+      <li><a href="/timetable"> timetable</a></li>
+      <li><a href="/links"> useful links</a></li>
+    </ul>
+</div>`;
 };
