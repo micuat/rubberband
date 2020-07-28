@@ -178,11 +178,13 @@ module.exports = function(state, emit) {
 
   return html`
     <div class="container">
-      <div> <div style="display:inline-block"> hydra meetup #1! </div>
-         <div style="display:inline-block; float:right">  <span>${page} / ${state.profiles.length}</span>
+      <div style="padding:1em;background-color:#fff"> <div style="display:inline-block"> hydra meetup #1! </div>
+         <div style="display:inline-block; float:right">  
           <a href="./${prev(page)}">＜</a>
           <a href="./${next(page)}">＞</a>
+          <span>${page} / ${state.profiles.length}</span>
           <a href="./${randomize(page)}">random!</a>
+          
         </div>
         </div>
       ${profile(state.profiles[page - 1])}
