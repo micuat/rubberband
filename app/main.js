@@ -38,7 +38,7 @@ module.exports = function(state, emit) {
     <p>
       Please join the <a href="https://chat.toplap.org/channel/hydra-meetup">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 
     </p>
-    <!---<div><a href="/info">more info here</a></div>--->
+    <div><a href="https://hydra-meetup-0.glitch.me/info">more info here</a></div>
     <div>
       <h4>Participants</h4>
       <p class="participants">${participants}</p>
