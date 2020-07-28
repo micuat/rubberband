@@ -51,7 +51,7 @@ module.exports = function(profile) {
   return html`
  
     ${showEmbedIfNotEmpty(url)}
-    <div style="position:fixed;bottom:0.1em;right:0.1em">
+    <div style="position:fixed;bottom:0.1em;right:0.1em;text-align:right;max-width:400px;margin:2em;background-color:#f06;color:#ff0">
       <h2>${name}</h2>
         <div style="display:inline-block">
           ${showEmailIfNotEmpty(email)} |
