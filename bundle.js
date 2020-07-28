@@ -243,14 +243,18 @@ module.exports = function(state, emit) {
 <div class="container">
     <h1> hydra meetup #1! </h1>
     <p>
-       1st August (Saturday) 18:00 UTC (20:00 CEST / 14:00 EDT)
+       The first hydra meetup will be held on <b>1st August (Saturday) 18:00 UTC (20:00 CEST / 14:00 EDT)</b>
     </p>
+    <b>Schedule</b>
     <ul>
-      <li>18:00 - 18:30: Introduction from Olivia + words from organizers</li>
+      <li>18:00 - 18:30: Introduction from organizers</li>
       <li>18:30 - 19:30: Show and tell. Say hi and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone! </li>
       <li>19:30 - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
     </ul>
-    <div><a href="/info">more info here</a></div>
+    <b>Communication:</b>
+      We use hydra-meetup channel on toplap chat for the communication before/during/after the event! Please sign up if you haven’t done yet:
+      https://chat.toplap.org/channel/hydra-meetup
+    <!---<div><a href="/info">more info here</a></div>--->
     <div>
       <p>Participants:</p>
       <p class="participants">${participants}</p>
