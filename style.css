@@ -20,14 +20,14 @@ h1 {
 
 /* unvisited link */
 a:link {
-  color: #0f0;
+  color: #5ef177;
 /*   background-color: #fff;
   padding: 0.6em; */
 }
 
 /* visited link */
 a:visited {
-  color: #0f0;
+  color: #5ef177;
 }
 
 .container {
