@@ -4,7 +4,7 @@ body {
   font-family: monospace;
   margin: 2em;
   color: #ff0066;
-  background-color: #0d1418;
+  background-color: #0d1418; /* this should be blackish why doesn't it work*/
   font-size: 2em;
 }
 
@@ -25,5 +25,5 @@ h1 {
 }
 
 .organizer {
-  background-color: #0d1418;
+  background-color: #ffff20;
 }
