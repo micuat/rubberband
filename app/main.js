@@ -15,7 +15,7 @@ module.exports = function(state, emit) {
   for(var i = 0; i < state.profiles.length; i++) {
     var profile = state.profiles[i];
     var badge = profile["organizer"] === "y" ? "organizer" : "normal";
-    participants.push(html`<span class="participant ${badge}"><a href="/introductions/${i+1}" style="background-color:hsl(${Math.floor(360* i/state.profiles.length)}, 100%, 80%)">${profile["Your name"]}</a></span> `);
+    participants.push(html`<span class="participant ${badge}"><a href="/introductions/${i+1}" style="background-color:hsl(${Math.floor(360* i/state.profiles.length)}, 100%, 60%)">${profile["Your name"]}</a></span> `);
   }
 
   emit(
