@@ -22,9 +22,9 @@ module.exports = function(state, emit) {
 Thank you for signing up to the first hydra meetup! This time we are using Zoom, and here is the important info:
 </div>
 <div><br>
-<b>Date/Time: August 1st, 18:00 UTC </b> <br>
+<b>Date/Time: <em>August 1st, 18:00 UTC</em> </b> <br>
 Check the starting time in your timezone here: <br>
-<a>https://www.timeanddate.com/worldclock/fixedtime.html?msg=hydra+meetup+%231&iso=20200801T20&p1=37&ah=2</a>
+https://www.timeanddate.com/worldclock/fixedtime.html?msg=hydra+meetup+%231&iso=20200801T20&p1=37&ah=2
 Zoom link: https://us02web.zoom.us/j/87997962006
 </div>
 <div>
