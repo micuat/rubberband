@@ -4,13 +4,13 @@ body {
   font-family: monospace;
   margin: 2em;
   color: #ff0066;
-  background-color: #0d1418; /* this should be blackish why doesn't it work*/
+  background-color: #0d1020; /* this should be blackish why doesn't it work*/
   font-size: 2em;
 }
 
 h1 {
   font-style: italic;
-  color: #373fff;
+  color: #ffffff;
 }
 
 .participants {
