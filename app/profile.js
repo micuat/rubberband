@@ -4,17 +4,17 @@ var html = require("choo/html");
 function showEmbedIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <iframe src="${link}" width="800" height="600"></iframe>
+      <iframe src="${link}" width="800" height="600" frameBorder="0"></iframe>
     `;
   else return html`
-      <div style="width:800px; height:600px;border: 2px solid white;">no link provided</div>
+      <div style="width:800px; height:600px;border: 2px solid white;" >no link provided</div>
     `;
 }
 
 function showEmailIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <div>email: <a href="mailto:${link}">${link}</a></div>
+      <div>email:<a href="mailto:${link}">${link}</a></div>
     `;
   else return "";
 }
@@ -22,7 +22,7 @@ function showEmailIfNotEmpty(link) {
 function showLinkIfNotEmpty(text, prefix, link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <div>${text}: <a href="${prefix}${link}" target="_blank">${link}</div>
+      <span>${text}: <a href="${prefix}${link}" target="_blank">${link}</span>
     `;
   else return "";
 }
@@ -53,13 +53,15 @@ module.exports = function(profile) {
     ${showEmbedIfNotEmpty(url)}
     
     <h2>${name}</h2>
-    ${showEmailIfNotEmpty(email)}
-    ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)}
-    ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
-    <br>
-    ${showQIfNotEmpty("Will attend the meetup:", availability)}
-    ${showQIfNotEmpty("Desired breakout room:", breakout)}
-    <br>
+      <div style="display:inline-block">
+        ${showEmailIfNotEmpty(email)}
+        ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)}
+        ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
+      </div>
+      <!---<br>
+      ${showQIfNotEmpty("Will attend the meetup:", availability)}
+      ${showQIfNotEmpty("Desired breakout room:", breakout)}
+      <br>--->
     <div>${comments}</div>
   `;
 };

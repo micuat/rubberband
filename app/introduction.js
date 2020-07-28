@@ -34,12 +34,14 @@ module.exports = function(state, emit) {
     <div class="container">
       ${profile(state.profiles[page - 1])}
       <div>
-        <a href="./${prev(page)}">＜</a>
-        <a href="./${next(page)}">＞</a>
-        <a href="./${randomize(page)}">random!</a>
+        <div>
+          <a href="./${prev(page)}">＜</a>
+          <a href="./${next(page)}">＞</a>
+          <a href="./${randomize(page)}">random!</a>
+        </div>
+        <div>${page} / ${state.profiles.length}</div>
+        <div><a href="/">back to top</a></div>
       </div>
-      <div>${page} / ${state.profiles.length}</div>
-      <div><a href="/">back to top</a></div>
     </div>
   `;
   // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>
