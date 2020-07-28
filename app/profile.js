@@ -14,7 +14,7 @@ function showEmbedIfNotEmpty(link) {
 function showEmailIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <div>email:<a href="mailto:${link}">${link}</a></div>
+      <span style="display:inline-block"><a href="mailto:${link}">${link}</a></span>
     `;
   else return "";
 }
@@ -54,8 +54,8 @@ module.exports = function(profile) {
     
     <h2>${name}</h2>
       <div style="display:inline-block">
-        ${showEmailIfNotEmpty(email)}
-        ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)}
+        ${showEmailIfNotEmpty(email)} |
+        ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)} |
         ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
       </div>
       <!---<br>

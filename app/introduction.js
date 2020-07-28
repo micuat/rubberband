@@ -40,7 +40,7 @@ module.exports = function(state, emit) {
           <a href="./${randomize(page)}">random!</a>
         </div>
         <div>${page} / ${state.profiles.length}</div>
-        <div><a href="/">back to top</a></div>
+        <!---<div><a href="/">back to top</a></div>--->
       </div>
     </div>
   `;
