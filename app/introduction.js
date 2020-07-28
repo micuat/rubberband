@@ -31,7 +31,7 @@ module.exports = function(state, emit) {
   );
 
   return html`
-    <div class="container">
+    <div class="container" style="width:100%;height:100%">
       <div style="padding:1em;background-color:#fff"> <div style="display:inline-block"> hydra meetup #1! </div>
          <div style="display:inline-block; float:right">  
           <a href="./${prev(page)}">＜</a>

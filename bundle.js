@@ -177,7 +177,7 @@ module.exports = function(state, emit) {
   );
 
   return html`
-    <div class="container">
+    <div class="container" style="width:100%;height:100%">
       <div style="padding:1em;background-color:#fff"> <div style="display:inline-block"> hydra meetup #1! </div>
          <div style="display:inline-block; float:right">  
           <a href="./${prev(page)}">＜</a>
@@ -272,7 +272,7 @@ var html = require("choo/html");
 function showEmbedIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <iframe src="${link}" width="800" height="600" frameBorder="0"></iframe>
+      <iframe src="${link}" width="800" height="600" frameBorder="0" style="width:100%;height:100%"></iframe>
     `;
   else return html`
       <div style="width:800px; height:600px;border: 2px solid white;" >no link provided</div>
@@ -319,18 +319,19 @@ module.exports = function(profile) {
   return html`
  
     ${showEmbedIfNotEmpty(url)}
-    
-    <h2>${name}</h2>
-      <div style="display:inline-block">
-        ${showEmailIfNotEmpty(email)} |
-        ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)} |
-        ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
-      </div>
-      <!---<br>
-      ${showQIfNotEmpty("Will attend the meetup:", availability)}
-      ${showQIfNotEmpty("Desired breakout room:", breakout)}
-      <br>--->
-    <div>${comments}</div>
+    <div style="position:fixed;bottom:0.1em;right:0.1em">
+      <h2>${name}</h2>
+        <div style="display:inline-block">
+          ${showEmailIfNotEmpty(email)} |
+          ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)} |
+          ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
+        </div>
+        <!---<br>
+        ${showQIfNotEmpty("Will attend the meetup:", availability)}
+        ${showQIfNotEmpty("Desired breakout room:", breakout)}
+        <br>--->
+      <div>${comments}</div>
+    </div>
   `;
 };
 
