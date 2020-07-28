@@ -4,11 +4,12 @@ var html = require("choo/html");
 function showEmbedIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <iframe src="${link}" width="800" height="600" frameBorder="0" style="width:100%;height:100%"></iframe>
+      <iframe src="${link}" width="800" height="600" frameBorder="0" style="width:100%;height:80%"></iframe>
     `;
-  else return html`
-      <div style="width:800px; height:600px;border: 2px solid white;" >no link provided</div>
-    `;
+  // else return html`
+  //     <div style="width:800px; height:600px;border: 2px solid white;" >no link provided</div>
+  //   `;
+  else return ''
 }
 
 function showEmailIfNotEmpty(link) {
@@ -51,7 +52,7 @@ module.exports = function(profile) {
   return html`
  
     ${showEmbedIfNotEmpty(url)}
-    <div style="position:fixed;bottom:0.1em;right:0.1em;text-align:right;max-width:400px;margin:2em;background-color:#f06;color:#ff0">
+    <div class="profile-info">
       <h2>${name}</h2>
         <div style="display:inline-block">
           ${showEmailIfNotEmpty(email)} |
