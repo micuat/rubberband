@@ -3,14 +3,24 @@
 body {
   font-family: monospace;
   margin: 2em;
-  color: #ff0066;
-  background-color: #0d1020; /* this should be blackish why doesn't it work*/
+  color: #ff196a;
+  background-color: #050010; /* this should be blackish why doesn't it work*/
   font-size: 2em;
 }
 
 h1 {
   font-style: italic;
   color: #ffffff;
+}
+
+/* unvisited link */
+a:link {
+  color: #ff0000;
+}
+
+/* visited link */
+a:visited {
+  color: #ff0027;
 }
 
 .participants {
@@ -25,5 +35,5 @@ h1 {
 }
 
 .organizer {
-  background-color: #ffff20;
+  background-color: #EBEDF2;
 }
