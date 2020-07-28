@@ -20,8 +20,9 @@ h1 {
 
 /* unvisited link */
 a:link {
-  color: #ff6096;
+  color: #000;
   background-color: #fff;
+  padding: 0.6em;
 }
 
 /* visited link */
@@ -37,14 +38,25 @@ a:visited {
 .participants {
   display: block;
 }
-.participant {
+.participant>a {
   margin-right: 1em;
   margin-top: .1em;
   margin-bottom: .1em;
   white-space: pre;
   float: left;
+  background-color: #5ef177;
+  color: #000;
 }
 
-.organizer {
-  background-color: #ededed;
+.participant>a:hover {
+  background-color: #f06;
+}
+
+.organizer>a{
+/*   background-color: #ededed; */
+  background-color: #f00;
+}
+
+.introduction-header {
+  
 }
