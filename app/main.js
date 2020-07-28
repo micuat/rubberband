@@ -33,6 +33,7 @@ module.exports = function(state, emit) {
       <li>18:30 - 19:30: Show and tell. Say hi and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone! </li>
       <li>19:30 - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
     </ul>
+    <div><a href="/info">more info here</a></div>
     <div>
       <p>Participants:</p>
       <p class="participants">${participants}</p>
