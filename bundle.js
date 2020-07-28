@@ -315,8 +315,10 @@ module.exports = function(profile) {
     ${showEmailIfNotEmpty(email)}
     ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)}
     ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
-    ${showQIfNotEmpty("can you make it to the meetup?", availability)}
-    ${showQIfNotEmpty("Which breakout room do you want to join?", breakout)}
+    <br>
+    ${showQIfNotEmpty("Will attend the meetup:", availability)}
+    ${showQIfNotEmpty("Desired breakout room:", breakout)}
+    <br>
     <div>${comments}</div>
   `;
 };
