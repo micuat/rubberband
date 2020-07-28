@@ -32,8 +32,9 @@ module.exports = function(state, emit) {
 
   return html`
     <div class="introduction-container">
-      <div class="introduction-header"> <div style="display:inline-block"> hydra meetup #1! </div>
-         <div style="display:inline-block; float:right">  
+      <div class="introduction-nav"> 
+          <!---<div style="display:inline-block"> hydra meetup #1! </div>--->
+         <div>  
           <a href="./${prev(page)}">＜</a>
           <a href="./${next(page)}">＞</a>
           <span>${page} / ${state.profiles.length}</span>

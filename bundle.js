@@ -178,8 +178,9 @@ module.exports = function(state, emit) {
 
   return html`
     <div class="introduction-container">
-      <div class="introduction-header"> <div style="display:inline-block"> hydra meetup #1! </div>
-         <div style="display:inline-block; float:right">  
+      <div class="introduction-nav"> 
+          <!---<div style="display:inline-block"> hydra meetup #1! </div>--->
+         <div>  
           <a href="./${prev(page)}">＜</a>
           <a href="./${next(page)}">＞</a>
           <span>${page} / ${state.profiles.length}</span>
@@ -277,7 +278,7 @@ var html = require("choo/html");
 function showEmbedIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <iframe src="${link}" width="800" height="600" frameBorder="0" style="width:100%;height:80%"></iframe>
+      <iframe src="${link}" width="800" height="600" frameBorder="0" style="width:100%;height:75%"></iframe>
     `;
   // else return html`
   //     <div style="width:800px; height:600px;border: 2px solid white;" >no link provided</div>
@@ -324,7 +325,7 @@ module.exports = function(profile) {
   // create html template
   return html`
  
-    ${showEmbedIfNotEmpty(url)}
+    
     <div class="profile-info">
       <h2>${name}</h2>
         <div style="display:inline-block">
@@ -338,6 +339,7 @@ module.exports = function(profile) {
         <br>--->
       <div>${comments}</div>
     </div>
+    ${showEmbedIfNotEmpty(url)}
   `;
 };
 
