@@ -3,9 +3,9 @@
 body {
   font-family: monospace;
   margin: 2em;
-  color: #ff196a;
+  color: #ff1c6a;
   background-color: #050010; /* this should be blackish why doesn't it work*/
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 h1 {
@@ -15,7 +15,7 @@ h1 {
 
 /* unvisited link */
 a:link {
-  color: #ff0000;
+  color: #ff6096;
 }
 
 /* visited link */
@@ -35,5 +35,5 @@ a:visited {
 }
 
 .organizer {
-  background-color: #EBEDF2;
+  background-color: #ededed;
 }

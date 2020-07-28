@@ -21,12 +21,12 @@ const init = data => {
     } else if (parseInt(cell.row) > baseRow) {
       const slideIndex = parseFloat(cell.row) - baseRow - 1;
       const col = parseFloat(cell.col) - 1;
-      console.log("col", col);
+      // console.log("col", col);
       if (!links[slideIndex]) {
         links[slideIndex] = {};
         columns.forEach(column => (links[slideIndex][column] = ""));
       }
-      console.log(cell.inputValue);
+      // console.log(cell.inputValue);
       links[slideIndex][columns[col]] = cell.inputValue;
     }
   });

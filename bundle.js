@@ -22,12 +22,12 @@ const init = data => {
     } else if (parseInt(cell.row) > baseRow) {
       const slideIndex = parseFloat(cell.row) - baseRow - 1;
       const col = parseFloat(cell.col) - 1;
-      console.log("col", col);
+      // console.log("col", col);
       if (!links[slideIndex]) {
         links[slideIndex] = {};
         columns.forEach(column => (links[slideIndex][column] = ""));
       }
-      console.log(cell.inputValue);
+      // console.log(cell.inputValue);
       links[slideIndex][columns[col]] = cell.inputValue;
     }
   });
@@ -100,23 +100,23 @@ module.exports = function(state, emit) {
     <div>
 Thank you for signing up to the first hydra meetup! This time we are using Zoom, and here is the important info:
 </div>
-<div>
-date/time: August 1st,18:00 UTC
-check the starting time in your timezone here:
-https://www.timeanddate.com/worldclock/fixedtime.html?msg=hydra+meetup+%231&iso=20200801T20&p1=37&ah=2
-zoom link: https://us02web.zoom.us/j/87997962006
+<div><br>
+<b>Date/Time: August 1st, 18:00 UTC </b> <br>
+Check the starting time in your timezone here: <br>
+<a>https://www.timeanddate.com/worldclock/fixedtime.html?msg=hydra+meetup+%231&iso=20200801T20&p1=37&ah=2</a>
+Zoom link: https://us02web.zoom.us/j/87997962006
 </div>
 <div>
 We received so many responses and are so excited about all of the ideas, projects, questions. For the 1st meetup, we want to make sure that everyone who wants to has a chance to share and to see what other people are working on. With that in mind we are organizing the meetup into three sections:
 </div>
 <div>
-(following times are in UTC)
+<em>(following times are in UTC)</em>
 18:00 - 18:30: Introduction from Olivia + words from organizers
 18:30 - 19:30: Show and tell! Say hi and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone!
 19:30 - 20:00: Breakout rooms to discuss specific topics and ask hydra questions
 </div>
 <div>
-*Introductions*
+<b>Introductions:</b>
 In order to keep everything quick, we created this page to share links and images ahead of time for the meetup. Please add whatever you would like to share by editing this spreadsheet (don’t edit the header, and be respectful to each other!)
 https://docs.google.com/spreadsheets/d/140ghrVXD_7DrWGC71i9ych6h-Rg7p9ZGn9eW1V6-Rso/edit?usp=sharing
 </div>
@@ -125,12 +125,12 @@ it will be automatically applied to the meetup page:
 https://hydra-meetup-0.glitch.me/
 </div>
 <div>
-*Communication*
+<b>Communication:</b>
 We use hydra-meetup channel on toplap chat for the communication before/during/after the event! Please sign up if you haven’t done yet:
 https://chat.toplap.org/channel/hydra-meetup
 </div>
 <div>
-*Code of Conduct*
+<b>Code of Conduct:</b>
 For everyone to enjoy the meetup, we follow Berlin Code of Conduct. Please take a look before the event (it has translations in several language, for example, in Spanish) https://berlincodeofconduct.org/
 </div>
 <div>
@@ -310,6 +310,7 @@ module.exports = function(profile) {
 
   // create html template
   return html`
+  <div id="info">
     ${showEmbedIfNotEmpty(url)}
     <h2>${name}</h2>
     ${showEmailIfNotEmpty(email)}
@@ -320,6 +321,7 @@ module.exports = function(profile) {
     ${showQIfNotEmpty("Desired breakout room:", breakout)}
     <br>
     <div>${comments}</div>
+</div>
   `;
 };
 

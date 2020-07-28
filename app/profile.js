@@ -49,6 +49,7 @@ module.exports = function(profile) {
 
   // create html template
   return html`
+  <div id="info">
     ${showEmbedIfNotEmpty(url)}
     <h2>${name}</h2>
     ${showEmailIfNotEmpty(email)}
@@ -59,5 +60,6 @@ module.exports = function(profile) {
     ${showQIfNotEmpty("Desired breakout room:", breakout)}
     <br>
     <div>${comments}</div>
+</div>
   `;
 };
