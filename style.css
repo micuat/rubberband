@@ -3,27 +3,35 @@
 html, body {
   font-family: monospace;
   margin: 0em;
-  color: #000;
-  background-color: #ccffcc; /* this should be blackish why doesn't it work*/
+  color: #fff;
+  background-color: #000000; /* this should be blackish why doesn't it work*/
   font-size: 1.2em;
   width: 100%;
   height: 100%;
-  text-shadow: 2px 2px 2px #FF0066;
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
   font-style: italic;
   color: #ffffff;
+   text-shadow: 2px 2px 2px #FF0066;
 }
 
 /* unvisited link */
 a:link {
   color: #ff6096;
+  background-color: #fff;
 }
 
 /* visited link */
 a:visited {
   color: #ff0027;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
 }
 
 .participants {

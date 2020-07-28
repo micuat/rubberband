@@ -241,6 +241,7 @@ module.exports = function(state, emit) {
   
   return html`
 <div class="container">
+    <h1> hydra meetup #1! </h1>
     <p>
        1st August (Saturday) 18:00 UTC (20:00 CEST / 14:00 EDT)
     </p>
