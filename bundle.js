@@ -45,7 +45,7 @@ var choo = require("choo");
 var html = require("choo/html");
 
 // initialize choo
-var app = choo();
+var app = choo({ hash: true })
 
 app.route('/*', notFound);
 function notFound () {
@@ -71,6 +71,7 @@ storePromise.then(store => {
   app.route("/", main);
   app.route("/info", info);
   app.route("/introductions/:profile", introduction);
+  app.route("#introductions/:profile", introduction);
 
   // start app
   app.mount("div");
@@ -161,10 +162,10 @@ module.exports = function(state, emit) {
       <div class="introduction-nav"> 
           <!---<div style="display:inline-block"> hydra meetup #1! </div>--->
          <div>  
-          <a href="./${prev(page)}">＜</a>
-          <a href="./${next(page)}">＞</a>
+          <a href="./#introductions/${prev(page)}">＜</a>
+          <a href="./#introductions/${next(page)}">＞</a>
           <span>${page} / ${state.profiles.length}</span>
-          <a href="./${randomize(page)}">random!</a>
+          <a href="./#introductions/${randomize(page)}">random!</a>
           
         </div>
         </div>
@@ -212,7 +213,7 @@ module.exports = function(state, emit) {
   for(var i = 0; i < state.profiles.length; i++) {
     var profile = state.profiles[i];
     var badge = profile["organizer"] === "y" ? "organizer" : "normal";
-    participants.push(html`<span class="participant ${badge}"><a href="/introductions/${i+1}">${profile["Your name"]}</a></span> `);
+    participants.push(html`<span class="participant ${badge}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span> `);
   }
 
   emit(

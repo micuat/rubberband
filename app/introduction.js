@@ -35,10 +35,10 @@ module.exports = function(state, emit) {
       <div class="introduction-nav"> 
           <!---<div style="display:inline-block"> hydra meetup #1! </div>--->
          <div>  
-          <a href="./${prev(page)}">＜</a>
-          <a href="./${next(page)}">＞</a>
+          <a href="./#introductions/${prev(page)}">＜</a>
+          <a href="./#introductions/${next(page)}">＞</a>
           <span>${page} / ${state.profiles.length}</span>
-          <a href="./${randomize(page)}">random!</a>
+          <a href="./#introductions/${randomize(page)}">random!</a>
           
         </div>
         </div>

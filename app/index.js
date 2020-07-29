@@ -3,7 +3,7 @@ var choo = require("choo");
 var html = require("choo/html");
 
 // initialize choo
-var app = choo();
+var app = choo({ hash: true })
 
 app.route('/*', notFound);
 function notFound () {
@@ -29,6 +29,7 @@ storePromise.then(store => {
   app.route("/", main);
   app.route("/info", info);
   app.route("/introductions/:profile", introduction);
+  app.route("#introductions/:profile", introduction);
 
   // start app
   app.mount("div");
