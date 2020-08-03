@@ -43,7 +43,7 @@ module.exports = fetch(SHEET)
 // import choo
 var choo = require("choo");
 var html = require("choo/html");
-
+const store = require("./store.js")
 // initialize choo
 var app = choo({ hash: true })
 
@@ -60,7 +60,7 @@ function notFound () {
 
 var storePromise = require("./store.js");
 
-storePromise.then(store => {
+//storePromise.then(store => {
   app.use(store);
 
   // import a template
@@ -75,7 +75,7 @@ storePromise.then(store => {
 
   // start app
   app.mount("div");
-});
+//});
 
 },{"./info.js":3,"./introduction.js":4,"./main.js":5,"./store.js":7,"choo":10,"choo/html":9}],3:[function(require,module,exports){
 // import choo's template helper
@@ -201,20 +201,7 @@ var html = require("choo/html");
 
 // export module
 module.exports = function(state, emit) {
-  if (state.profiles.length == 0) {
-    return html`
-      <div class="container">
-        no profiles yet!!!
-      </div>
-    `;
-  }
-  
-  var participants = [];
-  for(var i = 0; i < state.profiles.length; i++) {
-    var profile = state.profiles[i];
-    var badge = profile["organizer"] === "y" ? "organizer" : "normal";
-    participants.push(html`<span class="participant ${badge}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span> `);
-  }
+
 
   emit(
     "DOMTitleChange",
@@ -239,7 +226,9 @@ module.exports = function(state, emit) {
     <div><a href="https://hydra-meetup-0.glitch.me/info">more info here</a></div>
     <div>
       <h4>Participants</h4>
-      <p class="participants">${participants}</p>
+      <p class="participants">${state.profiles.map((profile, i) => html`
+        <span class="participant ${profile["organizer"] === "y" ? "organizer" : "normal"}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span>
+      `)}</p>
     </div>
 </div>`;
 };
@@ -252,6 +241,20 @@ module.exports = function(state, emit) {
     // </ul>
     // </div>
 
+//   if (state.profiles.length == 0) {
+//     return html`
+//       <div class="container">
+//         no profiles yet!!!
+//       </div>
+//     `;
+//   }
+  
+//   var participants = [];
+//   for(var i = 0; i < state.profiles.length; i++) {
+//     var profile = state.profiles[i];
+//     var badge = profile["organizer"] === "y" ? "organizer" : "normal";
+//     participants.push(html`<span class="participant ${badge}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span> `);
+//   }
 },{"choo/html":9}],6:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
@@ -313,6 +316,7 @@ module.exports = function(profile) {
           ${showEmailIfNotEmpty(email)} |
           ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)} |
           ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
+          ${showLinkIfNotEmpty()}
         </div>
         <!---<br>
         ${showQIfNotEmpty("Will attend the meetup:", availability)}
@@ -330,8 +334,27 @@ const gsheets = require("./google-sheets.js");
 // module.exports = (state, emitter) => {
 //   state.links = []
 // }
-module.exports = gsheets.then((data) => {
-  return function(state, emitter) {
+// module.exports = gsheets.then((data) => {
+//   return function(state, emitter) {
+//     state.page = 0;
+
+//     emitter.on("prev", function() {
+//       state.page =
+//         (state.page - 1 + state.profiles.length) % state.profiles.length;
+//       emitter.emit("render");
+//     });
+//     emitter.on("next", function() {
+//       state.page = (state.page + 1) % state.profiles.length;
+//       emitter.emit("render");
+//     });
+
+//     // initialize state
+//     state.profiles = data;
+//     // console.log(data);
+//   };
+// });
+
+module.exports = (state, emitter) => {
     state.page = 0;
 
     emitter.on("prev", function() {
@@ -343,12 +366,16 @@ module.exports = gsheets.then((data) => {
       state.page = (state.page + 1) % state.profiles.length;
       emitter.emit("render");
     });
+  
+    state.profiles = []
 
     // initialize state
-    state.profiles = data;
+    gsheets.then((data) => { 
+      state.profiles = data; 
+      emitter.emit("render")
+    })
     // console.log(data);
   };
-});
 
 },{"./google-sheets.js":1}],8:[function(require,module,exports){
 var assert = require('assert')

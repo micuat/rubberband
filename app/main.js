@@ -3,20 +3,7 @@ var html = require("choo/html");
 
 // export module
 module.exports = function(state, emit) {
-  if (state.profiles.length == 0) {
-    return html`
-      <div class="container">
-        no profiles yet!!!
-      </div>
-    `;
-  }
-  
-  var participants = [];
-  for(var i = 0; i < state.profiles.length; i++) {
-    var profile = state.profiles[i];
-    var badge = profile["organizer"] === "y" ? "organizer" : "normal";
-    participants.push(html`<span class="participant ${badge}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span> `);
-  }
+
 
   emit(
     "DOMTitleChange",
@@ -41,7 +28,9 @@ module.exports = function(state, emit) {
     <div><a href="https://hydra-meetup-0.glitch.me/info">more info here</a></div>
     <div>
       <h4>Participants</h4>
-      <p class="participants">${participants}</p>
+      <p class="participants">${state.profiles.map((profile, i) => html`
+        <span class="participant ${profile["organizer"] === "y" ? "organizer" : "normal"}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span>
+      `)}</p>
     </div>
 </div>`;
 };
@@ -53,3 +42,18 @@ module.exports = function(state, emit) {
     //   <li><a href="/links"> useful links</a></li>
     // </ul>
     // </div>
+
+//   if (state.profiles.length == 0) {
+//     return html`
+//       <div class="container">
+//         no profiles yet!!!
+//       </div>
+//     `;
+//   }
+  
+//   var participants = [];
+//   for(var i = 0; i < state.profiles.length; i++) {
+//     var profile = state.profiles[i];
+//     var badge = profile["organizer"] === "y" ? "organizer" : "normal";
+//     participants.push(html`<span class="participant ${badge}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span> `);
+//   }

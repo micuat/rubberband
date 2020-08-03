@@ -1,7 +1,7 @@
 // import choo
 var choo = require("choo");
 var html = require("choo/html");
-
+const store = require("./store.js")
 // initialize choo
 var app = choo({ hash: true })
 
@@ -18,7 +18,7 @@ function notFound () {
 
 var storePromise = require("./store.js");
 
-storePromise.then(store => {
+//storePromise.then(store => {
   app.use(store);
 
   // import a template
@@ -33,4 +33,4 @@ storePromise.then(store => {
 
   // start app
   app.mount("div");
-});
+//});
