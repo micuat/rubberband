@@ -9,7 +9,7 @@ module.exports = function(state, emit) {
   if (state.profiles.length == 0) {
     return html`
       <div class="container">
-        no profiles yet!!!
+        loading .... :)
       </div>
     `;
   }

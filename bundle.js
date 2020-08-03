@@ -136,7 +136,7 @@ module.exports = function(state, emit) {
   if (state.profiles.length == 0) {
     return html`
       <div class="container">
-        no profiles yet!!!
+        loading .... :)
       </div>
     `;
   }
@@ -316,7 +316,7 @@ module.exports = function(profile) {
           ${showEmailIfNotEmpty(email)} |
           ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)} |
           ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
-          ${showLinkIfNotEmpty()}
+          
         </div>
         <!---<br>
         ${showQIfNotEmpty("Will attend the meetup:", availability)}
@@ -324,6 +324,7 @@ module.exports = function(profile) {
         <br>--->
       <div>${comments}</div>
     </div>
+    ${url ? html`<a href="${url}" target="_blank">${url}</a>` : ''}
     ${showEmbedIfNotEmpty(url)}
   `;
 };

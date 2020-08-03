@@ -58,7 +58,7 @@ module.exports = function(profile) {
           ${showEmailIfNotEmpty(email)} |
           ${showLinkIfNotEmpty("tw", "https://twitter.com/", twitter)} |
           ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
-          ${showLinkIfNotEmpty("")}
+          
         </div>
         <!---<br>
         ${showQIfNotEmpty("Will attend the meetup:", availability)}
@@ -66,6 +66,7 @@ module.exports = function(profile) {
         <br>--->
       <div>${comments}</div>
     </div>
+    ${url ? html`<a href="${url}" target="_blank">${url}</a>` : ''}
     ${showEmbedIfNotEmpty(url)}
   `;
 };
