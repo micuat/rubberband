@@ -9,7 +9,7 @@ app.route('/*', notFound);
 function notFound () {
   return html`
     <div>
-      <a href="https://hydra-meetup-0.glitch.me/">
+      <a href="https://hydra-meetup-2.glitch.me/">
         404 with love ❤ back to top!
       </a>
     </div>
@@ -27,8 +27,7 @@ var storePromise = require("./store.js");
   var introduction = require("./introduction.js");
 
   app.route("/", main);
-  app.route("/info", info);
-  app.route("/introductions/:profile", introduction);
+  app.route("#info", info);
   app.route("#introductions/:profile", introduction);
 
   // start app
