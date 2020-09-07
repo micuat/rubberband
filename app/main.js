@@ -25,6 +25,15 @@ module.exports = function(state, emit) {
     <p>
       Please join the <a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 
     </p>
+
+    <p>
+      Make your own webpage! Templates by
+      <a href="https://glitch.com/~meetup-2-embed" target="_blank">Olivia</a> | 
+      <!-- <a href="https://glitch.com/~crocus-puffy-caption" target="_blank">Flor</a> | -->
+      <a href="https://glitch.com/~hydra-meetup-2-naoto" target="_blank">Naoto</a>
+    </p>
+
+
     <div><a href="#info">more info here</a></div>
     <div>
       <h4>Participants</h4>
