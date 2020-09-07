@@ -18,6 +18,12 @@ h1 {
    text-shadow: 2px 2px 2px #FF0066;
 }
 
+h2 {
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #6600FF;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 /* unvisited link */
 a:link {
   color: #5ef177;

@@ -82,6 +82,7 @@ module.exports = function(state, emit) {
   
   return html`
 <div class="container">
+
     <h1>
       hydra meetup #2!
     </h1>
@@ -98,14 +99,17 @@ module.exports = function(state, emit) {
 <li>17:30 - 18:30: Show and tell! Say hi and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone!</li>
 <li>18:30 - 19:00: Breakout rooms to discuss specific topics and ask hydra questions</li>
 </ul>
+
 <h2 id="introductions">Introductions</h2>
 <p>In order to keep everything quick, we created this page to share links and images ahead of time for the meetup. Please add whatever you would like to share by editing this spreadsheet (don’t edit the header, and be respectful to each other!)</p>
 <p><a href="https://docs.google.com/spreadsheets/d/1sAqoc9ZYAwpxjTb4xX5UubTcbVHN_wLv-hn3dZofnx8/edit#gid=0" target="_blank">here</a></p>
 <p>it will be automatically applied to this meetup page:</p>
 <p><a href="https://hydra-meetup-2.glitch.me/">https://hydra-meetup-2.glitch.me/</a></p>
+
 <h2 id="communication">Communication</h2>
 <p>We use hydra-meetup channel on toplap chat for the communication before/during/after the event! Please sign up if you haven’t done yet:</p>
 <p><a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">https://chat.toplap.org/channel/hydra-meetup</a></p>
+
 <h2 id="code-of-conduct">Code of Conduct</h2>
 <p>For everyone to enjoy the meetup, we follow Berlin Code of Conduct. Please take a look before the event (it has translations in several language, for example, in Spanish) </p>
 <p><a href="https://berlincodeofconduct.org/" target="_blank">https://berlincodeofconduct.org/</a></p>
