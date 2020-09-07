@@ -4,7 +4,7 @@ const SHEET =
   "https://spreadsheets.google.com/feeds/cells/1sAqoc9ZYAwpxjTb4xX5UubTcbVHN_wLv-hn3dZofnx8/1/public/full?alt=json";
 const columns = [];
 const links = [];
-const baseRow = 9;
+const baseRow = 7;
 const init = data => {
   data.forEach(entry => {
     const cell = entry["gs$cell"];
