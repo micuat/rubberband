@@ -41,11 +41,9 @@ module.exports = function(profile) {
   // var {name, twitter, instagram } = profile;
   var name = profile["Your name"];
   var email = profile["Email address"];
-  var twitter = profile["Twitter account"];
-  var instagram = profile["Instagram account"];
+  var twitter = profile["Twitter account"].replace(/@/, '').replace(/.*\//, '');
+  var instagram = profile["Instagram account"].replace(/@/, '').replace(/.*\//, '');
   var url = profile["URL of what you want to share"];
-  var availability = profile["can you make it to the meetup on August 1?"];
-  var breakout = profile["Which breakout room do you want to join?"];
   var comments = profile["A few words about you"];
 
   // create html template
@@ -60,10 +58,6 @@ module.exports = function(profile) {
           ${showLinkIfNotEmpty("ig", "https://instagram.com/", instagram)}
           
         </div>
-        <!---<br>
-        ${showQIfNotEmpty("Will attend the meetup:", availability)}
-        ${showQIfNotEmpty("Desired breakout room:", breakout)}
-        <br>--->
       <div>${comments}</div>
     </div>
     ${url ? html`<a href="${url}" target="_blank">${url}</a>` : ''}

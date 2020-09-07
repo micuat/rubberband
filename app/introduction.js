@@ -27,7 +27,7 @@ module.exports = function(state, emit) {
 
   emit(
     "DOMTitleChange",
-    `hydra meetup 1: ${state.profiles[page - 1]["Your name"]}`
+    `hydra meetup 2: ${state.profiles[page - 1]["Your name"]}`
   );
 
   return html`
@@ -46,7 +46,7 @@ module.exports = function(state, emit) {
       <div>
         
        
-        <!---<div><a href="/">back to top</a></div>--->
+        <div><a href="/">back to top</a></div>
       </div>
     </div>
   `;
