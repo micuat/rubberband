@@ -4,7 +4,7 @@ var html = require("choo/html");
 function showEmbedIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <iframe src="${link}" width="800" height="600" frameBorder="0" allow="camera;microphone" style="width:100%;height:75%"></iframe>
+      <iframe src="${link}" width="800" height="600" frameBorder="0" allow="camera *;microphone *" style="width:100%;height:75%"></iframe>
     `;
   // else return html`
   //     <div style="width:800px; height:600px;border: 2px solid white;" >no link provided</div>
