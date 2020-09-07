@@ -216,7 +216,7 @@ module.exports = function(state, emit) {
       <li>18:30 - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
     </ul>
     <p>
-      Please join the <a href="https://chat.toplap.org/channel/hydra-meetup">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 
+      Please join the <a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 
     </p>
     <div><a href="#info">more info here</a></div>
     <div>
