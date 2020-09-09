@@ -14,8 +14,15 @@ html, body {
 
 h1 {
   font-style: italic;
-  color: #ffffff;
+/*   color: #ffffff; 
    text-shadow: 2px 2px 2px #FF0066;
+   */
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, red, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, red, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .info {
@@ -26,14 +33,14 @@ h1 {
 
 /* unvisited link */
 a:link {
-  color: #5ef177;
+  color: #008000;
 /*   background-color: #fff;
   padding: 0.6em; */
 }
 
 /* visited link */
 a:visited {
-  color: #5ef177;
+  color: #008000;
 }
 
 .container {
