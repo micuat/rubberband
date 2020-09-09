@@ -9,7 +9,7 @@ module.exports = function(state, emit) {
   const date0 = new Date('October 4, 2020 17:00:00 UTC');
   const date1 = new Date('October 4, 2020 17:30:00 UTC');
   const date2 = new Date('October 4, 2020 18:30:00 UTC');
-  
+  console.log(date())
   emit(
     "DOMTitleChange",
     `hydra meetup 2`

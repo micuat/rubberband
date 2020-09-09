@@ -1,16 +1,26 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 var html = require("choo/html");
 
-module.exports = (state, emit) => {
-  console.log('state is', state)
-  
+module.exports = () => {
   let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const dates = [new Date('October 4, 2020 17:00:00 UTC'),
-    new Date('October 4, 2020 17:30:00 UTC'),
-    new Date('October 4, 2020 18:30:00 UTC')];
+  const dateObjs = [
+    new Date("October 4, 2020 17:00:00 UTC"),
+    new Date("October 4, 2020 17:30:00 UTC"),
+    new Date("October 4, 2020 18:30:00 UTC")
+  ];
+  
+  const dates = [];
+  for(let i = 0; i < dateObjs.length; i++) {
+    dates.push();
+  }
 
-  return {timezone, dates}
-}
+  return { timezone, dates };
+};
+
+// <li>${date0.toLocaleTimeString()} - ${date1.toLocaleTimeString()}: Introduction</li>
+// <li>${date1.toLocaleTimeString()} - ${date2.toLocaleTimeString()}: Show and tell. Say hi, and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone! </li>
+// <li>${date2.toLocaleTimeString()} - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
+
 },{"choo/html":10}],2:[function(require,module,exports){
 // read info from spreadsheet and parse into json object
 
@@ -215,7 +225,7 @@ module.exports = function(state, emit) {
   const date0 = new Date('October 4, 2020 17:00:00 UTC');
   const date1 = new Date('October 4, 2020 17:30:00 UTC');
   const date2 = new Date('October 4, 2020 18:30:00 UTC');
-  
+  console.log(date())
   emit(
     "DOMTitleChange",
     `hydra meetup 2`
