@@ -1,11 +1,10 @@
 // import choo's template helper
 var html = require("choo/html");
 
+var date = require("./date.js");
+
 // export module
 module.exports = function(state, emit) {
-  var offset = new Date().getTimezoneOffset();
-  console.log(-offset / 60);
-  let time1 = offset
   let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const date0 = new Date('October 4, 2020 17:00:00 UTC');
   const date1 = new Date('October 4, 2020 17:30:00 UTC');
@@ -20,7 +19,8 @@ module.exports = function(state, emit) {
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
-       The first hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC (19:00 CEST / 13:00 EDT)</b>
+      The second hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC</b><br>
+      In your timezone: ${date0}
     </p>
      <h4>Schedule</h4>
     <p>

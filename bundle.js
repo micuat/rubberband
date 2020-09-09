@@ -1,4 +1,17 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+var html = require("choo/html");
+
+module.exports = (state, emit) => {
+  console.log('state is', state)
+  
+  let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const dates = [new Date('October 4, 2020 17:00:00 UTC'),
+    new Date('October 4, 2020 17:30:00 UTC'),
+    new Date('October 4, 2020 18:30:00 UTC')];
+
+  return {timezone, dates}
+}
+},{"choo/html":10}],2:[function(require,module,exports){
 // read info from spreadsheet and parse into json object
 
 const SHEET =
@@ -32,7 +45,7 @@ module.exports = fetch(SHEET)
   .then(data => init(data.feed.entry))
   // .then(()=>links);
 
-},{}],2:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 // import choo
 var choo = require("choo");
 var html = require("choo/html");
@@ -69,7 +82,7 @@ var storePromise = require("./store.js");
   app.mount("div");
 //});
 
-},{"./info.js":3,"./introduction.js":4,"./main.js":5,"./store.js":7,"choo":10,"choo/html":9}],3:[function(require,module,exports){
+},{"./info.js":4,"./introduction.js":5,"./main.js":6,"./store.js":8,"choo":11,"choo/html":10}],4:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 
@@ -119,7 +132,7 @@ module.exports = function(state, emit) {
 </div>`;
 };
 
-},{"choo/html":9}],4:[function(require,module,exports){
+},{"choo/html":10}],5:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 
@@ -190,15 +203,14 @@ module.exports = function(state, emit) {
   }
 };
 
-},{"./profile.js":6,"choo/html":9}],5:[function(require,module,exports){
+},{"./profile.js":7,"choo/html":10}],6:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 
+var date = require("./date.js");
+
 // export module
 module.exports = function(state, emit) {
-  var offset = new Date().getTimezoneOffset();
-  console.log(-offset / 60);
-  let time1 = offset
   let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
   const date0 = new Date('October 4, 2020 17:00:00 UTC');
   const date1 = new Date('October 4, 2020 17:30:00 UTC');
@@ -213,7 +225,8 @@ module.exports = function(state, emit) {
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
-       The first hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC (19:00 CEST / 13:00 EDT)</b>
+      The second hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC</b><br>
+      In your timezone: ${date0}
     </p>
      <h4>Schedule</h4>
     <p>
@@ -246,7 +259,7 @@ module.exports = function(state, emit) {
 </div>`;
 };
 
-},{"choo/html":9}],6:[function(require,module,exports){
+},{"./date.js":1,"choo/html":10}],7:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 
@@ -314,7 +327,7 @@ module.exports = function(profile) {
   `;
 };
 
-},{"choo/html":9}],7:[function(require,module,exports){
+},{"choo/html":10}],8:[function(require,module,exports){
 const gsheets = require("./google-sheets.js");
 
 // module.exports = (state, emitter) => {
@@ -363,7 +376,7 @@ module.exports = (state, emitter) => {
     // console.log(data);
   };
 
-},{"./google-sheets.js":1}],8:[function(require,module,exports){
+},{"./google-sheets.js":2}],9:[function(require,module,exports){
 var assert = require('assert')
 var LRU = require('nanolru')
 
@@ -406,10 +419,10 @@ function newCall (Cls) {
   return new (Cls.bind.apply(Cls, arguments)) // eslint-disable-line
 }
 
-},{"assert":14,"nanolru":23}],9:[function(require,module,exports){
+},{"assert":15,"nanolru":24}],10:[function(require,module,exports){
 module.exports = require('nanohtml')
 
-},{"nanohtml":19}],10:[function(require,module,exports){
+},{"nanohtml":20}],11:[function(require,module,exports){
 var scrollToAnchor = require('scroll-to-anchor')
 var documentReady = require('document-ready')
 var nanotiming = require('nanotiming')
@@ -693,7 +706,7 @@ Choo.prototype._setCache = function (state) {
   }
 }
 
-},{"./component/cache":8,"assert":14,"document-ready":11,"nanobus":15,"nanohref":16,"nanomorph":24,"nanoquery":27,"nanoraf":28,"nanorouter":29,"nanotiming":31,"scroll-to-anchor":33}],11:[function(require,module,exports){
+},{"./component/cache":9,"assert":15,"document-ready":12,"nanobus":16,"nanohref":17,"nanomorph":25,"nanoquery":28,"nanoraf":29,"nanorouter":30,"nanotiming":32,"scroll-to-anchor":34}],12:[function(require,module,exports){
 'use strict'
 
 module.exports = ready
@@ -712,7 +725,7 @@ function ready (callback) {
   })
 }
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 module.exports = attributeToProperty
 
 var transform = {
@@ -733,7 +746,7 @@ function attributeToProperty (h) {
   }
 }
 
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 var attrToProp = require('hyperscript-attribute-to-property')
 
 var VAR = 0, TEXT = 1, OPEN = 2, CLOSE = 3, ATTR = 4
@@ -1030,7 +1043,7 @@ var closeRE = RegExp('^(' + [
 ].join('|') + ')(?:[\.#][a-zA-Z0-9\u007F-\uFFFF_:-]+)*$')
 function selfClosing (tag) { return closeRE.test(tag) }
 
-},{"hyperscript-attribute-to-property":12}],14:[function(require,module,exports){
+},{"hyperscript-attribute-to-property":13}],15:[function(require,module,exports){
 assert.notEqual = notEqual
 assert.notOk = notOk
 assert.equal = equal
@@ -1054,7 +1067,7 @@ function assert (t, m) {
   if (!t) throw new Error(m || 'AssertionError')
 }
 
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 var splice = require('remove-array-items')
 var nanotiming = require('nanotiming')
 var assert = require('assert')
@@ -1218,7 +1231,7 @@ Nanobus.prototype._emit = function (arr, eventName, data, uuid) {
   }
 }
 
-},{"assert":14,"nanotiming":31,"remove-array-items":32}],16:[function(require,module,exports){
+},{"assert":15,"nanotiming":32,"remove-array-items":33}],17:[function(require,module,exports){
 var assert = require('assert')
 
 var safeExternalLink = /(noopener|noreferrer) (noopener|noreferrer)/
@@ -1263,7 +1276,7 @@ function href (cb, root) {
   })
 }
 
-},{"assert":14}],17:[function(require,module,exports){
+},{"assert":15}],18:[function(require,module,exports){
 'use strict'
 
 var trailingNewlineRegex = /\n[\s]+$/
@@ -1397,7 +1410,7 @@ module.exports = function appendChild (el, childs) {
   }
 }
 
-},{}],18:[function(require,module,exports){
+},{}],19:[function(require,module,exports){
 'use strict'
 
 module.exports = [
@@ -1407,17 +1420,17 @@ module.exports = [
   'readonly', 'required', 'reversed', 'selected'
 ]
 
-},{}],19:[function(require,module,exports){
+},{}],20:[function(require,module,exports){
 module.exports = require('./dom')(document)
 
-},{"./dom":21}],20:[function(require,module,exports){
+},{"./dom":22}],21:[function(require,module,exports){
 'use strict'
 
 module.exports = [
   'indeterminate'
 ]
 
-},{}],21:[function(require,module,exports){
+},{}],22:[function(require,module,exports){
 'use strict'
 
 var hyperx = require('hyperx')
@@ -1535,7 +1548,7 @@ module.exports = function (document) {
   return exports
 }
 
-},{"./append-child":17,"./bool-props":18,"./direct-props":20,"./svg-tags":22,"hyperx":13}],22:[function(require,module,exports){
+},{"./append-child":18,"./bool-props":19,"./direct-props":21,"./svg-tags":23,"hyperx":14}],23:[function(require,module,exports){
 'use strict'
 
 module.exports = [
@@ -1555,7 +1568,7 @@ module.exports = [
   'tspan', 'use', 'view', 'vkern'
 ]
 
-},{}],23:[function(require,module,exports){
+},{}],24:[function(require,module,exports){
 module.exports = LRU
 
 function LRU (opts) {
@@ -1693,7 +1706,7 @@ LRU.prototype.evict = function () {
   this.remove(this.tail)
 }
 
-},{}],24:[function(require,module,exports){
+},{}],25:[function(require,module,exports){
 var assert = require('nanoassert')
 var morph = require('./lib/morph')
 
@@ -1858,7 +1871,7 @@ function same (a, b) {
   return false
 }
 
-},{"./lib/morph":26,"nanoassert":14}],25:[function(require,module,exports){
+},{"./lib/morph":27,"nanoassert":15}],26:[function(require,module,exports){
 module.exports = [
   // attribute events (can be set with attributes)
   'onclick',
@@ -1902,7 +1915,7 @@ module.exports = [
   'onfocusout'
 ]
 
-},{}],26:[function(require,module,exports){
+},{}],27:[function(require,module,exports){
 var events = require('./events')
 var eventsLength = events.length
 
@@ -2077,7 +2090,7 @@ function updateAttribute (newNode, oldNode, name) {
   }
 }
 
-},{"./events":25}],27:[function(require,module,exports){
+},{"./events":26}],28:[function(require,module,exports){
 var reg = /([^?=&]+)(=([^&]*))?/g
 var assert = require('assert')
 
@@ -2101,7 +2114,7 @@ function qs (url) {
   return obj
 }
 
-},{"assert":14}],28:[function(require,module,exports){
+},{"assert":15}],29:[function(require,module,exports){
 'use strict'
 
 var assert = require('assert')
@@ -2138,7 +2151,7 @@ function nanoraf (render, raf) {
   }
 }
 
-},{"assert":14}],29:[function(require,module,exports){
+},{"assert":15}],30:[function(require,module,exports){
 var assert = require('assert')
 var wayfarer = require('wayfarer')
 
@@ -2194,7 +2207,7 @@ function pathname (routename, isElectron) {
   return decodeURI(routename.replace(suffix, '').replace(normalize, '/'))
 }
 
-},{"assert":14,"wayfarer":34}],30:[function(require,module,exports){
+},{"assert":15,"wayfarer":35}],31:[function(require,module,exports){
 var assert = require('assert')
 
 var hasWindow = typeof window !== 'undefined'
@@ -2251,7 +2264,7 @@ NanoScheduler.prototype.setTimeout = function (cb) {
 
 module.exports = createScheduler
 
-},{"assert":14}],31:[function(require,module,exports){
+},{"assert":15}],32:[function(require,module,exports){
 var scheduler = require('nanoscheduler')()
 var assert = require('assert')
 
@@ -2301,7 +2314,7 @@ function noop (cb) {
   }
 }
 
-},{"assert":14,"nanoscheduler":30}],32:[function(require,module,exports){
+},{"assert":15,"nanoscheduler":31}],33:[function(require,module,exports){
 'use strict'
 
 /**
@@ -2330,7 +2343,7 @@ module.exports = function removeItems (arr, startIdx, removeCount) {
   arr.length = len
 }
 
-},{}],33:[function(require,module,exports){
+},{}],34:[function(require,module,exports){
 module.exports = scrollToAnchor
 
 function scrollToAnchor (anchor, options) {
@@ -2342,7 +2355,7 @@ function scrollToAnchor (anchor, options) {
   }
 }
 
-},{}],34:[function(require,module,exports){
+},{}],35:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var assert = require('assert')
 var trie = require('./trie')
@@ -2417,7 +2430,7 @@ function Wayfarer (dft) {
   }
 }
 
-},{"./trie":35,"assert":14}],35:[function(require,module,exports){
+},{"./trie":36,"assert":15}],36:[function(require,module,exports){
 /* eslint-disable node/no-deprecated-api */
 var assert = require('assert')
 
@@ -2558,4 +2571,4 @@ function has (object, property) {
   return Object.prototype.hasOwnProperty.call(object, property)
 }
 
-},{"assert":14}]},{},[2]);
+},{"assert":15}]},{},[3]);
