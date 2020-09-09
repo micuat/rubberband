@@ -196,8 +196,14 @@ var html = require("choo/html");
 
 // export module
 module.exports = function(state, emit) {
-
-
+  var offset = new Date().getTimezoneOffset();
+  console.log(-offset / 60);
+  let time1 = offset
+  let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const date0 = new Date('October 4, 2020 17:00:00 UTC');
+  const date1 = new Date('October 4, 2020 17:30:00 UTC');
+  const date2 = new Date('October 4, 2020 18:30:00 UTC');
+  
   emit(
     "DOMTitleChange",
     `hydra meetup 2`
@@ -210,10 +216,13 @@ module.exports = function(state, emit) {
        The first hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC (19:00 CEST / 13:00 EDT)</b>
     </p>
      <h4>Schedule</h4>
+    <p>
+    time in ${timezone}
+    </p>
     <ul>
-      <li>17:00 - 17:30: Introduction</li>
-      <li>17:30 - 18:30: Show and tell. Say hi, and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone! </li>
-      <li>18:30 - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
+      <li>${date0.toLocaleTimeString()} - ${date1.toLocaleTimeString()}: Introduction</li>
+      <li>${date1.toLocaleTimeString()} - ${date2.toLocaleTimeString()}: Show and tell. Say hi, and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone! </li>
+      <li>${date2.toLocaleTimeString()} - end: Breakout rooms to discuss specific topics and ask hydra questions</li>
     </ul>
     <p>
       Please join the <a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 
