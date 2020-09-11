@@ -132,7 +132,9 @@ a:visited {
 }
 
 #hydra-canvas {
-  width: 100%;
+/*   width: 100%;
   height: 100%;
-  position: fixed;
+  position: fixed; */
+  width: fit-content;
+  height: fit-content;
 }

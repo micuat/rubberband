@@ -8,7 +8,7 @@ var app = choo({ hash: true });
 app.route("/*", notFound);
 
 const Hydra = require("hydra-synth");
-const P5 = require("p5");
+//const P5 = require("p5");
 
 function notFound() {
   return html`
@@ -40,26 +40,43 @@ let mobileCheck = function() {
 };
 // create a new hydra-synth instance
 if (mobileCheck() == false) {
-  var hydra = new Hydra({
-    canvas: document.getElementById("hydra-canvas")
-  });
-  setTimeout(() => {
-    let p1 = new P5();
-    let c = p1.createCanvas(800,800);
-    p1.textSize(16);
-    p1.text(
-      "hydra meetup #2",
-      50,
-      50
-      // p1.displayWidth / 4 - 130,
-      // p1.displayHeight / 2 - 30
-    );
-    p1.textFont("Helvetica");
-    p1.fill(255, 255, 255);
+  const hydraCanvas = document.getElementById("hydra-canvas")
+  hydraCanvas.width = window.innerWidth
+  hydraCanvas.height = 100
 
-    c.hide();
-    s0.init({ src: p1.canvas });
-  }, 1000);
+  // create canvas for drawing text
+  const canvas = document.createElement('canvas')
+  canvas.width = hydraCanvas.width
+  canvas.height = hydraCanvas.height
+  
+  var hydra = new Hydra({
+    canvas: document.getElementById("hydra-canvas"),
+    //width: 400,
+   //height: 400
+  })
+  
+  
+  const ctx = canvas.getContext('2d')
+  ctx.font = "20px Georgia";
+ctx.fillText("Hydra meetup #2!", 10, 50);
+  s0.init({src:canvas})
+//   setTimeout(() => {
+//     let p1 = new P5();
+//     let c = p1.createCanvas(800,800);
+//     p1.textSize(16);
+//     p1.text(
+//       "hydra meetup #2",
+//       50,
+//       50
+//       // p1.displayWidth / 4 - 130,
+//       // p1.displayHeight / 2 - 30
+//     );
+//     p1.textFont("Helvetica");
+//     p1.fill(255, 255, 255);
+
+//     c.hide();
+//     s0.init({ src: p1.canvas });
+//   }, 1000);
 
   src(o0)
     .layer(
