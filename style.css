@@ -75,7 +75,11 @@ a:visited {
   height: 100%;
   overflow-y: auto;
   display: flex;
-/*   padding-left:140px; */
+}
+
+.hydramode {
+  padding-left:140px;
+ 
 }
 
 .container {
