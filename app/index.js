@@ -43,20 +43,23 @@ if (mobileCheck() == false) {
   var hydra = new Hydra({
     canvas: document.getElementById("myCanvas")
   });
+  setTimeout(()=>{
+
   let p1 = new P5();
+  p1.textSize(160);
+  p1.text(
+    "hydra meetup #2",
+    p1.displayWidth / 4 - 130,
+    p1.displayHeight / 2 - 30
+  );
+  p1.textFont("Helvetica");
+  p1.fill(255, 255, 255);
 
-//   p1.textSize(160);
-//   p1.text(
-//     "hydra meetup #2",
-//     p1.displayWidth / 4 - 130,
-//     p1.displayHeight / 2 - 30
-//   );
-//   p1.textFont("Helvetica");
-//   p1.fill(255, 255, 255);
+  p1.hide();
+  s0.init({ src: p1.canvas });
+  },1000)
 
-//   p1.hide();
 
-  // s0.init({ src: p1.canvas });
 
   src(o0)
     .layer(
