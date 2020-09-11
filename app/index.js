@@ -23,7 +23,8 @@ const mobileCheck = function() {
   })(navigator.userAgent || navigator.vendor || window.opera);
   return check;
 };
-app.state.isMobile 
+app.state.isMobile = mobileCheck();
+
 function notFound() {
   return html`
     <div>

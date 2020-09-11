@@ -13,7 +13,7 @@ module.exports = function(state, emit) {
   return html`
 <div>
 ${state.cache(Hydra, 'my-hydra').render()}
-<div class="main">
+<div class="main ${state.isMobile ? "" : "hydra-mode"}">
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
