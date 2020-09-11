@@ -8,6 +8,7 @@ var app = choo({ hash: true });
 app.route("/*", notFound);
 
 const Hydra = require("hydra-synth");
+const P5 = require("p5");
 
 function notFound() {
   return html`
@@ -42,7 +43,7 @@ if (mobileCheck() == false) {
   var hydra = new Hydra({
     canvas: document.getElementById("myCanvas")
   });
-//   p1 = new P5();
+  let p1 = new P5();
 
 //   p1.textSize(160);
 //   p1.text(
