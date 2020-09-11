@@ -104,7 +104,7 @@ let mobileCheck = function() {
 // create a new hydra-synth instance
 if (mobileCheck() == false) {
   var hydra = new Hydra({
-    canvas: document.getElementById("myCanvas")
+    canvas: document.getElementById("hydra-canvas")
   });
   setTimeout(() => {
     let p1 = new P5();
@@ -290,6 +290,7 @@ module.exports = function(state, emit) {
   );
   
   return html`
+<div class="main">
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
@@ -322,6 +323,7 @@ module.exports = function(state, emit) {
         <span class="participant ${profile["organizer"] === "y" ? "organizer" : "normal"}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span>
       `)}</p>
     </div>
+  </div>
 </div>`;
 };
 

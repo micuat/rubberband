@@ -41,7 +41,7 @@ let mobileCheck = function() {
 // create a new hydra-synth instance
 if (mobileCheck() == false) {
   var hydra = new Hydra({
-    canvas: document.getElementById("myCanvas")
+    canvas: document.getElementById("hydra-canvas")
   });
   setTimeout(() => {
     let p1 = new P5();

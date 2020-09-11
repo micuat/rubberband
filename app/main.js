@@ -11,6 +11,7 @@ module.exports = function(state, emit) {
   );
   
   return html`
+<div class="main">
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
@@ -43,5 +44,6 @@ module.exports = function(state, emit) {
         <span class="participant ${profile["organizer"] === "y" ? "organizer" : "normal"}"><a href="/#introductions/${i+1}">${profile["Your name"]}</a></span>
       `)}</p>
     </div>
+  </div>
 </div>`;
 };
