@@ -105,7 +105,7 @@ let mobileCheck = function() {
 if (mobileCheck() == false) {
   const hydraCanvas = document.getElementById("hydra-canvas")
   hydraCanvas.width = window.innerWidth
-  hydraCanvas.height = 100
+  hydraCanvas.height = 150
 
   // create canvas for drawing text
   const canvas = document.createElement('canvas')
@@ -120,8 +120,8 @@ if (mobileCheck() == false) {
   
   
   const ctx = canvas.getContext('2d')
-  ctx.font = "20px Georgia";
-ctx.fillText("Hydra meetup #2!", 10, 50);
+  ctx.font = "100px Helvetica";
+  ctx.fillText("hydra meetup #2", 10, 150);
   s0.init({src:canvas})
 //   setTimeout(() => {
 //     let p1 = new P5();
