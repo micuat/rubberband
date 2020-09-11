@@ -56,7 +56,7 @@ if (mobileCheck() == false) {
 
 //   p1.hide();
 
-  s0.init({ src: p1.canvas });
+  // s0.init({ src: p1.canvas });
 
   src(o0)
     .layer(
