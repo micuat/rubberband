@@ -135,7 +135,7 @@ if (mobileCheck() == false) {
     .layer(src(s0).invert().mult(osc(2, 0.01, 0.).color(2, 1, 1).hue(() => time)))
     .scrollY(-0.005)
     .scale(0.99)
-    .mask(osc(20).rotate())
+    //.mask(shape(4, 0.8, 0.2).scrollY(-0.1))
     .out();
 }
 
