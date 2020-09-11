@@ -9,6 +9,7 @@ module.exports = class Map extends Component {
   }
 
   load(element) {
+    console.log('loading', element, this.canvas)
     // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
     let mobileCheck = function() {
       let check = false;
@@ -43,7 +44,8 @@ module.exports = class Map extends Component {
       });
 
       //let main = { scrollTop: 0}
-
+  
+      
       const ctx = canvas.getContext("2d");
       ctx.font = "80px Helvetica";
       ctx.fillText("hydra meetup #2", 10, 100);
@@ -75,6 +77,8 @@ module.exports = class Map extends Component {
         .scale(0.99)
         //.mask(shape(4, 0.8, 0.2).scrollY(-0.1))
         .out();
+      
+      //window.hasRun = true
     }
   }
 

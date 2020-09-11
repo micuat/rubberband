@@ -72,6 +72,7 @@ module.exports = class Map extends Component {
   }
 
   load(element) {
+    console.log('loading', element, this.canvas)
     // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
     let mobileCheck = function() {
       let check = false;
@@ -106,7 +107,8 @@ module.exports = class Map extends Component {
       });
 
       //let main = { scrollTop: 0}
-
+  
+      
       const ctx = canvas.getContext("2d");
       ctx.font = "80px Helvetica";
       ctx.fillText("hydra meetup #2", 10, 100);
@@ -138,6 +140,8 @@ module.exports = class Map extends Component {
         .scale(0.99)
         //.mask(shape(4, 0.8, 0.2).scrollY(-0.1))
         .out();
+      
+      //window.hasRun = true
     }
   }
 
@@ -2448,76 +2452,6 @@ function formatArguments (transform, startIndex) {
 }
 
 },{"./lib/array-utils.js":28}],25:[function(require,module,exports){
-/*
-Format for adding functions to hydra. For each entry in this file, hydra automatically generates a glsl function and javascript function with the same name. You can also ass functions dynamically using setFunction(object).
-
-{
-  name: 'osc', // name that will be used to access function in js as well as in glsl
-  type: 'src', // can be 'src', 'color', 'combine', 'combineCoords'. see below for more info
-  inputs: [
-    {
-      name: 'freq',
-      type: 'float',
-      default: 0.2
-    },
-    {
-      name: 'sync',
-      type: 'float',
-      default: 0.1
-    },
-    {
-      name: 'offset',
-      type: 'float',
-      default: 0.0
-    }
-  ],
-    glsl: `
-      vec2 st = _st;
-      float r = sin((st.x-offset*2/freq+time*sync)*freq)*0.5  + 0.5;
-      float g = sin((st.x+time*sync)*freq)*0.5 + 0.5;
-      float b = sin((st.x+offset/freq+time*sync)*freq)*0.5  + 0.5;
-      return vec4(r, g, b, 1.0);
-   `
-}
-
-// The above code generates the glsl function:
-`vec4 osc(vec2 _st, float freq, float sync, float offset){
- vec2 st = _st;
- float r = sin((st.x-offset*2/freq+time*sync)*freq)*0.5  + 0.5;
- float g = sin((st.x+time*sync)*freq)*0.5 + 0.5;
- float b = sin((st.x+offset/freq+time*sync)*freq)*0.5  + 0.5;
- return vec4(r, g, b, 1.0);
-}`
-
-
-Types and default arguments for hydra functions.
-The value in the 'type' field lets the parser know which type the function will be returned as well as default arguments.
-
-const types = {
-  'src': {
-    returnType: 'vec4',
-    args: ['vec2 _st']
-  },
-  'coord': {
-    returnType: 'vec2',
-    args: ['vec2 _st']
-  },
-  'color': {
-    returnType: 'vec4',
-    args: ['vec4 _c0']
-  },
-  'combine': {
-    returnType: 'vec4',
-    args: ['vec4 _c0', 'vec4 _c1']
-  },
-  'combineCoord': {
-    returnType: 'vec2',
-    args: ['vec2 _st', 'vec4 _c0']
-  }
-}
-
-*/
-
 module.exports = [
   {
   name: 'noise',
@@ -3043,7 +2977,7 @@ module.exports = [
 `
    _st.x += scrollX + time*speedX;
    _st.y += scrollY + time*speedY;
-   return fract(_st);`
+   return _st;`
 },
 {
   name: 'scrollX',
@@ -3062,7 +2996,7 @@ module.exports = [
   ],
   glsl:
 `   _st.x += scrollX + time*speed;
-   return fract(_st);`
+   return _st;`
 },
 {
   name: 'modulateScrollX',
@@ -3081,7 +3015,7 @@ module.exports = [
   ],
   glsl:
 `   _st.x += _c0.r*amount + time*speed;
-   return fract(_st);`
+   return _st;`
 },
 {
   name: 'scrollY',
@@ -3100,7 +3034,7 @@ module.exports = [
   ],
   glsl:
 `   _st.y += scrollY + time*speed;
-   return fract(_st);`
+   return _st;`
 },
 {
   name: 'modulateScrollY',
@@ -3119,7 +3053,7 @@ module.exports = [
   ],
   glsl:
 `   _st.y += _c0.r*scrollY + time*speed;
-   return fract(_st);`
+   return _st;`
 },
 {
   name: 'add',
@@ -3665,7 +3599,8 @@ module.exports = {
 const Webcam = require('./lib/webcam.js')
 const Screen = require('./lib/screenmedia.js')
 
-class HydraSource {
+class HydraSource  {
+
   constructor (opts) {
     this.regl = opts.regl
     this.src = null
@@ -3673,8 +3608,8 @@ class HydraSource {
     this.width = opts.width
     this.height = opts.height
     this.tex = this.regl.texture({
-      //  shape: [opts.width, opts.height]
-      shape: [ 1, 1 ]
+      shape: [1, 1]
+    //  shape: [opts.width, opts.height]
     })
     this.pb = opts.pb
   }
@@ -3684,73 +3619,40 @@ class HydraSource {
       this.src = opts.src
       this.tex = this.regl.texture(this.src)
     }
-    if (opts.dynamic) this.dynamic = opts.dynamic
+    if(opts.dynamic) this.dynamic = opts.dynamic
   }
 
   initCam (index) {
     const self = this
-    Webcam(index)
-      .then(response => {
-        self.src = response.video
-        self.dynamic = true
-        self.tex = self.regl.texture(self.src)
-      })
-      .catch(err => console.log('could not get camera', err))
-  }
-
-  initVideo (url = '') {
-    // const self = this
-    const vid = document.createElement('video')
-    vid.crossOrigin = 'anonymous'
-    vid.autoplay = true
-    vid.loop = true
-    vid.addEventListener('canplay', () => {
-      this.src = vid
-      vid.play()
-      document.body.appendChild(vid)
-      this.tex = this.regl.texture(this.src)
-      this.dynamic = true
-    })
-    vid.src = url
-  }
-
-  initImage (url = '') {
-    const img = document.createElement('img')
-    img.crossOrigin = 'anonymous'
-    img.src = url
-    img.onload = () => {
-      this.src = img
-      this.dynamic = false
-      this.tex = this.regl.texture(this.src)
-    }
+    Webcam(index).then((response) => {
+      self.src = response.video
+      self.tex = self.regl.texture(self.src)
+    }).catch((err) => console.log('could not get camera', err))
   }
 
   initStream (streamName) {
-    //  console.log("initing stream!", streamName)
+  //  console.log("initing stream!", streamName)
     let self = this
     if (streamName && this.pb) {
-      this.pb.initSource(streamName)
+        this.pb.initSource(streamName)
 
-      this.pb.on('got video', function (nick, video) {
-        if (nick === streamName) {
-          self.src = video
-          self.dynamic = true
-          self.tex = self.regl.texture(self.src)
-        }
-      })
+        this.pb.on("got video", function(nick, video){
+          if(nick === streamName) {
+            self.src = video
+            self.tex = self.regl.texture(self.src)
+          }
+        })
+
     }
   }
 
   initScreen () {
     const self = this
-    Screen()
-      .then(function (response) {
-        self.src = response.video
-        self.tex = self.regl.texture(self.src)
-        self.dynamic = true
-        //  console.log("received screen input")
-      })
-      .catch(err => console.log('could not get screen', err))
+    Screen().then(function (response) {
+       self.src = response.video
+       self.tex = self.regl.texture(self.src)
+     //  console.log("received screen input")
+   }).catch((err) => console.log('could not get screen', err))
   }
 
   resize (width, height) {
@@ -3759,33 +3661,28 @@ class HydraSource {
   }
 
   clear () {
-    if (this.src && this.src.srcObject) {
+    if(this.src && this.src.srcObject) {
       if (this.src.srcObject.getTracks) {
-        this.src.srcObject.getTracks().forEach(track => track.stop())
+        this.src.srcObject.getTracks().forEach((track) => track.stop())
       }
     }
     this.src = null
-    this.tex = this.regl.texture({ shape: [ 1, 1 ] })
+    this.tex = this.regl.texture({
+      shape: [1, 1]
+    })
   }
 
   tick (time) {
     //  console.log(this.src, this.tex.width, this.tex.height)
     if (this.src !== null && this.dynamic === true) {
-      if (this.src.videoWidth && this.src.videoWidth !== this.tex.width) {
-        console.log(
-          this.src.videoWidth,
-          this.src.videoHeight,
-          this.tex.width,
-          this.tex.height
-        )
-        this.tex.resize(this.src.videoWidth, this.src.videoHeight)
-      }
+        if(this.src.videoWidth && this.src.videoWidth !== this.tex.width) {
+          console.log(this.src.videoWidth, this.src.videoHeight, this.tex.width, this.tex.height)
+          this.tex.resize(this.src.videoWidth, this.src.videoHeight)
+        }
 
-      if (this.src.width && this.src.width !== this.tex.width) {
-        this.tex.resize(this.src.width, this.src.height)
-      }
+        if(this.src.width && this.src.width !== this.tex.width)   this.tex.resize(this.src.width, this.src.height)
 
-      this.tex.subimage(this.src)
+        this.tex.subimage(this.src)
     }
   }
 
