@@ -6,11 +6,11 @@ module.exports = class Map extends Component {
   constructor(id, state, emit) {
     super(id);
     this.local = state.components[id] = {};
-    
+    this.state = state;
   }
 
   load(element) {
-    console.log('loading', element, this.canvas)
+    console.log("loading", element, this.canvas);
     // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
     let mobileCheck = function() {
       let check = false;
@@ -29,7 +29,7 @@ module.exports = class Map extends Component {
     };
     // create a new hydra-synth instance
     if (mobileCheck() == false && window.location.hash.length < 1) {
-      const hydraCanvas = this.canvas
+      const hydraCanvas = this.canvas;
       hydraCanvas.width = window.innerHeight;
       hydraCanvas.height = 120;
 
@@ -38,15 +38,19 @@ module.exports = class Map extends Component {
       canvas.width = hydraCanvas.width;
       canvas.height = hydraCanvas.height;
 
-      var hydra = new Hydra({
-        canvas: this.canvas
-        //width: 400,
-        //height: 400
-      });
+      if (this.state.hydra == undefined) {
+        var hydra = new Hydra({
+          canvas: this.canvas
+          //width: 400,
+          //height: 400
+        });
+        this.state.hydra = hydra;
+      } else {
+        hydra = this.state.hydra;
+      }
 
       //let main = { scrollTop: 0}
-  
-      
+
       const ctx = canvas.getContext("2d");
       ctx.font = "80px Helvetica";
       ctx.fillText("hydra meetup #2", 10, 100);
@@ -78,7 +82,7 @@ module.exports = class Map extends Component {
         .scale(0.99)
         //.mask(shape(4, 0.8, 0.2).scrollY(-0.1))
         .out();
-      
+
       //window.hasRun = true
     }
   }
@@ -88,11 +92,16 @@ module.exports = class Map extends Component {
   }
 
   createElement(center) {
-    this.canvas = html`
-      <canvas class="hydra-canvas"></canvas>
-    `
+    if (this.state.canvas == undefined) {
+      this.canvas = html`
+        <canvas></canvas>
+      `;
+      this.state.canvas = this.canvas;
+    } else {
+      this.canvas = this.state.canvas;
+    }
     return html`
-       <div id="hydra-holder">
+      <div id="hydra-holder">
         ${this.canvas}
       </div>
     `;
