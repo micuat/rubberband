@@ -12,7 +12,7 @@ module.exports = class Map extends Component {
   load(element) {
     console.log("loading", element, this.canvas);
     // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
-    let mobileCheck = function() {
+    const mobileCheck = function() {
       let check = false;
       (function(a) {
         if (
@@ -27,8 +27,16 @@ module.exports = class Map extends Component {
       })(navigator.userAgent || navigator.vendor || window.opera);
       return check;
     };
+    const isMobile = mobileCheck();
+    if (isMobile) {
+      console.log("is mobile")
+      document
+        .getElementById("hydra-holder").style.visibility = "hidden";
+    }
     // create a new hydra-synth instance
-    if (mobileCheck() == false && window.location.hash.length < 1) {
+    if (isMobile == false && window.location.hash.length < 1) {
+      document
+        .getElementsByClassName("main")[0].style.paddingLeft = "140px";
       const hydraCanvas = this.canvas;
       hydraCanvas.width = window.innerHeight;
       hydraCanvas.height = 120;
