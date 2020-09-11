@@ -1,5 +1,6 @@
 dependencies:
   choo: 7.1.0
+  hydra-synth: 1.3.0
   static-server: 3.0.0
   watchify: 3.11.1
 packages:
@@ -119,6 +120,10 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
+  /babel-plugin-add-module-exports/0.2.1:
+    dev: false
+    resolution:
+      integrity: sha1-mumh9KjcZ/DN7E9K7aHkOl/2XiU=
   /balanced-match/1.0.0:
     dev: false
     resolution:
@@ -323,6 +328,21 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-EQX0h59Pp+0GtSRb5rL6OTfrttlzv+uyaUVlK6GX3w11SQ0jKPKyjC/54RhPR2ib2KmfcELM06e8FxcI5XNU2A==
+  /buffer-alloc-unsafe/1.1.0:
+    dev: false
+    resolution:
+      integrity: sha512-TEM2iMIEQdJ2yjPJoSIsldnleVaAk1oW3DBVUykyOLsEsFmEc9kn+SFFPz+gl54KQNxlDnAwCXosOS9Okx2xAg==
+  /buffer-alloc/1.2.0:
+    dependencies:
+      buffer-alloc-unsafe: 1.1.0
+      buffer-fill: 1.0.0
+    dev: false
+    resolution:
+      integrity: sha512-CFsHQgjtW1UChdXgbyJGtnm+O/uLQeZdtbDo8mfUgYXCHSM1wgrVxXm6bSyrUuErEb+4sYVGCzASBRot7zyrow==
+  /buffer-fill/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-+PeLdniYiO858gXNY39o5wISKyw=
   /buffer-from/1.1.1:
     dev: false
     resolution:
@@ -565,6 +585,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Vy4dx7gquTeMcQR/hDkYLGUnwVil6vk4FOOct+djUnHOUWt+zJPJAaRIXaAFkPXtJjvlY7o3rfRu0/3hpnwoUA==
+  /dct/0.1.0:
+    dev: false
+    engines:
+      node: '>=0.12.0'
+    resolution:
+      integrity: sha512-/uUtEniuMq1aUxvLAoDtAduyl12oM1zhA/le2f83UFN/9+4KDHXFB6znEfoj5SDDLiTpUTr26NpxC7t8IFOYhQ==
   /debug/2.6.9:
     dependencies:
       ms: 2.0.0
@@ -685,6 +711,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Ec+X44CapIGExvSZN+pGkmr5p7HwUVQoPQSd458Lqwvaf4/61k/invHSh4BYK8OXnCkfEhWuIoG5hayKLQStIg==
+  /events/1.1.1:
+    dev: false
+    engines:
+      node: '>=0.4.x'
+    resolution:
+      integrity: sha1-nr23Y1rQmccNzEwqH1AEKI6L2SQ=
   /events/2.1.0:
     dev: false
     engines:
@@ -748,6 +780,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Utm6CdzT+6xsDk2m8S6uL8VHxNwI6Jub+e9NYTcAms28T84pTa25GJQV9j0CY0N1rM8hK4x6grpF2BQf+2qwVA==
+  /fftjs/0.0.4:
+    dependencies:
+      babel-plugin-add-module-exports: 0.2.1
+    dev: false
+    resolution:
+      integrity: sha1-mfRwvPRI+LZbMd/3EkWupLMtOaA=
   /file-size/0.0.5:
     dev: false
     resolution:
@@ -938,6 +976,16 @@ packages:
     dev: false
     resolution:
       integrity: sha1-7AbBDgo0wPL68Zn3/X/Hj//QPHM=
+  /hydra-synth/1.3.0:
+    dependencies:
+      meyda: 4.3.1
+      mouse-change: 1.4.0
+      raf-loop: 1.1.3
+      regl: 1.6.1
+      web-audio-analyser: 2.0.1
+    dev: false
+    resolution:
+      integrity: sha512-GhiCtjuHFrVdHF1mBi9EhV+34NqTNgjm8DBT3EgcjCrca+hEvxErm/V+uHFAcbexFn4a2Y+90+oD4xWHAncilg==
   /hyperscript-attribute-to-property/1.0.2:
     dev: false
     resolution:
@@ -1125,6 +1173,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA==
+  /isarray/0.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
   /isarray/1.0.0:
     dev: false
     resolution:
@@ -1236,6 +1288,18 @@ packages:
     dev: false
     resolution:
       integrity: sha1-pd5GU42uhNQRTMXqArR3KmNGcB8=
+  /meyda/4.3.1:
+    dependencies:
+      dct: 0.1.0
+      fftjs: 0.0.4
+      node-getopt: 0.2.4
+      wav: 1.0.2
+    dev: false
+    engines:
+      node: ^8 || ^10 || ^12
+    hasBin: true
+    resolution:
+      integrity: sha512-rAy03ycgRtZWTqm4yLiNq45eC1/k0HqDVq94EZZAkt4glAsp14viQLg+6kua7o2dVDkKGvtcTr8KQMuvcaUmeg==
   /micromatch/3.1.10:
     dependencies:
       arr-diff: 4.0.0
@@ -1331,6 +1395,16 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-a9y6yDv5u5I4A+IPHTnqFxcaKr4p50/zxTjcQJaX2ws9tN/W6J6YXnEKhqRyPhl494dkcxx951onSKVezmI+3w==
+  /mouse-change/1.4.0:
+    dependencies:
+      mouse-event: 1.0.5
+    dev: false
+    resolution:
+      integrity: sha1-wrd+W/o0pDzhRFyBV6Tk3JiVwU8=
+  /mouse-event/1.0.5:
+    dev: false
+    resolution:
+      integrity: sha1-s3ie23EJmX1aky0dAdqhVDpQFzI=
   /ms/2.0.0:
     dev: false
     resolution:
@@ -1466,6 +1540,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
+  /node-getopt/0.2.4:
+    dev: false
+    engines:
+      node: '>= 0.6.0'
+    resolution:
+      integrity: sha512-06LC4wHO+nyH0J07dUzFsZTVZMsMMKTkXo8BUTmuYbJhbsKX2cVDn2xADoFqjbnBYThVlGSlaM10CDyEi+48Iw==
   /normalize-html-whitespace/0.2.0:
     dev: false
     engines:
@@ -1604,6 +1684,10 @@ packages:
       node: '>=0.12'
     resolution:
       integrity: sha512-4Ejy1OPxi9f2tt1rRV7Go7zmfDQ+ZectEQz3VGUQhgq62HtIRPDyG/JtnwIxs6x3uNMwo2V7q1fMvKjb+Tnpqg==
+  /performance-now/2.1.0:
+    dev: false
+    resolution:
+      integrity: sha1-Ywn04OX6kT7BxpMHrjZLSzd8nns=
   /posix-character-classes/0.1.1:
     dev: false
     engines:
@@ -1657,6 +1741,21 @@ packages:
       node: '>=0.4.x'
     resolution:
       integrity: sha1-sgmEkgO7Jd+CDadW50cAWHhSFiA=
+  /raf-loop/1.1.3:
+    dependencies:
+      events: 1.1.1
+      inherits: 2.0.4
+      raf: 3.4.1
+      right-now: 1.0.0
+    dev: false
+    resolution:
+      integrity: sha1-h0emmilhUZcgaVS85HfT5l5lkpk=
+  /raf/3.4.1:
+    dependencies:
+      performance-now: 2.1.0
+    dev: false
+    resolution:
+      integrity: sha512-Sq4CW4QhwOHE8ucn6J34MqtZCeWFP2aQSmrlroYgqAV1PjStIhJXxYuTgUIfkEk7zTLjmIjLmU5q+fbD1NnOJA==
   /randombytes/2.1.0:
     dependencies:
       safe-buffer: 5.2.1
@@ -1676,6 +1775,15 @@ packages:
     dev: false
     resolution:
       integrity: sha1-JyT9aoET1zdkrCiNQ4YnDB2/F/A=
+  /readable-stream/1.1.14:
+    dependencies:
+      core-util-is: 1.0.2
+      inherits: 2.0.4
+      isarray: 0.0.1
+      string_decoder: 0.10.31
+    dev: false
+    resolution:
+      integrity: sha1-fPTFTvZI44EwhMY23SB54WbAgdk=
   /readable-stream/2.3.7:
     dependencies:
       core-util-is: 1.0.2
@@ -1717,6 +1825,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha512-J6SDjUgDxQj5NusnOtdFxDwN/+HWykR8GELwctJ7mdqhcyy1xEc4SRFHUXvxTp661YaVKAjfRLZ9cCqS6tn32A==
+  /regl/1.6.1:
+    dev: false
+    resolution:
+      integrity: sha512-7Z9rmpEqmLNwC9kCYCyfyu47eWZaQWeNpwZfwz99QueXN8B/Ow40DB0N+OeUeM/yu9pZAB01+JgJ+XghGveVoA==
   /remove-array-items/1.1.1:
     dev: false
     resolution:
@@ -1758,6 +1870,10 @@ packages:
       node: '>=0.12'
     resolution:
       integrity: sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
+  /right-now/1.0.0:
+    dev: false
+    resolution:
+      integrity: sha1-bolgne69fc2vja7Mmuo5z1haCRg=
   /ripemd160/2.0.2:
     dependencies:
       hash-base: 3.1.0
@@ -1932,6 +2048,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-S7OqaYu0EkFpgeGFb/NPOoPLxFko7TPqtEeFg5DXPB4v/KETHG0Ln6fRFrNezoelpaDKmycEmmZ81cC9DAwgYg==
+  /stream-parser/0.3.1:
+    dependencies:
+      debug: 2.6.9
+    dev: false
+    resolution:
+      integrity: sha1-FhhUhpRCACGhGC/wrxkRwSl2F3M=
   /stream-splicer/2.0.1:
     dependencies:
       inherits: 2.0.4
@@ -1939,6 +2061,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Xizh4/NPuYSyAXyT7g8IvdJ9HJpxIGL9PjyhtywCZvvP0OPIdqyrr4dMikeuvY8xahpdKEBlBTySe583totajg==
+  /string_decoder/0.10.31:
+    dev: false
+    resolution:
+      integrity: sha1-YuIDvEF2bGwoyfyEMB2rHFMQ+pQ=
   /string_decoder/1.1.1:
     dependencies:
       safe-buffer: 5.1.2
@@ -2157,12 +2283,26 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-WwnUClyFNRMB2NIiHgJU9RQPQNqVeFk7OmZaWf5dC5EnNa0Mgr7imBydbaJ7tGTuPM2hz1Cb4uiBvK9NVxMfog==
+  /wav/1.0.2:
+    dependencies:
+      buffer-alloc: 1.2.0
+      buffer-from: 1.1.1
+      debug: 2.6.9
+      readable-stream: 1.1.14
+      stream-parser: 0.3.1
+    dev: false
+    resolution:
+      integrity: sha512-viHtz3cDd/Tcr/HbNqzQCofKdF6kWUymH9LGDdskfWFoIy/HJ+RTihgjEcHfnsy1PO4e9B+y4HwgTwMrByquhg==
   /wayfarer/7.0.1:
     dependencies:
       nanoassert: 1.1.0
     dev: false
     resolution:
       integrity: sha512-yf+kAlOYnJRjLxflLy+1+xEclb6222EAVvAjSY+Yz2qAIDrXeN5wLl/G302Mwv3E0KMg1HT/WDGsvSymX0U7Rw==
+  /web-audio-analyser/2.0.1:
+    dev: false
+    resolution:
+      integrity: sha1-zUgSYrs1vM62GHuQqbk54QYpKvw=
   /wrappy/1.0.2:
     dev: false
     resolution:
@@ -2178,5 +2318,6 @@ shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   choo: ^7.1.0
+  hydra-synth: '*'
   static-server: ^3.0.0
   watchify: ^3.11.1
