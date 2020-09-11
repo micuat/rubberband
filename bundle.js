@@ -128,9 +128,11 @@ if (mobileCheck() == false) {
       osc(10, 0.1, 2)
         .modulate(noise(3))
         .rotate(0, 0.5)
-        .luma([0.2, 0.5].smooth(1))
+        .luma(() => 1 - mouse.x/width)
+        //.luma([0.2, 0.5].smooth(1))
     )
-    .layer(src(s0).invert())
+    //.layer(src(s0).invert())
+    .layer(src(s0).invert().mult(solid(1, 0.4, 0)))
     .scrollY(-0.005)
     .scale(0.99)
     .out();
