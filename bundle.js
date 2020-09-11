@@ -140,6 +140,10 @@ module.exports = class Map extends Component {
               const main = document.getElementsByClassName("main")[0];
               return main ? 1 - main.scrollTop / 400 : 1;
             })
+            .modulate(noise(3, 0.1), () => {
+              let t = Math.max(0, Math.sin(time * 0.5));
+              return t * t * 0.1;
+            })
         )
         .scrollY(-0.005)
         .scale(0.99)
@@ -299,8 +303,8 @@ module.exports = function(state, emit) {
   return html`
     <div class="introduction-container">
       <div class="introduction-nav"> 
-          <!---<div style="display:inline-block"> hydra meetup #1! </div>--->
-         <div>  
+         <div>
+          <a href="/">back to top</a>
           <a href="./#introductions/${prev(page)}">＜</a>
           <a href="./#introductions/${next(page)}">＞</a>
           <span>${page} / ${state.profiles.length}</span>
@@ -309,11 +313,6 @@ module.exports = function(state, emit) {
         </div>
         </div>
       ${profile(state.profiles[page - 1])}
-      <div>
-        
-       
-        <div><a href="/">back to top</a></div>
-      </div>
     </div>
   `;
   // <button onclick=${prev}>＜</button><button onclick=${next}>＞</button>

@@ -77,6 +77,10 @@ module.exports = class Map extends Component {
               const main = document.getElementsByClassName("main")[0];
               return main ? 1 - main.scrollTop / 400 : 1;
             })
+            .modulate(noise(3, 0.1), () => {
+              let t = Math.max(0, Math.sin(time * 0.5));
+              return t * t * 0.1;
+            })
         )
         .scrollY(-0.005)
         .scale(0.99)
