@@ -138,3 +138,13 @@ a:visited {
   width: fit-content;
   height: fit-content;
 }
+
+#hydra-holder {
+    display: inline-block;
+    color:white;
+    position: fixed;
+    bottom:0;
+    left: 0;
+    transform-origin:top left;
+    transform:translateY(100%) rotate(-90deg);
+}

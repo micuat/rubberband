@@ -104,8 +104,8 @@ let mobileCheck = function() {
 // create a new hydra-synth instance
 if (mobileCheck() == false) {
   const hydraCanvas = document.getElementById("hydra-canvas")
-  hydraCanvas.width = window.innerWidth
-  hydraCanvas.height = 150
+  hydraCanvas.width = window.innerHeight
+  hydraCanvas.height = 120
 
   // create canvas for drawing text
   const canvas = document.createElement('canvas')
@@ -120,8 +120,8 @@ if (mobileCheck() == false) {
   
   
   const ctx = canvas.getContext('2d')
-  ctx.font = "100px Helvetica";
-  ctx.fillText("hydra meetup #2", 10, 150);
+  ctx.font = "80px Helvetica";
+  ctx.fillText("hydra meetup #2", 10, 100);
   s0.init({src:canvas})
 //   setTimeout(() => {
 //     let p1 = new P5();
@@ -167,7 +167,7 @@ app.route("#info", info);
 app.route("#introductions/:profile", introduction);
 
 // start app
-app.mount("div");
+app.mount("#choomount");
 //});
 
 },{"./info.js":4,"./introduction.js":5,"./main.js":6,"./store.js":8,"choo":11,"choo/html":10,"hydra-synth":15}],4:[function(require,module,exports){
