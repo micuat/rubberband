@@ -6,6 +6,7 @@ module.exports = class Map extends Component {
   constructor(id, state, emit) {
     super(id);
     this.local = state.components[id] = {};
+    
   }
 
   load(element) {
@@ -88,7 +89,7 @@ module.exports = class Map extends Component {
 
   createElement(center) {
     this.canvas = html`
-      <canvas></canvas>
+      <canvas class="hydra-canvas"></canvas>
     `
     return html`
        <div id="hydra-holder">

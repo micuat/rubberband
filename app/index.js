@@ -20,8 +20,6 @@ function notFound() {
 
 var storePromise = require("./store.js");
 
-
-//storePromise.then(store => {
 app.use(store);
 
 // import a template
@@ -38,4 +36,3 @@ app.mount("#choomount");
 // main = document.getElementsByClassName("main")[0]
 
 console.log('!main', main)
-//});
