@@ -122,8 +122,7 @@ if (mobileCheck() == false) {
   s0.init({ src: p1.canvas });
   },1000)
 
-  setTimeout(()=>{
-  },2000)
+
 
   src(o0)
     .layer(
