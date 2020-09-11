@@ -1,6 +1,6 @@
 // import choo's template helper
 var html = require("choo/html");
-
+var Hydra = require('./hydra-canvas.js')
 var date = require("./date.js")();
 
 // export module
@@ -11,6 +11,8 @@ module.exports = function(state, emit) {
   );
   
   return html`
+<div>
+${state.cache(Hydra, 'my-hydra').render()}
 <div class="main">
 <div class="container">
     <h1> hydra meetup #2! </h1>
@@ -45,5 +47,6 @@ module.exports = function(state, emit) {
       `)}</p>
     </div>
   </div>
+</div>
 </div>`;
 };
