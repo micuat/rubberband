@@ -64,14 +64,15 @@ if (mobileCheck() == false) {
     .layer(
       osc(10, 0.1, 2)
         .modulate(noise(3))
-        .rotate(0, 0.5)
-        .luma(() => 1 - mouse.x/width)
-        //.luma([0.2, 0.5].smooth(1))
+        .rotate(0, 0.2)
+       // .luma(() => 1 - mouse.x/width)
+        .luma([0.2, 0.5].smooth(1))
     )
     //.layer(src(s0).invert())
-    .layer(src(s0).invert().mult(solid(1, 0.4, 0)))
+    .layer(src(s0).invert().mult(osc(2, 0.01, 0.).color(2, 1, 1).hue(() => time)))
     .scrollY(-0.005)
     .scale(0.99)
+    .mask(osc(20,).rotate(Math.PI/2))
     .out();
 }
 
