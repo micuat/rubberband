@@ -118,6 +118,8 @@ if (mobileCheck() == false) {
   })
   
   
+  //let main = { scrollTop: 0}
+  
   const ctx = canvas.getContext('2d')
   ctx.font = "80px Helvetica";
   ctx.fillText("hydra meetup #2", 10, 100);
@@ -132,7 +134,10 @@ if (mobileCheck() == false) {
         .luma([0.2, 0.5].smooth(1))
     )
     //.layer(src(s0).invert())
-    .layer(src(s0).invert().mult(osc(2, 0.01, 0.).color(2, 1, 1).hue(() => time)))
+    .layer(src(s0).invert().mult(osc(2, 0.01, 0.).color(2, 1, 1).hue(() => time)).scale(() => {
+      const main = document.getElementsByClassName("main")[0]
+      return main ? 1 - main.scrollTop/400: 1
+    }))
     .scrollY(-0.005)
     .scale(0.99)
     //.mask(shape(4, 0.8, 0.2).scrollY(-0.1))
@@ -153,6 +158,9 @@ app.route("#introductions/:profile", introduction);
 
 // start app
 app.mount("#choomount");
+// main = document.getElementsByClassName("main")[0]
+
+console.log('!main', main)
 //});
 
 },{"./info.js":4,"./introduction.js":5,"./main.js":6,"./store.js":8,"choo":11,"choo/html":10,"hydra-synth":15}],4:[function(require,module,exports){
