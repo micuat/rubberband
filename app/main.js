@@ -1,7 +1,7 @@
 // import choo's template helper
 var html = require("choo/html");
 var Hydra = require('./hydra-canvas.js')
-var date = require("./date.js")();
+var schedule = require("./schedule.js")();
 
 // export module
 module.exports = function(state, emit) {
@@ -18,14 +18,14 @@ ${state.cache(Hydra, 'my-hydra').render()}
     <h1> hydra meetup #2! </h1>
     <p>
       The second hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC</b><br>
-      In your timezone: ${date.startDate}
+      In your timezone: ${schedule.startDate}
     </p>
      <h4>Schedule</h4>
     <p>
-    time in ${date.timezone}
+    time in ${schedule.timezone}
     </p>
     <ul>
-      ${date.dates}
+      ${schedule.dates}
     </ul>
     <p>
       Please join the <a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 

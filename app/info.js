@@ -1,7 +1,7 @@
 // import choo's template helper
 var html = require("choo/html");
 var Hydra = require('./hydra-canvas.js')
-var date = require("./date.js")();
+var schedule = require("./schedule.js")();
 
 // export module
 module.exports = function(state, emit) {
@@ -27,10 +27,10 @@ ${state.cache(Hydra, 'my-hydra').render()}
 </ul>
 <p>We received so many responses and are so excited about all of the ideas, projects, questions. For the 2nd meetup, we want to make sure that everyone who wants to has a chance to share and to see what other people are working on. With that in mind we are organizing the meetup into three sections:</p>
 <p>
-time in ${date.timezone}
+time in ${schedule.timezone}
 </p>
 <ul>
-${date.dates}
+${schedule.dates}
 </ul>
 
 <h2 class="info" id="introductions">Introductions</h2>

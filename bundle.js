@@ -1,32 +1,4 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-var html = require("choo/html");
-
-module.exports = () => {
-  let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  const dateObjs = [
-    new Date("October 4, 2020 17:00:00 UTC"),
-    new Date("October 4, 2020 17:30:00 UTC"),
-    new Date("October 4, 2020 18:00:00 UTC"),
-    new Date("October 4, 2020 18:30:00 UTC")
-  ];
-  const dateDescs = [
-    "Introduction",
-    "Short presentations. Presenters to be announced",
-    "Show and tell. Say hi, and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone!",
-    "Pixeljam in Mozilla Hubs!",
-  ];
-  
-  const dates = [];
-  for(let i = 0; i < dateObjs.length; i++) {
-    const start = dateObjs[i].toLocaleTimeString();
-    const end = i == dateObjs.length - 1 ? "end" : dateObjs[i+1].toLocaleTimeString();
-    dates.push(html`<li>${start} - ${end}: ${dateDescs[i]}</li>`);
-  }
-
-  return { timezone, dates, startDate: dateObjs[0] };
-};
-
-},{"choo/html":13}],2:[function(require,module,exports){
 // read info from spreadsheet and parse into json object
 
 const SHEET =
@@ -60,7 +32,7 @@ module.exports = fetch(SHEET)
   .then(data => init(data.feed.entry))
   // .then(()=>links);
 
-},{}],3:[function(require,module,exports){
+},{}],2:[function(require,module,exports){
 var html = require("choo/html");
 var Component = require("choo/component");
 const Hydra = require("hydra-synth");
@@ -165,7 +137,7 @@ module.exports = class Map extends Component {
   }
 };
 
-},{"choo/component":12,"choo/html":13,"hydra-synth":20}],4:[function(require,module,exports){
+},{"choo/component":12,"choo/html":13,"hydra-synth":20}],3:[function(require,module,exports){
 // import choo
 var choo = require("choo");
 var html = require("choo/html");
@@ -222,11 +194,11 @@ app.mount("#choomount");
 
 console.log("!main", main);
 
-},{"./info.js":5,"./introduction.js":6,"./main.js":7,"./store.js":9,"choo":14,"choo/html":13}],5:[function(require,module,exports){
+},{"./info.js":4,"./introduction.js":5,"./main.js":6,"./store.js":9,"choo":14,"choo/html":13}],4:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 var Hydra = require('./hydra-canvas.js')
-var date = require("./date.js")();
+var schedule = require("./schedule.js")();
 
 // export module
 module.exports = function(state, emit) {
@@ -252,10 +224,10 @@ ${state.cache(Hydra, 'my-hydra').render()}
 </ul>
 <p>We received so many responses and are so excited about all of the ideas, projects, questions. For the 2nd meetup, we want to make sure that everyone who wants to has a chance to share and to see what other people are working on. With that in mind we are organizing the meetup into three sections:</p>
 <p>
-time in ${date.timezone}
+time in ${schedule.timezone}
 </p>
 <ul>
-${date.dates}
+${schedule.dates}
 </ul>
 
 <h2 class="info" id="introductions">Introductions</h2>
@@ -279,7 +251,7 @@ ${date.dates}
 </div>`;
 };
 
-},{"./date.js":1,"./hydra-canvas.js":3,"choo/html":13}],6:[function(require,module,exports){
+},{"./hydra-canvas.js":2,"./schedule.js":8,"choo/html":13}],5:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 
@@ -345,11 +317,11 @@ module.exports = function(state, emit) {
   }
 };
 
-},{"./profile.js":8,"choo/html":13}],7:[function(require,module,exports){
+},{"./profile.js":7,"choo/html":13}],6:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 var Hydra = require('./hydra-canvas.js')
-var date = require("./date.js")();
+var schedule = require("./schedule.js")();
 
 // export module
 module.exports = function(state, emit) {
@@ -366,14 +338,14 @@ ${state.cache(Hydra, 'my-hydra').render()}
     <h1> hydra meetup #2! </h1>
     <p>
       The second hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC</b><br>
-      In your timezone: ${date.startDate}
+      In your timezone: ${schedule.startDate}
     </p>
      <h4>Schedule</h4>
     <p>
-    time in ${date.timezone}
+    time in ${schedule.timezone}
     </p>
     <ul>
-      ${date.dates}
+      ${schedule.dates}
     </ul>
     <p>
       Please join the <a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 
@@ -399,7 +371,7 @@ ${state.cache(Hydra, 'my-hydra').render()}
 </div>`;
 };
 
-},{"./date.js":1,"./hydra-canvas.js":3,"choo/html":13}],8:[function(require,module,exports){
+},{"./hydra-canvas.js":2,"./schedule.js":8,"choo/html":13}],7:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
 
@@ -467,6 +439,34 @@ module.exports = function(profile) {
   `;
 };
 
+},{"choo/html":13}],8:[function(require,module,exports){
+var html = require("choo/html");
+
+module.exports = () => {
+  let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const dateObjs = [
+    new Date("October 4, 2020 17:00:00 UTC"),
+    new Date("October 4, 2020 17:30:00 UTC"),
+    new Date("October 4, 2020 18:00:00 UTC"),
+    new Date("October 4, 2020 18:30:00 UTC")
+  ];
+  const dateDescs = [
+    "Introduction",
+    "Short presentations. Presenters to be announced",
+    "Show and tell. Say hi, and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone!",
+    "Pixeljam in Mozilla Hubs!",
+  ];
+  
+  const dates = [];
+  for(let i = 0; i < dateObjs.length; i++) {
+    const start = dateObjs[i].toLocaleTimeString();
+    const end = i == dateObjs.length - 1 ? "end" : dateObjs[i+1].toLocaleTimeString();
+    dates.push(html`<li>${start} - ${end}: ${dateDescs[i]}</li>`);
+  }
+
+  return { timezone, dates, startDate: dateObjs[0] };
+};
+
 },{"choo/html":13}],9:[function(require,module,exports){
 const gsheets = require("./google-sheets.js");
 
@@ -516,7 +516,7 @@ module.exports = (state, emitter) => {
     // console.log(data);
   };
 
-},{"./google-sheets.js":2}],10:[function(require,module,exports){
+},{"./google-sheets.js":1}],10:[function(require,module,exports){
 
 },{}],11:[function(require,module,exports){
 var assert = require('assert')
@@ -20624,4 +20624,4 @@ function has (object, property) {
   return Object.prototype.hasOwnProperty.call(object, property)
 }
 
-},{"assert":42}]},{},[4]);
+},{"assert":42}]},{},[3]);
