@@ -18,7 +18,7 @@ module.exports = class Map extends Component {
         .getElementById("hydra-holder").style.visibility = "hidden";
     }
     // create a new hydra-synth instance
-    if (isMobile == false && window.location.hash.length < 1) {
+    if (isMobile == false) {
       const hydraCanvas = this.canvas;
       hydraCanvas.width = window.innerHeight;
       hydraCanvas.height = 120;
