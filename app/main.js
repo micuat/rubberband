@@ -34,7 +34,7 @@ ${state.cache(Hydra, 'my-hydra').render()}
     <p>
       Make your own webpage! Templates by
       <a href="https://glitch.com/~meetup-2-embed" target="_blank">Olivia</a> | 
-      <!-- <a href="https://glitch.com/~crocus-puffy-caption" target="_blank">Flor</a> | -->
+      <a href="https://glitch.com/~hydra-test-flor" target="_blank">Flor</a> |
       <a href="https://glitch.com/~hydra-meetup-2-naoto" target="_blank">Naoto</a>
     </p>
 

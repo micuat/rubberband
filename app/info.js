@@ -1,6 +1,6 @@
 // import choo's template helper
 var html = require("choo/html");
-
+var Hydra = require('./hydra-canvas.js')
 var date = require("./date.js")();
 
 // export module
@@ -11,6 +11,9 @@ module.exports = function(state, emit) {
   );
   
   return html`
+<div>
+${state.cache(Hydra, 'my-hydra').render()}
+<div class="main ${state.isMobile ? "" : "hydra-mode"}">
 <div class="container">
 
     <h1>
@@ -46,5 +49,7 @@ ${date.dates}
 <p>We are hoping to make this a monthly meetup and continuously evolve. If you have any questions, let us know on toplap chat or the organizers’ social media.</p>
 <p>Flor de Fuego, Naoto Hieda, Ritchse &amp; Olivia Jack</p>
 <a href="/">go to main page</a>
+  </div>
+</div>
 </div>`;
 };
