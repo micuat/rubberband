@@ -19,13 +19,13 @@ ${state.cache(Hydra, 'my-hydra').render()}
     <h1>
       hydra meetup #2!
     </h1>
-<p>Thank you for signing up to the first hydra meetup! For the meetup, this time we are using Zoom, and here is the important info:</p>
+<p>Thank you for joining the 1st hydra meetup and we are excited to announce the second hydra meetup! For the meetup, we are using Zoom, and here is the important info:</p>
 <ul>
 <li>date/time: October 4th,17:00 UTC</li>
 <li>check the starting time in your timezone <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=hydra+meetup+%232&iso=20201004T19&p1=37&ah=2" target="_blank">here</a></li>
 <li>zoom link: <a href="https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09" target="_blank">https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09</a></li>
 </ul>
-<p>We received so many responses and are so excited about all of the ideas, projects, questions. For the 2nd meetup, we want to make sure that everyone who wants to has a chance to share and to see what other people are working on. With that in mind we are organizing the meetup into three sections:</p>
+<p>Again for the 2nd meetup, we want to make sure that everyone has a chance to share and to see what other people are working on. With that in mind we are organizing the meetup into three sections:</p>
 <p>
 time in ${schedule.timezone}
 </p>
