@@ -18,10 +18,10 @@ function getId(url) {
 }
 
 module.exports = function (url) {
-  if(url.match(/youtube.com/)) {
-    
+  if(url.match(/youtube.com/) || url.match(/youtu.be/)) {
+    return `https://www.youtube.com/embed/${getId(url)}`;
   }
   else {
-    
+    return url;
   }
 }

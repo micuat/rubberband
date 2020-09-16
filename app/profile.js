@@ -5,7 +5,7 @@ var ytsm = require("./ytStringManipulation.js");
 function showEmbedIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
     return html`
-      <iframe src="${link}" width="800" height="600" frameBorder="0" allow="camera *;microphone *" style="width:100%;height:75%"></iframe>
+      <iframe src="${ytsm(link)}" width="800" height="600" frameBorder="0" allow="camera *;microphone *" style="width:100%;height:75%"></iframe>
     `;
   // else return html`
   //     <div style="width:800px; height:600px;border: 2px solid white;" >no link provided</div>
@@ -44,7 +44,7 @@ module.exports = function(profile) {
   var email = profile["Email address"];
   var twitter = profile["Twitter account"].replace(/@/, '').replace(/.*\//, '');
   var instagram = profile["Instagram account"].replace(/@/, '').replace(/.*\//, '');
-  var url = ytsm(profile["URL of what you want to share"]);
+  var url = profile["URL of what you want to share"];
   var comments = profile["A few words about you"];
 
   // create html template
