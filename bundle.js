@@ -452,8 +452,8 @@ module.exports = () => {
   ];
   const dateDescs = [
     "Introduction",
-    "Show and tell (see below)",
     "Short presentations. Presenters to be announced",
+    "Show and tell (see below)",
     "Pixeljam in Mozilla Hubs!",
   ];
   

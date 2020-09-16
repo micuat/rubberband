@@ -1,4 +1,4 @@
-function youtubeNormalizer(inUrl){
+module.exports = function youtubeNormalizer(inUrl){
   if(inUrl.includes("/embed/"))
     return inUrl
   else if(inUrl.includes("youtube.com/watch?v="))
