@@ -231,7 +231,7 @@ ${schedule.dates}
 
 <h2 class="info" id="introductions">Show and tell + skillshare</h2>
 
-<p>In order to keep everything quick, we created <a href="https://docs.google.com/spreadsheets/d/1sAqoc9ZYAwpxjTb4xX5UubTcbVHN_wLv-hn3dZofnx8/edit#gid=0" target="_blank">this spreadsheet</a> to share links and videos ahead of time for the meetup. Please add whatever you would like to share by editing this spreadsheet (be respectful to each other!) <br>
+<p>Everyone has 1-2 minutes (to be decided, depending on the number of attendees) to present! In order to keep everything quick, we created <a href="https://docs.google.com/spreadsheets/d/1sAqoc9ZYAwpxjTb4xX5UubTcbVHN_wLv-hn3dZofnx8/edit#gid=0" target="_blank">this spreadsheet</a> to share links and videos ahead of time for the meetup. Please add whatever you would like to share by editing this spreadsheet (be respectful to each other!) <br>
 it will be automatically applied to <a href="https://hydra-meetup-2.glitch.me/">this meetup page</a>.</p>
 
 <p>Some suggestions for things to share in this space:</p>
