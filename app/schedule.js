@@ -23,5 +23,6 @@ module.exports = () => {
     dates.push(html`<li><b>${start} - ${end}</b>: ${dateDescs[i]}</li>`);
   }
 
-  return { timezone, dates, startDate: dateObjs[0] };
+  const startDateString = dateObjs[0].toLocaleDateString(undefined, { timeZoneName: 'short', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+  return { timezone, dates, startDateString };
 };

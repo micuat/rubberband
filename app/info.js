@@ -21,7 +21,7 @@ ${state.cache(Hydra, 'my-hydra').render()}
     </h1>
 <p>Thank you for joining the 1st hydra meetup, and we are excited to announce the second hydra meetup! Here is the important info:</p>
 <ul>
-<li>date/time: <b>${schedule.startDate}</b> in ${schedule.timezone}</li>
+<li>date/time: <b>${schedule.startDateString}</b> in ${schedule.timezone}</li>
 <!-- <li>check the starting time in your timezone <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=hydra+meetup+%232&iso=20201004T19&p1=37&ah=2" target="_blank">here</a></li> -->
 <li>zoom link: <a href="https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09" target="_blank">https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09</a></li>
 </ul>

@@ -218,7 +218,7 @@ ${state.cache(Hydra, 'my-hydra').render()}
     </h1>
 <p>Thank you for joining the 1st hydra meetup, and we are excited to announce the second hydra meetup! Here is the important info:</p>
 <ul>
-<li>date/time: <b>${schedule.startDate}</b> in ${schedule.timezone}</li>
+<li>date/time: <b>${schedule.startDateString}</b> in ${schedule.timezone}</li>
 <!-- <li>check the starting time in your timezone <a href="https://www.timeanddate.com/worldclock/fixedtime.html?msg=hydra+meetup+%232&iso=20201004T19&p1=37&ah=2" target="_blank">here</a></li> -->
 <li>zoom link: <a href="https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09" target="_blank">https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09</a></li>
 </ul>
@@ -357,7 +357,7 @@ ${state.cache(Hydra, 'my-hydra').render()}
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
-      The second hydra meetup will be held online on <b>${schedule.startDate.toLocaleDateString(undefined, { timeZoneName: 'short', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute:'2-digit' })}</b> in ${schedule.timezone}<br>
+      The second hydra meetup will be held online on <b>${schedule.startDateString}</b> in ${schedule.timezone}<br>
 (4th October (Sunday) 17:00 UTC)
     </p>
      <h4>Schedule (time in ${schedule.timezone})</h4>
@@ -483,7 +483,8 @@ module.exports = () => {
     dates.push(html`<li><b>${start} - ${end}</b>: ${dateDescs[i]}</li>`);
   }
 
-  return { timezone, dates, startDate: dateObjs[0] };
+  const startDateString = dateObjs[0].toLocaleDateString(undefined, { timeZoneName: 'short', weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute:'2-digit' });
+  return { timezone, dates, startDateString };
 };
 
 },{"choo/html":14}],9:[function(require,module,exports){
