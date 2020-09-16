@@ -452,8 +452,8 @@ module.exports = () => {
   ];
   const dateDescs = [
     "Introduction",
-    "Short presentations. Presenters to be announced",
-    "Show and tell + skillshare",
+    "Short presentations (TBA)",
+    "Show and tell + skillshare. Say hi and share something you have been working, or a hydra tip. (see below)",
     "Pixeljam in Mozilla Hubs!",
   ];
   
