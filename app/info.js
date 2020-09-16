@@ -14,7 +14,6 @@ module.exports = function(state, emit) {
 <div>
 ${state.cache(Hydra, 'my-hydra').render()}
 <div class="main ${state.isMobile ? "" : "hydra-mode"}">
-<div class="container-outer">
 <div class="container">
 
     <h1>
@@ -71,7 +70,6 @@ Feel free to ask in the forum if you have any questions about editing the page :
 <p>Flor de Fuego, Naoto Hieda, Ritchse & Olivia Jack</p>
 <a href="/">go to main page</a>
   </div>
-</div>
 </div>
 </div>`;
 };
