@@ -1,5 +1,6 @@
 // import choo's template helper
 var html = require("choo/html");
+var ytsm = require("./ytStringManipulation.js");
 
 function showEmbedIfNotEmpty(link) {
   if (link !== undefined && link.length > 0)
@@ -43,7 +44,7 @@ module.exports = function(profile) {
   var email = profile["Email address"];
   var twitter = profile["Twitter account"].replace(/@/, '').replace(/.*\//, '');
   var instagram = profile["Instagram account"].replace(/@/, '').replace(/.*\//, '');
-  var url = profile["URL of what you want to share"];
+  var url = ytsm(profile["URL of what you want to share"]);
   var comments = profile["A few words about you"];
 
   // create html template
