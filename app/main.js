@@ -17,8 +17,8 @@ ${state.cache(Hydra, 'my-hydra').render()}
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
-      The second hydra meetup will be held online on <b>4th October (Sunday) 17:00 UTC</b><br>
-      In your timezone: ${schedule.startDate}
+      The second hydra meetup will be held online on <b>${schedule.startDate}</b> in ${schedule.timezone}<br>
+(4th October (Sunday) 17:00 UTC)      
     </p>
      <h4>Schedule</h4>
     <p>
@@ -31,12 +31,12 @@ ${state.cache(Hydra, 'my-hydra').render()}
       Please join the <a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">hydra-meetup channel</a> on toplap for up-to-date info, as well as communication before/during/after the event. 
     </p>
 
-    <p>
+    <!-- <p>
       Make your own webpage! Templates by
       <a href="https://glitch.com/~meetup-2-embed" target="_blank">Olivia</a> | 
       <a href="https://glitch.com/~hydra-test-flor" target="_blank">Flor</a> |
       <a href="https://glitch.com/~hydra-meetup-2-naoto" target="_blank">Naoto</a>
-    </p>
+    </p> -->
 
 
     <div><a href="#info">more info here</a></div>
