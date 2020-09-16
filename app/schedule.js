@@ -11,7 +11,7 @@ module.exports = () => {
   const dateDescs = [
     "Introduction",
     "Presentations: this time we will have 2-3 presentations from the community! Each presentation is 10 minute followed by a 5-minute Q&A. Presenters to be announced soon.",
-    "Show and tell + skillshare (+ more info)",
+    html`Show and tell + skillshare (+ more <a href="/#info">info</a>)`,
     "Hydra questions in Zoom / pixeljam in Mozilla Hubs!",
   ];
   
@@ -20,7 +20,7 @@ module.exports = () => {
   for(let i = 0; i < dateObjs.length; i++) {
     const start = dateObjs[i].toLocaleTimeString([], dateOptions);
     const end = i == dateObjs.length - 1 ? "end" : (dateObjs[i+1].toLocaleTimeString([], dateOptions));
-    dates.push(html`<li>${start} - ${end}: ${dateDescs[i]}</li>`);
+    dates.push(html`<li><b>${start} - ${end}</b>: ${dateDescs[i]}</li>`);
   }
 
   return { timezone, dates, startDate: dateObjs[0] };

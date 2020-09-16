@@ -66,7 +66,7 @@ Feel free to ask in the forum if you have any questions about editing the page :
 <p>We use hydra-meetup channel on toplap chat for the communication before/during/after the event! Please sign up if you haven't done yet:</p>
 <p><a href="https://chat.toplap.org/channel/hydra-meetup" target="_blank">https://chat.toplap.org/channel/hydra-meetup</a></p>
 
-<p>We are keeping this a regular meetup and continuously evolve. If you have any questions or be part of the organizers, let us know on toplap chat or the organizers’ social media</p>
+<p>We are keeping this a regular meetup and continuously evolve. If you have any questions or be part of the organizers, let us know on toplap chat or the organizers’ social media!</p>
 <p>Flor de Fuego, Naoto Hieda, Ritchse & Olivia Jack</p>
 <a href="/">go to main page</a>
   </div>

@@ -17,13 +17,10 @@ ${state.cache(Hydra, 'my-hydra').render()}
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
-      The second hydra meetup will be held online on <b>${schedule.startDate}</b> in ${schedule.timezone}<br>
-(4th October (Sunday) 17:00 UTC)      
+      The second hydra meetup will be held online on <b>${schedule.startDate.toLocaleDateString(undefined, { timeZoneName: 'short', weekday: 'long', year: 'numeric', month: 'long', day: 'long' })}</b> in ${schedule.timezone}<br>
+(4th October (Sunday) 17:00 UTC)
     </p>
-     <h4>Schedule</h4>
-    <p>
-    time in ${schedule.timezone}
-    </p>
+     <h4>Schedule (time in ${schedule.timezone})</h4>
     <ul>
       ${schedule.dates}
     </ul>
