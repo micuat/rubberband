@@ -10,8 +10,8 @@ module.exports = () => {
   ];
   const dateDescs = [
     "Introduction",
+    "Show and tell (see below)",
     "Short presentations. Presenters to be announced",
-    "Show and tell. Say hi, and share one thing you are interested in or working on. Please keep it to 2 minutes max so we have time to hear from everyone!",
     "Pixeljam in Mozilla Hubs!",
   ];
   
