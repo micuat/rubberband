@@ -30,7 +30,8 @@ module.exports = class Map extends Component {
 
       if (this.state.hydra == undefined) {
         var hydra = new Hydra({
-          canvas: this.canvas
+          canvas: this.canvas,
+          detectAudio: false
           //width: 400,
           //height: 400
         });

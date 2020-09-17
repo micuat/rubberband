@@ -65,7 +65,8 @@ module.exports = class Map extends Component {
 
       if (this.state.hydra == undefined) {
         var hydra = new Hydra({
-          canvas: this.canvas
+          canvas: this.canvas,
+          detectAudio: false
           //width: 400,
           //height: 400
         });
@@ -357,7 +358,7 @@ ${state.cache(Hydra, 'my-hydra').render()}
 <div class="container">
     <h1> hydra meetup #2! </h1>
     <p>
-      The second hydra meetup will be held online on <b>${schedule.startDateString}</b> in ${schedule.timezone}<br>
+      Thanks to all who joined the <a href="https://hydra-meetup-0.glitch.me/">hydra meetup last month.</a> The next meetup will be held online on <b>${schedule.startDateString}</b> in ${schedule.timezone}<br>
 (4th October (Sunday) 17:00 UTC)
     </p>
      <h4>Schedule (time in ${schedule.timezone})</h4>
