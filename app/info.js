@@ -34,7 +34,7 @@ ${schedule.dates}
 
 <h2 class="info" id="introductions">Show and tell + skillshare</h2>
 
-<p>Everyone has 1-2 minutes (to be decided, depending on the number of attendees) to present! In order to keep everything quick, we created <a href="https://docs.google.com/spreadsheets/d/1sAqoc9ZYAwpxjTb4xX5UubTcbVHN_wLv-hn3dZofnx8/edit#gid=0" target="_blank">this spreadsheet</a> to share links and videos ahead of time for the meetup. Please add whatever you would like to share by editing this spreadsheet (be respectful to each other!) <br>
+<p>In order to keep everything quick, we created <a href="https://docs.google.com/spreadsheets/d/1sAqoc9ZYAwpxjTb4xX5UubTcbVHN_wLv-hn3dZofnx8/edit#gid=0" target="_blank">this spreadsheet</a> to share links and videos ahead of time for the meetup. Please add whatever you would like to share by editing this spreadsheet (be respectful to each other!) <br>
 it will be automatically applied to <a href="https://hydra-meetup-2.glitch.me/">this meetup page</a>.</p>
 
 <p>Some suggestions for things to share in this space:</p>
@@ -44,7 +44,7 @@ it will be automatically applied to <a href="https://hydra-meetup-2.glitch.me/">
 <li>skillshare: show a tip or trick for working with hydra, or for integrating it in other projects </li>
 </ul>
 
-<p>You can share any link you want, but if you want to get creative you can also add things to your own html page.
+<p>You can share any link you want, but if you want to get creative you can also add things to an html page, such as on <a href="https://glitch.com/" target="_blank">glitch.com</a>, and share the link in the spreadsheet. <a href="https://basic-website.glitch.me/" target="_blank">Here is a tutorial on glitch.</a></p>
 
 <p>Here are some examples that we have made which you can copy and remix:</p>
 <ul>
@@ -52,8 +52,6 @@ it will be automatically applied to <a href="https://hydra-meetup-2.glitch.me/">
 <li><a href="https://glitch.com/~hydra-test-flor" target="_blank">https://glitch.com/~hydra-test-flor</a> </li>
 <li><a href="https://glitch.com/~hydra-meetup-2-naoto" target="_blank">https://glitch.com/~hydra-meetup-2-naoto</a></li>
 </ul>
-a <a href="https://glitch.com/" target="_blank">glitch.com</a>, and share the link in the spreadsheet. <a href="https://basic-website.glitch.me/" target="_blank">Here is a tutorial on glitch.</a></p>
-
 
 <p>Another option is to add a link to a video hosted on youtube or internet archive. <br>
 Feel free to ask in the forum if you have any questions about editing the page :)</p>
