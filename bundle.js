@@ -241,7 +241,7 @@ it will be automatically applied to <a href="https://hydra-meetup-2.glitch.me/">
 <li>skillshare: show a tip or trick for working with hydra, or for integrating it in other projects </li>
 </ul>
 
-<p>The most flexible way to share something is to add it to a basic html page, such as on <a href="https://glitch.com/" target="_blank">glitch.com</a>, and share the link in the spreadsheet. <a href="https://basic-website.glitch.me/" target="_blank">Here is a tutorial on glitch.</a></p>
+<p>You can share any link you want, but if you want to get creative you can also add things to your own html page.
 
 <p>Here are some examples that we have made which you can copy and remix:</p>
 <ul>
@@ -249,6 +249,8 @@ it will be automatically applied to <a href="https://hydra-meetup-2.glitch.me/">
 <li><a href="https://glitch.com/~hydra-test-flor" target="_blank">https://glitch.com/~hydra-test-flor</a> </li>
 <li><a href="https://glitch.com/~hydra-meetup-2-naoto" target="_blank">https://glitch.com/~hydra-meetup-2-naoto</a></li>
 </ul>
+a <a href="https://glitch.com/" target="_blank">glitch.com</a>, and share the link in the spreadsheet. <a href="https://basic-website.glitch.me/" target="_blank">Here is a tutorial on glitch.</a></p>
+
 
 <p>Another option is to add a link to a video hosted on youtube or internet archive. <br>
 Feel free to ask in the forum if you have any questions about editing the page :)</p>
@@ -470,7 +472,7 @@ module.exports = () => {
   ];
   const dateDescs = [
     "Introduction",
-    "Presentations: this time we will have 2-3 presentations from the community! Each presentation is 10 minute followed by a 5-minute Q&A. Presenters to be announced soon.",
+    "Presentations: this time we will have 2-3 presentations from the community. Each presentation is 10 minute followed by a 5-minute Q&A. Presenters to be announced soon.",
     html`Show and tell + skillshare (+ more <a href="/#info">info</a>)`,
     "Hydra questions in Zoom / pixeljam in Mozilla Hubs!",
   ];

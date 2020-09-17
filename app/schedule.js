@@ -10,7 +10,7 @@ module.exports = () => {
   ];
   const dateDescs = [
     "Introduction",
-    "Presentations: this time we will have 2-3 presentations from the community! Each presentation is 10 minute followed by a 5-minute Q&A. Presenters to be announced soon.",
+    "Presentations: this time we will have 2-3 presentations from the community. Each presentation is 10 minute followed by a 5-minute Q&A. Presenters to be announced soon.",
     html`Show and tell + skillshare (+ more <a href="/#info">info</a>)`,
     "Hydra questions in Zoom / pixeljam in Mozilla Hubs!",
   ];
