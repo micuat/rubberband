@@ -192,7 +192,7 @@ module.exports = () => {
       html`
         <li>
           <p class="schedule">${start} - ${end}</p>
-          <p class="type">${types}</p>
+          <div class="type">${types}</div>
           <p class="title">${title}</p>
           <p class="orgs">by ${orgs}</p>
           <p class="desc">${desc}</p>
