@@ -148,6 +148,7 @@ li > .title {
   margin-top: .1em;
   margin-bottom: .1em;
   padding: 0.6em;
+  float: left;
 }
 
 .type > p {
@@ -162,9 +163,22 @@ li > .title {
 }
 
 .type .lunch {
-  background-color: pink;
+  background-color: hotpink;
 }
 
 .type .exhibition {
-  background-color: pink;
+  background-color: cornflowerblue;
+}
+
+.type .performance {
+  background-color: mediumslateblue;
+}
+
+.type .discussion {
+  background-color: khaki;
+}
+
+.type .TBA {
+  background-color: black;
+  color: white;
 }
