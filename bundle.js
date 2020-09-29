@@ -45,8 +45,8 @@ module.exports = function(state, emit) {
     <p>
 Choreographic Coding Lab Online is a series of events organized and curated by Naoto Hieda as an official unconference at <a href="https://20.nodeforum.org/">NODE20</a>.
     </p>
-     <h4>Schedule (time in ${schedule.timezone})</h4>
     <ul>
+      <li><b>Schedule (time in ${schedule.timezone})</b></li>
       ${schedule.dates}
     </ul>
   </div>
@@ -65,7 +65,7 @@ module.exports = () => {
   `;
 
   const lfsdesc = html`
-    Lunch session. URL coming soon.<b></b>
+    Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone! URL coming soon.<b></b>
   `;
   const lfsorgs = html`
     <a href="https://twitter.com/sableraph">Raphaël de Courville</a>,
@@ -111,7 +111,7 @@ module.exports = () => {
       type: ["lunch"],
       topic: ["food"],
       desc:
-        "Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!"
+        "Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone! URL coming soon."
     },
     {
       start: new Date("October 4, 2020 09:30:00 UTC"),
@@ -152,7 +152,7 @@ module.exports = () => {
       type: ["meetup", "performance"],
       topic: ["hydra"],
       desc: html`
-        The event will start in Zoom and partially streamed to GreenHouse NAXOS.
+Hydra meetup #2 makes an intervention at NODE20! Hydra (hydra.ojack.xyz) is a live-coding environment inspired by analog video synthesizer. Olivia Jack, the creator of Hydra, Flor de Fuego and Naoto Hieda host a meetup starting in Zoom and then a live-coding jam in GreenHouse NAXOS (around 20:45 CEST). Everyone with or without experiences in Hydra is welcome!
         <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
       `
     },
@@ -174,7 +174,7 @@ module.exports = () => {
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
       topic: ["dance", "hydra", "tidalcycles"],
-      desc: "discussion"
+      desc: "Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October."
     },
     {
       start: new Date("October 5, 2020 14:00:00 UTC"),
@@ -205,7 +205,7 @@ module.exports = () => {
       orgs: bporgs.cloneNode(true),
       type: ["performance"],
       topic: ["dance", "hydra", "tidalcycles"],
-      desc: "Performing practice. URL coming soon."
+      desc: "Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session URL coming soon."
     },
     {
       start: new Date("October 7, 2020 10:30:00 UTC"),
