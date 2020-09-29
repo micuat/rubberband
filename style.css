@@ -134,7 +134,7 @@ ul {
   padding: 0;
 }
 li {
-  padding: 30px 0 30px 0;
+  padding: 30px 10px 30px 10px;
 }
 /* li > p:nth-child(1),
 li > p:nth-last-child(1) {
@@ -144,10 +144,17 @@ li > p:nth-last-child(1) {
  */
 li > .title {
   font-weight: bold;
-  margin-right: 1em;
+  font-size: 1.2em;
+/*   margin-right: 1em;
   margin-top: .1em;
   margin-bottom: .1em;
   padding: 0.6em;
+  
+  
+  white-space: pre;
+  float: left;
+  color: #000;
+  border: solid rgba(255,255,255,0.0); */
 }
 
 .type > p {
@@ -195,4 +202,8 @@ li > .title {
   border-radius: 25px;
   background-color: aliceblue;
   color: black;
+}
+
+.clearer {
+  clear: both;
 }

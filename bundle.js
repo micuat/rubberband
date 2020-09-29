@@ -261,6 +261,7 @@ module.exports = () => {
     }
     let topics = [];
     for (const t of topic) {
+      if(t!="food")
       topics.push(html`<p class="${t}">${t}</p>`);
     }
     dates.push(
@@ -269,6 +270,7 @@ module.exports = () => {
           <p class="schedule">${start} - ${end}</p>
           <div class="type">${types}</div>
           <div class="topic">${topics}</div>
+          <div class="clearer"></div>
           <p class="title">${title}</p>
           <p class="orgs">by ${orgs}</p>
           <p class="desc">${desc}</p>
