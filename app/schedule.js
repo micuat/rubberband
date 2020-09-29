@@ -78,7 +78,7 @@ module.exports = () => {
         Flor de Fuego, Olivia Jack and ${naoto.cloneNode(true)}
       `,
       type: ["meetup", "performance"],
-      topic: ["food"],
+      topic: ["hydra"],
       desc: html`
         The event will start in Zoom and partially streamed to GreenHouse NAXOS.
         <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
@@ -90,6 +90,7 @@ module.exports = () => {
       title: "Low Frequency Skies",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
+      topic: ["food"],
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -98,12 +99,14 @@ module.exports = () => {
       title: "Best Practices - Discussion",
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
+      topic: ["dance", "hydra", "tidalcycles"],
       desc: "discussion"
     },
     {
       start: new Date("October 5, 2020 14:00:00 UTC"),
       end: new Date("October 5, 2020 14:30:00 UTC"),
       title: "TBA",
+      topic: [],
       orgs: html`
         ${naoto.cloneNode(true)}
       `,
@@ -116,6 +119,7 @@ module.exports = () => {
       title: "Low Frequency Skies",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
+      topic: ["food"],
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -124,6 +128,7 @@ module.exports = () => {
       title: "Best Practices",
       orgs: bporgs.cloneNode(true),
       type: ["performance"],
+      topic: ["dance", "hydra", "tidalcycles"],
       desc: "Performing practice. URL coming soon."
     },
     {
@@ -132,6 +137,7 @@ module.exports = () => {
       title: "Low Frequency Skies",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
+      topic: ["food"],
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -140,6 +146,7 @@ module.exports = () => {
       title: "Best Practices - Discussion",
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
+      topic: ["dance", "hydra", "tidalcycles"],
       desc: "discussion"
     },
     {
@@ -150,6 +157,7 @@ module.exports = () => {
         Nien Tzu Weng and ${naoto.cloneNode(true)}
       `,
       type: ["performance"],
+      topic: ["dance"],
       desc: "performative journey. URL coming soon."
     },
     {
@@ -158,6 +166,7 @@ module.exports = () => {
       title: "Low Frequency Skies",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
+      topic: ["food"],
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -168,6 +177,7 @@ module.exports = () => {
         Annie Abrahams, Daniel Pinheiro and Muriel Piqué
       `,
       type: ["performance"],
+      topic: ["dance"],
       desc: html`
         15-min performance. The session will take place on
         <a href="https://meet.jit.si/ChoreographicCodingOnline">jitsi</a>.
@@ -187,16 +197,21 @@ module.exports = () => {
       minute: "2-digit"
     });
     const end = s.end.toLocaleTimeString([], dateOptions);
-    const { title, orgs, desc, type } = s;
+    const { title, orgs, desc, type, topic } = s;
     let types = [];
     for (const t of type) {
       types.push(html`<p class="${t}">${t}</p>`);
+    }
+    let topics = [];
+    for (const t of topic) {
+      topics.push(html`<p class="${t}">${t}</p>`);
     }
     dates.push(
       html`
         <li>
           <p class="schedule">${start} - ${end}</p>
           <div class="type">${types}</div>
+          <div class="topic">${topics}</div>
           <p class="title">${title}</p>
           <p class="orgs">by ${orgs}</p>
           <p class="desc">${desc}</p>
