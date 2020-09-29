@@ -84,9 +84,10 @@ module.exports = () => {
       end: new Date("October 2, 2020 19:00:00 UTC"),
       title: "Creative Code Stammtisch",
       orgs: html`
-<a href="https://www.meetup.com/creativeCodeBerlin/"
+        <a href="https://www.meetup.com/creativeCodeBerlin/"
           >Creative Code Berlin</a
-        >      `,
+        >
+      `,
       type: ["meetup"],
       topic: [],
       desc: html`
@@ -104,6 +105,7 @@ module.exports = () => {
     {
       start: new Date("October 3, 2020 10:30:00 UTC"),
       end: new Date("October 3, 2020 11:30:00 UTC"),
+      talque: "https://20.nodeforum.org/program/?lectureId=fIT3yhH7pfPvnpLyMrWl",
       title: "Low Frequency Skies",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
@@ -115,6 +117,7 @@ module.exports = () => {
       start: new Date("October 4, 2020 09:30:00 UTC"),
       end: new Date("October 4, 2020 11:30:00 UTC"),
       title: "TDSW x PCJ Vernissage",
+      talque: "https://20.nodeforum.org/program/?lectureId=lj3AGNPXP6Mm4MxHeQa0",
       orgs: html`
         <a href="https://twitter.com/chimanaco">Yasushi Harada</a>,
         <a href="https://twitter.com/narumin256/">Yuki Narumi</a>,
@@ -140,6 +143,7 @@ module.exports = () => {
       start: new Date("October 4, 2020 17:00:00 UTC"),
       end: new Date("October 4, 2020 19:00:00 UTC"),
       title: "Hydra meetup #2",
+      talque: "https://20.nodeforum.org/program/?lectureId=84WjEDuHHRr3ERNosLO0",
       orgs: html`
         <a href="https://twitter.com/flordefuego4">Flor de Fuego</a>,
         <a href="https://twitter.com/_ojack_">Olivia Jack</a> and
@@ -156,6 +160,7 @@ module.exports = () => {
       start: new Date("October 5, 2020 10:30:00 UTC"),
       end: new Date("October 5, 2020 11:30:00 UTC"),
       title: "Low Frequency Skies",
+      talque: "https://20.nodeforum.org/program/?lectureId=he2MXkruZpJzHnhCLN4e",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
@@ -165,6 +170,7 @@ module.exports = () => {
       start: new Date("October 5, 2020 11:30:00 UTC"),
       end: new Date("October 5, 2020 12:30:00 UTC"),
       title: "Best Practices - Discussion",
+      talque: "https://20.nodeforum.org/program/?lectureId=3qdrcstgZQaBYZDKdXE5",
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
       topic: ["dance", "hydra", "tidalcycles"],
@@ -185,6 +191,7 @@ module.exports = () => {
       start: new Date("October 6, 2020 10:30:00 UTC"),
       end: new Date("October 6, 2020 11:30:00 UTC"),
       title: "Low Frequency Skies",
+      talque: "https://20.nodeforum.org/program/?lectureId=MLRv9CIiqYALHf0H1DcK",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
@@ -194,6 +201,7 @@ module.exports = () => {
       start: new Date("October 6, 2020 19:00:00 UTC"),
       end: new Date("October 6, 2020 20:00:00 UTC"),
       title: "Best Practices",
+      talque: "https://20.nodeforum.org/program/?lectureId=Aic70Y0uVbHBtMpYmDgE",
       orgs: bporgs.cloneNode(true),
       type: ["performance"],
       topic: ["dance", "hydra", "tidalcycles"],
@@ -203,6 +211,7 @@ module.exports = () => {
       start: new Date("October 7, 2020 10:30:00 UTC"),
       end: new Date("October 7, 2020 11:30:00 UTC"),
       title: "Low Frequency Skies",
+      talque: "https://20.nodeforum.org/program/?lectureId=O8BUqlsMy8Xz6QIZaI0j",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
@@ -212,6 +221,7 @@ module.exports = () => {
       start: new Date("October 7, 2020 11:30:00 UTC"),
       end: new Date("October 7, 2020 12:30:00 UTC"),
       title: "Best Practices - Discussion",
+      talque: "https://20.nodeforum.org/program/?lectureId=i07cQKeIdkEPGK7O1ssc",
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
       topic: ["dance", "hydra", "tidalcycles"],
@@ -221,6 +231,7 @@ module.exports = () => {
       start: new Date("October 7, 2020 18:30:00 UTC"),
       end: new Date("October 7, 2020 19:30:00 UTC"),
       title: "Multidimensional Journey",
+      talque: "https://20.nodeforum.org/program/?lectureId=dhehVbNzOgzfFdY6Q7Lb",
       orgs: html`
         <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and
         ${naoto.cloneNode(true)}
@@ -233,6 +244,7 @@ module.exports = () => {
       start: new Date("October 8, 2020 10:30:00 UTC"),
       end: new Date("October 8, 2020 11:30:00 UTC"),
       title: "Low Frequency Skies",
+      talque: "https://20.nodeforum.org/program/?lectureId=owtuJSws3Q9rT005QqRj",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
@@ -242,6 +254,7 @@ module.exports = () => {
       start: new Date("October 8, 2020 14:00:00 UTC"),
       end: new Date("October 8, 2020 14:15:00 UTC"),
       title: "Distant Movements",
+      talque: "https://20.nodeforum.org/program/?lectureId=H3LLol0HIwTrMCuqOlY3",
       orgs: html`
         <a href="https://twitter.com/annieabrahams">Annie Abrahams</a>,
         <a href="https://twitter.com/dannyblueboy">Daniel Pinheiro</a> and
@@ -267,7 +280,7 @@ module.exports = () => {
     });
     const start = s.start.toLocaleTimeString([], dateOptions);
     const end = s.end.toLocaleTimeString([], dateOptions);
-    const { title, orgs, desc, type, topic } = s;
+    const { title, orgs, desc, type, topic, talque } = s;
     let types = [];
     for (const t of type) {
       types.push(
@@ -285,6 +298,10 @@ module.exports = () => {
           `
         );
     }
+    let talqueLink;
+    if(talque != undefined) {
+      talqueLink = html`<a href="${talque}">view on NODE20</a>`
+    }
     dates.push(
       html`
         <li>
@@ -294,6 +311,8 @@ module.exports = () => {
           <div class="topic">${topics}</div>
           <div class="clearer"></div>
           <p class="title">${title}</p>
+          <p class="talque">${talqueLink}</p>
+          <div class="clearer"></div>
           <p class="orgs">by ${orgs}</p>
           <p class="desc">${desc}</p>
         </li>
