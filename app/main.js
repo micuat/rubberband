@@ -6,17 +6,16 @@ var schedule = require("./schedule.js")();
 module.exports = function(state, emit) {
   emit(
     "DOMTitleChange",
-    `Choreographic Coding Online @ NODE`
+    `Choreographic Coding Lab Online @ NODE`
   );
   
   return html`
 <div>
 <div class="main">
 <div class="container">
-    <h1> hydra meetup #2! </h1>
+    <h1> Choreographic Coding Lab Online in NODE! </h1>
     <p>
-      Thanks to all who joined the <a href="https://hydra-meetup-0.glitch.me/">hydra meetup last month.</a> The next meetup will be held online on <b>${schedule.startDateString}</b> in ${schedule.timezone}<br>
-(4th October (Sunday) 17:00 UTC)
+yo
     </p>
      <h4>Schedule (time in ${schedule.timezone})</h4>
     <ul>
