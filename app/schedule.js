@@ -20,7 +20,7 @@ module.exports = () => {
     {start: new Date("October 7, 2020 11:30:00 UTC"), end: new Date("October 7, 2020 12:30:00 UTC"), title: "Best Practices - Discussion", orgs: bporgs, desc: "discussion"},
     {start: new Date("October 7, 2020 18:30:00 UTC"), end: new Date("October 7, 2020 19:30:00 UTC"), title: "Multidimensional Journey", orgs: html`Nien Tzu Weng and Naoto Hieda`, desc: "performative journey"},
     {start: new Date("October 8, 2020 10:30:00 UTC"), end: new Date("October 8, 2020 11:30:00 UTC"), title: "Low Frequency Skies", orgs: lfsorgs, desc: lfsdesc},
-    {start: new Date("October 8, 2020 14:00:00 UTC"), end: new Date("October 8, 2020 14:15:00 UTC"), title: "Distant Movements", orgs: html``, desc: "15-min performance"},
+    {start: new Date("October 8, 2020 14:00:00 UTC"), end: new Date("October 8, 2020 14:15:00 UTC"), title: "Distant Movements", orgs: html``, desc: html`15-min performance. The session will take place in <a href="https://meet.jit.si/ChoreographicCodingOnline">jitsi</a>. Please arrive in advance if you are going to participate.`},
   ]
   
   const dates = [];
