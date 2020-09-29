@@ -14,6 +14,7 @@ module.exports = () => {
     {start: new Date("October 4, 2020 17:00:00 UTC"), end: new Date("October 4, 2020 19:00:00 UTC"), title: "Hydra meetup #2", orgs: html`Flor de Fuego, Olivia Jack and Naoto Hieda`, desc: html`The event will start in Zoom and partially streamed to GreenHouse NAXOS. <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>`},
     {start: new Date("October 5, 2020 10:30:00 UTC"), end: new Date("October 5, 2020 11:30:00 UTC"), title: "Low Frequency Skies", orgs: lfsorgs, desc: lfsdesc},
     {start: new Date("October 5, 2020 11:30:00 UTC"), end: new Date("October 5, 2020 12:30:00 UTC"), title: "Best Practices - Discussion", orgs: bporgs, desc: "discussion"},
+    {start: new Date("October 5, 2020 11:30:00 UTC"), end: new Date("October 5, 2020 12:30:00 UTC"), title: "", orgs: bporgs, desc: "discussion"},
     {start: new Date("October 6, 2020 10:30:00 UTC"), end: new Date("October 6, 2020 11:30:00 UTC"), title: "Low Frequency Skies", orgs: lfsorgs, desc: lfsdesc},
     {start: new Date("October 6, 2020 19:00:00 UTC"), end: new Date("October 6, 2020 20:00:00 UTC"), title: "Best Practices", orgs: bporgs, desc: "practice"},
     {start: new Date("October 7, 2020 10:30:00 UTC"), end: new Date("October 7, 2020 11:30:00 UTC"), title: "Low Frequency Skies", orgs: lfsorgs, desc: lfsdesc},
