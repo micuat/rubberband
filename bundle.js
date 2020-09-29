@@ -125,10 +125,10 @@ module.exports = () => {
       talque:
         "https://20.nodeforum.org/program/?lectureId=lj3AGNPXP6Mm4MxHeQa0",
       orgs: html`
-        <a href="https://twitter.com/chimanaco">Yasushi Harada</a>,
-        <a href="https://twitter.com/narumin256/">Yuki Narumi</a>,
-        <a href="https://twitter.com/takawo">Shunsuke Takawo</a> and
-        ${naoto.cloneNode(true)}
+        <a href="https://twitter.com/chimanaco">Yasushi Harada</a> (TDSW),
+        <a href="https://twitter.com/narumin256/">Yuki Narumi</a> (TDSW),
+        <a href="https://twitter.com/takawo">Shunsuke Takawo</a> (PCJ) and
+        ${naoto.cloneNode(true)} (PCJ)
       `,
       type: ["meetup", "exhibition"],
       topic: ["touchdesigner", "processing"],
