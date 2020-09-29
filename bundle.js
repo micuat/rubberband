@@ -84,8 +84,9 @@ module.exports = () => {
       end: new Date("October 2, 2020 19:00:00 UTC"),
       title: "Creative Code Stammtisch",
       orgs: html`
-        Creative Code Berlin
-      `,
+<a href="https://www.meetup.com/creativeCodeBerlin/"
+          >Creative Code Berlin</a
+        >      `,
       type: ["meetup"],
       topic: [],
       desc: html`
@@ -115,7 +116,9 @@ module.exports = () => {
       end: new Date("October 4, 2020 11:30:00 UTC"),
       title: "TDSW x PCJ Vernissage",
       orgs: html`
-        Yasushi Harada, Yuki Narumi, Shunsuke Takawo and
+        <a href="https://twitter.com/chimanaco">Yasushi Harada</a>,
+        <a href="https://twitter.com/narumin256/">Yuki Narumi</a>,
+        <a href="https://twitter.com/takawo">Shunsuke Takawo</a> and
         ${naoto.cloneNode(true)}
       `,
       type: ["meetup", "exhibition"],
@@ -138,7 +141,9 @@ module.exports = () => {
       end: new Date("October 4, 2020 19:00:00 UTC"),
       title: "Hydra meetup #2",
       orgs: html`
-        Flor de Fuego, Olivia Jack and ${naoto.cloneNode(true)}
+        <a href="https://twitter.com/flordefuego4">Flor de Fuego</a>,
+        <a href="https://twitter.com/_ojack_">Olivia Jack</a> and
+        ${naoto.cloneNode(true)}
       `,
       type: ["meetup", "performance"],
       topic: ["hydra"],
@@ -217,7 +222,8 @@ module.exports = () => {
       end: new Date("October 7, 2020 19:30:00 UTC"),
       title: "Multidimensional Journey",
       orgs: html`
-        Nien Tzu Weng and ${naoto.cloneNode(true)}
+        <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and
+        ${naoto.cloneNode(true)}
       `,
       type: ["performance"],
       topic: ["dance"],
@@ -237,7 +243,9 @@ module.exports = () => {
       end: new Date("October 8, 2020 14:15:00 UTC"),
       title: "Distant Movements",
       orgs: html`
-        Annie Abrahams, Daniel Pinheiro and Muriel Piqué
+        <a href="https://twitter.com/annieabrahams">Annie Abrahams</a>,
+        <a href="https://twitter.com/dannyblueboy">Daniel Pinheiro</a> and
+        Muriel Piqué
       `,
       type: ["performance"],
       topic: ["dance"],
@@ -253,12 +261,11 @@ module.exports = () => {
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {
     const s = sc[i];
-    const start = s.start.toLocaleDateString(undefined, {
+    const date = s.start.toLocaleDateString(undefined, {
       month: "long",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit"
+      day: "numeric"
     });
+    const start = s.start.toLocaleTimeString([], dateOptions);
     const end = s.end.toLocaleTimeString([], dateOptions);
     const { title, orgs, desc, type, topic } = s;
     let types = [];
@@ -281,6 +288,7 @@ module.exports = () => {
     dates.push(
       html`
         <li>
+          <p class="schedule">${date}</p>
           <p class="schedule">${start} - ${end}</p>
           <div class="type">${types}</div>
           <div class="topic">${topics}</div>
