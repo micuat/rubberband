@@ -2,6 +2,9 @@ var html = require("choo/html");
 
 module.exports = () => {
   let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  const sc = [
+    {start: new Date("October 4, 2020 17:00:00 UTC"), end: new Date("October 4, 2020 17:00:00 UTC"), title: "a", desc: "oi"}
+  ]
   const dateObjs = [
     new Date("October 4, 2020 17:00:00 UTC"),
     new Date("October 4, 2020 17:15:00 UTC"),
@@ -17,9 +20,11 @@ module.exports = () => {
   
   const dates = [];
   const dateOptions = {hour: '2-digit', minute:'2-digit'};
-  for(let i = 0; i < dateObjs.length; i++) {
-    const start = dateObjs[i].toLocaleTimeString([], dateOptions);
-    const end = i == dateObjs.length - 1 ? "end" : (dateObjs[i+1].toLocaleTimeString([], dateOptions));
+  for(let i = 0; i < sc.length; i++) {
+    const s = sc[i];
+    const start = s.start.toLocaleTimeString([], dateOptions);
+    const end = s.end.toLocaleTimeString([], dateOptions);
+    const {title, desc} = s;
     dates.push(html`<li><b>${start} - ${end}</b>: ${dateDescs[i]}</li>`);
   }
 
