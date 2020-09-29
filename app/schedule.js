@@ -35,7 +35,8 @@ module.exports = () => {
         *this event is hosted by
         <a href="https://www.meetup.com/creativeCodeBerlin/"
           >Creative Code Berlin</a
-        >*<br />Naoto gives a brief introduction of this project at the Stammtisch.
+        >*<br />Naoto gives a brief introduction of this project at the
+        Stammtisch.
         <a
           href="https://www.meetup.com/creativeCodeBerlin/events/skjgrrybcnbdb/"
           >More info here.</a
@@ -49,7 +50,8 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
-      desc: lfsdesc.cloneNode(true)
+      desc:
+        "Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!"
     },
     {
       start: new Date("October 4, 2020 09:30:00 UTC"),
@@ -62,9 +64,13 @@ module.exports = () => {
       type: ["meetup", "exhibition"],
       topic: ["touchdesigner", "processing"],
       desc: html`
-        Tokyo Developers Study Weekend and Processing Community Japan going to
-        occupy GreenHouse NAXOS. URL coming soon.
-        <a href="https://tdswxpcj.peatix.com/">peatix ページはこちら</a>・<a
+        Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
+        (PCJ) invite you to present your artworks at an exhibition, where
+        everyone can virtually hang their works in the GreenHouse exhibition
+        space. Be respectful to each other and let’s make a collective
+        exhibition! The hosts will present in Japanese and English. URL coming
+        soon.<br />
+        <a href="https://tdswxpcj.peatix.com/">peatix ページはこちら</a><br /><a
           href="https://paper.dropbox.com/doc/TDSWxPCJ-howto--A8hx~MmXMO3P8s5_UboiQC75AQ-KgJQH4Ai8FQHHZ9QZ55lu"
           >Hubs の使い方はこちら</a
         >
@@ -110,7 +116,7 @@ module.exports = () => {
       orgs: html`
         ${naoto.cloneNode(true)}
       `,
-      type: ["TBA"],
+      type: [],
       desc: "TBA"
     },
     {
@@ -200,12 +206,20 @@ module.exports = () => {
     const { title, orgs, desc, type, topic } = s;
     let types = [];
     for (const t of type) {
-      types.push(html`<p class="${t}">${t}</p>`);
+      types.push(
+        html`
+          <p class="${t}">${t}</p>
+        `
+      );
     }
     let topics = [];
     for (const t of topic) {
-      if(t!="food")
-      topics.push(html`<p class="${t}">${t}</p>`);
+      if (t != "food")
+        topics.push(
+          html`
+            <p class="${t}">${t}</p>
+          `
+        );
     }
     dates.push(
       html`
