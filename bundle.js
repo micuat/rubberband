@@ -87,11 +87,12 @@ module.exports = () => {
         Creative Code Berlin
       `,
       type: ["meetup"],
+      topic: [],
       desc: html`
         *this event is hosted by
         <a href="https://www.meetup.com/creativeCodeBerlin/"
           >Creative Code Berlin</a
-        >*<br />Naoto gives a brief introduction at the Stammtisch.
+        >*<br />Naoto gives a brief introduction of this project at the Stammtisch.
         <a
           href="https://www.meetup.com/creativeCodeBerlin/events/skjgrrybcnbdb/"
           >More info here.</a
@@ -104,6 +105,7 @@ module.exports = () => {
       title: "Low Frequency Skies",
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
+      topic: ["food"],
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -115,6 +117,7 @@ module.exports = () => {
         ${naoto.cloneNode(true)}
       `,
       type: ["meetup", "exhibition"],
+      topic: ["touchdesigner", "processing"],
       desc: html`
         Tokyo Developers Study Weekend and Processing Community Japan going to
         occupy GreenHouse NAXOS. URL coming soon.
@@ -132,6 +135,7 @@ module.exports = () => {
         Flor de Fuego, Olivia Jack and ${naoto.cloneNode(true)}
       `,
       type: ["meetup", "performance"],
+      topic: ["food"],
       desc: html`
         The event will start in Zoom and partially streamed to GreenHouse NAXOS.
         <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
