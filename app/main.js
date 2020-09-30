@@ -17,6 +17,9 @@ module.exports = function(state, emit) {
     <p>
 Choreographic Coding Lab Online is a series of events organized and curated by Naoto Hieda as an official unconference at <a href="https://20.nodeforum.org/">NODE20</a>.
     </p>
+    <div class="thumbnail">
+    <img src="https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200829_Naoto_CCO_GreenHouseNAXOS_small.jpg">
+    </div>
     <ul>
       <li><b>Schedule (time in ${schedule.timezone})</b></li>
       ${schedule.dates}
