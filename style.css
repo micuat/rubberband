@@ -157,14 +157,14 @@ li > .talque {
 
 .type > p {
   margin-right: 1em;
-  margin-top: .1em;
-  margin-bottom: .1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
   white-space: pre;
   float: left;
   background-color: #5ef177;
   color: #000;
   padding: 0.6em;
-  border: solid rgba(255,255,255,0.0);
+  border: solid rgba(255, 255, 255, 0);
 }
 
 .type .lunch {
@@ -190,12 +190,12 @@ li > .talque {
 
 .topic > p {
   margin-right: 1em;
-  margin-top: .1em;
-  margin-bottom: .1em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
   white-space: pre;
   float: left;
   padding: 0.6em;
-  
+
   border: solid black;
   border-radius: 25px;
   background-color: aliceblue;
@@ -206,7 +206,47 @@ li > .talque {
   clear: both;
 }
 
-.thumbnail > img {
+.thumbnail > img,
+.rowimg > img {
   width: 100%;
   height: auto;
+}
+
+.imgcaption {
+  color: black;
+  background-color: plum;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  /* ...and now for the proper property */
+  transition: 0.5s;
+}
+
+.imgcaption:hover {
+  opacity: 80%;
+}
+
+.imgcaption > p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.rowimg {
+  border: solid mediumpurple;
+  padding: 0px;
+  position: relative;
 }
