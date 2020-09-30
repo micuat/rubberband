@@ -94,6 +94,7 @@ module.exports = () => {
       `,
       type: ["meetup"],
       topic: [],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200501ccs.png?v=1601460981486",
       desc: html`
         *this event is hosted by
         <a href="https://www.meetup.com/creativeCodeBerlin/"
@@ -115,6 +116,7 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
       desc:
         "Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone! URL coming soon."
     },
@@ -132,6 +134,7 @@ module.exports = () => {
       `,
       type: ["meetup", "exhibition"],
       topic: ["touchdesigner", "processing"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
       desc: html`
         Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
         (PCJ) invite you to present your artworks at an exhibition, where
@@ -178,6 +181,7 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200506lfs.png?v=1601460984957",
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -189,6 +193,7 @@ module.exports = () => {
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
       topic: ["dance", "hydra", "tidalcycles"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-06-best-practices-session.png?v=1601461258436",
       desc:
         "Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. URL coming soon."
     },
@@ -212,6 +217,7 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200511lfs.png?v=1601460987582",
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -223,6 +229,7 @@ module.exports = () => {
       orgs: bporgs.cloneNode(true),
       type: ["performance"],
       topic: ["dance", "hydra", "tidalcycles"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
       desc:
         "Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session. URL coming soon."
     },
@@ -235,6 +242,7 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200514lfs.png?v=1601460983648",
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -246,6 +254,7 @@ module.exports = () => {
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
       topic: ["dance", "hydra", "tidalcycles"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-20-best-practices-session.png?v=1601461265057",
       desc:
         "Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. In this discussion, the duo reflects on the “Best Practice” session that happens the day before (6th of October 2020). URL coming soon."
     },
@@ -261,6 +270,7 @@ module.exports = () => {
       `,
       type: ["performance"],
       topic: ["dance"],
+      image: "https://cdn.glitch.com/4ca2dec5-7e57-49b4-9f3c-1a1e74fa2e48%2Fa0.gif?v=1591302475810",
       desc:
         "Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required. URL coming soon."
     },
@@ -273,6 +283,7 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200519lfs.png?v=1601460978858",
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -352,7 +363,6 @@ module.exports = () => {
     dates.push(
       html`
         <li>
-          <div class="thumbnail">${imageElt}</div>
           <p class="schedule">${date}</p>
           <p class="schedule">${start} - ${end}</p>
           <div class="type">${types}</div>
@@ -362,6 +372,7 @@ module.exports = () => {
           <p class="talque">${talqueLink}</p>
           <div class="clearer"></div>
           <p class="orgs">by ${orgs}</p>
+          <div class="thumbnail">${imageElt}</div>
           <p class="desc">${desc}</p>
         </li>
       `
