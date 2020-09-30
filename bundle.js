@@ -201,17 +201,17 @@ module.exports = () => {
       desc:
         "Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. URL coming soon."
     },
-    {
-      start: new Date("October 5, 2020 14:00:00 UTC"),
-      end: new Date("October 5, 2020 14:30:00 UTC"),
-      title: "TBA",
-      topic: [],
-      orgs: html`
-        ${naoto.cloneNode(true)}
-      `,
-      type: [],
-      desc: "TBA"
-    },
+    // {
+    //   start: new Date("October 5, 2020 14:00:00 UTC"),
+    //   end: new Date("October 5, 2020 14:30:00 UTC"),
+    //   title: "TBA",
+    //   topic: [],
+    //   orgs: html`
+    //     ${naoto.cloneNode(true)}
+    //   `,
+    //   type: [],
+    //   desc: "TBA"
+    // },
     {
       start: new Date("October 6, 2020 10:30:00 UTC"),
       end: new Date("October 6, 2020 11:30:00 UTC"),
@@ -277,7 +277,8 @@ module.exports = () => {
       `,
       type: ["performance"],
       topic: ["dance"],
-      image: "https://cdn.glitch.com/4ca2dec5-7e57-49b4-9f3c-1a1e74fa2e48%2Fa0.gif?v=1591302475810",
+      // image: "https://cdn.glitch.com/4ca2dec5-7e57-49b4-9f3c-1a1e74fa2e48%2Fa0.gif?v=1591302475810",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fmdj.jpg?v=1601470887536",
       desc:
         "Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required. URL coming soon."
     },
