@@ -134,7 +134,8 @@ module.exports = () => {
       `,
       type: ["meetup", "exhibition"],
       topic: ["touchdesigner", "processing"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Ftdswxpcj.jpg?v=1601468680335",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
       desc: html`
         Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
         (PCJ) invite you to present your artworks at an exhibition, where
