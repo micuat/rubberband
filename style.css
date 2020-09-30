@@ -205,3 +205,8 @@ li > .talque {
 .clearer {
   clear: both;
 }
+
+.thumbnail > img {
+  width: 100%;
+  height: auto;
+}

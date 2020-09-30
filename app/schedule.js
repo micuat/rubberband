@@ -101,6 +101,7 @@ module.exports = () => {
       `,
       type: ["meetup", "performance"],
       topic: ["hydra"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601460305745",
       desc: html`
         Hydra meetup #2 makes an intervention at NODE20! <a href="hydra.ojack.xyz">Hydra</a>
         is a live-coding environment inspired by analog video synthesizer.
@@ -230,6 +231,7 @@ module.exports = () => {
       `,
       type: ["performance"],
       topic: ["dance"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
       desc: html`
         Distant Movements is a project by Annie Abrahams (FR/NL), Daniel
         Pinheiro (PT) and Muriel Piqué (FR). They develop an experimental,
@@ -260,7 +262,7 @@ module.exports = () => {
     });
     const start = s.start.toLocaleTimeString([], dateOptions);
     const end = s.end.toLocaleTimeString([], dateOptions);
-    const { title, orgs, desc, type, topic, talque } = s;
+    const { title, orgs, desc, type, topic, image, talque } = s;
     let types = [];
     for (const t of type) {
       types.push(
@@ -278,6 +280,12 @@ module.exports = () => {
           `
         );
     }
+    let imageElt;
+    if (image != undefined) {
+      imageElt = html`
+        <img src="${image}">
+      `;
+    }
     let talqueLink;
     if (talque != undefined) {
       talqueLink = html`
@@ -287,6 +295,7 @@ module.exports = () => {
     dates.push(
       html`
         <li>
+          <div class="thumbnail">${imageElt}</div>
           <p class="schedule">${date}</p>
           <p class="schedule">${start} - ${end}</p>
           <div class="type">${types}</div>
