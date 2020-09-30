@@ -116,7 +116,8 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs1.jpg?v=1601469763915",
       desc:
         "Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone! URL coming soon."
     },
@@ -182,7 +183,8 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200506lfs.png?v=1601460984957",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200506lfs.png?v=1601460984957",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs2.jpg?v=1601469764520",
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -218,7 +220,8 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200511lfs.png?v=1601460987582",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200511lfs.png?v=1601460987582",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs3.jpg?v=1601469762672",
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -243,7 +246,8 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200514lfs.png?v=1601460983648",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200514lfs.png?v=1601460983648",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs4.jpg?v=1601469762978",
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -284,7 +288,8 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200519lfs.png?v=1601460978858",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200519lfs.png?v=1601460978858",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs5.jpg?v=1601469763598",
       desc: lfsdesc.cloneNode(true)
     },
     {
