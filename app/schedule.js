@@ -12,7 +12,7 @@ module.exports = () => {
     quarantine to open a virtual space for his friends to eat and chat together.
     The legendary lunch session comes back during NODE20 at GreenHouse NAXOS –
     bring your friends and have breakfast, lunch or dinner together, depending
-    on your time zone! URL coming soon.<b></b>
+    on your time zone! <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>
   `;
   const lfsorgs = html`
     <a href="https://twitter.com/sableraph">Raphaël de Courville</a>,
@@ -62,7 +62,7 @@ module.exports = () => {
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs1.jpg?v=1601469763915",
       desc:
-        "Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone! URL coming soon."
+        html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone! <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
     {
       start: new Date("October 4, 2020 09:30:00 UTC"),
@@ -85,8 +85,7 @@ module.exports = () => {
         (PCJ) invite you to present your artworks at an exhibition, where
         everyone can virtually hang their works in the GreenHouse exhibition
         space. Be respectful to each other and let’s make a collective
-        exhibition! The hosts will present in Japanese and English. URL coming
-        soon.<br />
+        exhibition! The hosts will present in Japanese and English. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a><br />
         <a href="https://tdswxpcj.peatix.com/">peatix ページはこちら</a><br /><a
           href="https://paper.dropbox.com/doc/TDSWxPCJ-howto--A8hx~MmXMO3P8s5_UboiQC75AQ-KgJQH4Ai8FQHHZ9QZ55lu"
           >Hubs の使い方はこちら</a
@@ -142,7 +141,7 @@ module.exports = () => {
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-06-best-practices-session.png?v=1601461258436",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
       desc:
-        "Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. URL coming soon."
+        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
     // {
     //   start: new Date("October 5, 2020 14:00:00 UTC"),
@@ -179,7 +178,7 @@ module.exports = () => {
       topic: ["dance", "hydra", "tidalcycles"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
       desc:
-        "Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session. URL coming soon."
+        html`Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
     {
       start: new Date("October 7, 2020 10:30:00 UTC"),
@@ -206,7 +205,7 @@ module.exports = () => {
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-20-best-practices-session.png?v=1601461265057",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
       desc:
-        "Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. In this discussion, the duo reflects on the “Best Practice” session that happens the day before (6th of October 2020). URL coming soon."
+        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. In this discussion, the duo reflects on the “Best Practice” session that happens the day before (6th of October 2020). <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
     {
       start: new Date("October 7, 2020 18:30:00 UTC"),
@@ -223,7 +222,7 @@ module.exports = () => {
       // image: "https://cdn.glitch.com/4ca2dec5-7e57-49b4-9f3c-1a1e74fa2e48%2Fa0.gif?v=1591302475810",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fmdj.jpg?v=1601470887536",
       desc:
-        "Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required. URL coming soon."
+        html`Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
     {
       start: new Date("October 8, 2020 10:30:00 UTC"),
@@ -266,7 +265,7 @@ module.exports = () => {
         welcoming everyone.<br />
         15-min performance. The session will take place on
         <a href="https://meet.jit.si/ChoreographicCodingOnline">jitsi</a> and
-        streamed to GreenHouse NAXOS (URL coming soon). Please arrive in advance
+        streamed to <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">GreenHouse NAXOS</a>. Please arrive in advance
         if you are going to participate.
       `
     }
