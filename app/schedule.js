@@ -65,7 +65,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs1.jpg?v=1601469763915",
-      openin: hubs,
+      openin: hubs.cloneNode(true),
       desc:
         html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`
     },
