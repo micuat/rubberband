@@ -85,6 +85,7 @@ module.exports = () => {
       topic: ["touchdesigner", "processing"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Ftdswxpcj.jpg?v=1601468680335",
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
+      openin: hubs.cloneNode(true),
       desc: html`
         Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
         (PCJ) invite you to present your artworks at an exhibition, where
@@ -111,6 +112,7 @@ module.exports = () => {
       type: ["meetup", "performance"],
       topic: ["hydra"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601460305745",
+      openin: hydrazoom,
       desc: html`
         Hydra meetup #2 makes an intervention at NODE20! <a href="hydra.ojack.xyz">Hydra</a>
         is a live-coding environment inspired by analog video synthesizer.
@@ -132,6 +134,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200506lfs.png?v=1601460984957",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs2.jpg?v=1601469764520",
+      openin: hubs.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -145,6 +148,7 @@ module.exports = () => {
       topic: ["dance", "hydra", "tidalcycles"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-06-best-practices-session.png?v=1601461258436",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
+      openin: hubs.cloneNode(true),
       desc:
         html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
@@ -170,6 +174,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200511lfs.png?v=1601460987582",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs3.jpg?v=1601469762672",
+      openin: hubs.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -182,6 +187,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["dance", "hydra", "tidalcycles"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
+      openin: hubs.cloneNode(true),
       desc:
         html`Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
@@ -196,6 +202,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200514lfs.png?v=1601460983648",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs4.jpg?v=1601469762978",
+      openin: hubs.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -209,6 +216,7 @@ module.exports = () => {
       topic: ["dance", "hydra", "tidalcycles"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-20-best-practices-session.png?v=1601461265057",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
+      openin: hubs.cloneNode(true),
       desc:
         html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. In this discussion, the duo reflects on the “Best Practice” session that happens the day before (6th of October 2020). <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
@@ -226,6 +234,7 @@ module.exports = () => {
       topic: ["dance"],
       // image: "https://cdn.glitch.com/4ca2dec5-7e57-49b4-9f3c-1a1e74fa2e48%2Fa0.gif?v=1591302475810",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fmdj.jpg?v=1601470887536",
+      openin: hubs.cloneNode(true),
       desc:
         html`Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
@@ -240,6 +249,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200519lfs.png?v=1601460978858",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs5.jpg?v=1601469763598",
+      openin: hubs.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -256,6 +266,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["dance"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
+      openin: dmjitsi,
       desc: html`
         Distant Movements is a project by Annie Abrahams (FR/NL), Daniel
         Pinheiro (PT) and Muriel Piqué (FR). They develop an experimental,
@@ -269,7 +280,7 @@ module.exports = () => {
         collaborative artistic research. DM comes to NODE20 as a one-off
         welcoming everyone.<br />
         15-min performance. The session will take place on
-        <a href="https://meet.jit.si/ChoreographicCodingOnline">jitsi</a> and
+        <a href="https://meet.jit.si/ChoreographicCodingOnline">jit.si</a> and
         streamed to <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">GreenHouse NAXOS</a>. Please arrive in advance
         if you are going to participate.
       `
