@@ -12,7 +12,7 @@ module.exports = () => {
     quarantine to open a virtual space for his friends to eat and chat together.
     The legendary lunch session comes back during NODE20 at GreenHouse NAXOS –
     bring your friends and have breakfast, lunch or dinner together, depending
-    on your time zone! <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>
+    on your time zone!
   `;
   const lfsorgs = html`
     <a href="https://twitter.com/sableraph">Raphaël de Courville</a>,
@@ -24,6 +24,10 @@ module.exports = () => {
     <a href="https://twitter.com/J_Guevara_L">Jorge Guevara</a> and
     ${naoto.cloneNode(true)}
   `;
+  
+  const hubs = html`<a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">join in hubs!</a>`;
+  const hydrazoom = html`<a href="https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09">join in zoom!</a>`;
+  const dmjitsi = html`<a href="https://meet.jit.si/ChoreographicCodingOnline">join in jit.si!</a>`;
 
   const sc = [
     {
@@ -62,7 +66,7 @@ module.exports = () => {
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs1.jpg?v=1601469763915",
       desc:
-        html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone! <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
+        html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`
     },
     {
       start: new Date("October 4, 2020 09:30:00 UTC"),
