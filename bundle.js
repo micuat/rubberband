@@ -43,7 +43,7 @@ module.exports = function(state, emit) {
 <div class="container">
     <h1> Choreographic Coding Lab Online @ NODE! </h1>
     <p>
-Choreographic Coding Lab Online is a series of events organized and curated by Naoto Hieda as an official unconference at <a href="https://20.nodeforum.org/">NODE20</a>.
+Choreographic Coding Lab Online is a series of events organized and curated by Naoto Hieda as an official unconference at <a href="https://20.nodeforum.org/">NODE20</a>. Open to everyone and festival pass is not required to join :)
     </p>
 
     <p>
@@ -85,7 +85,7 @@ module.exports = () => {
     quarantine to open a virtual space for his friends to eat and chat together.
     The legendary lunch session comes back during NODE20 at GreenHouse NAXOS –
     bring your friends and have breakfast, lunch or dinner together, depending
-    on your time zone!
+    on your time zone!<b></b>
   `;
   const lfsorgs = html`
     <a href="https://twitter.com/sableraph">Raphaël de Courville</a>,
@@ -138,6 +138,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs1.jpg?v=1601469763915",
+      openin: hubs,
       desc:
         html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`
     },
@@ -358,7 +359,7 @@ module.exports = () => {
     });
     const start = s.start.toLocaleTimeString([], dateOptions);
     const end = s.end.toLocaleTimeString([], dateOptions);
-    const { title, orgs, desc, type, topic, image, talque } = s;
+    const { title, orgs, desc, type, topic, image, talque, openin } = s;
     let types = [];
     for (const t of type) {
       types.push(
@@ -376,6 +377,7 @@ module.exports = () => {
           `
         );
     }
+
     let imageElt;
     if (image != undefined) {
       imageElt = html`
@@ -401,6 +403,7 @@ module.exports = () => {
           <div class="clearer"></div>
           <p class="orgs">by ${orgs}</p>
           <div class="thumbnail">${imageElt}</div>
+          <p>${openin != undefined ? openin : ""}</p>
           <p class="desc">${desc}</p>
         </li>
       `

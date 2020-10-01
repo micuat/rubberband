@@ -15,7 +15,7 @@ module.exports = function(state, emit) {
 <div class="container">
     <h1> Choreographic Coding Lab Online @ NODE! </h1>
     <p>
-Choreographic Coding Lab Online is a series of events organized and curated by Naoto Hieda as an official unconference at <a href="https://20.nodeforum.org/">NODE20</a>.
+Choreographic Coding Lab Online is a series of events organized and curated by Naoto Hieda as an official unconference at <a href="https://20.nodeforum.org/">NODE20</a>. Open to everyone and festival pass is not required to join :)
     </p>
 
     <p>
