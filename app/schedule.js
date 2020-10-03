@@ -30,45 +30,7 @@ module.exports = () => {
   const dmjitsi = html`<a href="https://meet.jit.si/ChoreographicCodingOnline">join in jit.si!</a>`;
 
   const sc = [
-    {
-      start: new Date("October 2, 2020 17:30:00 UTC"),
-      end: new Date("October 2, 2020 19:00:00 UTC"),
-      title: "Creative Code Stammtisch",
-      orgs: html`
-        <a href="https://www.meetup.com/creativeCodeBerlin/"
-          >Creative Code Berlin</a
-        >
-      `,
-      type: ["meetup"],
-      topic: [],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200501ccs.png?v=1601460981486",
-      desc: html`
-        *this event is hosted by
-        <a href="https://www.meetup.com/creativeCodeBerlin/"
-          >Creative Code Berlin</a
-        >*<br />Naoto gives a brief introduction of this project at the
-        Stammtisch.
-        <a
-          href="https://www.meetup.com/creativeCodeBerlin/events/skjgrrybcnbdb/"
-          >More info here.</a
-        >
-      `
-    },
-    {
-      start: new Date("October 3, 2020 10:30:00 UTC"),
-      end: new Date("October 3, 2020 11:30:00 UTC"),
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=fIT3yhH7pfPvnpLyMrWl",
-      title: "Low Frequency Skies",
-      orgs: lfsorgs.cloneNode(true),
-      type: ["lunch"],
-      topic: ["food"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs1.jpg?v=1601469763915",
-      openin: hubs.cloneNode(true),
-      desc:
-        html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`
-    },
+
     {
       start: new Date("October 4, 2020 09:30:00 UTC"),
       end: new Date("October 4, 2020 11:30:00 UTC"),
@@ -284,7 +246,48 @@ module.exports = () => {
         streamed to <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">GreenHouse NAXOS</a>. Please arrive in advance
         if you are going to participate.
       `
-    }
+    },
+
+      {
+      start: new Date("October 2, 2020 17:30:00 UTC"),
+      end: new Date("October 2, 2020 19:00:00 UTC"),
+      title: "Creative Code Stammtisch",
+      orgs: html`
+        <a href="https://www.meetup.com/creativeCodeBerlin/"
+          >Creative Code Berlin</a
+        >
+      `,
+      type: ["meetup"],
+      topic: [],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200501ccs.png?v=1601460981486",
+      desc: html`
+        *this event is hosted by
+        <a href="https://www.meetup.com/creativeCodeBerlin/"
+          >Creative Code Berlin</a
+        >*<br />Naoto gives a brief introduction of this project at the
+        Stammtisch.
+        <a
+          href="https://www.meetup.com/creativeCodeBerlin/events/skjgrrybcnbdb/"
+          >More info here.</a
+        >
+      `
+    },
+    {
+      start: new Date("October 3, 2020 10:30:00 UTC"),
+      end: new Date("October 3, 2020 11:30:00 UTC"),
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=fIT3yhH7pfPvnpLyMrWl",
+      title: "Low Frequency Skies",
+      orgs: lfsorgs.cloneNode(true),
+      type: ["lunch"],
+      topic: ["food"],
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200430lfs1.png?v=1601460993064",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs1.jpg?v=1601469763915",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201003-02.jpg?v=1601728591081",
+      openin: hubs.cloneNode(true),
+      desc:
+        html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`,
+    },
   ];
 
   const dates = [];
