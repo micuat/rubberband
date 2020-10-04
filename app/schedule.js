@@ -32,60 +32,6 @@ module.exports = () => {
   const sc = [
 
     {
-      start: new Date("October 4, 2020 09:30:00 UTC"),
-      end: new Date("October 4, 2020 11:30:00 UTC"),
-      title: "TDSW x PCJ Vernissage",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=lj3AGNPXP6Mm4MxHeQa0",
-      orgs: html`
-        <a href="https://twitter.com/chimanaco">Yasushi Harada</a> (TDSW),
-        <a href="https://twitter.com/narumin256/">Yuki Narumi</a> (TDSW),
-        <a href="https://twitter.com/takawo">Shunsuke Takawo</a> (PCJ) and
-        ${naoto.cloneNode(true)} (PCJ)
-      `,
-      type: ["meetup", "exhibition"],
-      topic: ["touchdesigner", "processing"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Ftdswxpcj.jpg?v=1601468680335",
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
-      openin: hubs.cloneNode(true),
-      desc: html`
-        Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
-        (PCJ) invite you to present your artworks at an exhibition, where
-        everyone can virtually hang their works in the GreenHouse exhibition
-        space. Be respectful to each other and let’s make a collective
-        exhibition! The hosts will present in Japanese and English. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a><br />
-        <a href="https://tdswxpcj.peatix.com/">peatix ページはこちら</a><br /><a
-          href="https://paper.dropbox.com/doc/TDSWxPCJ-howto--A8hx~MmXMO3P8s5_UboiQC75AQ-KgJQH4Ai8FQHHZ9QZ55lu"
-          >Hubs の使い方はこちら</a
-        >
-      `
-    },
-    {
-      start: new Date("October 4, 2020 17:00:00 UTC"),
-      end: new Date("October 4, 2020 19:00:00 UTC"),
-      title: "Hydra meetup #2",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=84WjEDuHHRr3ERNosLO0",
-      orgs: html`
-        <a href="https://twitter.com/flordefuego4">Flor de Fuego</a>,
-        <a href="https://twitter.com/_ojack_">Olivia Jack</a> and
-        ${naoto.cloneNode(true)}
-      `,
-      type: ["meetup", "performance"],
-      topic: ["hydra"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601460305745",
-      openin: hydrazoom,
-      desc: html`
-        Hydra meetup #2 makes an intervention at NODE20! <a href="hydra.ojack.xyz">Hydra</a>
-        is a live-coding environment inspired by analog video synthesizer.
-        Olivia Jack, the creator of Hydra, Flor de Fuego and Naoto Hieda host a
-        meetup starting in Zoom and then a live-coding jam in GreenHouse NAXOS
-        (around 20:45 CEST). Everyone with or without experiences in Hydra is
-        welcome!
-        <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
-      `
-    },
-    {
       start: new Date("October 5, 2020 10:30:00 UTC"),
       end: new Date("October 5, 2020 11:30:00 UTC"),
       title: "Low Frequency Skies",
@@ -288,6 +234,61 @@ module.exports = () => {
       desc:
         html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`,
     },
+    {
+      start: new Date("October 4, 2020 09:30:00 UTC"),
+      end: new Date("October 4, 2020 11:30:00 UTC"),
+      title: "TDSW x PCJ Vernissage",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=lj3AGNPXP6Mm4MxHeQa0",
+      orgs: html`
+        <a href="https://twitter.com/chimanaco">Yasushi Harada</a> (TDSW),
+        <a href="https://twitter.com/narumin256/">Yuki Narumi</a> (TDSW),
+        <a href="https://twitter.com/takawo">Shunsuke Takawo</a> (PCJ) and
+        ${naoto.cloneNode(true)} (PCJ)
+      `,
+      type: ["meetup", "exhibition"],
+      topic: ["touchdesigner", "processing"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Ftdswxpcj.jpg?v=1601468680335",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
+      openin: hubs.cloneNode(true),
+      desc: html`
+        Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
+        (PCJ) invite you to present your artworks at an exhibition, where
+        everyone can virtually hang their works in the GreenHouse exhibition
+        space. Be respectful to each other and let’s make a collective
+        exhibition! The hosts will present in Japanese and English. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a><br />
+        <a href="https://tdswxpcj.peatix.com/">peatix ページはこちら</a><br /><a
+          href="https://paper.dropbox.com/doc/TDSWxPCJ-howto--A8hx~MmXMO3P8s5_UboiQC75AQ-KgJQH4Ai8FQHHZ9QZ55lu"
+          >Hubs の使い方はこちら</a
+        >
+      `
+    },
+    {
+      start: new Date("October 4, 2020 17:00:00 UTC"),
+      end: new Date("October 4, 2020 19:00:00 UTC"),
+      title: "Hydra meetup #2",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=84WjEDuHHRr3ERNosLO0",
+      orgs: html`
+        <a href="https://twitter.com/flordefuego4">Flor de Fuego</a>,
+        <a href="https://twitter.com/_ojack_">Olivia Jack</a> and
+        ${naoto.cloneNode(true)}
+      `,
+      type: ["meetup", "performance"],
+      topic: ["hydra"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601460305745",
+      openin: hydrazoom,
+      desc: html`
+        Hydra meetup #2 makes an intervention at NODE20! <a href="hydra.ojack.xyz">Hydra</a>
+        is a live-coding environment inspired by analog video synthesizer.
+        Olivia Jack, the creator of Hydra, Flor de Fuego and Naoto Hieda host a
+        meetup starting in Zoom and then a live-coding jam in GreenHouse NAXOS
+        (around 20:45 CEST). Everyone with or without experiences in Hydra is
+        welcome!
+        <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
+      `
+    },
+  
   ];
 
   const dates = [];
