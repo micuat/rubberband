@@ -27,50 +27,10 @@ module.exports = () => {
   
   const hubs = html`<a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">join in hubs!</a>`;
   const hydrazoom = html`<a href="https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09">join in zoom!</a>`;
-  const dmjitsi = html`<a href="https://meet.jit.si/ChoreographicCodingOnline">join in jit.si!</a>`;
+  const dmjitsi = html`<a href="https://zoom.us/j/99499279292?pwd=cnJWb1B6anN6bC96Vk5xZjZLQmZlZz09">join in Zoom!</a>`;
 
   const sc = [
 
-    {
-      start: new Date("October 5, 2020 10:30:00 UTC"),
-      end: new Date("October 5, 2020 11:30:00 UTC"),
-      title: "Low Frequency Skies",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=he2MXkruZpJzHnhCLN4e",
-      orgs: lfsorgs.cloneNode(true),
-      type: ["lunch"],
-      topic: ["food"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200506lfs.png?v=1601460984957",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs2.jpg?v=1601469764520",
-      openin: hubs.cloneNode(true),
-      desc: lfsdesc.cloneNode(true)
-    },
-    {
-      start: new Date("October 5, 2020 11:30:00 UTC"),
-      end: new Date("October 5, 2020 12:30:00 UTC"),
-      title: "Best Practices - Discussion",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=3qdrcstgZQaBYZDKdXE5",
-      orgs: bporgs.cloneNode(true),
-      type: ["discussion"],
-      topic: ["dance", "hydra", "tidalcycles"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-06-best-practices-session.png?v=1601461258436",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
-      openin: hubs.cloneNode(true),
-      desc:
-        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
-    },
-    // {
-    //   start: new Date("October 5, 2020 14:00:00 UTC"),
-    //   end: new Date("October 5, 2020 14:30:00 UTC"),
-    //   title: "TBA",
-    //   topic: [],
-    //   orgs: html`
-    //     ${naoto.cloneNode(true)}
-    //   `,
-    //   type: [],
-    //   desc: "TBA"
-    // },
     {
       start: new Date("October 6, 2020 10:30:00 UTC"),
       end: new Date("October 6, 2020 11:30:00 UTC"),
@@ -188,8 +148,8 @@ module.exports = () => {
         collaborative artistic research. DM comes to NODE20 as a one-off
         welcoming everyone.<br />
         15-min performance. The session will take place on
-        <a href="https://meet.jit.si/ChoreographicCodingOnline">jit.si</a> and
-        streamed to <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">GreenHouse NAXOS</a>. Please arrive in advance
+        <a href="https://zoom.us/j/99499279292?pwd=cnJWb1B6anN6bC96Vk5xZjZLQmZlZz09">Zoom</a> and
+        streamed to <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">GreenHouse NAXOS</a>. Please arrive on time
         if you are going to participate.
       `
     },
@@ -288,7 +248,35 @@ module.exports = () => {
         <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
       `
     },
-  
+    {
+      start: new Date("October 5, 2020 10:30:00 UTC"),
+      end: new Date("October 5, 2020 11:30:00 UTC"),
+      title: "Low Frequency Skies",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=he2MXkruZpJzHnhCLN4e",
+      orgs: lfsorgs.cloneNode(true),
+      type: ["lunch"],
+      topic: ["food"],
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200506lfs.png?v=1601460984957",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs2.jpg?v=1601469764520",
+      openin: hubs.cloneNode(true),
+      desc: lfsdesc.cloneNode(true)
+    },
+    {
+      start: new Date("October 5, 2020 11:30:00 UTC"),
+      end: new Date("October 5, 2020 12:30:00 UTC"),
+      title: "Best Practices - Discussion",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=3qdrcstgZQaBYZDKdXE5",
+      orgs: bporgs.cloneNode(true),
+      type: ["discussion"],
+      topic: ["dance", "hydra", "tidalcycles"],
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-06-best-practices-session.png?v=1601461258436",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
+      openin: hubs.cloneNode(true),
+      desc:
+        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
+    },  
   ];
 
   const dates = [];
