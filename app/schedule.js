@@ -195,7 +195,7 @@ module.exports = () => {
       `,
       type: ["meetup", "exhibition"],
       topic: ["touchdesigner", "processing"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Ftdswxpcj.jpg?v=1601468680335",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
       openin: hubs.cloneNode(true),
       desc: html`
