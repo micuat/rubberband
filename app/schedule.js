@@ -234,7 +234,7 @@ module.exports = () => {
         (around 20:45 CEST). Everyone with or without experiences in Hydra is
         welcome!
         <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7ioV6D_OStY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/7ioV6D_OStY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       `
     },
     {
@@ -264,7 +264,8 @@ module.exports = () => {
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
       openin: hubs.cloneNode(true),
       desc:
-        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <iframe width="560" height="315" src="https://www.youtube.com/embed/0-YILmKxVhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October.
+<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/0-YILmKxVhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
     {
       start: new Date("October 6, 2020 10:30:00 UTC"),
