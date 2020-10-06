@@ -99,25 +99,12 @@ module.exports = () => {
   `;
   
   const hubs = html`<a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">join in hubs!</a>`;
+  const lfsjitsi = html`<a href="https://meet.jit.si/LowFrequencySkies">join in jitsi!</a>`;
   const hydrazoom = html`<a href="https://us02web.zoom.us/j/82123778943?pwd=TzlvZHlLRlAwdWV4ZkRLTWFiN1loUT09">join in zoom!</a>`;
   const dmjitsi = html`<a href="https://zoom.us/j/99499279292?pwd=cnJWb1B6anN6bC96Vk5xZjZLQmZlZz09">join in Zoom!</a>`;
 
   const sc = [
 
-    {
-      start: new Date("October 6, 2020 10:30:00 UTC"),
-      end: new Date("October 6, 2020 11:30:00 UTC"),
-      title: "Low Frequency Skies",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=MLRv9CIiqYALHf0H1DcK",
-      orgs: lfsorgs.cloneNode(true),
-      type: ["lunch"],
-      topic: ["food"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200511lfs.png?v=1601460987582",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs3.jpg?v=1601469762672",
-      openin: hubs.cloneNode(true),
-      desc: lfsdesc.cloneNode(true)
-    },
     {
       start: new Date("October 6, 2020 19:00:00 UTC"),
       end: new Date("October 6, 2020 20:00:00 UTC"),
@@ -143,7 +130,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200514lfs.png?v=1601460983648",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs4.jpg?v=1601469762978",
-      openin: hubs.cloneNode(true),
+      openin: lfsjitsi.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -190,7 +177,7 @@ module.exports = () => {
       topic: ["food"],
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200519lfs.png?v=1601460978858",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs5.jpg?v=1601469763598",
-      openin: hubs.cloneNode(true),
+      openin: lfsjitsi.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
     },
     {
@@ -349,7 +336,21 @@ module.exports = () => {
       openin: hubs.cloneNode(true),
       desc:
         html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
-    },  
+    },
+    {
+      start: new Date("October 6, 2020 10:30:00 UTC"),
+      end: new Date("October 6, 2020 11:30:00 UTC"),
+      title: "Low Frequency Skies",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=MLRv9CIiqYALHf0H1DcK",
+      orgs: lfsorgs.cloneNode(true),
+      type: ["lunch"],
+      topic: ["food"],
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200511lfs.png?v=1601460987582",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs3.jpg?v=1601469762672",
+      openin: hubs.cloneNode(true),
+      desc: lfsdesc.cloneNode(true)
+    },
   ];
 
   const dates = [];
