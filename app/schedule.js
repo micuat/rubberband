@@ -223,7 +223,8 @@ module.exports = () => {
       `,
       type: ["meetup", "performance"],
       topic: ["hydra"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601460305745",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601460305745",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
       openin: hydrazoom,
       desc: html`
         Hydra meetup #2 makes an intervention at NODE20! <a href="hydra.ojack.xyz">Hydra</a>
@@ -233,6 +234,7 @@ module.exports = () => {
         (around 20:45 CEST). Everyone with or without experiences in Hydra is
         welcome!
         <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7ioV6D_OStY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       `
     },
     {
@@ -258,11 +260,11 @@ module.exports = () => {
       orgs: bporgs.cloneNode(true),
       type: ["discussion"],
       topic: ["dance", "hydra", "tidalcycles"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-06-best-practices-session.png?v=1601461258436",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg?v=1601987022036",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
       openin: hubs.cloneNode(true),
       desc:
-        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
+        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October. <iframe width="560" height="315" src="https://www.youtube.com/embed/0-YILmKxVhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     },
     {
       start: new Date("October 6, 2020 10:30:00 UTC"),
@@ -273,8 +275,8 @@ module.exports = () => {
       orgs: lfsorgs.cloneNode(true),
       type: ["lunch"],
       topic: ["food"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200511lfs.png?v=1601460987582",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs3.jpg?v=1601469762672",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201006lfs.jpg?v=1601986689773",
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs3.jpg?v=1601469762672",
       openin: hubs.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
     },
