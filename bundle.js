@@ -106,20 +106,6 @@ module.exports = () => {
   const sc = [
 
     {
-      start: new Date("October 6, 2020 19:00:00 UTC"),
-      end: new Date("October 6, 2020 20:00:00 UTC"),
-      title: "Best Practices in Contemporary Dance",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=Aic70Y0uVbHBtMpYmDgE",
-      orgs: bporgs.cloneNode(true),
-      type: ["performance"],
-      topic: ["dance", "hydra", "tidalcycles"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
-      openin: hubs.cloneNode(true),
-      desc:
-        html`Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
-    },
-    {
       start: new Date("October 7, 2020 10:30:00 UTC"),
       end: new Date("October 7, 2020 11:30:00 UTC"),
       title: "Low Frequency Skies",
@@ -353,6 +339,20 @@ module.exports = () => {
       // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs3.jpg?v=1601469762672",
       openin: hubs.cloneNode(true),
       desc: lfsdesc.cloneNode(true)
+    },
+    {
+      start: new Date("October 6, 2020 19:00:00 UTC"),
+      end: new Date("October 6, 2020 20:00:00 UTC"),
+      title: "Best Practices in Contemporary Dance",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=Aic70Y0uVbHBtMpYmDgE",
+      orgs: bporgs.cloneNode(true),
+      type: ["performance"],
+      topic: ["dance", "hydra", "tidalcycles"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
+      openin: hubs.cloneNode(true),
+      desc:
+        html`Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
   ];
 
