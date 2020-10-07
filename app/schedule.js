@@ -33,53 +33,6 @@ module.exports = () => {
   const sc = [
 
     {
-      start: new Date("October 7, 2020 10:30:00 UTC"),
-      end: new Date("October 7, 2020 11:30:00 UTC"),
-      title: "Low Frequency Skies",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=O8BUqlsMy8Xz6QIZaI0j",
-      orgs: lfsorgs.cloneNode(true),
-      type: ["lunch"],
-      topic: ["food"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200514lfs.png?v=1601460983648",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs4.jpg?v=1601469762978",
-      openin: lfsjitsi.cloneNode(true),
-      desc: lfsdesc.cloneNode(true)
-    },
-    {
-      start: new Date("October 7, 2020 11:30:00 UTC"),
-      end: new Date("October 7, 2020 12:30:00 UTC"),
-      title: "Best Practices - Discussion",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=i07cQKeIdkEPGK7O1ssc",
-      orgs: bporgs.cloneNode(true),
-      type: ["discussion"],
-      topic: ["dance", "hydra", "tidalcycles"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-20-best-practices-session.png?v=1601461265057",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
-      openin: hubs.cloneNode(true),
-      desc:
-        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. In this discussion, the duo reflects on the “Best Practice” session that happens the day before (6th of October 2020). <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
-    },
-    {
-      start: new Date("October 7, 2020 18:30:00 UTC"),
-      end: new Date("October 7, 2020 19:30:00 UTC"),
-      title: "Multidimensional Journey",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=dhehVbNzOgzfFdY6Q7Lb",
-      orgs: html`
-        <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and
-        ${naoto.cloneNode(true)}
-      `,
-      type: ["performance"],
-      topic: ["dance"],
-      // image: "https://cdn.glitch.com/4ca2dec5-7e57-49b4-9f3c-1a1e74fa2e48%2Fa0.gif?v=1591302475810",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fmdj.jpg?v=1601470887536",
-      openin: hubs.cloneNode(true),
-      desc:
-        html`Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
-    },
-    {
       start: new Date("October 8, 2020 10:30:00 UTC"),
       end: new Date("October 8, 2020 11:30:00 UTC"),
       title: "Low Frequency Skies",
@@ -279,7 +232,55 @@ module.exports = () => {
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
       openin: hubs.cloneNode(true),
       desc:
-        html`Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
+        html`Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session.
+<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/0-YILmKxVhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+    },
+        {
+      start: new Date("October 7, 2020 10:30:00 UTC"),
+      end: new Date("October 7, 2020 11:30:00 UTC"),
+      title: "Low Frequency Skies",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=O8BUqlsMy8Xz6QIZaI0j",
+      orgs: lfsorgs.cloneNode(true),
+      type: ["lunch"],
+      topic: ["food"],
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200514lfs.png?v=1601460983648",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs4.jpg?v=1601469762978",
+      openin: lfsjitsi.cloneNode(true),
+      desc: lfsdesc.cloneNode(true)
+    },
+    {
+      start: new Date("October 7, 2020 11:30:00 UTC"),
+      end: new Date("October 7, 2020 12:30:00 UTC"),
+      title: "Best Practices - Discussion",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=i07cQKeIdkEPGK7O1ssc",
+      orgs: bporgs.cloneNode(true),
+      type: ["discussion"],
+      topic: ["dance", "hydra", "tidalcycles"],
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-20-best-practices-session.png?v=1601461265057",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
+      openin: hubs.cloneNode(true),
+      desc:
+        html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. In this discussion, the duo reflects on the “Best Practice” session that happens the day before (6th of October 2020). <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
+    },
+    {
+      start: new Date("October 7, 2020 18:30:00 UTC"),
+      end: new Date("October 7, 2020 19:30:00 UTC"),
+      title: "Multidimensional Journey",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=dhehVbNzOgzfFdY6Q7Lb",
+      orgs: html`
+        <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and
+        ${naoto.cloneNode(true)}
+      `,
+      type: ["performance"],
+      topic: ["dance"],
+      // image: "https://cdn.glitch.com/4ca2dec5-7e57-49b4-9f3c-1a1e74fa2e48%2Fa0.gif?v=1591302475810",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fmdj.jpg?v=1601470887536",
+      openin: hubs.cloneNode(true),
+      desc:
+        html`Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required. <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">Access here!</a>`
     },
   ];
 
