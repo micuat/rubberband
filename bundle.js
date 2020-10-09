@@ -104,55 +104,6 @@ module.exports = () => {
   const dmjitsi = html`<a href="https://zoom.us/j/99499279292?pwd=cnJWb1B6anN6bC96Vk5xZjZLQmZlZz09">join in Zoom!</a>`;
 
   const sc = [
-
-    {
-      start: new Date("October 8, 2020 10:30:00 UTC"),
-      end: new Date("October 8, 2020 11:30:00 UTC"),
-      title: "Low Frequency Skies",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=owtuJSws3Q9rT005QqRj",
-      orgs: lfsorgs.cloneNode(true),
-      type: ["lunch"],
-      topic: ["food"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200519lfs.png?v=1601460978858",
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs5.jpg?v=1601469763598",
-      openin: lfsjitsi.cloneNode(true),
-      desc: lfsdesc.cloneNode(true)
-    },
-    {
-      start: new Date("October 8, 2020 14:00:00 UTC"),
-      end: new Date("October 8, 2020 14:15:00 UTC"),
-      title: "Distant Movements",
-      talque:
-        "https://20.nodeforum.org/program/?lectureId=H3LLol0HIwTrMCuqOlY3",
-      orgs: html`
-        <a href="https://twitter.com/annieabrahams">Annie Abrahams</a>,
-        <a href="https://twitter.com/dannyblueboy">Daniel Pinheiro</a> and
-        Muriel Piqué
-      `,
-      type: ["performance"],
-      topic: ["dance"],
-      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
-      openin: dmjitsi,
-      desc: html`
-        Distant Movements is a project by Annie Abrahams (FR/NL), Daniel
-        Pinheiro (PT) and Muriel Piqué (FR). They develop an experimental,
-        performative approach to examine what «dancing together» could mean in
-        an environment where bodies are entangled with machines. Questions like:
-        “Under what conditions can we dance together online?, “How will a dance
-        practice in an artificial environment differ from a «normal» dance
-        practice?”, “Can the emergence of dance in bodies that are both distant
-        and together become visible and if so how?”, guide the project, which is
-        also a concrete example of a remotely activated multilingual
-        collaborative artistic research. DM comes to NODE20 as a one-off
-        welcoming everyone.<br />
-        15-min performance. The session will take place on
-        <a href="https://zoom.us/j/99499279292?pwd=cnJWb1B6anN6bC96Vk5xZjZLQmZlZz09">Zoom</a> and
-        streamed to <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">GreenHouse NAXOS</a>. Please arrive on time
-        if you are going to participate.
-      `
-    },
-
       {
       start: new Date("October 2, 2020 17:30:00 UTC"),
       end: new Date("October 2, 2020 19:00:00 UTC"),
@@ -358,6 +309,53 @@ module.exports = () => {
       desc:
         html`Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required.
 <div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/g5Hd_5rKggA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+    },
+    {
+      start: new Date("October 8, 2020 10:30:00 UTC"),
+      end: new Date("October 8, 2020 11:30:00 UTC"),
+      title: "Low Frequency Skies",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=owtuJSws3Q9rT005QqRj",
+      orgs: lfsorgs.cloneNode(true),
+      type: ["lunch"],
+      topic: ["food"],
+      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200519lfs.png?v=1601460978858",
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Flfs5.jpg?v=1601469763598",
+      openin: lfsjitsi.cloneNode(true),
+      desc: lfsdesc.cloneNode(true)
+    },
+    {
+      start: new Date("October 8, 2020 14:00:00 UTC"),
+      end: new Date("October 8, 2020 14:15:00 UTC"),
+      title: "Distant Movements",
+      talque:
+        "https://20.nodeforum.org/program/?lectureId=H3LLol0HIwTrMCuqOlY3",
+      orgs: html`
+        <a href="https://twitter.com/annieabrahams">Annie Abrahams</a>,
+        <a href="https://twitter.com/dannyblueboy">Daniel Pinheiro</a> and
+        Muriel Piqué
+      `,
+      type: ["performance"],
+      topic: ["dance"],
+      image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
+      openin: dmjitsi,
+      desc: html`
+        Distant Movements is a project by Annie Abrahams (FR/NL), Daniel
+        Pinheiro (PT) and Muriel Piqué (FR). They develop an experimental,
+        performative approach to examine what «dancing together» could mean in
+        an environment where bodies are entangled with machines. Questions like:
+        “Under what conditions can we dance together online?, “How will a dance
+        practice in an artificial environment differ from a «normal» dance
+        practice?”, “Can the emergence of dance in bodies that are both distant
+        and together become visible and if so how?”, guide the project, which is
+        also a concrete example of a remotely activated multilingual
+        collaborative artistic research. DM comes to NODE20 as a one-off
+        welcoming everyone.<br />
+        15-min performance. The session will take place on
+        <a href="https://zoom.us/j/99499279292?pwd=cnJWb1B6anN6bC96Vk5xZjZLQmZlZz09">Zoom</a> and
+        streamed to <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage">GreenHouse NAXOS</a>. Please arrive on time
+        if you are going to participate.
+      `
     },
   ];
 
