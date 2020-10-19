@@ -9,7 +9,7 @@ app.route("/*", notFound);
 function notFound() {
   return html`
     <div>
-      <a href="https://hydra-meetup-2.glitch.me/">
+      <a href="/">
         404 with love ❤ back to top!
       </a>
     </div>
