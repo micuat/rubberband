@@ -6,7 +6,7 @@ var schedule = require("./schedule.js")();
 module.exports = function(state, emit) {
   emit(
     "DOMTitleChange",
-    `Choreographic Coding Lab Online @ NODE`
+    `Chikula_lab`
   );
   
   return html`
