@@ -15,7 +15,7 @@ module.exports = function(state, emit) {
 <div class="container">
     <h1> Chikula_lab </h1>
     <p>
-Chikula_lab is an artist duo of Nien Tzu Weng and Naoto Hieda.
+Chikula_lab is an artist duo of <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and <a href="https://naotohieda.com/">Naoto Hieda</a>.
     </p>
 
     <ul>

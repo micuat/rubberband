@@ -43,7 +43,7 @@ module.exports = function(state, emit) {
 <div class="container">
     <h1> Chikula_lab </h1>
     <p>
-Chikula_lab is an artist duo of Nien Tzu Weng and Naoto Hieda.
+Chikula_lab is an artist duo of <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and <a href="https://naotohieda.com/">Naoto Hieda</a>.
     </p>
 
     <ul>
@@ -67,7 +67,7 @@ module.exports = () => {
       type: ["performance"],
       image: "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
       desc:
-        html`At NODE20, Nien Tzu Weng, a dancer/choreographer based in Montreal, and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required.
+        html`At NODE20, Nien Tzu Weng and Naoto Hieda share online tools for interdisciplinary collaborations from the recent online residencies. We open the room for participants to experiment with the tools. No experience required.
 <div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/g5Hd_5rKggA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
     {
