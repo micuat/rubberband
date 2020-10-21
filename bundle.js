@@ -80,11 +80,11 @@ module.exports = () => {
     },
     {
       start: new Date("June 1, 2020 16:00:00 UTC"),
-      title: "CCOV",
+      title: "CCOV Residency at a Distance",
       type: ["residency"],
       image: "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200601residence.png?v=1603140134648",
       desc:
-        html`<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/HL6CTlNuzak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+        html`Quarantine time confines a body in a limited space surrounded by flat walls and urges us to have a fixed routine at home that ends up in flatness of time. The physical world becomes stiff and tasteless. Meanwhile, in a digital space, time is not linear as there is no constant rhythm - by interrupting and confusing the network, the accelerated miscommunication can lead us to another channel of communication.<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/HL6CTlNuzak" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
     },
     {
       start: new Date("May 12, 2020 16:00:00 UTC"),
