@@ -78,7 +78,7 @@ module.exports = () => {
     },
     {
       start: new Date("May 12, 2020 16:00:00 UTC"),
-      title: "Miro",
+      title: "Pre-residency meeting: Miro",
       type: ["meeting"],
       topic: ["miro", "jitsi"],
       image:
@@ -89,7 +89,7 @@ module.exports = () => {
     },
     {
       start: new Date("April 29, 2020 16:00:00 UTC"),
-      title: "CCOV",
+      title: "Pre-residency meeting: Hubs",
       type: ["meeting"],
       topic: ["hubs", "jitsi"],
       image:
