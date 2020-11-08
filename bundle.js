@@ -34,16 +34,16 @@ var schedule = require("./schedule.js")();
 module.exports = function(state, emit) {
   emit(
     "DOMTitleChange",
-    `Chikula_lab`
+    `easy portfolio`
   );
   
   return html`
 <div>
 <div class="main">
-<div class="container">
-    <h1> Chikula_lab </h1>
+  <div class="container">
+    <h1> easy portfolio </h1>
     <p>
-Chikula_lab is an artist duo of <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and <a href="https://naotohieda.com/">Naoto Hieda</a>.
+      here comes the description!
     </p>
 
     <ul>
@@ -63,16 +63,13 @@ module.exports = () => {
   const sc = [
     {
       start: new Date("October 7, 2020 18:30:00 UTC"),
-      title: "Multidimensional Journey",
+      title: "First stuff",
       type: ["performance"],
       topic: ["hubs", "miro", "green screen"],
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
       desc: html`
-        At NODE20, Nien Tzu Weng and Naoto Hieda share online tools for
-        interdisciplinary collaborations from the recent online residencies. We
-        open the room for participants to experiment with the tools. No
-        experience required.
+        here's the first stuff. you can embed a video too
         <div class="youtube-container">
           <iframe
             class="youtube-video"
@@ -88,73 +85,15 @@ module.exports = () => {
     },
     {
       start: new Date("June 11, 2020 22:00:00 UTC"),
-      title: "Sortie de résidence #4 at CCOV",
+      title: "Second stuff",
       type: ["performance"],
       topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
       desc: html`
-        Nien Tzu Weng and Naoto Hiéda, working in Montreal and Germany
-        respectively, were the last artists to take part in a CCOV Residency at
-        a distance. On Thursday, June 11, at 4PM (EDT), you are invited to join
-        them in a Zoom room as they discuss the outcomes of their work, the
-        difficulties met on the way, their strategies for creating remotely, and
-        much more!
-        <a href="https://www.facebook.com/events/903037330168173/"
-          >facebook link</a
-        >
+        second stuff
       `
     },
-    {
-      start: new Date("June 1, 2020 16:00:00 UTC"),
-      title: "CCOV Residency at a Distance",
-      type: ["residency"],
-      topic: ["jitsi", "miro", "cooking"],
-      image:
-        "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200601residence.png?v=1603140134648",
-      desc: html`
-        Quarantine time confines a body in a limited space surrounded by flat
-        walls and urges us to have a fixed routine at home that ends up in
-        flatness of time. The physical world becomes stiff and tasteless.
-        Meanwhile, in a digital space, time is not linear as there is no
-        constant rhythm - by interrupting and confusing the network, the
-        accelerated miscommunication can lead us to another channel of
-        communication.
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/HL6CTlNuzak"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      `
-    },
-    {
-      start: new Date("May 12, 2020 16:00:00 UTC"),
-      title: "Pre-residency meeting: Miro",
-      type: ["meeting"],
-      topic: ["miro", "jitsi"],
-      image:
-        "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200512miro.png?v=1603140133851",
-      desc: html`
-        Naoto working hard to move things around.
-      `
-    },
-    {
-      start: new Date("April 29, 2020 16:00:00 UTC"),
-      title: "Pre-residency meeting: Hubs",
-      type: ["meeting"],
-      topic: ["hubs", "jitsi"],
-      image:
-        "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fmdj.jpg?v=1601470887536",
-      desc: html`
-        "wild space" in Mozilla Hubs
-      `
-    }
   ];
 
   const dates = [];
