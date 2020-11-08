@@ -6,16 +6,16 @@ var schedule = require("./schedule.js")();
 module.exports = function(state, emit) {
   emit(
     "DOMTitleChange",
-    `Chikula_lab`
+    `easy portfolio`
   );
   
   return html`
 <div>
 <div class="main">
-<div class="container">
-    <h1> Chikula_lab </h1>
+  <div class="container">
+    <h1> easy portfolio </h1>
     <p>
-Chikula_lab is an artist duo of <a href="https://www.nientzuweng.com/">Nien Tzu Weng</a> and <a href="https://naotohieda.com/">Naoto Hieda</a>.
+      here comes the description!
     </p>
 
     <ul>
