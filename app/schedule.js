@@ -298,6 +298,15 @@ module.exports = () => {
       `
     },
     {
+      start: new Date("July 6, 2020"),
+      title: "Digital Dancing",
+      type: ["panel"],
+      topic: [],
+      desc: html`
+      panelist at Toronto Love-In
+      `
+    },
+    {
       start: new Date("July 5, 2020"),
       title: "Processing Community Hangout Japan 02",
       type: ["meetup"],
