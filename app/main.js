@@ -6,16 +6,16 @@ var schedule = require("./schedule.js")();
 module.exports = function(state, emit) {
   emit(
     "DOMTitleChange",
-    `easy portfolio`
+    `Naoto Hieda`
   );
   
   return html`
 <div>
 <div class="main">
   <div class="container">
-    <h1> easy portfolio </h1>
+    <h1> Works by Naoto Hieda </h1>
     <p>
-      here comes the description!
+      This is an attempt to make an archive of my works.
     </p>
 
     <ul>

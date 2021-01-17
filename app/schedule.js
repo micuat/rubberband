@@ -219,7 +219,7 @@ module.exports = () => {
       start: new Date("October 2, 2020"),
       title: "NODE20: Choreographic Coding Labs Online",
       type: ["curation"],
-      topic: [],
+      topic: ["hydra", "dance", "food"],
       desc: html`
         NODE20
       `
@@ -228,7 +228,7 @@ module.exports = () => {
       start: new Date("August 30, 2020"),
       title: "Processing Community Hangout Japan 03",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup
       `
@@ -237,7 +237,7 @@ module.exports = () => {
       start: new Date("August 19, 2020"),
       title: "Tidal Club: New Moon Marathon",
       type: ["performance"],
-      topic: [],
+      topic: ["tidalcycles"],
       desc: html`
         https://naotohieda.com/blog/new-moon/
       `
@@ -259,7 +259,7 @@ module.exports = () => {
       start: new Date("July 6, 2020"),
       title: "Digital Dancing",
       type: ["panel"],
-      topic: [],
+      topic: ["dance"],
       desc: html`
       panelist at Toronto Love-In
       `
@@ -268,7 +268,7 @@ module.exports = () => {
       start: new Date("July 5, 2020"),
       title: "Processing Community Hangout Japan 02",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup https://pchj02.peatix.com/
       `
@@ -277,7 +277,7 @@ module.exports = () => {
       start: new Date("July 1, 2020"),
       title: "Virtual Exhibition",
       type: ["net art"],
-      topic: [],
+      topic: ["vr"],
       desc: html`
       https://naotohieda.com/blog/virtual-exhibition-007/
       `
@@ -323,7 +323,7 @@ module.exports = () => {
       start: new Date("May 31, 2020"),
       title: "Processing Community Japan 30 Minute Coding 0",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/
       `
@@ -332,7 +332,7 @@ module.exports = () => {
       start: new Date("May 30, 2020"),
       title: "15s or less Showcase - Stories from HK",
       type: ["net art"],
-      topic: [],
+      topic: ["instagram", "hong kong"],
       desc: html`
         https://naotohieda.com/blog/15s-or-less/
       `
@@ -341,7 +341,7 @@ module.exports = () => {
       start: new Date("May 24, 2020"),
       title: "Algorithm | Degeneracy",
       type: ["performance"],
-      topic: [],
+      topic: ["dance", "p-code"],
       desc: html`
         https://naotohieda.com/blog/nl-cl-2-flesh/
       `
@@ -350,7 +350,7 @@ module.exports = () => {
       start: new Date("May 16, 2020"),
       title: "Processing Community Hangout Japan 01",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup https://pchj01.peatix.com/
       `
@@ -359,7 +359,7 @@ module.exports = () => {
       start: new Date("May 9, 2020"),
       title: "Processing Community Hangout 02",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing"],
       desc: html`
         Processing meetup https://naotohieda.com/blog/processing-community-hangout-2-en/
       `
@@ -368,7 +368,7 @@ module.exports = () => {
       start: new Date("April 5, 2020"),
       title: "Processing Community Hangout 01",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing"],
       desc: html`
         Processing meetup https://naotohieda.com/blog/processing-community-hangout-1-en/
       `
@@ -377,7 +377,7 @@ module.exports = () => {
       start: new Date("February 29, 2020"),
       title: "p-code Land",
       type: ["net art"],
-      topic: [],
+      topic: ["p-code"],
       desc: html`
         https://naotohieda.com/blog/p-code-land/
       `
@@ -386,7 +386,7 @@ module.exports = () => {
       start: new Date("February 22, 2020"),
       title: "Tweet Processing Editor",
       type: ["net art"],
-      topic: [],
+      topic: ["processing"],
       desc: html`
         https://naotohieda.com/blog/tweet-processing-editor/
       `
@@ -395,7 +395,7 @@ module.exports = () => {
       start: new Date("February 14, 2020"),
       title: "Utopian Council",
       type: ["net art"],
-      topic: [],
+      topic: ["vr"],
       desc: html`
         https://naotohieda.com/blog/utopian-council/      `
     },
@@ -403,7 +403,7 @@ module.exports = () => {
       start: new Date("February 11, 2020"),
       title: "Virtual Exhibition 004",
       type: ["net art"],
-      topic: [],
+      topic: ["vr"],
       desc: html`
         https://naotohieda.com/blog/virtual-exhibition-004/ https://blog.glitch.com/post/drag-and-drop-your-art-to-the-virtual-world
         `
@@ -412,7 +412,7 @@ module.exports = () => {
       start: new Date("February 5, 2020"),
       title: "Virtual Exhibition 003",
       type: ["performance"],
-      topic: [],
+      topic: ["dance", "p-code"],
       desc: html`
         Informal presentation https://naotohieda.com/blog/virtual-exhibition-003/
       `
@@ -421,7 +421,7 @@ module.exports = () => {
       start: new Date("February 1, 2020"),
       title: "Processing Community Day Tokyo 2020",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup
       `
@@ -430,7 +430,7 @@ module.exports = () => {
       start: new Date("January 10, 2020"),
       title: "The Body and the Other~",
       type: ["performance"],
-      topic: [],
+      topic: ["processing", "dance"],
       desc: html`
         Project by Eleonora Siarava https://vimeo.com/463813053
         `
@@ -439,7 +439,7 @@ module.exports = () => {
       start: new Date("December 28, 2019"),
       title: "Algorithm | Diversion",
       type: ["lecture"],
-      topic: [],
+      topic: ["autism"],
       desc: html`
         https://naotohieda.com/blog/36c3/
         `
@@ -448,7 +448,7 @@ module.exports = () => {
       start: new Date("December 22, 2019"),
       title: "Hydra Book",
       type: ["tutorial"],
-      topic: [],
+      topic: ["hydra"],
       desc: html`
         https://hydra-book.naotohieda.com/
         `
@@ -466,7 +466,7 @@ module.exports = () => {
       start: new Date("February 2, 2019"),
       title: "Processing Community Day Tokyo 2019",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup
       `
