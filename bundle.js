@@ -474,13 +474,46 @@ module.exports = () => {
       `
     },
     {
-      start: new Date("November 21, 2020"),
-      title: "Hydra Exhibition",
+      start: new Date("February 29, 2020"),
+      title: "p-code Land",
       type: ["net art"],
       topic: [],
       desc: html`
-        net art
+        https://naotohieda.com/blog/p-code-land/
       `
+    },
+    {
+      start: new Date("February 22, 2020"),
+      title: "Tweet Processing Editor",
+      type: ["net art"],
+      topic: [],
+      desc: html`
+        https://naotohieda.com/blog/tweet-processing-editor/
+      `
+    },
+    {
+      start: new Date("February 14, 2020"),
+      title: "Utopian Council",
+      type: ["net art"],
+      topic: [],
+      desc: html`
+        https://naotohieda.com/blog/utopian-council/      `
+    },
+    {
+      start: new Date("February 11, 2020"),
+      title: "Virtual Exhibition 004",
+      type: ["net art"],
+      topic: [],
+      desc: html`
+        https://naotohieda.com/blog/virtual-exhibition-004/   `
+    },
+    {
+      start: new Date("February 5, 2020"),
+      title: "Virtual Exhibition 003",
+      type: ["performance"],
+      topic: [],
+      desc: html`
+        Informal presentation https://naotohieda.com/blog/virtual-exhibition-003/   `
     },
     {
       start: new Date("February 1, 2020"),
@@ -489,6 +522,42 @@ module.exports = () => {
       topic: [],
       desc: html`
         Japanese Processing meetup
+      `
+    },
+    {
+      start: new Date("January 10, 2020"),
+      title: "The Body and the Other~",
+      type: ["performance"],
+      topic: [],
+      desc: html`
+        Project by Eleonora Siarava https://vimeo.com/463813053
+        `
+    },
+    {
+      start: new Date("December 28, 2019"),
+      title: "Algorithm | Diversion",
+      type: ["lecture"],
+      topic: [],
+      desc: html`
+        https://naotohieda.com/blog/36c3/
+        `
+    },
+    {
+      start: new Date("December 22, 2019"),
+      title: "Hydra Book",
+      type: ["tutorial"],
+      topic: [],
+      desc: html`
+        https://hydra-book.naotohieda.com/
+        `
+    },
+    {
+      start: new Date("November 28, 2019"),
+      title: "Creative Code Köln",
+      type: ["meetup"],
+      topic: [],
+      desc: html`
+        meetup -Feb 27, 2020 https://naotohieda.com/blog/creative-code-koeln-1/
       `
     },
     {
