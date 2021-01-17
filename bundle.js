@@ -88,7 +88,7 @@ module.exports = () => {
     {
       start: new Date("December 18, 2020 20:00:00 UTC"),
       title: "GlitchMe Performance-Presentation",
-      type: ["performance"],
+      type: ["performance", "net art"],
       topic: ["hydra", "livelab"],
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201218-codame.jpg?v=1608479114980",
@@ -110,7 +110,7 @@ module.exports = () => {
       start: new Date("December 6, 2020"),
       title: "Processing Community Hangout Japan 05",
       type: ["meetup"],
-      topic: [],
+      topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup https://pchj05.peatix.com/
       `
@@ -119,7 +119,7 @@ module.exports = () => {
       start: new Date("November 21, 2020"),
       title: "Hydra Exhibition",
       type: ["net art"],
-      topic: [],
+      topic: ["hydra", "vr"],
       desc: html`
         net art
       `
@@ -137,7 +137,7 @@ module.exports = () => {
       start: new Date("October 23, 2020"),
       title: "Tech is Nonbinary",
       type: ["performance"],
-      topic: [],
+      topic: ["hydra", "dance"],
       desc: html`
         live coding performance
       `
@@ -187,37 +187,38 @@ module.exports = () => {
       end: new Date("October 7, 2020 12:30:00 UTC"),
       title: "Best Practices - Discussion",
       type: ["discussion"],
-      topic: ["dance", "hydra", "tidalcycles"],
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-08-20-best-practices-session.png?v=1601461265057",
+      topic: ["dance", "hydra"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
+      yt: "YZfMBoFWFZY",
       desc:
         html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. In this discussion, the duo reflects on the “Best Practice” session that happens the day before (6th of October 2020).
-<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/YZfMBoFWFZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+`
     },
     {
       start: new Date("October 6, 2020 19:00:00 UTC"),
       end: new Date("October 6, 2020 20:00:00 UTC"),
       title: "Best Practices in Contemporary Dance",
       type: ["performance"],
-      topic: ["dance", "hydra", "tidalcycles"],
+      topic: ["dance", "hydra"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
+      yt: "wxXguzTYt_I",
+      // yt: "OBtI1qSLyVQ",
+      // yt: "V427wRGGCZQ",
       desc:
         html`Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary Dance” at NODE20. While they practice with their bodies, videos and glitches, everyone is invited to watch, to intervene and to participate in the session.
-<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/wxXguzTYt_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/OBtI1qSLyVQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/V427wRGGCZQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+`
     },
     {
       start: new Date("October 5, 2020 11:30:00 UTC"),
       end: new Date("October 5, 2020 12:30:00 UTC"),
       title: "Best Practices - Discussion",
       type: ["discussion"],
-      topic: ["dance", "hydra", "tidalcycles"],
+      topic: ["dance", "hydra"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg?v=1601987022036",
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat1.jpg?v=1601470552575",
+      yt: "0-YILmKxVhY",
       desc:
         html`Jorge Guevara and Naoto Hieda discuss what they call Best Practices in Contemporary Dance. The session will be unstructured; they will initiate discussion about their experiences but everyone is welcome to join the conversation. Based on expertise in contemporary dance and media art, the duo talks about what they expect in the “Best Practice” session coming up on 6th of October.
-<div class="youtube-container"><iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/0-YILmKxVhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`
+`
     },
     {
       start: new Date("October 4, 2020 17:00:00 UTC"),
@@ -226,6 +227,8 @@ module.exports = () => {
       topic: ["hydra"],
       image:
         "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
+      yt: "xTL0BjtBq5k",
+      // yt: "7ioV6D_OStY",
       desc: html`
         Hydra meetup #2 made an intervention at NODE20!
         <a href="hydra.ojack.xyz">Hydra</a>
@@ -235,28 +238,7 @@ module.exports = () => {
         (around 20:45 CEST). Everyone with or without experiences in Hydra is
         welcome!
         <a href="https://hydra-meetup-2.glitch.me/">More info here.</a>
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/xTL0BjtBq5k"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/7ioV6D_OStY"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+     
       `
     },
     {
@@ -266,7 +248,6 @@ module.exports = () => {
       type: ["meetup", "exhibition"],
       topic: ["touchdesigner", "processing"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
-      // image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F200419harada2.png?v=1601461542248",
       desc: html`
         Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
         (PCJ) invite you to present your artworks at an exhibition, where
@@ -386,6 +367,7 @@ module.exports = () => {
       topic: ["jitsi", "miro", "cooking"],
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200601residence.png?v=1603140134648",
+      yt: "HL6CTlNuzak",
       desc: html`
         Quarantine time confines a body in a limited space surrounded by flat
         walls and urges us to have a fixed routine at home that ends up in
@@ -394,17 +376,6 @@ module.exports = () => {
         constant rhythm - by interrupting and confusing the network, the
         accelerated miscommunication can lead us to another channel of
         communication.
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/HL6CTlNuzak"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
       `
     },
     {
