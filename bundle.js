@@ -62,38 +62,55 @@ module.exports = () => {
 
   const sc = [
     {
-      start: new Date("October 7, 2020 18:30:00 UTC"),
-      title: "First stuff",
-      type: ["performance"],
-      topic: ["hubs", "miro", "green screen"],
+      start: new Date("January 24, 2021 20:00:00 UTC"),
+      title: "CCFest: Introduction to Hydra",
+      type: ["workshop"],
+      topic: ["hydra"],
       image:
-        "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
+        "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fccfest-desc.jpg?v=1610919339745",
       desc: html`
-        here's the first stuff. you can embed a video too
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/g5Hd_5rKggA"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+      A workshop - register <a href="https://ccfest.rocks/register">here</a>!<br>
+      Material can be found <a href="https://ccfest-2021-glitchme.glitch.me/">here</a>.
       `
     },
     {
-      start: new Date("June 11, 2020 22:00:00 UTC"),
-      title: "Second stuff",
+      start: new Date("December 18, 2020"),
+      title: "GlitchMe",
       type: ["performance"],
-      topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
-      image:
-        "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
+      topic: [],
       desc: html`
-        second stuff
+        lecture performance
       `
     },
+    {
+      start: new Date("November 21, 2020"),
+      title: "Hydra Exhibition",
+      type: ["net art"],
+      topic: [],
+      desc: html`
+        net art
+      `
+    },
+    {
+      start: new Date("October 23, 2020"),
+      title: "Tech is Nonbinary",
+      type: ["performance"],
+      topic: [],
+      desc: html`
+        live coding performance
+      `
+    },
+    // {
+    //   start: new Date("June 11, 2020 22:00:00 UTC"),
+    //   title: "Second stuff",
+    //   type: ["performance"],
+    //   topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
+    //   image:
+    //     "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
+    //   desc: html`
+    //     second stuff
+    //   `
+    // },
   ];
 
   const dates = [];
@@ -104,7 +121,6 @@ module.exports = () => {
       month: "long",
       day: "numeric"
     });
-    const start = s.start.toLocaleTimeString([], dateOptions);
     const { title, topic, desc, type, image } = s;
     let types = [];
     for (const t of type) {
@@ -132,7 +148,6 @@ module.exports = () => {
       html`
         <li>
           <p class="schedule">${date}</p>
-          <p class="schedule">${start}</p>
           <div class="type">${types}</div>
           <div class="topic">${topics}</div>
           <div class="clearer"></div>
