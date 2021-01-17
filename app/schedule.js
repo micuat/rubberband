@@ -278,10 +278,10 @@ module.exports = () => {
     {
       start: new Date("August 19, 2020"),
       title: "Tidal Club: New Moon Marathon",
-      type: ["performan"],
+      type: ["performance"],
       topic: [],
       desc: html`
-        Japanese Processing meetup
+        https://naotohieda.com/blog/new-moon/
       `
     },
     {
@@ -304,6 +304,15 @@ module.exports = () => {
       topic: [],
       desc: html`
         Japanese Processing meetup https://pchj02.peatix.com/
+      `
+    },
+    {
+      start: new Date("July 1, 2020"),
+      title: "Virtual Exhibition",
+      type: ["net art"],
+      topic: [],
+      desc: html`
+      https://naotohieda.com/blog/virtual-exhibition-007/
       `
     },
     {
@@ -354,12 +363,66 @@ module.exports = () => {
       `
     },
     {
+      start: new Date("May 31, 2020"),
+      title: "Processing Community Japan 30 Minute Coding 0",
+      type: ["meetup"],
+      topic: [],
+      desc: html`
+        Japanese Processing meetup https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/
+      `
+    },
+    {
+      start: new Date("May 30, 2020"),
+      title: "15s or less Showcase - Stories from HK",
+      type: ["net art"],
+      topic: [],
+      desc: html`
+        https://naotohieda.com/blog/15s-or-less/
+      `
+    },
+    {
+      start: new Date("May 24, 2020"),
+      title: "Algorithm | Degeneracy",
+      type: ["performance"],
+      topic: [],
+      desc: html`
+        https://naotohieda.com/blog/nl-cl-2-flesh/
+      `
+    },
+    {
       start: new Date("May 16, 2020"),
       title: "Processing Community Hangout Japan 01",
       type: ["meetup"],
       topic: [],
       desc: html`
         Japanese Processing meetup https://pchj01.peatix.com/
+      `
+    },
+    {
+      start: new Date("May 9, 2020"),
+      title: "Processing Community Hangout 02",
+      type: ["meetup"],
+      topic: [],
+      desc: html`
+        Processing meetup https://naotohieda.com/blog/processing-community-hangout-2-en/
+      `
+    },
+    {
+      start: new Date("April 5, 2020"),
+      title: "Processing Community Hangout 01",
+      type: ["meetup"],
+      topic: [],
+      desc: html`
+        Processing meetup https://naotohieda.com/blog/processing-community-hangout-1-en/
+      `
+    },
+    {
+      start: new Date("November 21, 2020"),
+      title: "Hydra Exhibition",
+      type: ["net art"],
+      topic: [],
+      desc: html`
+        net art
       `
     },
     {
@@ -380,17 +443,6 @@ module.exports = () => {
         Japanese Processing meetup
       `
     },
-    // {
-    //   start: new Date("June 11, 2020 22:00:00 UTC"),
-    //   title: "Second stuff",
-    //   type: ["performance"],
-    //   topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
-    //   image:
-    //     "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
-    //   desc: html`
-    //     second stuff
-    //   `
-    // },
   ];
 
   const dates = [];
