@@ -80,20 +80,10 @@ module.exports = () => {
       topic: ["hydra", "livelab", "tidalcycles"],
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201220-tidal.jpg?v=1608503105807",
+      yt: "gN9DHCetfBE",
       desc: html`
-      A performance at TidalClub Solstice Marathon.
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/gN9DHCetfBE"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      `
+      A performance at TidalClub Solstice Marathon using GlitchMe with Flor de Fuego.
+      `      
     },
     {
       start: new Date("December 18, 2020 20:00:00 UTC"),
@@ -102,19 +92,18 @@ module.exports = () => {
       topic: ["hydra", "livelab"],
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201218-codame.jpg?v=1608479114980",
+      yt: "Fas_pGA2tvk",
       desc: html`
-      A performance-presentation at CODAME.
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Fas_pGA2tvk"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
+      A performance-presentation at CODAME with Flor de Fuego.
+      `
+    },
+    {
+      start: new Date("December 12, 2020"),
+      title: "Hydra meetup #3",
+      type: ["meetup"],
+      topic: ["hydra"],
+      desc: html`
+      hydra meetup
       `
     },
     {
@@ -160,22 +149,12 @@ module.exports = () => {
       topic: ["hubs", "miro", "green screen"],
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
+      yt: "g5Hd_5rKggA",
       desc: html`
         At NODE20, Nien Tzu Weng and Naoto Hieda share online tools for
         interdisciplinary collaborations from the recent online residencies. We
         open the room for participants to experiment with the tools. No
         experience required.
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/g5Hd_5rKggA"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
       `
     },
     {
@@ -514,7 +493,8 @@ module.exports = () => {
       type: ["net art"],
       topic: [],
       desc: html`
-        https://naotohieda.com/blog/virtual-exhibition-004/   `
+        https://naotohieda.com/blog/virtual-exhibition-004/ https://blog.glitch.com/post/drag-and-drop-your-art-to-the-virtual-world
+        `
     },
     {
       start: new Date("February 5, 2020"),
@@ -522,7 +502,8 @@ module.exports = () => {
       type: ["performance"],
       topic: [],
       desc: html`
-        Informal presentation https://naotohieda.com/blog/virtual-exhibition-003/   `
+        Informal presentation https://naotohieda.com/blog/virtual-exhibition-003/
+      `
     },
     {
       start: new Date("February 1, 2020"),
@@ -589,7 +570,7 @@ module.exports = () => {
       day: "numeric",
       year: "numeric",
     });
-    const { title, topic, desc, type, image } = s;
+    const { title, topic, desc, type, image, yt } = s;
     let types = [];
     for (const t of type) {
       types.push(
@@ -612,6 +593,22 @@ module.exports = () => {
         <img src="${image}" />
       `;
     }
+    let ytElt;
+    if (yt != undefined && false) { // leave out videos for now
+      ytElt = html`
+              <div class="youtube-container">
+          <iframe
+            class="youtube-video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/${yt}"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+`;
+    }
     dates.push(
       html`
         <li>
@@ -623,6 +620,7 @@ module.exports = () => {
           <div class="clearer"></div>
           <div class="thumbnail">${imageElt}</div>
           <p class="desc">${desc}</p>
+          ${ytElt}
         </li>
       `
     );
