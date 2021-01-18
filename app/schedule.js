@@ -530,12 +530,14 @@ module.exports = () => {
     }
     let collabs = [];
     if(collab != undefined) {
+      if(collab.length > 0) collabs.push("with ");
+      let i = 0;
       for (const c of collab) {
-        collabs.push(
-          html`
-            ${collabs.length > 0?",":""} ${c}
-          `
-        );
+        collabs.push(`${c}`);
+        if(i < collab.length - 1) {
+          collabs.push(`, `);
+        }
+        i++;
       }
     }
     let imageElt;
@@ -571,7 +573,7 @@ module.exports = () => {
           <div class="clearer"></div>
           <div class="thumbnail">${imageElt}</div>
           <div class="clearer"></div>
-          <div class="collabs">with ${collabs}</div>
+          <div class="collabs">${collabs}</div>
           <div class="clearer"></div>
           <p class="desc">${desc}</p>
           ${ytElt}
