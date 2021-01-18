@@ -18,7 +18,8 @@ module.exports = function(state, emit) {
   
   const counter = [];
   for(const s of sc) {
-    for(const t of s.type) {
+    const types = [...s.type, "all"];
+    for(const t of types) {
       const c = counter.find(el=>el.t == t);
       if(c == undefined) {
         counter.push({t, count: 0});
@@ -30,8 +31,6 @@ module.exports = function(state, emit) {
   }
   
   const types = counter.sort((a, b) => a.count < b.count);
-  
-  types.unshift({t: "all"});
   
   const filters = [];
   // const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
