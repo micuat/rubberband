@@ -581,6 +581,17 @@ const sc = [
     `
   },
   {
+    start: new Date("September 28, 2019"),
+    title: "Passing Light",
+    type: ["installation"],
+    topic: ["vvvv"],
+    collab: ["Michael Montanaro"],
+    venue: "CHAOSMOSIS mAchInes / University of Toronto(Canada)",
+    desc: html`
+      https://www.cdtps.utoronto.ca/events/chaosmosis-machines
+    `
+  },
+  {
     start: new Date("September 16, 2019"),
     title: "HKAPA",
     type: ["residency"],
@@ -646,7 +657,7 @@ const sc = [
     `
   },
   {
-    start: new Date("April 14, 2019"),
+    start: new Date("April 12, 2019"),
     title: "Beyond Time",
     type: ["commercial"],
     topic: ["openFrameworks"],
@@ -661,7 +672,7 @@ const sc = [
     title: "Processing Community Day Tokyo 2019",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["PCD Tokyo"],
+    collab: ["Ayumu Nagamatsu", "Yasuto Nakanishi"],
     venue: "Yahoo! LODGE (Japan)",
     desc: html`
       Japanese Processing meetup
@@ -821,6 +832,16 @@ const sc = [
     topic: ["machine learning"],
     collab: ["Kenichi Yoneda"],
     venue: "online",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("March 3, 2018"),
+    title: "body_code",
+    type: ["performance"],
+    topic: ["processing", "dance"],
+    collab: ["CCOV", "perte de signal"],
+    venue: "Centre de Création O Vertigo (Canada)",
     desc: html`
     `
   },
