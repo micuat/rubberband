@@ -950,7 +950,7 @@ app.mount("#choomount");
 },{"./main.js":3,"choo":7,"choo/html":6}],3:[function(require,module,exports){
 // import choo's template helper
 var html = require("choo/html");
-var schedule = require("./schedule.js")();
+var schedule = require("./schedule.js");
 
 // export module
 module.exports = function(state, emit) {
@@ -959,6 +959,8 @@ module.exports = function(state, emit) {
     `Naoto Hieda`
   );
   
+  let tag = "all";
+
   return html`
 <div>
 <div class="main">
@@ -969,18 +971,19 @@ module.exports = function(state, emit) {
     </p>
 
     <div>
-    Filter by <span onclick="filter">installations</span>
+    Filter by <button onclick="filter">installations</button>
     </div>
 
     <ul>
-      ${schedule.dates}
+      ${schedule(tag)}
     </ul>
   </div>
 </div>
 </div>`;
   
   function add () {
-    emit('addAnimal')
+    tag = "installation"
+    emit('render');
   }
 };
 
@@ -988,18 +991,13 @@ module.exports = function(state, emit) {
 var html = require("choo/html");
 var sc = require("./contents.js");
 
-module.exports = () => {
+module.exports = (tag) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-  emitter.on('addAnimal', function () {
-    var obj = {type: 'lion', x: 100, y: 200}
-    state.animals.push(obj)
-
-    emitter.emit('render')
-  })
+  
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {
+    if(tag != "all" && i > 3) continue;
     const s = sc[i];
     const date = s.start.toLocaleDateString(undefined, {
       month: "long",
@@ -1084,8 +1082,8 @@ module.exports = () => {
       `
     );
   }
-
-  return { timezone, dates };
+  
+  return dates;
 };
 
 },{"./contents.js":1,"choo/html":6}],5:[function(require,module,exports){

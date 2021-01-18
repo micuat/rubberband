@@ -1,17 +1,13 @@
 var html = require("choo/html");
 var sc = require("./contents.js");
 
-module.exports = () => {
+module.exports = (tag) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-
-  emitter.on('addAnimal', function () {
-    console.log
-    emitter.emit('render')
-  })
   
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {
+    if(tag != "all" && i > 3) continue;
     const s = sc[i];
     const date = s.start.toLocaleDateString(undefined, {
       month: "long",
@@ -96,6 +92,6 @@ module.exports = () => {
       `
     );
   }
-
-  return { timezone, dates };
+  
+  return dates;
 };

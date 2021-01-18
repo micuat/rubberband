@@ -1,6 +1,6 @@
 // import choo's template helper
 var html = require("choo/html");
-var schedule = require("./schedule.js")();
+var schedule = require("./schedule.js");
 
 // export module
 module.exports = function(state, emit) {
@@ -9,6 +9,8 @@ module.exports = function(state, emit) {
     `Naoto Hieda`
   );
   
+  let tag = "all";
+
   return html`
 <div>
 <div class="main">
@@ -19,17 +21,18 @@ module.exports = function(state, emit) {
     </p>
 
     <div>
-    Filter by <span onclick="filter">installations</span>
+    Filter by <button onclick="filter">installations</button>
     </div>
 
     <ul>
-      ${schedule.dates}
+      ${schedule(tag)}
     </ul>
   </div>
 </div>
 </div>`;
   
   function add () {
-    emit('addAnimal')
+    tag = "installation"
+    emit('render');
   }
 };
