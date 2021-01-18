@@ -559,10 +559,11 @@ const sc = [
   },
   {
     start: new Date("November 14, 2019"),
-    title: "",
+    title: "Articulation Hackathon",
     type: ["meetup"],
     topic: ["dance"],
     collab: ["Asaf Bachrach"],
+    venue: "CNRS (France)",
     desc: html`
       Paris
     `
@@ -590,40 +591,39 @@ const sc = [
     `
   },
   {
-    start: new Date(""),
+    start: new Date("September 12, 2019"),
     title: "XM-Profiler Prime",
     type: ["installation"],
-    topic: [],
-    collab: [],
+    topic: ["openFrameworks", "ingress"],
+    collab: ["Ito-En"],
     venue: "Ito-En (Japan)",
     desc: html`
       Ingress
     `
   },
   {
-    start: new Date(""),
+    start: new Date("September 6, 2019"),
     title: "Walk 4 Me",
     type: ["installation"],
-    topic: [],
-    collab: [""],
+    topic: ["dance", "processing"],
+    collab: ["Christopher Matthews"],
     venue: "Dance4 (UK)",
     desc: html`
       Nottingham
     `
   },
   {
-    start: new Date(""),
+    start: new Date("August 30, 2019"),
     title: "Nails | Pixels | Stimming",
     type: ["installation"],
-    topic: [],
-    collab: [""],
+    topic: ["weaving"],
     venue: "Victoria and Albert Museum",
     desc: html`
       V&A Friday Late at Victoria and Albert Museum (UK)
     `
   },
   {
-    start: new Date(""),
+    start: new Date("June 20, 2019"),
     title: "Open, Closed, Open",
     type: ["installation"],
     topic: ["robot", "unity"],
@@ -634,7 +634,7 @@ const sc = [
     `
   },
   {
-    start: new Date(""),
+    start: new Date("April 29, 2019"),
     title: "11th Choreographic Coding Lab",
     type: ["meetup"],
     topic: ["dance"],
@@ -645,10 +645,10 @@ const sc = [
     `
   },
   {
-    start: new Date(""),
+    start: new Date("April 14, 2019"),
     title: "Beyond Time",
     type: ["installation"],
-    topic: [],
+    topic: ["openFrameworks"],
     collab: ["Shiseido", "R/GA"],
     venue: "S/PARK (Japan)",
     desc: html`
@@ -667,9 +667,9 @@ const sc = [
     `
   },
   {
-    start: new Date(""),
+    start: new Date("January 25, 2019"),
     title: "Cosmic Wander",
-    type: ["residency"],
+    type: ["performance"],
     topic: ["dance"],
     collab: ["Choy Ka Fai"],
     venue: "tanzhaus nrw (Germany)",
@@ -678,7 +678,7 @@ const sc = [
     `
   },
   {
-    start: new Date(""),
+    start: new Date("January 17, 2019"),
     title: "Dance Clinic Mobile",
     type: ["performance"],
     topic: ["dance", "eeg", "processing"],
@@ -689,7 +689,7 @@ const sc = [
     `
   },
   {
-    start: new Date(""),
+    start: new Date("January 15, 2019"),
     title: "Algorithm | Diversion",
     type: ["lecture"],
     topic: ["dance", "autism", "processing"],
