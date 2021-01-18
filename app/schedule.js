@@ -512,6 +512,26 @@ module.exports = () => {
     },
     {
       start: new Date(""),
+      title: "HKAPA",
+      type: ["residency"],
+      topic: [],
+      collab: [""],
+      desc: html`
+      HKAPA
+      `
+    },
+    {
+      start: new Date(""),
+      title: "XM-Profiler Prime",
+      type: ["installation"],
+      topic: [],
+      collab: ["Ito-En"],
+      desc: html`
+      Ingress
+      `
+    },
+    {
+      start: new Date(""),
       title: "Walk 4 Me",
       type: ["installation"],
       topic: [],
@@ -522,12 +542,12 @@ module.exports = () => {
     },
     {
       start: new Date(""),
-      title: "Nails",
+      title: "Nails | Pixels | Stimming",
       type: ["installation"],
       topic: [],
       collab: [""],
       desc: html`
-      V&A
+       V&A Friday Late at Victoria and Albert Museum (UK)
       `
     },
     {
@@ -545,7 +565,7 @@ module.exports = () => {
       title: "Beyond Time",
       type: ["installation"],
       topic: [],
-      collab: [""],
+      collab: ["Shiseido", "R/GA"],
       desc: html`
       Shiseido
       `
@@ -558,6 +578,36 @@ module.exports = () => {
       collab: ["PCD Tokyo"],
       desc: html`
         Japanese Processing meetup
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Cosmic Wander",
+      type: ["residency"],
+      topic: ["dance"],
+      collab: ["Choy Ka Fai"],
+      desc: html`
+      tanzhaus
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Dance Clinic Mobile",
+      type: ["performance"],
+      topic: ["dance", "eeg", "processing"],
+      collab: ["Choy Ka Fai"],
+      desc: html`
+      tanzhaus
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Algorithm | Diversion",
+      type: ["lecture"],
+      topic: ["dance", "autism", "processing"],
+      collab: ["Choy Ka Fai"],
+      desc: html`
+      Technological flesh! at Festival Temps d'Images, tanzhaus nrw
       `
     },
   ];
