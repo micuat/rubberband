@@ -1,6 +1,7 @@
 // import choo's template helper
 var html = require("choo/html");
 var schedule = require("./schedule.js");
+var sc = require("./contents.js");
 
 // export module
 module.exports = function(state, emit) {
@@ -15,8 +16,24 @@ module.exports = function(state, emit) {
     state.schedule = schedule(tag);
   }
   
+  const counter = {};
+  for(const s of sc) {
+    for(const t of s.type) {
+      if(counter[t] == undefined) {
+        counter[t] = 1;
+      }
+      else {
+        counter[t]++;
+      }
+    }
+  }
+  
+  const types = [];
+  
+  types.unshift("all");
+  
   const filters = [];
-  const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
+  // const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
   for(const t of types) {
     filters.push(html`<p onclick="${filter}" class="${t}">${t}</p>`);
   }
