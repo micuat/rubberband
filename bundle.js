@@ -1104,7 +1104,7 @@ module.exports = (tag) => {
     let imageElt;
     if (image != undefined) {
       imageElt = html`
-        <img src="${image}" />
+        <img src="${image}" loading="lazy" />
       `;
     }
     let ytElt;
