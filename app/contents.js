@@ -107,6 +107,17 @@ const sc = [
     `
   },
   {
+    start: new Date("October 17, 2020"),
+    title: "",
+    type: ["performance"],
+    topic: ["feedback"],
+    collab: ["Raphael Hillebrand"],
+    venue: "Deutscher Tanzpreis / Aalto Theater (Germany)",
+    desc: html`
+    
+    `
+  },
+  {
     start: new Date("October 7, 2020"),
     title: "Multidimensional Journey",
     type: ["performance", "net art"],
@@ -957,6 +968,27 @@ const sc = [
     `
   },
   {
+    start: new Date("December 18, 2017"),
+    title: "Artist in Residence",
+    type: ["residence"],
+    topic: ["dance"],
+    collab: ["Nien Tzu Weng"],
+    venue: "Studio 303 (Canada)",
+    desc: html`
+    
+    `
+  },
+  {
+    start: new Date("October 23, 2017"),
+    title: "Mobile Brain-Computer Interface for Dance and Somatic Practice",
+    type: ["installation"],
+    topic: ["python", "eeg", "openFrameworks"],
+    venue: "UIST (Canada)",
+    desc: html`
+    
+    `
+  },
+  {
     start: new Date("October 5, 2017"),
     title: "Passing Light",
     type: ["installation"],
@@ -969,13 +1001,13 @@ const sc = [
   },
   {
     start: new Date("August 10, 2017"),
-    title: "Lads",
-    type: ["installation"],
-    topic: ["dance", "openFrameworks", "max"],
-    collab: ["Christopher Matthews"],
-    venue: "Villa Empain (Belgium)",
+    title: "Seismic Session",
+    type: ["performance"],
+    topic: ["dance"],
+    collab: ["Doris Uhlich", "others"],
+    venue: "ImPulsTanz / Secession (Austria)",
     desc: html`
-      
+      participation
     `
   },
   {
@@ -1038,6 +1070,17 @@ const sc = [
     topic: [],
     venue: "Pola Art Foundation",
     desc: html`
+    `
+  },
+  {
+    start: new Date("February 13, 2017"),
+    title: "Scènes Ouvertes",
+    type: ["performance"],
+    topic: ["scenic"],
+    collab: ["Evelyne Drouin"],
+    venue: "Société des Arts Technologiques (Canada)",
+    desc: html`
+    
     `
   },
 ];
