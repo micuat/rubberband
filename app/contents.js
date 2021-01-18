@@ -593,7 +593,7 @@ const sc = [
   {
     start: new Date("September 12, 2019"),
     title: "XM-Profiler Prime",
-    type: ["installation"],
+    type: ["commercial"],
     topic: ["openFrameworks", "ingress"],
     collab: ["Ito-En"],
     venue: "Ito-En (Japan)",
@@ -647,7 +647,7 @@ const sc = [
   {
     start: new Date("April 14, 2019"),
     title: "Beyond Time",
-    type: ["installation"],
+    type: ["commercial"],
     topic: ["openFrameworks"],
     collab: ["Shiseido", "R/GA"],
     venue: "S/PARK (Japan)",
@@ -700,13 +700,105 @@ const sc = [
     `
   },
   {
+    start: new Date("November 22, 2018"),
+    title: "Algorithm/Pattern/Diversity",
+    type: ["lecture"],
+    topic: ["autism", "processing"],
+    venue: "CITEC, Bielefeld University (Germany)",
+    desc: html`
+      guest talk
+    `
+  },
+  {
+    start: new Date("November 22, 2018"),
+    title: "IMPACT18 - Matter in Movement",
+    type: ["conference"],
+    topic: ["autism"],
+    venue: "PACT Zollverein (Germany)",
+    desc: html`
+      guest talk
+    `
+  },
+  {
+    start: new Date("November 1, 2018"),
+    title: "XM-Profiler",
+    type: ["commercial"],
+    topic: ["openFrameworks", "ingress"],
+    collab: ["Ito-En"],
+    venue: "Ito-En (Japan)",
+    desc: html`
+      Ingress
+    `
+  },
+  {
+    start: new Date("October 1, 2018"),
+    title: "Jeux de Rebans",
+    type: ["commercial"],
+    topic: ["openFrameworks"],
+    collab: ["Matilda"],
+    venue: "Mikimoto (Japan)",
+    desc: html`
+      Face morphing
+    `
+  },
+  {
+    start: new Date("September 14, 2018"),
+    title: "Usine 108",
+    type: ["performance"],
+    topic: ["processing", "machine learning"],
+    collab: ["Evelyne Drouin"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("July 24, 2018"),
+    title: "Deep Performance Dwelling",
+    type: ["installation"],
+    topic: ["vvvv"],
+    collab: ["Team MTL"],
+    venue: "Solar Decathlon (China)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("July 16, 2018"),
+    title: "Call Stack",
+    type: ["residency"],
+    topic: ["processing"],
+    collab: ["Janine Harrington"],
+    venue: "Digitale Performance Web Residency / Favoriten Festival (Germany, online)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("July 3, 2018"),
     title: "Artist in Residence",
     type: ["residency"],
     topic: ["processing"],
-    collab: ["Nien Tzu Weng"],
-    venue: "Centre de Création O Vertigo (online)",
-    yt: "HL6CTlNuzak",
+    collab: ["Evelyne Drouin"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("June 28, 2019"),
+    title: "Skin Irony Virtual Screen",
+    type: ["commercial"],
+    topic: ["openFrameworks"],
+    collab: ["Matilda"],
+    venue: "Swatch (Japan)",
+    desc: html`
+      Face morphing
+    `
+  },
+  {
+    start: new Date("March 3, 2018"),
+    title: "body_code",
+    type: ["performance"],
+    topic: ["processing", "dance"],
+    collab: ["CCOV", "perte de signal"],
+    venue: "Centre de Création O Vertigo (Canada)",
     desc: html`
     `
   },
