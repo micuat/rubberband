@@ -10,10 +10,6 @@ module.exports = function(state, emit) {
     `Naoto Hieda`
   );
   
-  if(state.schedule == undefined) {
-    state.schedule = schedule();
-  }
-  
   const counter = [];
   for(const s of sc) {
     const types = [...s.type, "all"];

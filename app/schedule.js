@@ -1,6 +1,6 @@
 var html = require("choo/html");
 var sc = require("./contents.js");
-console.log(sc[0].desc)
+
 module.exports = filter => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 

@@ -44,7 +44,7 @@ const sc = [
     `
   },
   {
-    start: new Date("December 15, 2021"),
+    start: new Date("December 15, 2020"),
     title: "Introduction to TidalCycles",
     type: ["workshop"],
     topic: ["tidalcycles"],

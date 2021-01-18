@@ -45,7 +45,7 @@ const sc = [
     `
   },
   {
-    start: new Date("December 15, 2021"),
+    start: new Date("December 15, 2020"),
     title: "Introduction to TidalCycles",
     type: ["workshop"],
     topic: ["tidalcycles"],
@@ -1010,10 +1010,6 @@ module.exports = function(state, emit) {
     `Naoto Hieda`
   );
   
-  if(state.schedule == undefined) {
-    state.schedule = schedule();
-  }
-  
   const counter = [];
   for(const s of sc) {
     const types = [...s.type, "all"];
@@ -1081,7 +1077,7 @@ module.exports = function(state, emit) {
 },{"./contents.js":1,"./schedule.js":4,"choo/html":6}],4:[function(require,module,exports){
 var html = require("choo/html");
 var sc = require("./contents.js");
-console.log(sc[0].desc)
+
 module.exports = filter => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
