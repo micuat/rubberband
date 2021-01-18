@@ -33,7 +33,7 @@ const sc = [
   {
     start: new Date("December 18, 2020"),
     title: "GlitchMe Performance-Presentation",
-    type: ["performance", "net art"],
+    type: ["performance", "lecture", "net art"],
     topic: ["hydra", "livelab"],
     collab: ["Flor de Fuego"],
     venue: "CODAME (online)",
