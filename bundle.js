@@ -971,7 +971,7 @@ const sc = [
   {
     start: new Date("December 18, 2017"),
     title: "Artist in Residence",
-    type: ["residence"],
+    type: ["residency"],
     topic: ["dance"],
     collab: ["Nien Tzu Weng"],
     venue: "Studio 303 (Canada)",
@@ -982,10 +982,10 @@ const sc = [
   {
     start: new Date("November 14, 2017"),
     title: "Brainwave Performance",
-    type: ["residence"],
-    topic: ["dance"],
-    collab: ["Nien Tzu Weng"],
-    venue: "Studio 303 (Canada)",
+    type: ["performance"],
+    topic: ["dance", "eeg"],
+    collab: ["Olivier Lalonde"],
+    venue: "RIDM / Cinémathèque Québecoise (Canada)",
     desc: html`
     
     `
@@ -1082,6 +1082,17 @@ const sc = [
     topic: [],
     venue: "Pola Art Foundation",
     desc: html`
+    `
+  },
+  {
+    start: new Date("March 7, 2017"),
+    title: "Brainwave Performance",
+    type: ["performance"],
+    topic: ["dance", "eeg"],
+    collab: ["Olivier Lalonde"],
+    venue: "Printemps Numeriques / Canadian Centre for Architecture (Canada)",
+    desc: html`
+    
     `
   },
   {
