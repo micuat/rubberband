@@ -548,6 +548,66 @@ module.exports = () => {
       `
     },
     {
+      start: new Date(""),
+      title: "",
+      type: ["residency"],
+      topic: [],
+      collab: ["Asaf Bachrach"],
+      desc: html`
+      Paris
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Staebetanzen",
+      type: ["performance"],
+      topic: [],
+      collab: [""],
+      desc: html`
+      HKAPA
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Walk 4 Me",
+      type: ["installation"],
+      topic: [],
+      collab: [""],
+      desc: html`
+      Nottingham
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Nails",
+      type: ["installation"],
+      topic: [],
+      collab: [""],
+      desc: html`
+      V&A
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Open, Closed, Open",
+      type: ["installation"],
+      topic: [],
+      collab: [""],
+      desc: html`
+      Jewish Museum Berlin
+      `
+    },
+    {
+      start: new Date(""),
+      title: "Beyond Time",
+      type: ["installation"],
+      topic: [],
+      collab: [""],
+      desc: html`
+      Shiseido
+      `
+    },
+    {
       start: new Date("February 2, 2019"),
       title: "Processing Community Day Tokyo 2019",
       type: ["meetup"],
