@@ -16,26 +16,27 @@ module.exports = function(state, emit) {
     state.schedule = schedule(tag);
   }
   
-  const counter = {};
+  const counter = [];
   for(const s of sc) {
     for(const t of s.type) {
-      if(counter[t] == undefined) {
-        counter[t] = 1;
+      const c = counter.find(el=>el.t == t);
+      if(c == undefined) {
+        counter.push({t, count: 0});
       }
       else {
-        counter[t]++;
+        c.count++;
       }
     }
   }
   
-  const types = [];
+  const types = counter.sort((a, b) => a.count < b.count);
   
-  types.unshift("all");
+  types.unshift({t: "all"});
   
   const filters = [];
   // const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
   for(const t of types) {
-    filters.push(html`<p onclick="${filter}" class="${t}">${t}</p>`);
+    filters.push(html`<p onclick="${filter}" class="${t.t}">${t.t}</p>`);
   }
 
   return html`
@@ -60,7 +61,7 @@ module.exports = function(state, emit) {
 </div>`;
   
   function filter (e) {
-    console.log(e.target.innerText);
+    // console.log(e.target.innerText);
     tag = e.target.innerText;
     state.schedule = schedule(tag);
     emit('render');
