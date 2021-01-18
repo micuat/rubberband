@@ -10,6 +10,16 @@ module.exports = function(state, emit) {
   );
   
   let tag = "all";
+  
+  if(state.schedule == undefined) {
+    state.schedule = schedule(tag);
+  }
+  
+  const filters = [];
+  const types = ["installation", "lecture"];
+  for(const t of types) {
+    filters.push(html`<div onclick="${filter}">installation</div>`);
+  }
 
   return html`
 <div>
@@ -21,18 +31,19 @@ module.exports = function(state, emit) {
     </p>
 
     <div>
-    Filter by <button onclick="filter">installations</button>
+    Filter by ${filters}
     </div>
 
     <ul>
-      ${schedule(tag)}
+      ${state.schedule}
     </ul>
   </div>
 </div>
 </div>`;
   
-  function add () {
+  function filter () {
     tag = "installation"
+    state.schedule = schedule(tag);
     emit('render');
   }
 };

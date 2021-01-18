@@ -960,6 +960,12 @@ module.exports = function(state, emit) {
   );
   
   let tag = "all";
+  
+  if(state.schedule == undefined) {
+    state.schedule = schedule(tag);
+  }
+  
+  
 
   return html`
 <div>
@@ -971,18 +977,19 @@ module.exports = function(state, emit) {
     </p>
 
     <div>
-    Filter by <button onclick="filter">installations</button>
+    Filter by <div onclick="${filter}">installation</div>
     </div>
 
     <ul>
-      ${schedule(tag)}
+      ${state.schedule}
     </ul>
   </div>
 </div>
 </div>`;
   
-  function add () {
+  function filter () {
     tag = "installation"
+    state.schedule = schedule(tag);
     emit('render');
   }
 };
@@ -997,7 +1004,6 @@ module.exports = (tag) => {
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {
-    if(tag != "all" && i > 3) continue;
     const s = sc[i];
     const date = s.start.toLocaleDateString(undefined, {
       month: "long",
@@ -1005,6 +1011,9 @@ module.exports = (tag) => {
       year: "numeric",
     });
     const { title, topic, desc, type, image, yt, collab, venue } = s;
+    
+    if(tag != "all" && tag != type) continue;
+    
     let types = [];
     for (const t of type) {
       types.push(
