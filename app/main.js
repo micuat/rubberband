@@ -18,10 +18,18 @@ module.exports = function(state, emit) {
       This is an attempt to make an archive of my works.
     </p>
 
+    <div>
+    Filter by <span onclick="filter">installations</span>
+    </div>
+
     <ul>
       ${schedule.dates}
     </ul>
   </div>
 </div>
 </div>`;
+  
+  function add () {
+    emit('addAnimal')
+  }
 };

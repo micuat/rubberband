@@ -4,7 +4,11 @@ var sc = require("./contents.js");
 module.exports = () => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-
+  emitter.on('addAnimal', function () {
+    console.log
+    emitter.emit('render')
+  })
+  
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {

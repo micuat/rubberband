@@ -773,6 +773,36 @@ const sc = [
     `
   },
   {
+    start: new Date("September 13, 2018"),
+    title: "Austistic View",
+    type: ["installation"],
+    topic: ["openframeworks"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+    an installation with sauna receipts and shots on streets
+    `
+  },
+  {
+    start: new Date("August 17, 2018"),
+    title: "Mapping Party #3",
+    type: ["meetup"],
+    topic: ["processing"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+      party with projection mapping
+    `
+  },
+  {
+    start: new Date("August 8, 2018"),
+    title: "Mapping Party #2",
+    type: ["meetup"],
+    topic: ["processing"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+      party with projection mapping
+    `
+  },
+  {
     start: new Date("July 24, 2018"),
     title: "Deep Performance Dwelling",
     type: ["installation"],
@@ -780,6 +810,16 @@ const sc = [
     collab: ["Team MTL"],
     venue: "Solar Decathlon (China)",
     desc: html`
+    `
+  },
+  {
+    start: new Date("July 19, 2018"),
+    title: "Mapping Party #1",
+    type: ["meetup"],
+    topic: ["processing"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+      party with projection mapping
     `
   },
   {
@@ -835,12 +875,12 @@ const sc = [
     `
   },
   {
-    start: new Date("March 3, 2018"),
+    start: new Date("March 22, 2018"),
     title: "KUU",
     type: ["installation"],
-    topic: ["processing", "dance"],
+    topic: ["processing"],
     collab: ["KUU"],
-    venue: "Centre de Création O Vertigo (Canada)",
+    venue: "SNDO (Netherlands)",
     desc: html`
     `
   },

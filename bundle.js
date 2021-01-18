@@ -774,6 +774,36 @@ const sc = [
     `
   },
   {
+    start: new Date("September 13, 2018"),
+    title: "Austistic View",
+    type: ["installation"],
+    topic: ["openframeworks"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+    an installation with sauna receipts and shots on streets
+    `
+  },
+  {
+    start: new Date("August 17, 2018"),
+    title: "Mapping Party #3",
+    type: ["meetup"],
+    topic: ["processing"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+      party with projection mapping
+    `
+  },
+  {
+    start: new Date("August 8, 2018"),
+    title: "Mapping Party #2",
+    type: ["meetup"],
+    topic: ["processing"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+      party with projection mapping
+    `
+  },
+  {
     start: new Date("July 24, 2018"),
     title: "Deep Performance Dwelling",
     type: ["installation"],
@@ -781,6 +811,16 @@ const sc = [
     collab: ["Team MTL"],
     venue: "Solar Decathlon (China)",
     desc: html`
+    `
+  },
+  {
+    start: new Date("July 19, 2018"),
+    title: "Mapping Party #1",
+    type: ["meetup"],
+    topic: ["processing"],
+    venue: "Seoul Art Space Geumcheon (Korea)",
+    desc: html`
+      party with projection mapping
     `
   },
   {
@@ -836,12 +876,12 @@ const sc = [
     `
   },
   {
-    start: new Date("March 3, 2018"),
-    title: "body_code",
-    type: ["performance"],
-    topic: ["processing", "dance"],
-    collab: ["CCOV", "perte de signal"],
-    venue: "Centre de Création O Vertigo (Canada)",
+    start: new Date("March 22, 2018"),
+    title: "KUU",
+    type: ["installation"],
+    topic: ["processing"],
+    collab: ["KUU"],
+    venue: "SNDO (Netherlands)",
     desc: html`
     `
   },
@@ -928,12 +968,20 @@ module.exports = function(state, emit) {
       This is an attempt to make an archive of my works.
     </p>
 
+    <div>
+    Filter by <span onclick="filter">installations</span>
+    </div>
+
     <ul>
       ${schedule.dates}
     </ul>
   </div>
 </div>
 </div>`;
+  
+  function add () {
+    emit('addAnimal')
+  }
 };
 
 },{"./schedule.js":4,"choo/html":6}],4:[function(require,module,exports){
@@ -943,7 +991,12 @@ var sc = require("./contents.js");
 module.exports = () => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
+  emitter.on('addAnimal', function () {
+    var obj = {type: 'lion', x: 100, y: 200}
+    state.animals.push(obj)
 
+    emitter.emit('render')
+  })
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {
