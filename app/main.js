@@ -10,10 +10,8 @@ module.exports = function(state, emit) {
     `Naoto Hieda`
   );
   
-  let tag = "all";
-  
   if(state.schedule == undefined) {
-    state.schedule = schedule(tag);
+    state.schedule = schedule();
   }
   
   const counter = [];
@@ -35,7 +33,14 @@ module.exports = function(state, emit) {
   const filters = [];
   // const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
   for(const t of types) {
-    filters.push(html`<p onclick="${filter}" class="${t.t}">${t.t}</p>`);
+    filters.push(html`<p onclick="${filterTag}" class="${t.t}">${t.t}</p>`);
+  }
+  
+  filters.push(html`<div class="clearer"></div>`);
+
+  const filtersY = [];
+  for(const t of ["2021", "2020", "2019", "2018", "2017"]) {
+    filters.push(html`<p onclick="${filterYear}" class="${t}">${t}</p>`);
   }
 
   return html`
@@ -53,16 +58,22 @@ module.exports = function(state, emit) {
     <div class="clearer"></div>
 
     <ul>
-      ${state.schedule}
+      ${schedule(state.filter)}
     </ul>
   </div>
 </div>
 </div>`;
   
-  function filter (e) {
+  function filterTag (e) {
     // console.log(e.target.innerText);
-    tag = e.target.innerText;
-    state.schedule = schedule(tag);
+    const tag = e.target.innerText;
+    state.filter = {tag};
+    emit('render');
+  }
+  function filterYear (e) {
+    // console.log(e.target.innerText);
+    const year = e.target.innerText;
+    state.filter = {year};
     emit('render');
   }
 };

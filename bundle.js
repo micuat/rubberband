@@ -3,7 +3,7 @@ var html = require("choo/html");
 const sc = [
   {
     start: new Date("January 24, 2021 20:00:00 UTC"),
-    title: "CCFest: Introduction to Hydra",
+    title: "Introduction to Hydra",
     type: ["workshop"],
     topic: ["hydra"],
     collab: ["Flor de Fuego"],
@@ -44,6 +44,22 @@ const sc = [
     yt: "Fas_pGA2tvk",
     desc: html`
       A performance-presentation at CODAME with Flor de Fuego.
+    `
+  },
+  {
+    start: new Date("January 24, 2021 20:00:00 UTC"),
+    title: "CCFest: Introduction to Hydra",
+    type: ["workshop"],
+    topic: ["hydra"],
+    collab: ["Flor de Fuego"],
+    venue: "CCFest (online)",
+    image:
+      "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fccfest-desc.jpg?v=1610919339745",
+    desc: html`
+      A workshop - register
+      <a href="https://ccfest.rocks/register">here</a>!<br />
+      Material can be found
+      <a href="https://ccfest-2021-glitchme.glitch.me/">here</a>.
     `
   },
   {
@@ -990,10 +1006,8 @@ module.exports = function(state, emit) {
     `Naoto Hieda`
   );
   
-  let tag = "all";
-  
   if(state.schedule == undefined) {
-    state.schedule = schedule(tag);
+    state.schedule = schedule();
   }
   
   const counter = [];
@@ -1015,7 +1029,14 @@ module.exports = function(state, emit) {
   const filters = [];
   // const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
   for(const t of types) {
-    filters.push(html`<p onclick="${filter}" class="${t.t}">${t.t}</p>`);
+    filters.push(html`<p onclick="${filterTag}" class="${t.t}">${t.t}</p>`);
+  }
+  
+  filters.push(html`<div class="clearer"></div>`);
+
+  const filtersY = [];
+  for(const t of ["2021", "2020", "2019", "2018", "2017"]) {
+    filters.push(html`<p onclick="${filterYear}" class="${t}">${t}</p>`);
   }
 
   return html`
@@ -1033,16 +1054,22 @@ module.exports = function(state, emit) {
     <div class="clearer"></div>
 
     <ul>
-      ${state.schedule}
+      ${schedule(state.filter)}
     </ul>
   </div>
 </div>
 </div>`;
   
-  function filter (e) {
+  function filterTag (e) {
     // console.log(e.target.innerText);
-    tag = e.target.innerText;
-    state.schedule = schedule(tag);
+    const tag = e.target.innerText;
+    state.filter = {tag};
+    emit('render');
+  }
+  function filterYear (e) {
+    // console.log(e.target.innerText);
+    const year = e.target.innerText;
+    state.filter = {year};
     emit('render');
   }
 };
@@ -1051,9 +1078,9 @@ module.exports = function(state, emit) {
 var html = require("choo/html");
 var sc = require("./contents.js");
 
-module.exports = (tag) => {
+module.exports = filter => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  
+
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {
@@ -1061,12 +1088,21 @@ module.exports = (tag) => {
     const date = s.start.toLocaleDateString(undefined, {
       month: "long",
       day: "numeric",
-      year: "numeric",
+      year: "numeric"
+    });
+    const dateYear = s.start.toLocaleDateString(undefined, {
+      year: "numeric"
     });
     const { title, topic, desc, type, image, yt, collab, venue } = s;
-    
-    if(tag != "all" && type.indexOf(tag) < 0) continue;
-    
+
+    if (filter != undefined) {
+      if (filter.tag != undefined) {
+        if (filter.tag != "all" && type.indexOf(filter.tag) < 0) continue;
+      } else if (filter.year != undefined) {
+        if (dateYear != filter.year) continue;
+      }
+    }
+
     let types = [];
     for (const t of type) {
       types.push(
@@ -1084,12 +1120,12 @@ module.exports = (tag) => {
       );
     }
     let collabs = [];
-    if(collab != undefined) {
-      if(collab.length > 0) collabs.push("with ");
+    if (collab != undefined) {
+      if (collab.length > 0) collabs.push("with ");
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
-        if(i < collab.length - 1) {
+        if (i < collab.length - 1) {
           collabs.push(`, `);
         }
         i++;
@@ -1098,8 +1134,10 @@ module.exports = (tag) => {
     let venueElt;
     if (venue != undefined) {
       let prefix = "";
-      if(venue != "online") prefix = "at";
-      venueElt = html`${prefix} ${venue}`;
+      if (venue != "online") prefix = "at";
+      venueElt = html`
+        ${prefix} ${venue}
+      `;
     }
     let imageElt;
     if (image != undefined) {
@@ -1108,9 +1146,10 @@ module.exports = (tag) => {
       `;
     }
     let ytElt;
-    if (yt != undefined && false) { // leave out videos for now
+    if (yt != undefined && false) {
+      // leave out videos for now
       ytElt = html`
-              <div class="youtube-container">
+        <div class="youtube-container">
           <iframe
             class="youtube-video"
             width="560"
@@ -1121,7 +1160,7 @@ module.exports = (tag) => {
             allowfullscreen
           ></iframe>
         </div>
-`;
+      `;
     }
     dates.push(
       html`
@@ -1144,7 +1183,7 @@ module.exports = (tag) => {
       `
     );
   }
-  
+
   return dates;
 };
 

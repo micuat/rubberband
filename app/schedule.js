@@ -1,9 +1,9 @@
 var html = require("choo/html");
 var sc = require("./contents.js");
 
-module.exports = (tag) => {
+module.exports = filter => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  
+
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < sc.length; i++) {
@@ -11,12 +11,21 @@ module.exports = (tag) => {
     const date = s.start.toLocaleDateString(undefined, {
       month: "long",
       day: "numeric",
-      year: "numeric",
+      year: "numeric"
+    });
+    const dateYear = s.start.toLocaleDateString(undefined, {
+      year: "numeric"
     });
     const { title, topic, desc, type, image, yt, collab, venue } = s;
-    
-    if(tag != "all" && type.indexOf(tag) < 0) continue;
-    
+
+    if (filter != undefined) {
+      if (filter.tag != undefined) {
+        if (filter.tag != "all" && type.indexOf(filter.tag) < 0) continue;
+      } else if (filter.year != undefined) {
+        if (dateYear != filter.year) continue;
+      }
+    }
+
     let types = [];
     for (const t of type) {
       types.push(
@@ -34,12 +43,12 @@ module.exports = (tag) => {
       );
     }
     let collabs = [];
-    if(collab != undefined) {
-      if(collab.length > 0) collabs.push("with ");
+    if (collab != undefined) {
+      if (collab.length > 0) collabs.push("with ");
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
-        if(i < collab.length - 1) {
+        if (i < collab.length - 1) {
           collabs.push(`, `);
         }
         i++;
@@ -48,8 +57,10 @@ module.exports = (tag) => {
     let venueElt;
     if (venue != undefined) {
       let prefix = "";
-      if(venue != "online") prefix = "at";
-      venueElt = html`${prefix} ${venue}`;
+      if (venue != "online") prefix = "at";
+      venueElt = html`
+        ${prefix} ${venue}
+      `;
     }
     let imageElt;
     if (image != undefined) {
@@ -58,9 +69,10 @@ module.exports = (tag) => {
       `;
     }
     let ytElt;
-    if (yt != undefined && false) { // leave out videos for now
+    if (yt != undefined && false) {
+      // leave out videos for now
       ytElt = html`
-              <div class="youtube-container">
+        <div class="youtube-container">
           <iframe
             class="youtube-video"
             width="560"
@@ -71,7 +83,7 @@ module.exports = (tag) => {
             allowfullscreen
           ></iframe>
         </div>
-`;
+      `;
     }
     dates.push(
       html`
@@ -94,6 +106,6 @@ module.exports = (tag) => {
       `
     );
   }
-  
+
   return dates;
 };

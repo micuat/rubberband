@@ -2,7 +2,7 @@ var html = require("choo/html");
 const sc = [
   {
     start: new Date("January 24, 2021 20:00:00 UTC"),
-    title: "CCFest: Introduction to Hydra",
+    title: "Introduction to Hydra",
     type: ["workshop"],
     topic: ["hydra"],
     collab: ["Flor de Fuego"],
@@ -43,6 +43,22 @@ const sc = [
     yt: "Fas_pGA2tvk",
     desc: html`
       A performance-presentation at CODAME with Flor de Fuego.
+    `
+  },
+  {
+    start: new Date("January 24, 2021 20:00:00 UTC"),
+    title: "CCFest: Introduction to Hydra",
+    type: ["workshop"],
+    topic: ["hydra"],
+    collab: ["Flor de Fuego"],
+    venue: "CCFest (online)",
+    image:
+      "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fccfest-desc.jpg?v=1610919339745",
+    desc: html`
+      A workshop - register
+      <a href="https://ccfest.rocks/register">here</a>!<br />
+      Material can be found
+      <a href="https://ccfest-2021-glitchme.glitch.me/">here</a>.
     `
   },
   {
