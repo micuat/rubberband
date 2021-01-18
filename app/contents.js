@@ -698,7 +698,18 @@ const sc = [
     desc: html`
       Technological flesh! at Festival Temps d'Images, tanzhaus nrw
     `
-  }
+  },
+  {
+    start: new Date("July 3, 2018"),
+    title: "Artist in Residence",
+    type: ["residency"],
+    topic: ["processing"],
+    collab: ["Nien Tzu Weng"],
+    venue: "Centre de Création O Vertigo (online)",
+    yt: "HL6CTlNuzak",
+    desc: html`
+    `
+  },
 ];
 
 module.exports = sc;
