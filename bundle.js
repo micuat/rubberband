@@ -109,7 +109,7 @@ const sc = [
   },
   {
     start: new Date("October 17, 2020"),
-    title: "",
+    title: "Auf meinen Schultern",
     type: ["performance"],
     topic: ["feedback"],
     collab: ["Raphael Hillebrand"],
@@ -971,6 +971,17 @@ const sc = [
   {
     start: new Date("December 18, 2017"),
     title: "Artist in Residence",
+    type: ["residence"],
+    topic: ["dance"],
+    collab: ["Nien Tzu Weng"],
+    venue: "Studio 303 (Canada)",
+    desc: html`
+    
+    `
+  },
+  {
+    start: new Date("November 14, 2017"),
+    title: "Brainwave Performance",
     type: ["residence"],
     topic: ["dance"],
     collab: ["Nien Tzu Weng"],
