@@ -66,6 +66,7 @@ module.exports = () => {
       title: "CCFest: Introduction to Hydra",
       type: ["workshop"],
       topic: ["hydra"],
+      collab: ["Flor de Fuego"],
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fccfest-desc.jpg?v=1610919339745",
       desc: html`
@@ -78,6 +79,7 @@ module.exports = () => {
       title: "TidalClub Solstice",
       type: ["performance"],
       topic: ["hydra", "livelab", "tidalcycles"],
+      collab: ["Flor de Fuego"],
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201220-tidal.jpg?v=1608503105807",
       yt: "gN9DHCetfBE",
@@ -90,6 +92,7 @@ module.exports = () => {
       title: "GlitchMe Performance-Presentation",
       type: ["performance", "net art"],
       topic: ["hydra", "livelab"],
+      collab: ["Flor de Fuego"],
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201218-codame.jpg?v=1608479114980",
       yt: "Fas_pGA2tvk",
@@ -102,6 +105,7 @@ module.exports = () => {
       title: "Hydra meetup #3",
       type: ["meetup"],
       topic: ["hydra"],
+      collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
       desc: html`
       hydra meetup
       `
@@ -110,6 +114,7 @@ module.exports = () => {
       start: new Date("December 6, 2020"),
       title: "Processing Community Hangout Japan 05",
       type: ["meetup"],
+      collab: ["Takawo"],
       topic: ["processing", "japan"],
       desc: html`
         Japanese Processing meetup https://pchj05.peatix.com/
@@ -128,7 +133,8 @@ module.exports = () => {
       start: new Date("November 6, 2020"),
       title: "Sharing at Theater Dortmund",
       type: ["exhibition"],
-      topic: [],
+      topic: ["openFrameworks"],
+      collab: ["Vivian Lu"],
       desc: html`
         A project with Vivian Lu
       `
@@ -147,6 +153,7 @@ module.exports = () => {
       title: "Multidimensional Journey",
       type: ["performance"],
       topic: ["hubs", "miro", "green screen"],
+      collab: ["Nien Tzu Weng"],
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
       yt: "g5Hd_5rKggA",
@@ -163,6 +170,7 @@ module.exports = () => {
       title: "Distant Movements",
       type: ["performance"],
       topic: ["dance"],
+      collab: ["Annie Abrahams", "Daniel Pinheiro", "Muriel Piqué"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
       desc: html`
         Distant Movements is a project by Annie Abrahams (FR/NL), Daniel
@@ -188,6 +196,7 @@ module.exports = () => {
       title: "Best Practices - Discussion",
       type: ["discussion"],
       topic: ["dance", "hydra"],
+      collab: ["Jorge Guevara"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
       yt: "YZfMBoFWFZY",
       desc:
@@ -200,6 +209,7 @@ module.exports = () => {
       title: "Best Practices in Contemporary Dance",
       type: ["performance"],
       topic: ["dance", "hydra"],
+      collab: ["Jorge Guevara"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
       yt: "wxXguzTYt_I",
       // yt: "OBtI1qSLyVQ",
@@ -214,6 +224,7 @@ module.exports = () => {
       title: "Best Practices - Discussion",
       type: ["discussion"],
       topic: ["dance", "hydra"],
+      collab: ["Jorge Guevara"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg?v=1601987022036",
       yt: "0-YILmKxVhY",
       desc:
@@ -225,6 +236,7 @@ module.exports = () => {
       title: "Hydra meetup #2",
       type: ["meetup"],
       topic: ["hydra"],
+      collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
       image:
         "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
       yt: "xTL0BjtBq5k",
@@ -248,6 +260,7 @@ module.exports = () => {
       type: ["meetup", "exhibition"],
       topic: ["touchdesigner", "processing"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
+      collab: ["Yasushi Harada", "Yuki Narumi", "Takawo"],
       desc: html`
         Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
         (PCJ) invite you to present your artworks at an exhibition, where
@@ -268,6 +281,7 @@ module.exports = () => {
       title: "Low Frequency Skies",
       type: ["lunch"],
       topic: ["food"],
+      collab: ["", "Taru Muhonen"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201003-02.jpg?v=1601728591081",
       desc:
         html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`,
@@ -539,7 +553,7 @@ module.exports = () => {
       day: "numeric",
       year: "numeric",
     });
-    const { title, topic, desc, type, image, yt } = s;
+    const { title, topic, desc, type, image, yt, collab } = s;
     let types = [];
     for (const t of type) {
       types.push(
@@ -555,6 +569,16 @@ module.exports = () => {
           <p class="${t}">${t}</p>
         `
       );
+    }
+    let collabs = [];
+    if(collab != undefined) {
+      for (const c of collab) {
+        collabs.push(
+          html`
+            ${collabs.length > 0?",":""} ${c}
+          `
+        );
+      }
     }
     let imageElt;
     if (image != undefined) {
@@ -586,6 +610,8 @@ module.exports = () => {
           <div class="topic">${topics}</div>
           <div class="clearer"></div>
           <p class="title">${title}</p>
+          <div class="clearer"></div>
+          <div class="collabs">with ${collabs}</div>
           <div class="clearer"></div>
           <div class="thumbnail">${imageElt}</div>
           <p class="desc">${desc}</p>
