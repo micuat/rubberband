@@ -2,7 +2,7 @@
 var html = require("choo/html");
 const sc = [
   {
-    start: new Date("January 24, 2021 20:00:00 UTC"),
+    start: new Date("January 24, 2021"),
     title: "Introduction to Hydra",
     type: ["workshop"],
     topic: ["hydra"],
@@ -18,7 +18,7 @@ const sc = [
     `
   },
   {
-    start: new Date("December 20, 2020 20:00:00 UTC"),
+    start: new Date("December 20, 2020"),
     title: "TidalClub Solstice",
     type: ["performance", "net art"],
     topic: ["hydra", "livelab", "tidalcycles"],
@@ -33,7 +33,7 @@ const sc = [
     `
   },
   {
-    start: new Date("December 18, 2020 20:00:00 UTC"),
+    start: new Date("December 18, 2020"),
     title: "GlitchMe Performance-Presentation",
     type: ["performance", "net art"],
     topic: ["hydra", "livelab"],
@@ -47,19 +47,13 @@ const sc = [
     `
   },
   {
-    start: new Date("January 24, 2021 20:00:00 UTC"),
-    title: "CCFest: Introduction to Hydra",
+    start: new Date("December 15, 2021"),
+    title: "Introduction to TidalCycles",
     type: ["workshop"],
-    topic: ["hydra"],
-    collab: ["Flor de Fuego"],
-    venue: "CCFest (online)",
-    image:
-      "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fccfest-desc.jpg?v=1610919339745",
+    topic: ["tidalcycles"],
+    venue: "Kunsthochschule für Medien Köln",
     desc: html`
-      A workshop - register
-      <a href="https://ccfest.rocks/register">here</a>!<br />
-      Material can be found
-      <a href="https://ccfest-2021-glitchme.glitch.me/">here</a>.
+    Workshop at "Sound und..." seminar
     `
   },
   {
@@ -116,7 +110,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 7, 2020 18:30:00 UTC"),
+    start: new Date("October 7, 2020"),
     title: "Multidimensional Journey",
     type: ["performance", "net art"],
     topic: ["hubs", "miro", "green screen"],
@@ -133,8 +127,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 8, 2020 14:00:00 UTC"),
-    end: new Date("October 8, 2020 14:15:00 UTC"),
+    start: new Date("October 8, 2020"),
     title: "Distant Movements",
     type: ["performance", "net art"],
     topic: ["dance", "zoom"],
@@ -165,8 +158,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 7, 2020 11:30:00 UTC"),
-    end: new Date("October 7, 2020 12:30:00 UTC"),
+    start: new Date("October 7, 2020"),
     title: "Best Practices - Discussion",
     type: ["discussion"],
     topic: ["dance", "hydra"],
@@ -184,8 +176,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 6, 2020 19:00:00 UTC"),
-    end: new Date("October 6, 2020 20:00:00 UTC"),
+    start: new Date("October 6, 2020"),
     title: "Best Practices in Contemporary Dance",
     type: ["performance", "net art"],
     topic: ["dance", "hydra"],
@@ -203,8 +194,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 5, 2020 11:30:00 UTC"),
-    end: new Date("October 5, 2020 12:30:00 UTC"),
+    start: new Date("October 5, 2020"),
     title: "Best Practices - Discussion",
     type: ["discussion"],
     topic: ["dance", "hydra"],
@@ -223,7 +213,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 4, 2020 17:00:00 UTC"),
+    start: new Date("October 4, 2020"),
     title: "Hydra meetup #2",
     type: ["meetup"],
     topic: ["hydra"],
@@ -244,8 +234,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 4, 2020 09:30:00 UTC"),
-    end: new Date("October 4, 2020 11:30:00 UTC"),
+    start: new Date("October 4, 2020"),
     title: "TDSW x PCJ Vernissage",
     type: ["meetup", "net art"],
     topic: ["touchdesigner", "processing"],
@@ -268,8 +257,7 @@ const sc = [
     `
   },
   {
-    start: new Date("October 3, 2020 10:30:00 UTC"),
-    end: new Date("October 3, 2020 11:30:00 UTC"),
+    start: new Date("October 3, 2020"),
     talque: "https://20.nodeforum.org/program/?lectureId=fIT3yhH7pfPvnpLyMrWl",
     title: "Low Frequency Skies",
     type: ["lunch", "meetup"],
@@ -470,6 +458,15 @@ const sc = [
     desc: html`
       Processing meetup
       https://naotohieda.com/blog/processing-community-hangout-1-en/
+    `
+  },
+  {
+    start: new Date("April 1, 2020"),
+    title: "Yoshino Gypsum Art Foundation Fellowship",
+    type: ["award"],
+    topic: [],
+    venue: "Yoshino Gypsum Art Foundation",
+    desc: html`
     `
   },
   {
@@ -962,6 +959,15 @@ const sc = [
     
     `
   },
+  {
+    start: new Date("April 1, 2017"),
+    title: "Pola Art Foundation Fellowship",
+    type: ["award"],
+    topic: [],
+    venue: "Pola Art Foundation",
+    desc: html`
+    `
+  },
 ];
 
 module.exports = sc;
@@ -1125,7 +1131,10 @@ module.exports = filter => {
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
-        if (i < collab.length - 1) {
+        if (i == collab.length - 2) {
+          collabs.push(` and `);
+        }
+        else if (i < collab.length - 1) {
           collabs.push(`, `);
         }
         i++;

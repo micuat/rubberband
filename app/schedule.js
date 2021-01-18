@@ -48,7 +48,10 @@ module.exports = filter => {
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
-        if (i < collab.length - 1) {
+        if (i == collab.length - 2) {
+          collabs.push(` and `);
+        }
+        else if (i < collab.length - 1) {
           collabs.push(`, `);
         }
         i++;
