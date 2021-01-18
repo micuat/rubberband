@@ -1081,7 +1081,7 @@ module.exports = function(state, emit) {
 },{"./contents.js":1,"./schedule.js":4,"choo/html":6}],4:[function(require,module,exports){
 var html = require("choo/html");
 var sc = require("./contents.js");
-
+console.log(sc[0].desc)
 module.exports = filter => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
@@ -1107,6 +1107,8 @@ module.exports = filter => {
       }
     }
 
+    // console.log(desc)
+    
     let types = [];
     for (const t of type) {
       types.push(
