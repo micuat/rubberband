@@ -20,7 +20,7 @@ const sc = [
   {
     start: new Date("December 20, 2020 20:00:00 UTC"),
     title: "TidalClub Solstice",
-    type: ["performance"],
+    type: ["performance", "net art"],
     topic: ["hydra", "livelab", "tidalcycles"],
     collab: ["Flor de Fuego"],
     venue: "TidalClub (online)",
@@ -71,7 +71,7 @@ const sc = [
   {
     start: new Date("November 21, 2020"),
     title: "Hydra Exhibition",
-    type: ["net art"],
+    type: ["installation", "net art"],
     topic: ["hydra", "vr"],
     venue: "online",
     desc: html`
@@ -81,7 +81,7 @@ const sc = [
   {
     start: new Date("November 6, 2020"),
     title: "Showing",
-    type: ["exhibition"],
+    type: ["installation"],
     topic: ["openFrameworks"],
     collab: ["Vivian Lu"],
     venue: "Theater Dortmund",
@@ -92,7 +92,7 @@ const sc = [
   {
     start: new Date("October 23, 2020"),
     title: "Tech is Nonbinary",
-    type: ["performance"],
+    type: ["performance", "net art"],
     topic: ["hydra", "dance"],
     venue: "Creative Commons Global Summit (online)",
     desc: html`
@@ -102,7 +102,7 @@ const sc = [
   {
     start: new Date("October 7, 2020 18:30:00 UTC"),
     title: "Multidimensional Journey",
-    type: ["performance"],
+    type: ["performance", "net art"],
     topic: ["hubs", "miro", "green screen"],
     collab: ["Nien Tzu Weng"],
     venue: "NODE20 (online)",
@@ -120,8 +120,8 @@ const sc = [
     start: new Date("October 8, 2020 14:00:00 UTC"),
     end: new Date("October 8, 2020 14:15:00 UTC"),
     title: "Distant Movements",
-    type: ["performance"],
-    topic: ["dance"],
+    type: ["performance", "net art"],
+    topic: ["dance", "zoom"],
     collab: ["Annie Abrahams", "Daniel Pinheiro", "Muriel Piqué"],
     venue: "NODE20 (online)",
     image:
@@ -171,7 +171,7 @@ const sc = [
     start: new Date("October 6, 2020 19:00:00 UTC"),
     end: new Date("October 6, 2020 20:00:00 UTC"),
     title: "Best Practices in Contemporary Dance",
-    type: ["performance"],
+    type: ["performance", "net art"],
     topic: ["dance", "hydra"],
     collab: ["Jorge Guevara"],
     image:
@@ -231,7 +231,7 @@ const sc = [
     start: new Date("October 4, 2020 09:30:00 UTC"),
     end: new Date("October 4, 2020 11:30:00 UTC"),
     title: "TDSW x PCJ Vernissage",
-    type: ["meetup", "exhibition"],
+    type: ["meetup", "net art"],
     topic: ["touchdesigner", "processing"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
@@ -256,7 +256,7 @@ const sc = [
     end: new Date("October 3, 2020 11:30:00 UTC"),
     talque: "https://20.nodeforum.org/program/?lectureId=fIT3yhH7pfPvnpLyMrWl",
     title: "Low Frequency Skies",
-    type: ["lunch"],
+    type: ["lunch", "meetup"],
     topic: ["food"],
     collab: ["Raphaël de Courville", "Taru Muhonen"],
     venue: "NODE20 (online)",
@@ -273,7 +273,7 @@ const sc = [
   {
     start: new Date("October 2, 2020"),
     title: "Choreographic Coding Labs Online",
-    type: ["curation"],
+    type: ["curation", "meetup"],
     topic: ["hydra", "dance", "food"],
     venue: "NODE20 (online)",
     desc: html`
@@ -294,8 +294,8 @@ const sc = [
   {
     start: new Date("August 19, 2020"),
     title: "TidalClub: New Moon Marathon",
-    type: ["performance"],
-    topic: ["tidalcycles"],
+    type: ["performance", "net art"],
+    topic: ["tidalcycles", "discord"],
     collab: ["vc-study"],
     venue: "TidalClub (online)",
     desc: html`
@@ -320,7 +320,7 @@ const sc = [
   {
     start: new Date("July 6, 2020"),
     title: "Digital Dancing",
-    type: ["panel"],
+    type: ["lecture"],
     topic: ["dance"],
     collab: ["Toronto Love-In"],
     venue: "Toronto Love-In (online)",
@@ -341,10 +341,10 @@ const sc = [
   },
   {
     start: new Date("July 1, 2020"),
-    title: "Virtual Exhibition",
-    type: ["net art"],
+    title: "Virtual Exhibition 007",
+    type: ["installation", "net art"],
     topic: ["vr"],
-    venue: "online",
+    venue: "nextmuseum.io (online)",
     desc: html`
       https://naotohieda.com/blog/virtual-exhibition-007/
     `
@@ -352,7 +352,7 @@ const sc = [
   {
     start: new Date("June 11, 2020 22:00:00 UTC"),
     title: "Sortie de résidence #4 at CCOV",
-    type: ["performance"],
+    type: ["performance", "net art"],
     topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
     collab: ["Nien Tzu Weng"],
     venue: "Centre de Création O Vertigo (online)",
@@ -373,7 +373,7 @@ const sc = [
   {
     start: new Date("June 1, 2020 16:00:00 UTC"),
     title: "CCOV Residency at a Distance",
-    type: ["residency"],
+    type: ["residency", "net art"],
     topic: ["jitsi", "miro", "cooking"],
     collab: ["Nien Tzu Weng"],
     venue: "Centre de Création O Vertigo (online)",
@@ -414,7 +414,7 @@ const sc = [
   {
     start: new Date("May 24, 2020"),
     title: "Algorithm | Degeneracy",
-    type: ["performance"],
+    type: ["performance", "net art"],
     topic: ["dance", "p-code"],
     venue: "NL_CL / iii (online)",
     desc: html`
@@ -459,7 +459,7 @@ const sc = [
   {
     start: new Date("February 29, 2020"),
     title: "p-code Land",
-    type: ["net art"],
+    type: ["installation", "net art"],
     topic: ["p-code"],
     venue: "online",
     desc: html`
@@ -490,7 +490,7 @@ const sc = [
   {
     start: new Date("February 11, 2020"),
     title: "Virtual Exhibition 004",
-    type: ["net art"],
+    type: ["installation", "net art"],
     topic: ["vr"],
     venue: "online",
     desc: html`
@@ -511,7 +511,7 @@ const sc = [
   {
     start: new Date("February 1, 2020"),
     title: "Processing Community Day Tokyo 2020",
-    type: ["meetup"],
+    type: ["meetup", "curation"],
     topic: ["processing", "japan"],
     collab: ["PCD Tokyo"],
     venue: "Yahoo! LODGE (Japan)",
@@ -562,7 +562,7 @@ const sc = [
     start: new Date("November 14, 2019"),
     title: "Articulation Hackathon",
     type: ["meetup"],
-    topic: ["dance"],
+    topic: ["dance", "unity"],
     collab: ["Asaf Bachrach"],
     venue: "CNRS (France)",
     desc: html`
@@ -670,7 +670,7 @@ const sc = [
   {
     start: new Date("February 2, 2019"),
     title: "Processing Community Day Tokyo 2019",
-    type: ["meetup"],
+    type: ["meetup", "curation", "lecture"],
     topic: ["processing", "japan"],
     collab: ["Ayumu Nagamatsu", "Yasuto Nakanishi"],
     venue: "Yahoo! LODGE (Japan)",
@@ -826,7 +826,7 @@ const sc = [
   {
     start: new Date("July 16, 2018"),
     title: "Call Stack",
-    type: ["residency"],
+    type: ["residency", "net art"],
     topic: ["processing"],
     collab: ["Janine Harrington"],
     venue: "Digitale Performance Web Residency / Favoriten Festival (Germany, online)",
@@ -928,7 +928,7 @@ const sc = [
   {
     start: new Date("February 12, 2018"),
     title: "Machine Learning Literacy",
-    type: ["meetup"],
+    type: ["conference"],
     topic: ["machine learning"],
     venue: "School for Poetic Computation (US)",
     desc: html`
@@ -1065,7 +1065,7 @@ module.exports = (tag) => {
     });
     const { title, topic, desc, type, image, yt, collab, venue } = s;
     
-    if(tag != "all" && tag != type) continue;
+    if(tag != "all" && type.indexOf(tag) < 0) continue;
     
     let types = [];
     for (const t of type) {

@@ -15,7 +15,7 @@ module.exports = (tag) => {
     });
     const { title, topic, desc, type, image, yt, collab, venue } = s;
     
-    if(tag != "all" && tag != type) continue;
+    if(tag != "all" && type.indexOf(tag) < 0) continue;
     
     let types = [];
     for (const t of type) {
