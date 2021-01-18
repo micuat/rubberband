@@ -710,13 +710,13 @@ const sc = [
     `
   },
   {
-    start: new Date("November 22, 2018"),
+    start: new Date("November 7, 2018"),
     title: "IMPACT18 - Matter in Movement",
     type: ["conference"],
     topic: ["autism"],
     venue: "PACT Zollverein (Germany)",
     desc: html`
-      guest talk
+    participation
     `
   },
   {
@@ -739,6 +739,16 @@ const sc = [
     venue: "Mikimoto (Japan)",
     desc: html`
       Face morphing
+    `
+  },
+  {
+    start: new Date("September 21, 2018"),
+    title: "Processing and Generative Art",
+    type: ["lecture"],
+    topic: ["processing"],
+    venue: "Seoul National University of Education (Korea)",
+    desc: html`
+      guest talk invited by Woosung
     `
   },
   {
@@ -793,6 +803,27 @@ const sc = [
     `
   },
   {
+    start: new Date("April 28, 2018"),
+    title: "Choreographic Coding Lab + Pathfinder",
+    type: ["workshop"],
+    topic: ["processing", "pathfinder"],
+    collab: ["Christian Mio Loclair"],
+    venue: "NOVA Festival / Point (Romania)",
+    desc: html`
+      
+    `
+  },
+  {
+    start: new Date("April 26, 2018"),
+    title: "Machine Learning for Artists",
+    type: ["translation"],
+    topic: ["machine learning"],
+    collab: ["Kenichi Yoneda"],
+    venue: "online",
+    desc: html`
+    `
+  },
+  {
     start: new Date("March 3, 2018"),
     title: "body_code",
     type: ["performance"],
@@ -800,6 +831,27 @@ const sc = [
     collab: ["CCOV", "perte de signal"],
     venue: "Centre de Création O Vertigo (Canada)",
     desc: html`
+    `
+  },
+  {
+    start: new Date("February 12, 2018"),
+    title: "Machine Learning Literacy",
+    type: ["meetup"],
+    topic: ["machine learning"],
+    venue: "School for Poetic Computation (US)",
+    desc: html`
+    participation
+    `
+  },
+  {
+    start: new Date("January 13, 2018"),
+    title: "Performance",
+    type: ["performance"],
+    topic: ["raspberry pi"],
+    collab: ["Evelyne Drouin"],
+    venue: "Centre Clark (Canada)",
+    desc: html`
+    
     `
   },
 ];
