@@ -236,7 +236,7 @@ module.exports = () => {
       title: "Hydra meetup #2",
       type: ["meetup"],
       topic: ["hydra"],
-      collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+      collab: ["Flor de Fuego", "Olivia Jack"],
       image:
         "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
       yt: "xTL0BjtBq5k",
@@ -281,7 +281,7 @@ module.exports = () => {
       title: "Low Frequency Skies",
       type: ["lunch"],
       topic: ["food"],
-      collab: ["", "Taru Muhonen"],
+      collab: ["Raphaël de Courville", "Taru Muhonen"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201003-02.jpg?v=1601728591081",
       desc:
         html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`,
@@ -300,6 +300,7 @@ module.exports = () => {
       title: "Processing Community Hangout Japan 03",
       type: ["meetup"],
       topic: ["processing", "japan"],
+      collab: ["Takawo"],
       desc: html`
         Japanese Processing meetup
       `
@@ -309,6 +310,7 @@ module.exports = () => {
       title: "Tidal Club: New Moon Marathon",
       type: ["performance"],
       topic: ["tidalcycles"],
+      collab: ["vc-study"],
       desc: html`
         https://naotohieda.com/blog/new-moon/
       `
@@ -318,6 +320,7 @@ module.exports = () => {
       title: "Hydra meetup #1",
       type: ["meetup"],
       topic: ["hydra"],
+      collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fhydra-meetup1.png?v=1604872115474",
       desc: html`
@@ -331,6 +334,7 @@ module.exports = () => {
       title: "Digital Dancing",
       type: ["panel"],
       topic: ["dance"],
+      collab: ["Toronto Love-In"],
       desc: html`
       panelist at Toronto Love-In
       `
@@ -340,6 +344,7 @@ module.exports = () => {
       title: "Processing Community Hangout Japan 02",
       type: ["meetup"],
       topic: ["processing", "japan"],
+      collab: ["Takawo"],
       desc: html`
         Japanese Processing meetup https://pchj02.peatix.com/
       `
@@ -358,6 +363,7 @@ module.exports = () => {
       title: "Sortie de résidence #4 at CCOV",
       type: ["performance"],
       topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
+      collab: ["Nien Tzu Weng"],
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
       desc: html`
@@ -377,6 +383,7 @@ module.exports = () => {
       title: "CCOV Residency at a Distance",
       type: ["residency"],
       topic: ["jitsi", "miro", "cooking"],
+      collab: ["Nien Tzu Weng"],
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200601residence.png?v=1603140134648",
       yt: "HL6CTlNuzak",
@@ -395,6 +402,7 @@ module.exports = () => {
       title: "Processing Community Japan 30 Minute Coding 0",
       type: ["meetup"],
       topic: ["processing", "japan"],
+      collab: ["Takawo"],
       desc: html`
         Japanese Processing meetup https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/
       `
@@ -422,6 +430,7 @@ module.exports = () => {
       title: "Processing Community Hangout Japan 01",
       type: ["meetup"],
       topic: ["processing", "japan"],
+      collab: ["Takawo"],
       desc: html`
         Japanese Processing meetup https://pchj01.peatix.com/
       `
@@ -431,6 +440,7 @@ module.exports = () => {
       title: "Processing Community Hangout 02",
       type: ["meetup"],
       topic: ["processing"],
+      collab: ["Saber Khan"],
       desc: html`
         Processing meetup https://naotohieda.com/blog/processing-community-hangout-2-en/
       `
@@ -440,6 +450,7 @@ module.exports = () => {
       title: "Processing Community Hangout 01",
       type: ["meetup"],
       topic: ["processing"],
+      collab: ["Saber Khan"],
       desc: html`
         Processing meetup https://naotohieda.com/blog/processing-community-hangout-1-en/
       `
@@ -467,6 +478,7 @@ module.exports = () => {
       title: "Utopian Council",
       type: ["net art"],
       topic: ["vr"],
+      collab: ["Utopian Council at KHM"],
       desc: html`
         https://naotohieda.com/blog/utopian-council/      `
     },
@@ -493,6 +505,7 @@ module.exports = () => {
       title: "Processing Community Day Tokyo 2020",
       type: ["meetup"],
       topic: ["processing", "japan"],
+      collab: ["PCD Tokyo"],
       desc: html`
         Japanese Processing meetup
       `
@@ -502,6 +515,7 @@ module.exports = () => {
       title: "The Body and the Other~",
       type: ["performance"],
       topic: ["processing", "dance"],
+      collab: ["Eleonora Siarava"],
       desc: html`
         Project by Eleonora Siarava https://vimeo.com/463813053
         `
@@ -538,6 +552,7 @@ module.exports = () => {
       title: "Processing Community Day Tokyo 2019",
       type: ["meetup"],
       topic: ["processing", "japan"],
+      collab: ["PCD Tokyo"],
       desc: html`
         Japanese Processing meetup
       `
@@ -611,9 +626,10 @@ module.exports = () => {
           <div class="clearer"></div>
           <p class="title">${title}</p>
           <div class="clearer"></div>
+          <div class="thumbnail">${imageElt}</div>
+          <div class="clearer"></div>
           <div class="collabs">with ${collabs}</div>
           <div class="clearer"></div>
-          <div class="thumbnail">${imageElt}</div>
           <p class="desc">${desc}</p>
           ${ytElt}
         </li>
