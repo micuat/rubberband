@@ -596,8 +596,8 @@ const sc = [
     title: "Passing Light",
     type: ["installation"],
     topic: ["vvvv"],
-    collab: ["Michael Montanaro"],
-    venue: "CHAOSMOSIS mAchInes / University of Toronto(Canada)",
+    collab: ["Michael Montanaro", "Tatev Yesayan"],
+    venue: "CHAOSMOSIS mAchInes / University of Toronto (Canada)",
     desc: html`
       https://www.cdtps.utoronto.ca/events/chaosmosis-machines
     `
@@ -953,6 +953,70 @@ const sc = [
     topic: ["raspberry pi"],
     collab: ["Evelyne Drouin"],
     venue: "Centre Clark (Canada)",
+    desc: html`
+    
+    `
+  },
+  {
+    start: new Date("October 5, 2017"),
+    title: "Passing Light",
+    type: ["installation"],
+    topic: ["vvvv"],
+    collab: ["Michael Montanaro", "Tatev Yesayan"],
+    venue: "MAPP_MTL Invisible Exhibition Micro-Mapping / Never Apart (Canada)",
+    desc: html`
+    
+    `
+  },
+  {
+    start: new Date("July 9, 2017"),
+    title: "Lads",
+    type: ["installation"],
+    topic: ["dance", "openFrameworks", "max"],
+    collab: ["Christopher Matthews"],
+    venue: "Villa Empain (Belgium)",
+    desc: html`
+      
+    `
+  },
+  {
+    start: new Date("June 16, 2017"),
+    title: "Passing Light",
+    type: ["installation"],
+    topic: ["vvvv"],
+    collab: ["Michael Montanaro", "Tatev Yesayan"],
+    venue: "InTime / Topological Media Lab (Canada)",
+    desc: html`
+    
+    `
+  },
+  {
+    start: new Date("June 10, 2017"),
+    title: "Hack the Brain",
+    type: ["meetup"],
+    topic: ["dance"],
+    venue: "Science Gallery Dublin (Ireland)",
+    desc: html`
+    hackathon group lead
+    `
+  },
+  {
+    start: new Date("May 6, 2017"),
+    title: "8th Choreographic Coding Lab",
+    type: ["meetup"],
+    topic: ["dance"],
+    venue: "De Brakke Grond (Netherlands)",
+    desc: html`
+    
+    `
+  },
+  {
+    start: new Date("April 27, 2017"),
+    title: "Transenses",
+    type: ["performance"],
+    topic: ["dance", "max"],
+    collab: ["Akiko Kitamura", "Navid Navab"],
+    venue: "Tangente (Canada)",
     desc: html`
     
     `
