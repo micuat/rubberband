@@ -10,10 +10,8 @@ const sc = [
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fccfest-desc.jpg?v=1610919339745",
     desc: html`
-      A workshop - register
-      <a href="https://ccfest.rocks/register">here</a>!<br />
-      Material can be found
-      <a href="https://ccfest-2021-glitchme.glitch.me/">here</a>.
+      A workshop - register <a href="https://ccfest.rocks/register">here</a>!<br />
+      Material can be found <a href="https://ccfest-2021-glitchme.glitch.me/">here</a>.
     `
   },
   {

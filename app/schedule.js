@@ -104,6 +104,7 @@ module.exports = filter => {
           <div class="venue">${venueElt}</div>
           <div class="clearer"></div>
           <p class="desc">${desc}</p>
+          <div class="clearer"></div>
           ${ytElt}
         </li>
       `
