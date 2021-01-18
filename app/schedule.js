@@ -10,6 +10,7 @@ module.exports = () => {
       type: ["workshop"],
       topic: ["hydra"],
       collab: ["Flor de Fuego"],
+      venue: "CCFest (online)",
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fccfest-desc.jpg?v=1610919339745",
       desc: html`
@@ -23,6 +24,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["hydra", "livelab", "tidalcycles"],
       collab: ["Flor de Fuego"],
+      venue: "TidalClub (online)",
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201220-tidal.jpg?v=1608503105807",
       yt: "gN9DHCetfBE",
@@ -36,6 +38,7 @@ module.exports = () => {
       type: ["performance", "net art"],
       topic: ["hydra", "livelab"],
       collab: ["Flor de Fuego"],
+      venue: "CODAME (online)",
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201218-codame.jpg?v=1608479114980",
       yt: "Fas_pGA2tvk",
@@ -49,6 +52,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["hydra"],
       collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+      venue: "online",
       desc: html`
       hydra meetup
       `
@@ -59,6 +63,7 @@ module.exports = () => {
       type: ["meetup"],
       collab: ["Takawo"],
       topic: ["processing", "japan"],
+      venue: "online",
       desc: html`
         Japanese Processing meetup https://pchj05.peatix.com/
       `
@@ -68,16 +73,18 @@ module.exports = () => {
       title: "Hydra Exhibition",
       type: ["net art"],
       topic: ["hydra", "vr"],
+      venue: "online",
       desc: html`
         net art
       `
     },
     {
       start: new Date("November 6, 2020"),
-      title: "Sharing at Theater Dortmund",
+      title: "Showing",
       type: ["exhibition"],
       topic: ["openFrameworks"],
       collab: ["Vivian Lu"],
+      venue: "Theater Dortmund",
       desc: html`
         A project with Vivian Lu
       `
@@ -87,6 +94,7 @@ module.exports = () => {
       title: "Tech is Nonbinary",
       type: ["performance"],
       topic: ["hydra", "dance"],
+      venue: "Creative Commons Global Summit (online)",
       desc: html`
         live coding performance
       `
@@ -97,6 +105,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["hubs", "miro", "green screen"],
       collab: ["Nien Tzu Weng"],
+      venue: "NODE20 (online)",
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
       yt: "g5Hd_5rKggA",
@@ -114,6 +123,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["dance"],
       collab: ["Annie Abrahams", "Daniel Pinheiro", "Muriel Piqué"],
+      venue: "NODE20 (online)",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
       desc: html`
         Distant Movements is a project by Annie Abrahams (FR/NL), Daniel
@@ -140,6 +150,7 @@ module.exports = () => {
       type: ["discussion"],
       topic: ["dance", "hydra"],
       collab: ["Jorge Guevara"],
+      venue: "NODE20 (online)",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
       yt: "YZfMBoFWFZY",
       desc:
@@ -168,6 +179,7 @@ module.exports = () => {
       type: ["discussion"],
       topic: ["dance", "hydra"],
       collab: ["Jorge Guevara"],
+      venue: "NODE20 (online)",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg?v=1601987022036",
       yt: "0-YILmKxVhY",
       desc:
@@ -180,6 +192,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["hydra"],
       collab: ["Flor de Fuego", "Olivia Jack"],
+      venue: "online",
       image:
         "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
       yt: "xTL0BjtBq5k",
@@ -204,6 +217,7 @@ module.exports = () => {
       topic: ["touchdesigner", "processing"],
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
       collab: ["Yasushi Harada", "Yuki Narumi", "Takawo"],
+      venue: "NODE20 (online)",
       desc: html`
         Tokyo Developers Study Weekend (TDSW) and Processing Community Japan
         (PCJ) invite you to present your artworks at an exhibition, where
@@ -225,15 +239,17 @@ module.exports = () => {
       type: ["lunch"],
       topic: ["food"],
       collab: ["Raphaël de Courville", "Taru Muhonen"],
+      venue: "NODE20 (online)",
       image: "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201003-02.jpg?v=1601728591081",
       desc:
         html`Low Frequency Skies is a lunch session run by Raphaël de Courville during quarantine to open a virtual space for his friends to eat and chat together. The legendary lunch session comes back during NODE20 at GreenHouse NAXOS – bring your friends and have breakfast, lunch or dinner together, depending on your time zone!`,
     },
     {
       start: new Date("October 2, 2020"),
-      title: "NODE20: Choreographic Coding Labs Online",
+      title: "Choreographic Coding Labs Online",
       type: ["curation"],
       topic: ["hydra", "dance", "food"],
+      venue: "NODE20 (online)",
       desc: html`
         NODE20
       `
@@ -244,16 +260,18 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["processing", "japan"],
       collab: ["Takawo"],
+      venue: "online",
       desc: html`
         Japanese Processing meetup
       `
     },
     {
       start: new Date("August 19, 2020"),
-      title: "Tidal Club: New Moon Marathon",
+      title: "TidalClub: New Moon Marathon",
       type: ["performance"],
       topic: ["tidalcycles"],
       collab: ["vc-study"],
+      venue: "TidalClub (online)",
       desc: html`
         https://naotohieda.com/blog/new-moon/
       `
@@ -264,6 +282,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["hydra"],
       collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+      venue: "online",
       image:
         "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fhydra-meetup1.png?v=1604872115474",
       desc: html`
@@ -278,6 +297,7 @@ module.exports = () => {
       type: ["panel"],
       topic: ["dance"],
       collab: ["Toronto Love-In"],
+      venue: "Toronto Love-In (online)",
       desc: html`
       panelist at Toronto Love-In
       `
@@ -288,6 +308,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["processing", "japan"],
       collab: ["Takawo"],
+      venue: "online",
       desc: html`
         Japanese Processing meetup https://pchj02.peatix.com/
       `
@@ -297,6 +318,7 @@ module.exports = () => {
       title: "Virtual Exhibition",
       type: ["net art"],
       topic: ["vr"],
+      venue: "online",
       desc: html`
       https://naotohieda.com/blog/virtual-exhibition-007/
       `
@@ -307,6 +329,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
       collab: ["Nien Tzu Weng"],
+      venue: "Centre de Création O Vertigo (online)",
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
       desc: html`
@@ -327,6 +350,7 @@ module.exports = () => {
       type: ["residency"],
       topic: ["jitsi", "miro", "cooking"],
       collab: ["Nien Tzu Weng"],
+      venue: "Centre de Création O Vertigo (online)",
       image:
         "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200601residence.png?v=1603140134648",
       yt: "HL6CTlNuzak",
@@ -346,6 +370,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["processing", "japan"],
       collab: ["Takawo"],
+      venue: "online",
       desc: html`
         Japanese Processing meetup https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/
       `
@@ -355,6 +380,7 @@ module.exports = () => {
       title: "15s or less Showcase - Stories from HK",
       type: ["net art"],
       topic: ["instagram", "hong kong"],
+      venue: "Umanesimo Artificiale (online)",
       desc: html`
         https://naotohieda.com/blog/15s-or-less/
       `
@@ -364,6 +390,7 @@ module.exports = () => {
       title: "Algorithm | Degeneracy",
       type: ["performance"],
       topic: ["dance", "p-code"],
+      venue: "NL_CL / iii (online)",
       desc: html`
         https://naotohieda.com/blog/nl-cl-2-flesh/
       `
@@ -374,6 +401,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["processing", "japan"],
       collab: ["Takawo"],
+      venue: "online",
       desc: html`
         Japanese Processing meetup https://pchj01.peatix.com/
       `
@@ -384,6 +412,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["processing"],
       collab: ["Saber Khan"],
+      venue: "online",
       desc: html`
         Processing meetup https://naotohieda.com/blog/processing-community-hangout-2-en/
       `
@@ -394,6 +423,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["processing"],
       collab: ["Saber Khan"],
+      venue: "online",
       desc: html`
         Processing meetup https://naotohieda.com/blog/processing-community-hangout-1-en/
       `
@@ -403,6 +433,7 @@ module.exports = () => {
       title: "p-code Land",
       type: ["net art"],
       topic: ["p-code"],
+      venue: "online",
       desc: html`
         https://naotohieda.com/blog/p-code-land/
       `
@@ -412,6 +443,7 @@ module.exports = () => {
       title: "Tweet Processing Editor",
       type: ["net art"],
       topic: ["processing"],
+      venue: "online",
       desc: html`
         https://naotohieda.com/blog/tweet-processing-editor/
       `
@@ -422,6 +454,7 @@ module.exports = () => {
       type: ["net art"],
       topic: ["vr"],
       collab: ["Utopian Council at KHM"],
+      venue: "Kunsthochschule für Medien Köln",
       desc: html`
         https://naotohieda.com/blog/utopian-council/      `
     },
@@ -430,6 +463,7 @@ module.exports = () => {
       title: "Virtual Exhibition 004",
       type: ["net art"],
       topic: ["vr"],
+      venue: "online",
       desc: html`
         https://naotohieda.com/blog/virtual-exhibition-004/ https://blog.glitch.com/post/drag-and-drop-your-art-to-the-virtual-world
         `
@@ -439,6 +473,7 @@ module.exports = () => {
       title: "Virtual Exhibition 003",
       type: ["performance"],
       topic: ["dance", "p-code"],
+      venue: "Kunsthochschule für Medien Köln",
       desc: html`
         Informal presentation https://naotohieda.com/blog/virtual-exhibition-003/
       `
@@ -449,6 +484,7 @@ module.exports = () => {
       type: ["meetup"],
       topic: ["processing", "japan"],
       collab: ["PCD Tokyo"],
+      venue: "Yahoo! LODGE (Japan)",
       desc: html`
         Japanese Processing meetup
       `
@@ -459,6 +495,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["processing", "dance"],
       collab: ["Eleonora Siarava"],
+      venue: "tanzhaus nrw (Germany)",
       desc: html`
         Project by Eleonora Siarava https://vimeo.com/463813053
         `
@@ -506,6 +543,7 @@ module.exports = () => {
       type: ["performance"],
       topic: [],
       collab: [""],
+      venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
       desc: html`
       HKAPA
       `
@@ -516,6 +554,7 @@ module.exports = () => {
       type: ["residency"],
       topic: [],
       collab: [""],
+      venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
       desc: html`
       HKAPA
       `
@@ -525,7 +564,8 @@ module.exports = () => {
       title: "XM-Profiler Prime",
       type: ["installation"],
       topic: [],
-      collab: ["Ito-En"],
+      collab: [],
+      venue: "Ito-En (Japan)",
       desc: html`
       Ingress
       `
@@ -536,6 +576,7 @@ module.exports = () => {
       type: ["installation"],
       topic: [],
       collab: [""],
+      venue: "Dance4 (UK)",
       desc: html`
       Nottingham
       `
@@ -546,6 +587,7 @@ module.exports = () => {
       type: ["installation"],
       topic: [],
       collab: [""],
+      venue: "Victoria and Albert Museum",
       desc: html`
        V&A Friday Late at Victoria and Albert Museum (UK)
       `
@@ -586,6 +628,7 @@ module.exports = () => {
       type: ["residency"],
       topic: ["dance"],
       collab: ["Choy Ka Fai"],
+      venue: "tanzhaus nrw (Germany)",
       desc: html`
       tanzhaus
       `
@@ -596,6 +639,7 @@ module.exports = () => {
       type: ["performance"],
       topic: ["dance", "eeg", "processing"],
       collab: ["Choy Ka Fai"],
+      venue: "tanzhaus nrw (Germany)",
       desc: html`
       tanzhaus
       `
@@ -606,6 +650,7 @@ module.exports = () => {
       type: ["lecture"],
       topic: ["dance", "autism", "processing"],
       collab: ["Choy Ka Fai"],
+      venue: "tanzhaus nrw (Germany)",
       desc: html`
       Technological flesh! at Festival Temps d'Images, tanzhaus nrw
       `
@@ -621,7 +666,7 @@ module.exports = () => {
       day: "numeric",
       year: "numeric",
     });
-    const { title, topic, desc, type, image, yt, collab } = s;
+    const { title, topic, desc, type, image, yt, collab, venue } = s;
     let types = [];
     for (const t of type) {
       types.push(
@@ -649,6 +694,10 @@ module.exports = () => {
         }
         i++;
       }
+    }
+    let venueElt;
+    if (venue != undefined) {
+      venueElt = html`at ${venue}`;
     }
     let imageElt;
     if (image != undefined) {
@@ -684,6 +733,8 @@ module.exports = () => {
           <div class="thumbnail">${imageElt}</div>
           <div class="clearer"></div>
           <div class="collabs">${collabs}</div>
+          <div class="clearer"></div>
+          <div class="venue">${venueElt}</div>
           <div class="clearer"></div>
           <p class="desc">${desc}</p>
           ${ytElt}
