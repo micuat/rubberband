@@ -876,6 +876,26 @@ const sc = [
     `
   },
   {
+    start: new Date("April 18, 2018"),
+    title: "Pecha Kucha at TML #3",
+    type: ["meetup"],
+    topic: [],
+    venue: "Topological Media Lab (Canada)",
+    desc: html`
+      I organized pecha kucha
+    `
+  },
+  {
+    start: new Date("April 4, 2018"),
+    title: "Pecha Kucha at TML #2",
+    type: ["meetup"],
+    topic: [],
+    venue: "Topological Media Lab (Canada)",
+    desc: html`
+      I organized pecha kucha
+    `
+  },
+  {
     start: new Date("March 22, 2018"),
     title: "KUU",
     type: ["installation"],
@@ -883,6 +903,16 @@ const sc = [
     collab: ["KUU"],
     venue: "SNDO (Netherlands)",
     desc: html`
+    `
+  },
+  {
+    start: new Date("March 8, 2018"),
+    title: "Pecha Kucha at TML #1",
+    type: ["meetup"],
+    topic: [],
+    venue: "Topological Media Lab (Canada)",
+    desc: html`
+      I presented at pecha kucha
     `
   },
   {
@@ -965,7 +995,11 @@ module.exports = function(state, emit) {
     state.schedule = schedule(tag);
   }
   
-  
+  const filters = [];
+  const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
+  for(const t of types) {
+    filters.push(html`<p onclick="${filter}" class="${t}">${t}</p>`);
+  }
 
   return html`
 <div>
@@ -977,8 +1011,9 @@ module.exports = function(state, emit) {
     </p>
 
     <div>
-    Filter by <div onclick="${filter}">installation</div>
+    Filter by <div class="type">${filters}</div>
     </div>
+    <div class="clearer"></div>
 
     <ul>
       ${state.schedule}
@@ -987,8 +1022,9 @@ module.exports = function(state, emit) {
 </div>
 </div>`;
   
-  function filter () {
-    tag = "installation"
+  function filter (e) {
+    console.log(e.target.innerText);
+    tag = e.target.innerText;
     state.schedule = schedule(tag);
     emit('render');
   }

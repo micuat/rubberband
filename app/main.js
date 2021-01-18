@@ -16,9 +16,9 @@ module.exports = function(state, emit) {
   }
   
   const filters = [];
-  const types = ["installation", "lecture"];
+  const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
   for(const t of types) {
-    filters.push(html`<div onclick="${filter}">installation</div>`);
+    filters.push(html`<p onclick="${filter}" class="${t}">${t}</p>`);
   }
 
   return html`
@@ -31,8 +31,9 @@ module.exports = function(state, emit) {
     </p>
 
     <div>
-    Filter by ${filters}
+    Filter by <div class="type">${filters}</div>
     </div>
+    <div class="clearer"></div>
 
     <ul>
       ${state.schedule}
@@ -41,8 +42,9 @@ module.exports = function(state, emit) {
 </div>
 </div>`;
   
-  function filter () {
-    tag = "installation"
+  function filter (e) {
+    console.log(e.target.innerText);
+    tag = e.target.innerText;
     state.schedule = schedule(tag);
     emit('render');
   }

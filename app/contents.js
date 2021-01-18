@@ -875,6 +875,26 @@ const sc = [
     `
   },
   {
+    start: new Date("April 18, 2018"),
+    title: "Pecha Kucha at TML #3",
+    type: ["meetup"],
+    topic: [],
+    venue: "Topological Media Lab (Canada)",
+    desc: html`
+      I organized pecha kucha
+    `
+  },
+  {
+    start: new Date("April 4, 2018"),
+    title: "Pecha Kucha at TML #2",
+    type: ["meetup"],
+    topic: [],
+    venue: "Topological Media Lab (Canada)",
+    desc: html`
+      I organized pecha kucha
+    `
+  },
+  {
     start: new Date("March 22, 2018"),
     title: "KUU",
     type: ["installation"],
@@ -882,6 +902,16 @@ const sc = [
     collab: ["KUU"],
     venue: "SNDO (Netherlands)",
     desc: html`
+    `
+  },
+  {
+    start: new Date("March 8, 2018"),
+    title: "Pecha Kucha at TML #1",
+    type: ["meetup"],
+    topic: [],
+    venue: "Topological Media Lab (Canada)",
+    desc: html`
+      I presented at pecha kucha
     `
   },
   {
