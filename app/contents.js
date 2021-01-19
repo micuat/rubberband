@@ -1221,11 +1221,58 @@ const sc = [
     `
   },
   {
+    start: new Date("August 14, 2015"),
+    title: "Crow Panel",
+    type: ["installation", "conference"],
+    topic: ["openFrameworks"],
+    collab: ["Judith Doyle"],
+    venue: "ISEA / Museum of Vancouver (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("August 1, 2015"),
+    title: "Bizarrege",
+    type: ["installation"],
+    topic: ["openFrameworks"],
+    venue: "Maker Faire Toronto / Toronto Reference Library (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("June 10, 2015"),
+    title: "Digital Facial Augmentation for Interactive Entertainment",
+    type: ["installation", "conference"],
+    topic: ["openFrameworks"],
+    venue: "INTETAIN (Italy)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("May 25, 2015"),
     title: "Google Summer of Code",
     type: ["residency"],
     topic: ["opencv"],
     venue: "OpenCV / Google (online)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("April 11, 2015"),
+    title: "sharedFace2",
+    type: ["installation", "conference"],
+    topic: ["openFrameworks"],
+    venue: "Laval Virtual (France)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("February 28, 2015"),
+    title: "Mémoire Liquide",
+    type: ["installation"],
+    topic: ["openFrameworks"],
+    collab: ["Marcella França"],
+    venue: "Nuit Blanche / Société des Arts Technologiques (Canada)",
     desc: html`
     `
   },
