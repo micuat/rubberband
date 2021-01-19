@@ -1107,11 +1107,40 @@ const sc = [
     start: new Date("February 13, 2017"),
     title: "Scènes Ouvertes",
     type: ["performance"],
-    topic: ["scenic"],
+    topic: ["scenic", "processing", "arduino"],
     collab: ["Evelyne Drouin"],
     venue: "Société des Arts Technologiques (Canada)",
     desc: html`
     
+    `
+  },
+  {
+    start: new Date("July 14, 2016"),
+    title: "danceWEB",
+    type: ["residency", "award"],
+    topic: ["dance"],
+    venue: "ImPulsTanz (Austria)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("May 31, 2016"),
+    title: "Composite Particles",
+    type: ["installation"],
+    topic: ["unity"],
+    collab: ["Evelyne Drouin"],
+    venue: "IX Symposium (Canada)",
+    desc: html`
+    `
+  },
+  {Avian Attractor (interactive display with Judith Doyle), CHI Art Exhibition (USA)
+    start: new Date("May 31, 2016"),
+    title: "Composite Particles",
+    type: ["installation"],
+    topic: ["unity"],
+    collab: ["Evelyne Drouin"],
+    venue: "IX Symposium (Canada)",
+    desc: html`
     `
   },
 ];
