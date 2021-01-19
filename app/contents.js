@@ -1162,6 +1162,25 @@ const sc = [
     `
   },
   {
+    start: new Date("August 14, 2016"),
+    title: "Showing",
+    type: ["performance"],
+    topic: ["dance"],
+    collab: ["Ainesh Madan"],
+    venue: "ImPulsTanz / Leopold Museum (Austria)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("July 29, 2016"),
+    title: "That Choreographs Us!",
+    type: ["performance"],
+    topic: ["dance"],
+    venue: "ImPulsTanz (Austria)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("July 14, 2016"),
     title: "danceWEB",
     type: ["residency", "award"],
@@ -1177,6 +1196,15 @@ const sc = [
     topic: ["unity"],
     collab: ["Evelyne Drouin"],
     venue: "IX Symposium (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("May 27, 2016"),
+    title: "Workshop on Mobile EEG for Neuroscience",
+    type: ["lecture"],
+    topic: ["eeg"],
+    venue: "BRAMS (Canada)",
     desc: html`
     `
   },

@@ -27,7 +27,7 @@ module.exports = function(state, emit) {
   const types = counter.sort((a, b) => a.count < b.count);
   
   const filters = [];
-  if(state.filter == undefined) state.filter = {tag: "all"};
+  if(state.filter == undefined) state.filter = {tag: "all", year: "all time"};
 
   for(const t of types) {
     const selected = state.filter.tag == undefined ? "" : (state.filter.tag == t.t ? "selected" : "");
