@@ -293,6 +293,15 @@ const sc = [
     `
   },
   {
+    start: new Date("September 6, 2020"),
+    title: "Online Hangs",
+    type: ["meetup"],
+    topic: [],
+    collab: ["Marie Claire LeBlanc Flanagan"],
+    venue: "online",
+    desc: html`
+    `
+  },  {
     start: new Date("August 30, 2020"),
     title: "Processing Community Hangout Japan 03",
     type: ["meetup"],
