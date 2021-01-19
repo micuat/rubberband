@@ -556,7 +556,7 @@ const sc = [
     type: ["performance"],
     topic: ["processing", "dance"],
     collab: ["Eleonora Siarava"],
-    venue: "tanzhaus nrw (Germany)",
+    venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     desc: html`
       Project by Eleonora Siarava https://vimeo.com/463813053
     `
@@ -717,7 +717,7 @@ const sc = [
     collab: ["Choy Ka Fai"],
     venue: "tanzhaus nrw (Germany)",
     desc: html`
-      tanzhaus
+      work in progress
     `
   },
   {
@@ -726,7 +726,7 @@ const sc = [
     type: ["performance"],
     topic: ["dance", "eeg", "processing"],
     collab: ["Choy Ka Fai"],
-    venue: "tanzhaus nrw (Germany)",
+    venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     desc: html`
       tanzhaus
     `
@@ -736,10 +736,9 @@ const sc = [
     title: "Algorithm | Diversion",
     type: ["lecture"],
     topic: ["dance", "autism", "processing"],
-    collab: ["Choy Ka Fai"],
-    venue: "tanzhaus nrw (Germany)",
+    venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     desc: html`
-      Technological flesh! at Festival Temps d'Images, tanzhaus nrw
+      at symposium Technological flesh!
     `
   },
   {
@@ -991,7 +990,7 @@ const sc = [
   },
   {
     start: new Date("November 14, 2017"),
-    title: "Brainwave Performance",
+    title: "Chorégraphie Cérébrale",
     type: ["performance"],
     topic: ["dance", "eeg"],
     collab: ["Olivier Lalonde"],
@@ -1105,13 +1104,23 @@ const sc = [
   },
   {
     start: new Date("March 7, 2017"),
-    title: "Brainwave Performance",
+    title: "Chorégraphie Cérébrale",
     type: ["performance"],
     topic: ["dance", "eeg"],
-    collab: ["Olivier Lalonde"],
+    collab: ["Olivier Lalonde", "Marie-Noëlle De Sève"],
     venue: "Printemps Numeriques / Canadian Centre for Architecture (Canada)",
     desc: html`
     
+    `
+  },
+  {
+    start: new Date("January 28, 2016"),
+    title: "Performance",
+    type: ["performance"],
+    topic: ["arduino"],
+    collab: ["Evelyne Drouin", "Captain Az!z"],
+    venue: "Igloofest (Canada)",
+    desc: html`
     `
   },
   {
@@ -1146,7 +1155,7 @@ const sc = [
   {
     start: new Date("September 23, 2016"),
     title: "An Intelligent Floor Surface for Foot-based Exploration of Geospatial Data",
-    type: ["conference"],
+    type: ["conference", "lecture"],
     topic: ["haptics"],
     collab: ["Jan Anlauff"],
     venue: "International Workshop on Multimedia Signal Processing (Canada)",
@@ -1211,6 +1220,25 @@ const sc = [
     `
   },
   {
+    start: new Date("January 28, 2016"),
+    title: "Igloofest",
+    type: ["performance"],
+    topic: ["openFrameworks"],
+    collab: ["Evelyne Drouin", "Captain Az!z"],
+    venue: "Igloofest (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("January 25, 2016"),
+    title: "EEG Drawing",
+    type: ["installation"],
+    topic: ["eeg", "openFrameworks"],
+    venue: "TEDxMontreal Cocktail Party (Canada)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("November 8, 2015"),
     title: "MINIW",
     type: ["installation"],
@@ -1261,7 +1289,7 @@ const sc = [
   {
     start: new Date("June 10, 2015"),
     title: "Digital Facial Augmentation for Interactive Entertainment",
-    type: ["installation", "conference"],
+    type: ["installation", "conference", "lecture"],
     topic: ["openFrameworks"],
     venue: "INTETAIN (Italy)",
     desc: html`
@@ -1279,7 +1307,7 @@ const sc = [
   {
     start: new Date("April 11, 2015"),
     title: "sharedFace2",
-    type: ["installation", "conference"],
+    type: ["installation", "conference", "lecture"],
     topic: ["openFrameworks"],
     venue: "Laval Virtual (France)",
     desc: html`
@@ -1307,7 +1335,7 @@ const sc = [
   {
     start: new Date("May 15, 2014"),
     title: "Image Processing with the Microsoft Kinect",
-    type: ["workshop"],
+    type: ["workshop", "lecture"],
     topic: ["kinect"],
     venue: "GRAND (Canada)",
     desc: html`
