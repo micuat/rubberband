@@ -1412,16 +1412,19 @@ module.exports = function(state, emit) {
   const types = counter.sort((a, b) => a.count < b.count);
   
   const filters = [];
-  // const types = ["all", "performance", "net art", "installation", "meetup", "workshop", "lecture", "conference"];
+  if(state.filter == undefined) state.filter = {};
+
   for(const t of types) {
-    filters.push(html`<p onclick="${filterTag}" class="${t.t}">${t.t}</p>`);
+    const selected = state.filter.tag == undefined ? "" : (state.filter.tag == t.t ? "selected" : "");
+    filters.push(html`<p onclick="${filterTag}" class="${t.t} ${selected}">${t.t}</p>`);
   }
   
   filters.push(html`<div class="clearer"></div>`);
 
   const filtersY = [];
-  for(const t of ["2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"]) {
-    filters.push(html`<p onclick="${filterYear}" class="${t}">${t}</p>`);
+  for(const t of ["all time", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"]) {
+    const selected = state.filter.year == undefined ? "" : (state.filter.year == t ? "selected" : "");
+    filters.push(html`<p onclick="${filterYear}" class="${t} ${selected}">${t}</p>`);
   }
 
   return html`
@@ -1448,13 +1451,13 @@ module.exports = function(state, emit) {
   function filterTag (e) {
     // console.log(e.target.innerText);
     const tag = e.target.innerText;
-    state.filter = {tag};
+    state.filter.tag = tag;
     emit('render');
   }
   function filterYear (e) {
     // console.log(e.target.innerText);
     const year = e.target.innerText;
-    state.filter = {year};
+    state.filter.year = year;
     emit('render');
   }
 };
@@ -1483,8 +1486,9 @@ module.exports = filter => {
     if (filter != undefined) {
       if (filter.tag != undefined) {
         if (filter.tag != "all" && type.indexOf(filter.tag) < 0) continue;
-      } else if (filter.year != undefined) {
-        if (dateYear != filter.year) continue;
+      }
+      if (filter.year != undefined) {
+        if (filter.year != "all time" && dateYear != filter.year) continue;
       }
     }
 
