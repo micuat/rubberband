@@ -1115,6 +1115,15 @@ const sc = [
     `
   },
   {
+    start: new Date("November 12, 2016"),
+    title: "EEG Drawing",
+    type: ["installation"],
+    topic: ["openFrameworks"],
+    venue: "TEDxMontreal (Canada)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("July 14, 2016"),
     title: "danceWEB",
     type: ["residency", "award"],
@@ -1133,13 +1142,22 @@ const sc = [
     desc: html`
     `
   },
-  {Avian Attractor (interactive display with Judith Doyle), CHI Art Exhibition (USA)
-    start: new Date("May 31, 2016"),
-    title: "Composite Particles",
+  {
+    start: new Date("April 26, 2016"),
+    title: "Avian Attractor",
     type: ["installation"],
-    topic: ["unity"],
-    collab: ["Evelyne Drouin"],
-    venue: "IX Symposium (Canada)",
+    topic: ["openFrameworks"],
+    collab: ["Judith Doyle"],
+    venue: "CHI Art Exhibition (US)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("April 12, 2016"),
+    title: "Using brain waves to do art",
+    type: ["workshop"],
+    topic: ["eeg", "python"],
+    venue: "NeuroTechMTL (Canada)",
     desc: html`
     `
   },
