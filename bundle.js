@@ -1135,6 +1135,15 @@ const sc = [
     `
   },
   {
+    start: new Date("October 2, 2016"),
+    title: "EEG Drawing",
+    type: ["installation"],
+    topic: ["eeg", "openFrameworks"],
+    venue: "World Maker Faire (US)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("September 23, 2016"),
     title: "An Intelligent Floor Surface for Foot-based Exploration of Geospatial Data",
     type: ["conference"],
@@ -1198,6 +1207,15 @@ const sc = [
     topic: ["unity"],
     collab: ["Evelyne Drouin"],
     venue: "Nuit Blanche / Société des Arts Technologiques (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("November 8, 2015"),
+    title: "MINIW",
+    type: ["installation"],
+    topic: ["unity"],
+    venue: "Maker Faire Ottawa (Canada)",
     desc: html`
     `
   },
@@ -1277,6 +1295,34 @@ const sc = [
     desc: html`
     `
   },
+  {
+    start: new Date("October 23, 2014"),
+    title: "sharedFace",
+    type: ["installation", "award"],
+    topic: ["openFrameworks"],
+    venue: "IVRC (Japan)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("May 15, 2014"),
+    title: "Image Processing with the Microsoft Kinect",
+    type: ["workshop"],
+    topic: ["kinect"],
+    venue: "GRAND (Canada)",
+    desc: html`
+    organization and lecture
+    `
+  },
+  {
+    start: new Date("May 14, 2014"),
+    title: "Kinetic Video Projection for Theatre Lighting",
+    type: ["installation"],
+    topic: ["openFrameworks"],
+    venue: "GRAND (Canada)",
+    desc: html`
+    `
+  },
 ];
 
 module.exports = sc;
@@ -1346,7 +1392,7 @@ module.exports = function(state, emit) {
   filters.push(html`<div class="clearer"></div>`);
 
   const filtersY = [];
-  for(const t of ["2021", "2020", "2019", "2018", "2017", "2016", "2015"]) {
+  for(const t of ["2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"]) {
     filters.push(html`<p onclick="${filterYear}" class="${t}">${t}</p>`);
   }
 
