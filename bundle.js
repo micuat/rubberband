@@ -875,7 +875,7 @@ const sc = [
     `
   },
   {
-    start: new Date("June 28, 2019"),
+    start: new Date("June 28, 2018"),
     title: "Skin Irony Virtual Screen",
     type: ["commercial"],
     topic: ["openFrameworks"],
@@ -1216,6 +1216,15 @@ const sc = [
     topic: ["openFrameworks"],
     collab: ["Judith Doyle"],
     venue: "CHI Art Exhibition / Works/San José (US)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("April 22, 2016"),
+    title: "EEG Drawing",
+    type: ["installation"],
+    topic: ["eeg", "openFrameworks"],
+    venue: "Hack Day (Canada)",
     desc: html`
     `
   },
