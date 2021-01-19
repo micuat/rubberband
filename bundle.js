@@ -1000,6 +1000,16 @@ const sc = [
     `
   },
   {
+    start: new Date("November 1, 2017"),
+    title: "EEG Drawing",
+    type: ["installation"],
+    topic: ["eeg", "openFrameworks"],
+    collab: ["Evelyne Drouin"],
+    venue: "Cancerto (Canada)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("October 23, 2017"),
     title: "Mobile Brain-Computer Interface for Dance and Somatic Practice",
     type: ["installation"],
@@ -1220,12 +1230,23 @@ const sc = [
     `
   },
   {
+    start: new Date("April 30, 2016"),
+    title: "Glitch 3D",
+    type: ["meetup"],
+    topic: ["3D scan", "openFrameworks"],
+    venue: "Virtual Reality Hackathon (Canada)",
+    desc: html`
+    https://devpost.com/software/glitch-3d
+    `
+  },
+  {
     start: new Date("April 22, 2016"),
-    title: "EEG Drawing",
-    type: ["installation"],
-    topic: ["eeg", "openFrameworks"],
+    title: "Glitch over Emotion Transfer Protocol",
+    type: ["meetup"],
+    topic: ["face tracking", "openFrameworks"],
     venue: "Hack Day (Canada)",
     desc: html`
+    https://vimeo.com/164074864
     `
   },
   {
