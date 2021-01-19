@@ -624,7 +624,7 @@ const sc = [
   {
     start: new Date("September 16, 2019"),
     title: "HKAPA",
-    type: ["residency"],
+    type: ["residency", "workshop"],
     topic: ["dance", "machine learning", "processing"],
     collab: ["Raphael Hillebrand"],
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
@@ -801,6 +801,7 @@ const sc = [
     collab: ["Evelyne Drouin"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     desc: html`
+    https://blog.naver.com/sas_g/221428126204
     `
   },
   {
@@ -1009,6 +1010,15 @@ const sc = [
     `
   },
   {
+    start: new Date("October 14, 2017"),
+    title: "EEG Drawing",
+    type: ["installation"],
+    topic: ["eeg", "openFrameworks"],
+    venue: "NeuroTechTO / TAVES / Toronto Congress Centre (Canada)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("October 5, 2017"),
     title: "Passing Light",
     type: ["installation"],
@@ -1124,6 +1134,16 @@ const sc = [
     `
   },
   {
+    start: new Date("September 23, 2016"),
+    title: "An Intelligent Floor Surface for Foot-based Exploration of Geospatial Data",
+    type: ["conference"],
+    topic: ["haptics"],
+    collab: ["Jan Anlauff"],
+    venue: "International Workshop on Multimedia Signal Processing (Canada)",
+    desc: html`
+    `
+  },
+  {
     start: new Date("July 14, 2016"),
     title: "danceWEB",
     type: ["residency", "award"],
@@ -1149,6 +1169,15 @@ const sc = [
     topic: ["openFrameworks"],
     collab: ["Judith Doyle"],
     venue: "CHI Art Exhibition (US)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("April 21, 2016"),
+    title: "EEG Drawing",
+    type: ["installation"],
+    topic: ["eeg", "openFrameworks"],
+    venue: "NeuroTechTO / Bnotions (Canada)",
     desc: html`
     `
   },
