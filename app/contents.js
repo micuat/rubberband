@@ -1165,10 +1165,10 @@ const sc = [
   {
     start: new Date("April 26, 2016"),
     title: "Avian Attractor",
-    type: ["installation"],
+    type: ["installation", "conference"],
     topic: ["openFrameworks"],
     collab: ["Judith Doyle"],
-    venue: "CHI Art Exhibition (US)",
+    venue: "CHI Art Exhibition / Works/San José (US)",
     desc: html`
     `
   },
@@ -1187,6 +1187,45 @@ const sc = [
     type: ["workshop"],
     topic: ["eeg", "python"],
     venue: "NeuroTechMTL (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("February 27, 2016"),
+    title: "Composite Particles",
+    type: ["installation", "award"],
+    topic: ["unity"],
+    collab: ["Evelyne Drouin"],
+    venue: "Nuit Blanche / Société des Arts Technologiques (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("November 7, 2015"),
+    title: "MINIW and Bizarrege (Play)",
+    type: ["installation"],
+    topic: ["openFrameworks"],
+    venue: "TEDxMontreal / Usine C (Canada)",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("August 27, 2015"),
+    title: "4th Choreographic Coding Lab",
+    type: ["meetup"],
+    topic: ["dance"],
+    collab: [],
+    venue: "NYU (US)",
+    desc: html`
+      Cellular Body
+    `
+  },
+  {
+    start: new Date("May 25, 2015"),
+    title: "Google Summer of Code",
+    type: ["residency"],
+    topic: ["opencv"],
+    venue: "OpenCV / Google (online)",
     desc: html`
     `
   },
