@@ -1076,7 +1076,6 @@ const sc = [
     topic: ["dance", "eeg"],
     collab: ["Olivier Lalonde"],
     venue: "RIDM / Cinémathèque Québecoise (Canada)",
-    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcc.jpg?v=1611413239347",
     desc: html`
     
     `
@@ -1205,6 +1204,7 @@ const sc = [
     topic: ["dance", "eeg"],
     collab: ["Olivier Lalonde", "Marie-Noëlle De Sève"],
     venue: "Printemps Numeriques / Canadian Centre for Architecture (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcc.jpg?v=1611413239347",
     desc: html`
     
     `
