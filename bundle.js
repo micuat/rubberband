@@ -537,6 +537,7 @@ const sc = [
     type: ["performance"],
     topic: ["dance", "p-code"],
     venue: "Kunsthochschule für Medien Köln",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-05-virtual-exhibition-003.png?v=1611414757005",
     desc: html`
       Informal presentation https://naotohieda.com/blog/virtual-exhibition-003/
     `
@@ -548,6 +549,7 @@ const sc = [
     topic: ["processing", "japan"],
     collab: ["PCD Tokyo"],
     venue: "Yahoo! LODGE (Japan)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-01-processing-community-day-tokyo-2020-kids.jpg?v=1611414728601",
     desc: html`
       Japanese Processing meetup
     `
@@ -587,6 +589,7 @@ const sc = [
     type: ["meetup"],
     topic: [],
     venue: "Akkuraum (Germany)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-12-05-cck-meetup-intro.jpg?v=1611414668474",
     desc: html`
       meetup -Feb 27, 2020 https://naotohieda.com/blog/creative-code-koeln-1/
     `
@@ -598,6 +601,7 @@ const sc = [
     topic: ["dance", "unity"],
     collab: ["Asaf Bachrach"],
     venue: "CNRS (France)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-11-15-articulation.png?v=1611414638191",
     desc: html`
       Paris
     `
