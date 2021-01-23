@@ -2,6 +2,17 @@
 var html = require("choo/html");
 const sc = [
   {
+    start: new Date("February 15, 2021"),
+    title: "#spektrum",
+    type: ["installation"],
+    topic: ["nails"],
+    venue: "ctrl+space / Cologne Main Station (Germany)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F210215-spektrum.jpg?v=1611426104304",
+    desc: html`
+      to be on view
+    `
+  },
+  {
     start: new Date("February 13, 2021"),
     title: "Hydra meetup #4",
     type: ["meetup"],
@@ -617,6 +628,7 @@ const sc = [
     title: "Hydra Book",
     type: ["tutorial"],
     topic: ["hydra"],
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhydra-book.png?v=1611426374077",
     desc: html`
       https://hydra-book.naotohieda.com/
     `
@@ -770,7 +782,7 @@ const sc = [
     collab: ["Choy Ka Fai"],
     venue: "tanzhaus nrw (Germany)",
     desc: html`
-      work in progress
+      participated in work-in-progress creation
     `
   },
   {
@@ -781,7 +793,7 @@ const sc = [
     collab: ["Choy Ka Fai"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     desc: html`
-      tanzhaus
+      visual, interaction programming
     `
   },
   {
@@ -791,7 +803,7 @@ const sc = [
     topic: ["dance", "autism", "processing"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     desc: html`
-      at symposium Technological flesh!
+      at symposium "Technological flesh!"
     `
   },
   {
@@ -900,6 +912,7 @@ const sc = [
     topic: ["vvvv"],
     collab: ["Team MTL"],
     venue: "Solar Decathlon (China)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsolar-decathlon.png?v=1611426495269",
     desc: html`
     `
   },
