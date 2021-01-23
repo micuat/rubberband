@@ -367,7 +367,7 @@ const sc = [
     type: ["installation", "net art"],
     topic: ["vr"],
     venue: "nextmuseum.io (online)",
-    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-07-01-virtual-exhibition-007.png?v=1611413239494"
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-07-01-virtual-exhibition-007.png?v=1611413239494",
     desc: html`
       https://naotohieda.com/blog/virtual-exhibition-007/
     `
@@ -608,6 +608,7 @@ const sc = [
     topic: ["dance", "machine learning", "processing"],
     collab: ["Raphael Hillebrand"],
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhkapa.jpg?v=1611413240992",
     desc: html`
       HKAPA
     `
@@ -619,6 +620,7 @@ const sc = [
     topic: ["vvvv"],
     collab: ["Michael Montanaro", "Tatev Yesayan"],
     venue: "CHAOSMOSIS mAchInes / University of Toronto (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
       https://www.cdtps.utoronto.ca/events/chaosmosis-machines
     `
@@ -662,6 +664,7 @@ const sc = [
     type: ["installation"],
     topic: ["weaving"],
     venue: "Victoria and Albert Museum",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fnpsw.jpg?v=1611413846212",
     desc: html`
       V&A Friday Late at Victoria and Albert Museum (UK)
     `
@@ -706,6 +709,7 @@ const sc = [
     topic: ["processing", "japan"],
     collab: ["Ayumu Nagamatsu", "Yasuto Nakanishi"],
     venue: "Yahoo! LODGE (Japan)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2.jpg?v=1611413240902",
     desc: html`
       Japanese Processing meetup
     `
@@ -822,6 +826,7 @@ const sc = [
     type: ["meetup"],
     topic: ["processing"],
     venue: "Seoul Art Space Geumcheon (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg.png?v=1611413249718",
     desc: html`
       party with projection mapping
     `
@@ -832,6 +837,7 @@ const sc = [
     type: ["meetup"],
     topic: ["processing"],
     venue: "Seoul Art Space Geumcheon (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg.png?v=1611413249718",
     desc: html`
       party with projection mapping
     `
@@ -852,6 +858,7 @@ const sc = [
     type: ["meetup"],
     topic: ["processing"],
     venue: "Seoul Art Space Geumcheon (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg.png?v=1611413249718",
     desc: html`
       party with projection mapping
     `
@@ -874,6 +881,7 @@ const sc = [
     topic: ["processing"],
     collab: ["Evelyne Drouin"],
     venue: "Seoul Art Space Geumcheon (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fusine.png?v=1611413241153",
     desc: html`
     `
   },
@@ -895,6 +903,7 @@ const sc = [
     topic: ["processing", "pathfinder"],
     collab: ["Christian Mio Loclair"],
     venue: "NOVA Festival / Point (Romania)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpathrefinder.jpg?v=1611413242207",
     desc: html`
       
     `
@@ -988,6 +997,7 @@ const sc = [
     topic: ["dance"],
     collab: ["Nien Tzu Weng"],
     venue: "Studio 303 (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpathrefinder.png?v=1611413251097",
     desc: html`
     
     `
@@ -1041,6 +1051,7 @@ const sc = [
     topic: ["vvvv"],
     collab: ["Michael Montanaro", "Tatev Yesayan"],
     venue: "MAPP_MTL Invisible Exhibition Micro-Mapping / Never Apart (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
     
     `
@@ -1094,6 +1105,7 @@ const sc = [
     type: ["meetup"],
     topic: ["dance"],
     venue: "De Brakke Grond (Netherlands)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Feegccl.jpg?v=1611413244834",
     desc: html`
     
     `
@@ -1105,6 +1117,7 @@ const sc = [
     topic: ["dance", "max"],
     collab: ["Akiko Kitamura", "Navid Navab"],
     venue: "Tangente (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fts.png?v=1611413246147",
     desc: html`
     
     `
@@ -1146,6 +1159,7 @@ const sc = [
     topic: ["scenic", "processing", "arduino"],
     collab: ["Evelyne Drouin"],
     venue: "Société des Arts Technologiques (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fso.jpg?v=1611413239746",
     desc: html`
     
     `
@@ -1213,6 +1227,7 @@ const sc = [
     topic: ["unity"],
     collab: ["Evelyne Drouin"],
     venue: "IX Symposium (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcomposite.png?v=1611413241382",
     desc: html`
     `
   },
@@ -1281,6 +1296,7 @@ const sc = [
     topic: ["unity"],
     collab: ["Evelyne Drouin"],
     venue: "Nuit Blanche / Société des Arts Technologiques (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcomposite.png?v=1611413241382",
     desc: html`
     `
   },
@@ -1291,6 +1307,7 @@ const sc = [
     topic: ["openFrameworks"],
     collab: ["Evelyne Drouin", "Captain Az!z"],
     venue: "Igloofest (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Figloofest.png?v=1611413241721",
     desc: html`
     `
   },
@@ -1309,6 +1326,7 @@ const sc = [
     type: ["installation"],
     topic: ["unity"],
     venue: "Maker Faire Ottawa (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fminiw.png?v=1611413244674",
     desc: html`
     `
   },
@@ -1318,6 +1336,7 @@ const sc = [
     type: ["installation"],
     topic: ["openFrameworks"],
     venue: "TEDxMontreal / Usine C (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FbizarregePlay.png?v=1611413243748",
     desc: html`
     `
   },
@@ -1328,6 +1347,7 @@ const sc = [
     topic: ["dance"],
     collab: [],
     venue: "NYU (US)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fccl4smalt.png?v=1611413242798",
     desc: html`
       Cellular Body
     `
@@ -1349,6 +1369,7 @@ const sc = [
     type: ["installation"],
     topic: ["openFrameworks"],
     venue: "Maker Faire Toronto / Toronto Reference Library (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fbizarrege.png?v=1611413244616",
     desc: html`
     `
   },
@@ -1377,6 +1398,7 @@ const sc = [
     type: ["installation", "conference", "lecture"],
     topic: ["openFrameworks"],
     venue: "Laval Virtual (France)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FsharedFace2.png?v=1611413246373",
     desc: html`
     `
   },
@@ -1387,6 +1409,7 @@ const sc = [
     topic: ["openFrameworks"],
     collab: ["Marcella França"],
     venue: "Nuit Blanche / Société des Arts Technologiques (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fmemoire.png?v=1611413242700",
     desc: html`
     `
   },
@@ -1396,6 +1419,7 @@ const sc = [
     type: ["installation", "award"],
     topic: ["openFrameworks"],
     venue: "IVRC (Japan)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FsharedFace.png?v=1611413244019",
     desc: html`
     `
   },
@@ -1405,6 +1429,7 @@ const sc = [
     type: ["workshop", "lecture"],
     topic: ["kinect"],
     venue: "GRAND (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FgrandKinect.png?v=1611413245485",
     desc: html`
     organization and lecture
     `
