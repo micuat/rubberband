@@ -998,6 +998,7 @@ const sc = [
     type: ["meetup"],
     topic: [],
     venue: "Topological Media Lab (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpecha-kucha-2.png?v=1611427074334",
     desc: html`
       I organized pecha kucha
     `
@@ -1018,6 +1019,7 @@ const sc = [
     type: ["meetup"],
     topic: [],
     venue: "Topological Media Lab (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpecha-kucha-1.jpg?v=1611427090222",
     desc: html`
       I presented at pecha kucha
     `
@@ -1039,6 +1041,7 @@ const sc = [
     type: ["conference"],
     topic: ["machine learning"],
     venue: "School for Poetic Computation (US)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F180215-sfpc-drawing.jpg?v=1611427045030",
     desc: html`
     participation
     `
@@ -1051,7 +1054,7 @@ const sc = [
     collab: ["Evelyne Drouin"],
     venue: "Centre Clark (Canada)",
     desc: html`
-    
+    https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a
     `
   },
   {
