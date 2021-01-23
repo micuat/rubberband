@@ -367,6 +367,7 @@ const sc = [
     type: ["installation", "net art"],
     topic: ["vr"],
     venue: "nextmuseum.io (online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-07-01-virtual-exhibition-007.png?v=1611413239494"
     desc: html`
       https://naotohieda.com/blog/virtual-exhibition-007/
     `
@@ -800,6 +801,7 @@ const sc = [
     topic: ["processing", "machine learning"],
     collab: ["Evelyne Drouin"],
     venue: "Seoul Art Space Geumcheon (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg2.jpg?v=1611413236868",
     desc: html`
     https://blog.naver.com/sas_g/221428126204
     `
@@ -861,6 +863,7 @@ const sc = [
     topic: ["processing"],
     collab: ["Janine Harrington"],
     venue: "Digitale Performance Web Residency / Favoriten Festival (Germany, online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcs.png?v=1611413234621",
     desc: html`
     `
   },
@@ -953,6 +956,7 @@ const sc = [
     topic: ["processing", "dance"],
     collab: ["CCOV", "perte de signal"],
     venue: "Centre de Création O Vertigo (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fbc.png?v=1611413236556",
     desc: html`
     `
   },
@@ -995,6 +999,7 @@ const sc = [
     topic: ["dance", "eeg"],
     collab: ["Olivier Lalonde"],
     venue: "RIDM / Cinémathèque Québecoise (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcc.jpg?v=1611413239347",
     desc: html`
     
     `
@@ -1006,6 +1011,7 @@ const sc = [
     topic: ["eeg", "openFrameworks"],
     collab: ["Evelyne Drouin"],
     venue: "Cancerto (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fmuse.png?v=1611413236306",
     desc: html`
     `
   },
@@ -1226,6 +1232,7 @@ const sc = [
     topic: ["openFrameworks"],
     collab: ["Judith Doyle"],
     venue: "CHI Art Exhibition / Works/San José (US)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Favian.png?v=1611413232640",
     desc: html`
     `
   },
@@ -1332,6 +1339,7 @@ const sc = [
     topic: ["openFrameworks"],
     collab: ["Judith Doyle"],
     venue: "ISEA / Museum of Vancouver (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Ftelus.png?v=1611413235692",
     desc: html`
     `
   },
@@ -1359,6 +1367,7 @@ const sc = [
     type: ["residency"],
     topic: ["opencv"],
     venue: "OpenCV / Google (online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fgsoc.png?v=1611413237000",
     desc: html`
     `
   },
@@ -1406,6 +1415,7 @@ const sc = [
     type: ["installation"],
     topic: ["openFrameworks"],
     venue: "GRAND (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fgrand2014.jpg?v=1611413235968",
     desc: html`
     `
   },
