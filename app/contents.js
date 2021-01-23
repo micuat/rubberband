@@ -470,6 +470,7 @@ const sc = [
     venue: "Umanesimo Artificiale (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-30-15s-or-less-filter.png?v=1611415171595",
     desc: html`
+    “Stories from HK” focused on protests in Hong Kong by creating a new work and curating works that are related to the digital culture in Hong Kong (but not limited to the protest).
       https://naotohieda.com/blog/15s-or-less/
     `
   },
@@ -481,6 +482,7 @@ const sc = [
     venue: "NL_CL / iii (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh.png?v=1611415093981",
     desc: html`
+    My movements are exhibited in the virtual gallery space, which is the concept of the performance “Algorithm | Degeneracy”.
       https://naotohieda.com/blog/nl-cl-2-flesh/
     `
   },
@@ -700,7 +702,7 @@ const sc = [
     venue: "Ito-En (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-12-financing-as-an-artist-2020-en.jpg?v=1611425599212",
     desc: html`
-      Ingress
+      Ingress visualizer installed in Tokyo, Sendai, Kyoto and Osaka
     `
   },
   {
@@ -712,7 +714,7 @@ const sc = [
     venue: "Dance4 (UK)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-01-node-proposal-walk4me.jpg?v=1611417219559",
     desc: html`
-      Nottingham
+      Collaborative work on performative video game work
     `
   },
   {
@@ -731,11 +733,11 @@ const sc = [
     title: "Open, Closed, Open",
     type: ["installation"],
     topic: ["robot", "unity"],
-    collab: ["Amir Shpilman", "Liat Grayver", "Yair Kira", "So Kanno"],
+    collab: ["Amir Shpilman", "Liat Grayver", "Yair Kira"],
     venue: "Jewish Museum Berlin",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F190620-oco.jpg?v=1611417273312",
     desc: html`
-      Jewish Museum Berlin
+      Assistant of robotics with So Kanno / Assistant of interactive visuals
     `
   },
   {
@@ -747,7 +749,7 @@ const sc = [
     venue: "Motion Bank",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh-ccl.png?v=1611415120197",
     desc: html`
-      CCL
+      Participation
     `
   },
   {
@@ -758,7 +760,7 @@ const sc = [
     collab: ["Shiseido", "R/GA"],
     venue: "S/PARK (Japan)",
     desc: html`
-      Shiseido
+      Assistant of visual components
     `
   },
   {
@@ -770,7 +772,7 @@ const sc = [
     venue: "Yahoo! LODGE (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2.jpg?v=1611413240902",
     desc: html`
-      Japanese Processing meetup
+      Organization, curation and talks
     `
   },
   {
@@ -836,7 +838,7 @@ const sc = [
     venue: "Ito-En (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F181101-xmprofiler.jpg?v=1611425554192",
     desc: html`
-      Ingress
+      Ingress visualizer installed in Tokyo, Sendai, Kyoto and Osaka
     `
   },
   {
@@ -847,7 +849,7 @@ const sc = [
     collab: ["Matilda"],
     venue: "Mikimoto (Japan)",
     desc: html`
-      Face morphing
+      Development of face morphing display
     `
   },
   {
@@ -1072,13 +1074,14 @@ const sc = [
   },
   {
     start: new Date("November 14, 2017"),
-    title: "Chorégraphie Cérébrale",
+    title: "Beatdox",
     type: ["performance"],
     topic: ["dance", "eeg"],
     collab: ["Olivier Lalonde"],
     venue: "RIDM / Cinémathèque Québecoise (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fridm.jpg?v=1611431764686",
     desc: html`
-    
+    image from MUSICMOTION website
     `
   },
   {
