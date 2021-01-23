@@ -345,6 +345,7 @@ const sc = [
     topic: ["dance"],
     collab: ["Toronto Love-In"],
     venue: "Toronto Love-In (online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200706-digitaldancing.jpg?v=1611412694852",
     desc: html`
       panelist at Toronto Love-In
     `
