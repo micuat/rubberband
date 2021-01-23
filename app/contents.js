@@ -541,6 +541,7 @@ const sc = [
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-29-p-code-land.jpg?v=1611414784827",
     desc: html`
+    p-code Land is an experimental virtual space for collective music live-coding. The syntax is based on <a href="https://github.com/p-code-magazine/p-code">p-code</a> but numbers denote MIDI notes not frequencies, and some features are added.
       https://naotohieda.com/blog/p-code-land/
     `
   },
@@ -552,7 +553,8 @@ const sc = [
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-22-tweet-processing-editor.png?v=1611414830340",
     desc: html`
-      https://naotohieda.com/blog/tweet-processing-editor/
+An editor with preview and minification of a p5.js sketch for Tweet Processing.
+https://naotohieda.com/blog/tweet-processing-editor/
     `
   },
   {
@@ -604,7 +606,7 @@ const sc = [
   },
   {
     start: new Date("January 10, 2020"),
-    title: "The Body and the Other~",
+    title: "The Body and the Other",
     type: ["performance"],
     topic: ["processing", "dance"],
     collab: ["Eleonora Siarava"],
@@ -638,7 +640,7 @@ const sc = [
     start: new Date("November 28, 2019"),
     title: "Creative Code Köln",
     type: ["meetup"],
-    topic: [],
+    topic: ["processing"],
     venue: "Akkuraum (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-12-05-cck-meetup-intro.jpg?v=1611414668474",
     desc: html`
@@ -654,7 +656,7 @@ const sc = [
     venue: "CNRS (France)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-11-15-articulation.png?v=1611414638191",
     desc: html`
-      Paris
+      Participation
     `
   },
   {
@@ -662,7 +664,7 @@ const sc = [
     title: "Staebetanzen",
     type: ["performance"],
     topic: ["dance", "machine learning", "processing"],
-    collab: ["Raphael Hillebrand"],
+    collab: ["Raphael Hillebrand", "HKAPA Students"],
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhkapa.jpg?v=1611413240992",
     desc: html`
