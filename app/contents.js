@@ -148,23 +148,6 @@ const sc = [
     `
   },
   {
-    start: new Date("October 7, 2020"),
-    title: "Multidimensional Journey",
-    type: ["performance", "net art"],
-    topic: ["hubs", "miro", "green screen"],
-    collab: ["Nien Tzu Weng"],
-    venue: "NODE20 (Germany / online)",
-    image:
-      "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
-    yt: "g5Hd_5rKggA",
-    desc: html`
-      At NODE20, Nien Tzu Weng and Naoto Hieda share online tools for
-      interdisciplinary collaborations from the recent online residencies. We
-      open the room for participants to experiment with the tools. No experience
-      required.
-    `
-  },
-  {
     start: new Date("October 8, 2020"),
     title: "Distant Movements",
     type: ["performance", "net art"],
@@ -193,6 +176,23 @@ const sc = [
       <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage"
         >GreenHouse NAXOS</a
       >. Please arrive on time if you are going to participate.
+    `
+  },
+  {
+    start: new Date("October 7, 2020"),
+    title: "Multidimensional Journey",
+    type: ["performance", "net art"],
+    topic: ["hubs", "miro", "green screen"],
+    collab: ["Nien Tzu Weng"],
+    venue: "NODE20 (Germany / online)",
+    image:
+      "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
+    yt: "g5Hd_5rKggA",
+    desc: html`
+      At NODE20, Nien Tzu Weng and Naoto Hieda share online tools for
+      interdisciplinary collaborations from the recent online residencies. We
+      open the room for participants to experiment with the tools. No experience
+      required.
     `
   },
   {
@@ -671,7 +671,7 @@ const sc = [
     start: new Date("September 28, 2019"),
     title: "Passing Light",
     type: ["installation"],
-    topic: ["vvvv"],
+    topic: ["vvvv", "processing", "puredata", "raspberry pi", "projection"],
     collab: ["Michael Montanaro", "Tatev Yesayan"],
     venue: "CHAOSMOSIS mAchInes / University of Toronto (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
@@ -791,8 +791,9 @@ const sc = [
     topic: ["dance", "eeg", "processing"],
     collab: ["Choy Ka Fai"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fdanceclinic.jpg?v=1611431554115",
     desc: html`
-      visual, interaction programming
+      visual, interaction programming / image from tanzhaus nrw
     `
   },
   {
@@ -1114,7 +1115,7 @@ const sc = [
     start: new Date("October 5, 2017"),
     title: "Passing Light",
     type: ["installation"],
-    topic: ["vvvv"],
+    topic: ["vvvv", "processing", "puredata", "raspberry pi", "projection"],
     collab: ["Michael Montanaro", "Tatev Yesayan"],
     venue: "MAPP_MTL Invisible Exhibition Micro-Mapping / Never Apart (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
@@ -1148,9 +1149,10 @@ const sc = [
     start: new Date("June 16, 2017"),
     title: "Passing Light",
     type: ["installation"],
-    topic: ["vvvv"],
+    topic: ["vvvv", "processing", "puredata", "raspberry pi", "projection"],
     collab: ["Michael Montanaro", "Tatev Yesayan"],
     venue: "InTime / Topological Media Lab (Canada)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
     
     `
@@ -1446,6 +1448,7 @@ const sc = [
     type: ["installation", "conference", "lecture"],
     topic: ["openFrameworks"],
     venue: "INTETAIN (Italy)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fintetain.png?v=1611431309761",
     desc: html`
     `
   },
