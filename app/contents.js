@@ -1,6 +1,18 @@
 var html = require("choo/html");
 const sc = [
   {
+    start: new Date("February 13, 2021"),
+    title: "Hydra meetup #4",
+    type: ["meetup"],
+    topic: ["hydra"],
+    collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+    venue: "online",
+    image: "https://cdn.glitch.com/ded7bc3b-3878-467c-9524-bce0e27dfc1e%2Fposter4.png?v=1611315261539",
+    desc: html`
+      hydra meetup / poster by Ritsche
+    `
+  },
+  {
     start: new Date("January 24, 2021"),
     title: "Introduction to Hydra",
     type: ["workshop"],
@@ -61,8 +73,9 @@ const sc = [
     topic: ["hydra"],
     collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201212-hydra03.jpg?v=1611416284311",
     desc: html`
-      hydra meetup
+      hydra meetup / poster by Flor de Fuego
     `
   },
   {
@@ -72,6 +85,7 @@ const sc = [
     collab: ["Takawo"],
     topic: ["processing", "japan"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201206-pchj05.png?v=1611416208142",
     desc: html`
       Japanese Processing meetup https://pchj05.peatix.com/
     `
@@ -94,6 +108,7 @@ const sc = [
     topic: ["openFrameworks"],
     collab: ["Vivian Lu"],
     venue: "Theater Dortmund",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201106-theater.jpg?v=1611416466540",
     desc: html`
       A project with Vivian Lu
     `
@@ -305,7 +320,9 @@ const sc = [
     topic: [],
     collab: ["Marie Claire LeBlanc Flanagan"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200906-hangs.jpg?v=1611416834409",
     desc: html`
+    online hangs / poster by Marie
     `
   },  {
     start: new Date("August 30, 2020"),
