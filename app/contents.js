@@ -81,6 +81,7 @@ const sc = [
     type: ["installation", "net art"],
     topic: ["hydra", "vr"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-11-21-hydra-exhibition.png?v=1611415274524",
     desc: html`
       net art
     `
@@ -102,6 +103,7 @@ const sc = [
     type: ["performance", "net art"],
     topic: ["hydra", "dance"],
     venue: "Creative Commons Global Summit (online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-10-23-tech-is-nonbinary.png?v=1611415254316",
     desc: html`
       live coding performance
     `
@@ -308,6 +310,7 @@ const sc = [
     topic: ["processing", "japan"],
     collab: ["Takawo"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-08-30-processing-community-hangout-japan-3-neort.jpg?v=1611415232395",
     desc: html`
       Japanese Processing meetup
     `
@@ -319,6 +322,7 @@ const sc = [
     topic: ["tidalcycles", "discord"],
     collab: ["vc-study"],
     venue: "TidalClub (online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-08-19-new-moon.png?v=1611415196073",
     desc: html`
       https://naotohieda.com/blog/new-moon/
     `
@@ -419,6 +423,7 @@ const sc = [
     topic: ["processing", "japan"],
     collab: ["Takawo"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-31-processing-community-japan-30min-coding-0-en.png?v=1611415150532",
     desc: html`
       Japanese Processing meetup
       https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/
@@ -430,6 +435,7 @@ const sc = [
     type: ["net art"],
     topic: ["instagram", "hong kong"],
     venue: "Umanesimo Artificiale (online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-30-15s-or-less-filter.png?v=1611415171595",
     desc: html`
       https://naotohieda.com/blog/15s-or-less/
     `
@@ -440,6 +446,7 @@ const sc = [
     type: ["performance", "net art"],
     topic: ["dance", "p-code"],
     venue: "NL_CL / iii (online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh.png?v=1611415093981",
     desc: html`
       https://naotohieda.com/blog/nl-cl-2-flesh/
     `
@@ -451,6 +458,7 @@ const sc = [
     topic: ["processing", "japan"],
     collab: ["Takawo"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-16-processing-community-hangout-japan-1-1.png?v=1611415042036",
     desc: html`
       Japanese Processing meetup https://pchj01.peatix.com/
     `
@@ -462,6 +470,7 @@ const sc = [
     topic: ["processing"],
     collab: ["Saber Khan"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-09-processing-community-hangout-2-46.png?v=1611414960476",
     desc: html`
       Processing meetup
       https://naotohieda.com/blog/processing-community-hangout-2-en/
@@ -474,6 +483,7 @@ const sc = [
     topic: ["processing"],
     collab: ["Saber Khan"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-04-05-processing-community-hangout-1-en.png?v=1611414930358",
     desc: html`
       Processing meetup
       https://naotohieda.com/blog/processing-community-hangout-1-en/
@@ -494,6 +504,7 @@ const sc = [
     type: ["installation", "net art"],
     topic: ["p-code"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-29-p-code-land.jpg?v=1611414784827",
     desc: html`
       https://naotohieda.com/blog/p-code-land/
     `
@@ -504,6 +515,7 @@ const sc = [
     type: ["net art"],
     topic: ["processing"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-22-tweet-processing-editor.png?v=1611414830340",
     desc: html`
       https://naotohieda.com/blog/tweet-processing-editor/
     `
@@ -515,6 +527,7 @@ const sc = [
     topic: ["vr"],
     collab: ["Utopian Council at KHM"],
     venue: "Kunsthochschule für Medien Köln",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-14-utopian-council.png?v=1611414807270",
     desc: html`
       https://naotohieda.com/blog/utopian-council/
     `
@@ -636,6 +649,7 @@ const sc = [
     topic: ["dance", "machine learning", "processing"],
     collab: ["Raphael Hillebrand"],
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-01-node-proposal-pathfinder-hkapa.jpg?v=1611414857759",
     desc: html`
       HKAPA
     `
@@ -691,6 +705,7 @@ const sc = [
     topic: ["dance"],
     collab: [],
     venue: "Motion Bank",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh-ccl.png?v=1611415120197",
     desc: html`
       CCL
     `
