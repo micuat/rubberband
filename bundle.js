@@ -856,6 +856,7 @@ const sc = [
     type: ["lecture"],
     topic: ["processing"],
     venue: "Seoul National University of Education (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsnue-processing.jpg?v=1611429706839",
     desc: html`
       guest talk invited by Woosung
     `
