@@ -686,6 +686,7 @@ const sc = [
     topic: ["openFrameworks", "ingress"],
     collab: ["Ito-En"],
     venue: "Ito-En (Japan)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-12-financing-as-an-artist-2020-en.jpg?v=1611425599212",
     desc: html`
       Ingress
     `
@@ -808,6 +809,7 @@ const sc = [
     type: ["conference"],
     topic: ["autism"],
     venue: "PACT Zollverein (Germany)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F181107-impact.jpg?v=1611425497483",
     desc: html`
     participation
     `
@@ -819,6 +821,7 @@ const sc = [
     topic: ["openFrameworks", "ingress"],
     collab: ["Ito-En"],
     venue: "Ito-En (Japan)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F181101-xmprofiler.jpg?v=1611425554192",
     desc: html`
       Ingress
     `
@@ -858,10 +861,11 @@ const sc = [
   },
   {
     start: new Date("September 13, 2018"),
-    title: "Austistic View",
+    title: "Autistic View",
     type: ["installation"],
     topic: ["openframeworks"],
     venue: "Seoul Art Space Geumcheon (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fautistic.png?v=1611425982233",
     desc: html`
     an installation with sauna receipts and shots on streets
     `
@@ -872,7 +876,7 @@ const sc = [
     type: ["meetup"],
     topic: ["processing"],
     venue: "Seoul Art Space Geumcheon (Korea)",
-    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg.png?v=1611413249718",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fmapping-party-3.jpg?v=1611425966652",
     desc: html`
       party with projection mapping
     `
@@ -883,7 +887,7 @@ const sc = [
     type: ["meetup"],
     topic: ["processing"],
     venue: "Seoul Art Space Geumcheon (Korea)",
-    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg.png?v=1611413249718",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fmapping-party-2.jpg?v=1611425950417",
     desc: html`
       party with projection mapping
     `
