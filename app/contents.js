@@ -265,7 +265,7 @@ const sc = [
     start: new Date("October 4, 2020"),
     title: "TDSW x PCJ Vernissage",
     type: ["meetup", "net art"],
-    topic: ["touchdesigner", "processing"],
+    topic: ["touchdesigner", "processing", "vvvv"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
     collab: ["Yasushi Harada", "Yuki Narumi", "Takawo"],
@@ -382,6 +382,7 @@ const sc = [
     topic: ["processing", "japan"],
     collab: ["Takawo"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200705-pchj02.png?v=1611417003823",
     desc: html`
       Japanese Processing meetup https://pchj02.peatix.com/
     `
@@ -559,6 +560,7 @@ const sc = [
     type: ["installation", "net art"],
     topic: ["vr"],
     venue: "online",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-11-virtual-exhibition-004.png?v=1611417051165",
     desc: html`
       https://naotohieda.com/blog/virtual-exhibition-004/
       https://blog.glitch.com/post/drag-and-drop-your-art-to-the-virtual-world
@@ -594,6 +596,7 @@ const sc = [
     topic: ["processing", "dance"],
     collab: ["Eleonora Siarava"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fthe-body-and-the-other-2048x862.jpg?v=1611417103032",
     desc: html`
       Project by Eleonora Siarava https://vimeo.com/463813053
     `
@@ -603,6 +606,7 @@ const sc = [
     title: "Algorithm | Diversion",
     type: ["lecture"],
     topic: ["autism"],
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F191228-ccc.jpg?v=1611417381810",
     desc: html`
       https://naotohieda.com/blog/36c3/
     `
@@ -693,6 +697,7 @@ const sc = [
     topic: ["dance", "processing"],
     collab: ["Christopher Matthews"],
     venue: "Dance4 (UK)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-01-node-proposal-walk4me.jpg?v=1611417219559",
     desc: html`
       Nottingham
     `
@@ -713,8 +718,9 @@ const sc = [
     title: "Open, Closed, Open",
     type: ["installation"],
     topic: ["robot", "unity"],
-    collab: ["Amir Shpilman", "Liat Grayver", "Yair Kira"],
+    collab: ["Amir Shpilman", "Liat Grayver", "Yair Kira", "So Kanno"],
     venue: "Jewish Museum Berlin",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F190620-oco.jpg?v=1611417273312",
     desc: html`
       Jewish Museum Berlin
     `
