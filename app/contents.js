@@ -49,6 +49,7 @@ const sc = [
     type: ["workshop"],
     topic: ["tidalcycles"],
     venue: "Kunsthochschule für Medien Köln",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201215-tidal.jpg?v=1611416016009",
     desc: html`
     Workshop at "Sound und..." seminar
     `
@@ -115,8 +116,9 @@ const sc = [
     topic: ["feedback"],
     collab: ["Raphael Hillebrand"],
     venue: "Deutscher Tanzpreis / Aalto Theater (Germany)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201017-tanzpreis.png?v=1611415944571",
     desc: html`
-    
+    as camera operator
     `
   },
   {
@@ -125,7 +127,7 @@ const sc = [
     type: ["performance", "net art"],
     topic: ["hubs", "miro", "green screen"],
     collab: ["Nien Tzu Weng"],
-    venue: "NODE20 (online)",
+    venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
     yt: "g5Hd_5rKggA",
@@ -142,9 +144,9 @@ const sc = [
     type: ["performance", "net art"],
     topic: ["dance", "zoom"],
     collab: ["Annie Abrahams", "Daniel Pinheiro", "Muriel Piqué"],
-    venue: "NODE20 (online)",
-    image:
-      "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
+    venue: "NODE20 (Germany / online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-10-08-ccl-online.jpg?v=1611415526027",
+      // "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fdm.jpg?v=1601460566624",
     desc: html`
       Distant Movements is a project by Annie Abrahams (FR/NL), Daniel Pinheiro
       (PT) and Muriel Piqué (FR). They develop an experimental, performative
@@ -173,10 +175,10 @@ const sc = [
     type: ["discussion"],
     topic: ["dance", "hydra"],
     collab: ["Jorge Guevara"],
-    venue: "NODE20 (online)",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
     yt: "YZfMBoFWFZY",
+    venue: "NODE20 (Germany / online)",
     desc: html`
       Jorge Guevara and Naoto Hieda discuss what they call Best Practices in
       Contemporary Dance. The session will be unstructured; they will initiate
@@ -196,6 +198,7 @@ const sc = [
     yt: "wxXguzTYt_I",
     // yt: "OBtI1qSLyVQ",
     // yt: "V427wRGGCZQ",
+    venue: "NODE20 (Germany / online)",
     desc: html`
       Naoto Hieda and Jorge Guevara practice “Best Practices in Contemporary
       Dance” at NODE20. While they practice with their bodies, videos and
@@ -209,7 +212,7 @@ const sc = [
     type: ["discussion"],
     topic: ["dance", "hydra"],
     collab: ["Jorge Guevara"],
-    venue: "NODE20 (online)",
+    venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg?v=1601987022036",
     yt: "0-YILmKxVhY",
@@ -251,7 +254,7 @@ const sc = [
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
     collab: ["Yasushi Harada", "Yuki Narumi", "Takawo"],
-    venue: "NODE20 (online)",
+    venue: "NODE20 (Germany / online)",
     desc: html`
       Tokyo Developers Study Weekend (TDSW) and Processing Community Japan (PCJ)
       invite you to present your artworks at an exhibition, where everyone can
@@ -273,7 +276,7 @@ const sc = [
     type: ["lunch", "meetup"],
     topic: ["food"],
     collab: ["Raphaël de Courville", "Taru Muhonen"],
-    venue: "NODE20 (online)",
+    venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201003-02.jpg?v=1601728591081",
     desc: html`
@@ -289,7 +292,8 @@ const sc = [
     title: "Choreographic Coding Labs Online",
     type: ["curation", "meetup"],
     topic: ["hydra", "dance", "food"],
-    venue: "NODE20 (online)",
+    venue: "NODE20 (Germany / online)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcconline.jpg?v=1611415565194",
     desc: html`
       NODE20
     `
