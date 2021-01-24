@@ -857,7 +857,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
   {
     start: new Date("September 21, 2018"),
     title: "Processing and Generative Art",
-    type: ["lecture"],
+    type: ["lecture", "workshop"],
     topic: ["processing"],
     venue: "Seoul National University of Education (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsnue-processing.jpg?v=1611429706839",
