@@ -375,6 +375,17 @@ const sc = [
     `
   },
   {
+    start: new Date("July 21, 2020"),
+    title: "Circles",
+    type: ["performance"],
+    topic: ["web"],
+    collab: ["Amir Shpilman"],
+    venue: "Die Irritierte Stadt (Germany)",
+    desc: html`
+      Technical development for a performative web app.
+    `
+  },
+  {
     start: new Date("July 6, 2020"),
     title: "Digital Dancing",
     type: ["lecture"],
