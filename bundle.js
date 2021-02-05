@@ -9,8 +9,7 @@ const sc = [
     venue: "ctrl+space / Cologne Main Station (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F210215-spektrum.jpg?v=1611426104304",
     desc: html`
-      to be on view
-    `
+#spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stigma of "binariness" of autism.`
   },
   {
     start: new Date("February 13, 2021"),
