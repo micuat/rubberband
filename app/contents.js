@@ -3,11 +3,13 @@ const sc = [
   {
     start: new Date("February 20, 2021"),
     title: "Processing Community Day Japan 2021",
-    type: ["meetup", "curation"],
-    topic: ["processing"],
+    type: ["meetup", "curation", "workshop", "lecture"],
+    topic: ["processing", "tidalcycles", "hydra"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2021ogp.png?v=1612740183557",
-    desc: html`poster by hina nakamura`
+    desc: html`report and video links <a href="https://naotohieda.com/blog/processing-community-day-japan-2021-en/">here</a><br>
+    organization, curation, talk and workshop<br>
+    poster by hina nakamura`
   },
   {
     start: new Date("February 15, 2021"),
