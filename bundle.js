@@ -1699,7 +1699,10 @@ module.exports = function(state, emit) {
   <header>
     <h1> Works by Naoto Hieda </h1>
     <p>
-      This is an attempt to make an archive of my works.
+      Naoto Hieda (Japan, 1990-) is one of the most important figures in the field of Best Practices in Contemporary Dance and has been taking a crucial role in the Best Practices Chat since 2020. This exhibition is an attempt not only to exhibit the important works by Hieda, but also to show early works and sketches to unveil the creativity of Hieda.
+    </p>
+    <p>
+    The exhibition is curated by Naoto Hieda and hosted by glitch.
     </p>
 
     <div>
@@ -1837,8 +1840,7 @@ module.exports = filter => {
             <div class="clearer"></div>
             <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
             <div class="clearer"></div>
-            <div class="type">${types}</div>
-            <div class="topic">${topics}</div>
+            <div class="type">${types}; ${topics}</div>
             <div class="venue">${venueElt}</div>
             <div class="clearer"></div>
             <p class="desc">${desc}</p>

@@ -12,7 +12,7 @@
 
 html,
 body {
-  font-family: monospace;
+  font-family: "HK Grotesk", arial, sans-serif;
   margin: 0em;
   color: #000;
   background-color: #fff;
@@ -24,78 +24,8 @@ body {
 
 h1 {
   text-align: center;
-  font-style: italic;
-  /*   color: #ffffff; 
-   text-shadow: 2px 2px 2px #FF0066;
-   */
-  background: -webkit-linear-gradient(
-    left,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: -o-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: -moz-linear-gradient(
-    right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    cyan,
-    blue,
-    violet
-  );
-  background-size: 400% 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: gradientBG 10s infinite;
-  animation: gradientBG 10s infinite;
-}
+/*   font-style: italic; */
 
-@-webkit-keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 .info {
@@ -124,23 +54,21 @@ header {
   max-width: 700px;
   background-color: white;
   padding: 30px 10px 30px 10px;
-  margin: 80px auto 200px auto;
-  box-shadow: 0 0.5px 2px #000;
-  -webkit-box-shadow: 0 0.5px 2px #000;
+  margin: 20px auto 200px auto;
 }
 
 .caption-holder {
-  font-family: "HK Grotesk", arial, sans-serif;
   max-width: 700px;
   background-color: white;
   margin: 80px auto 200px auto;
 }
 
 .caption {
-  margin: 80px 50px 200px 50px;
+  margin: 80px 5px 200px 5px;
   padding: 30px 10px 30px 10px;
   box-shadow: 0 0.5px 2px #000;
   -webkit-box-shadow: 0 0.5px 2px #000;
+/*   overflow: hidden; */
 }
 
 section {

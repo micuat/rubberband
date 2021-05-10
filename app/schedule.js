@@ -107,8 +107,7 @@ module.exports = filter => {
             <div class="clearer"></div>
             <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
             <div class="clearer"></div>
-            <div class="type">${types}</div>
-            <div class="topic">${topics}</div>
+            <div class="type">${types}; ${topics}</div>
             <div class="venue">${venueElt}</div>
             <div class="clearer"></div>
             <p class="desc">${desc}</p>
