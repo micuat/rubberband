@@ -142,8 +142,8 @@ section > .title {
 }
 
 .thumbnail {
-/*   width: 100%; */
-  min-width: 700px;
+  width: 100%;
+/*   min-width: 700px; */
 }
 
 .thumbnail > p {
