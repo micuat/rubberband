@@ -86,13 +86,6 @@ section > .title {
   margin-right: 1em;
 }
 
-section > .talque {
-  font-size: 0.8em;
-  float: left;
-  padding-top: 0.9em;
-  margin-right: 1em;
-}
-
 .type > p {
   margin-right: 1em;
   margin-top: 0.1em;
@@ -149,7 +142,8 @@ section > .talque {
 }
 
 .thumbnail {
-  width: 100%;
+/*   width: 100%; */
+  min-width: 700px;
 }
 
 .thumbnail > p {
