@@ -49,11 +49,11 @@ const sc = [
     title: "Hydra meetup #4",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritchse", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/ded7bc3b-3878-467c-9524-bce0e27dfc1e%2Fposter4.png?v=1611315261539",
     desc: html`
-      hydra meetup / poster by Ritsche
+      hydra meetup / poster by Ritchse
     `
   },
   {
@@ -116,7 +116,7 @@ const sc = [
     title: "Hydra meetup #3",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritchse", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201212-hydra03.jpg?v=1611416284311",
     desc: html`
@@ -401,7 +401,7 @@ const sc = [
     title: "Hydra meetup #1",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritchse", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fhydra-meetup1.png?v=1604872115474",
