@@ -2,6 +2,14 @@
 var html = require("choo/html");
 const sc = [
   {
+    start: new Date("March 27, 2021"),
+    title: "Video Loop of Decolonial Resistance",
+    type: ["installation"],
+    topic: ["video"],
+    venue: "K20 (Germany)",
+    desc: html`by Raphael Hillebrand, as camera, <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a>`
+  },
+  {
     start: new Date("March 12, 2021"),
     title: "TidalCycles Workshop",
     type: ["workshop"],
