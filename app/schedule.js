@@ -93,7 +93,7 @@ module.exports = filter => {
     }
     dates.push(
       html`
-        <li>
+        <section>
           <p class="schedule">${date}</p>
           <div class="type">${types}</div>
           <div class="topic">${topics}</div>
@@ -109,7 +109,7 @@ module.exports = filter => {
           <p class="desc">${desc}</p>
           <div class="clearer"></div>
           ${ytElt}
-        </li>
+        </section>
       `
     );
   }

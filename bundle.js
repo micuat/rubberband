@@ -2,6 +2,15 @@
 var html = require("choo/html");
 const sc = [
   {
+    start: new Date("March 12, 2021"),
+    title: "TidalCycles Workshop",
+    type: ["workshop"],
+    topic: ["tidalcycles"],
+    venue: "online",
+    // image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2021ogp.png?v=1612740183557",
+    desc: html`Workshop at SUNY`
+  },
+  {
     start: new Date("February 20, 2021"),
     title: "Processing Community Day Japan 2021",
     type: ["meetup", "curation", "workshop", "lecture"],
@@ -1621,6 +1630,7 @@ module.exports = function(state, emit) {
 <div>
 <div class="main">
   <div class="container">
+  <header>
     <h1> Works by Naoto Hieda </h1>
     <p>
       This is an attempt to make an archive of my works.
@@ -1630,10 +1640,9 @@ module.exports = function(state, emit) {
     Filter by <div class="type">${filters}</div>
     </div>
     <div class="clearer"></div>
+  </header>
 
-    <ul>
-      ${schedule(state.filter)}
-    </ul>
+  ${schedule(state.filter)}
   </div>
 </div>
 </div>`;
@@ -1748,7 +1757,7 @@ module.exports = filter => {
     }
     dates.push(
       html`
-        <li>
+        <section>
           <p class="schedule">${date}</p>
           <div class="type">${types}</div>
           <div class="topic">${topics}</div>
@@ -1764,7 +1773,7 @@ module.exports = filter => {
           <p class="desc">${desc}</p>
           <div class="clearer"></div>
           ${ytElt}
-        </li>
+        </section>
       `
     );
   }

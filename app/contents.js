@@ -1,6 +1,15 @@
 var html = require("choo/html");
 const sc = [
   {
+    start: new Date("March 12, 2021"),
+    title: "TidalCycles Workshop",
+    type: ["workshop"],
+    topic: ["tidalcycles"],
+    venue: "online",
+    // image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2021ogp.png?v=1612740183557",
+    desc: html`Workshop at SUNY`
+  },
+  {
     start: new Date("February 20, 2021"),
     title: "Processing Community Day Japan 2021",
     type: ["meetup", "curation", "workshop", "lecture"],

@@ -46,6 +46,7 @@ module.exports = function(state, emit) {
 <div>
 <div class="main">
   <div class="container">
+  <header>
     <h1> Works by Naoto Hieda </h1>
     <p>
       This is an attempt to make an archive of my works.
@@ -55,10 +56,9 @@ module.exports = function(state, emit) {
     Filter by <div class="type">${filters}</div>
     </div>
     <div class="clearer"></div>
+  </header>
 
-    <ul>
-      ${schedule(state.filter)}
-    </ul>
+  ${schedule(state.filter)}
   </div>
 </div>
 </div>`;
