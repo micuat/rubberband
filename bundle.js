@@ -939,7 +939,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg2.jpg?v=1611413236868",
     desc: html`
-    https://blog.naver.com/sas_g/221428126204
+    <a href="https://blog.naver.com/sas_g/221428126204">review</a>
     `
   },
   {
@@ -1132,7 +1132,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Centre Clark (Canada)",
     desc: html`
-    https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a
+    <a href="https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a">link</a>
     `
   },
   {
@@ -1697,7 +1697,7 @@ module.exports = function(state, emit) {
 <div class="main">
   <div class="container">
   <header>
-    <h1> Works by Naoto Hieda </h1>
+    <h1> Works: Naoto Hieda </h1>
     <p>
       Naoto Hieda (Japan, 1990-) is one of the most important figures in the field of Best Practices in Contemporary Dance and has been taking a crucial role in the Best Practices Chat since 2020. This exhibition is an attempt not only to exhibit the important works by Hieda, but also to show early works and sketches to unveil the creativity of Hieda.
     </p>

@@ -938,7 +938,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg2.jpg?v=1611413236868",
     desc: html`
-    https://blog.naver.com/sas_g/221428126204
+    <a href="https://blog.naver.com/sas_g/221428126204">review</a>
     `
   },
   {
@@ -1131,7 +1131,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Centre Clark (Canada)",
     desc: html`
-    https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a
+    <a href="https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a">link</a>
     `
   },
   {
