@@ -1,4 +1,14 @@
-/* CSS files add styling rules to your content */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
 
 html,
 body {
@@ -123,11 +133,20 @@ a:visited {
 }
 
 header, .caption {
+  max-width: 700px;
   background-color: white;
   padding: 30px 10px 30px 10px;
-  margin: 30px 0 30px 0;
-  box-shadow: 0 0 10px #000;
-  -webkit-box-shadow: 0 0 10px #000;
+  margin: 30px auto 30px auto;
+  box-shadow: 0 0 2px #000;
+  -webkit-box-shadow: 0 0 2px #000;
+}
+
+.caption {
+  font-family: "HK Grotesk", arial, sans-serif;
+}
+
+section {
+  margin: 150px auto 150px auto;
 }
 
 section > .title {

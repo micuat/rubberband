@@ -94,18 +94,16 @@ module.exports = filter => {
     dates.push(
       html`
         <section>
-          <div class="type">${types}</div>
-          <div class="topic">${topics}</div>
-          <div class="clearer"></div>
           <div class="thumbnail">${imageElt}</div>
           <div class="clearer"></div>
           <div class="caption">
-            <p class="title">${title}</p>
-            <div class="clearer"></div>
-            <p class="schedule">${date}</p>
             <div class="collabs">${collabs}</div>
-            <div class="clearer"></div>
             <div class="venue">${venueElt}</div>
+            <div class="clearer"></div>
+            <div><span class="title">${title}</span>, <span class="date">${date}</span></div>
+            <div class="clearer"></div>
+            <div class="type">${types}</div>
+            <div class="topic">${topics}</div>
             <div class="clearer"></div>
             <p class="desc">${desc}</p>
             <div class="clearer"></div>
