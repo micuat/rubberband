@@ -6,7 +6,8 @@ const sc = [
     type: ["installation"],
     topic: ["video"],
     venue: "K20 (Germany)",
-    desc: html`by Raphael Hillebrand, as camera, <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a>`
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fk20.jpg?v=1620678722784",
+    desc: html`by Raphael Hillebrand, as camera, <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (on the left)`
   },
   {
     start: new Date("March 12, 2021"),
