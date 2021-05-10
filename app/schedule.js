@@ -101,6 +101,7 @@ module.exports = filter => {
       html`
         <section>
           <div class="thumbnail">${imageElt}</div>
+          <div class="caption-holder">
           <div class="caption">
             <div class="collabs">${collabs}</div>
             <div class="clearer"></div>
@@ -113,6 +114,7 @@ module.exports = filter => {
             <p class="desc">${desc}</p>
             <div class="clearer"></div>
             ${ytElt}
+          </div>
           </div>
         </section>
       `

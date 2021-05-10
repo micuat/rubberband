@@ -120,17 +120,27 @@ h1 {
   display: inline-block;
 }
 
-header, .caption {
+header {
   max-width: 700px;
   background-color: white;
   padding: 30px 10px 30px 10px;
-  margin: 160px auto 160px auto;
-  box-shadow: 0 1px 2px #000;
-  -webkit-box-shadow: 0 1px 2px #000;
+  margin: 80px auto 200px auto;
+  box-shadow: 0 0.5px 2px #000;
+  -webkit-box-shadow: 0 0.5px 2px #000;
+}
+
+.caption-holder {
+  font-family: "HK Grotesk", arial, sans-serif;
+  max-width: 700px;
+  background-color: white;
+  margin: 80px auto 200px auto;
 }
 
 .caption {
-  font-family: "HK Grotesk", arial, sans-serif;
+  margin: 80px 50px 200px 50px;
+  padding: 30px 10px 30px 10px;
+  box-shadow: 0 0.5px 2px #000;
+  -webkit-box-shadow: 0 0.5px 2px #000;
 }
 
 section {
@@ -290,6 +300,8 @@ section > .talque {
 
 .title {
   font-style: italic;
+  left: -2px;
+  position: relative;
 }
 
 .venue, .type, .topic {
@@ -302,6 +314,7 @@ section > .talque {
 
 .desc {
   font-size: 12pt;
+  text-align: justify;
 }
 
 a {

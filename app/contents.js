@@ -739,7 +739,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     venue: "CHAOSMOSIS mAchInes / University of Toronto (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
-      https://www.cdtps.utoronto.ca/events/chaosmosis-machines
+      <a href="https://www.cdtps.utoronto.ca/events/chaosmosis-machines">link</a>
     `
   },
   {
