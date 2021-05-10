@@ -78,7 +78,7 @@ module.exports = filter => {
         <img src="${image}" loading="lazy" />
       `;
     } else {
-      imageElt = html`<p>no image</p>`
+      imageElt = html`<p>The work is currently on loan</p>`
     }
     let ytElt;
     if (yt != undefined && false) {
@@ -104,7 +104,7 @@ module.exports = filter => {
           <div class="caption">
             <div class="collabs">${collabs}</div>
             <div class="clearer"></div>
-            <div><span class="title">${title}</span>, <span class="date">${date}</span></div>
+            <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
             <div class="clearer"></div>
             <div class="type">${types}</div>
             <div class="topic">${topics}</div>
