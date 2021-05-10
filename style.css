@@ -218,6 +218,19 @@ section > .talque {
   clear: both;
 }
 
+.thumbnail {
+  width: 100%;
+}
+
+.thumbnail > p {
+  text-align: center;
+  background-color: #ccc;
+  display: table-cell;
+  vertical-align: middle;
+	width:100vw;
+  height:100px;
+}
+
 .thumbnail > img,
 .rowimg > img {
   width: 100%;

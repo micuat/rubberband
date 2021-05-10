@@ -30,20 +30,24 @@ module.exports = filter => {
     // console.log(desc)
     
     let types = [];
-    for (const t of type) {
-      types.push(
-        html`
-          <p class="${t}">${t}</p>
-        `
-      );
+    for (let i = 0; i < type.length; i++) {
+      // topics.push(
+      //   html`
+      //     <p class="${t}">${t}</p>
+      //   `
+      // );
+      let del = i < type.length - 1 ? ', ' : '';
+      types.push(type[i] + del);
     }
     let topics = [];
-    for (const t of topic) {
-      topics.push(
-        html`
-          <p class="${t}">${t}</p>
-        `
-      );
+    for (let i = 0; i < topic.length; i++) {
+      // topics.push(
+      //   html`
+      //     <p class="${t}">${t}</p>
+      //   `
+      // );
+      let del = i < topic.length - 1 ? ', ' : '';
+      topics.push(topic[i] + del);
     }
     let collabs = [];
     if (collab != undefined) {
@@ -73,6 +77,8 @@ module.exports = filter => {
       imageElt = html`
         <img src="${image}" loading="lazy" />
       `;
+    } else {
+      imageElt = html`<p>no image</p>`
     }
     let ytElt;
     if (yt != undefined && false) {
@@ -95,7 +101,6 @@ module.exports = filter => {
       html`
         <section>
           <div class="thumbnail">${imageElt}</div>
-          <div class="clearer"></div>
           <div class="caption">
             <div class="collabs">${collabs}</div>
             <div class="venue">${venueElt}</div>
