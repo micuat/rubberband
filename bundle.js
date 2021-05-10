@@ -7,8 +7,10 @@ const sc = [
     type: ["installation"],
     topic: ["video"],
     venue: "K20 (Germany)",
+    collab: ["Raphael Hillebrand"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fk20.jpg?v=1620678722784",
-    desc: html`by Raphael Hillebrand, as camera, <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (on the left)`
+    desc: html`camera: Naoto Hieda<br>
+    Exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (on the left)`
   },
   {
     start: new Date("March 12, 2021"),
@@ -16,6 +18,7 @@ const sc = [
     type: ["workshop"],
     topic: ["tidalcycles"],
     venue: "online",
+    collab: ["Naoto Hieda"],
     // image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2021ogp.png?v=1612740183557",
     desc: html`Workshop at SUNY`
   },
@@ -25,6 +28,7 @@ const sc = [
     type: ["meetup", "curation", "workshop", "lecture"],
     topic: ["processing", "tidalcycles", "hydra"],
     venue: "online",
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2021ogp.png?v=1612740183557",
     desc: html`report and video links <a href="https://naotohieda.com/blog/processing-community-day-japan-2021-en/">here</a><br>
     organization, curation, talk and workshop<br>
@@ -1724,7 +1728,7 @@ module.exports = filter => {
     }
     let collabs = [];
     if (collab != undefined) {
-      if (collab.length > 0) collabs.push("with ");
+      // if (collab.length > 0) collabs.push("with ");
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
@@ -1740,7 +1744,7 @@ module.exports = filter => {
     let venueElt;
     if (venue != undefined) {
       let prefix = "";
-      if (venue != "online") prefix = "at";
+      // if (venue != "online") prefix = "at";
       venueElt = html`
         ${prefix} ${venue}
       `;
@@ -1776,12 +1780,12 @@ module.exports = filter => {
           <div class="thumbnail">${imageElt}</div>
           <div class="caption">
             <div class="collabs">${collabs}</div>
-            <div class="venue">${venueElt}</div>
             <div class="clearer"></div>
             <div><span class="title">${title}</span>, <span class="date">${date}</span></div>
             <div class="clearer"></div>
             <div class="type">${types}</div>
             <div class="topic">${topics}</div>
+            <div class="venue">${venueElt}</div>
             <div class="clearer"></div>
             <p class="desc">${desc}</p>
             <div class="clearer"></div>

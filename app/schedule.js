@@ -51,7 +51,7 @@ module.exports = filter => {
     }
     let collabs = [];
     if (collab != undefined) {
-      if (collab.length > 0) collabs.push("with ");
+      // if (collab.length > 0) collabs.push("with ");
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
@@ -67,7 +67,7 @@ module.exports = filter => {
     let venueElt;
     if (venue != undefined) {
       let prefix = "";
-      if (venue != "online") prefix = "at";
+      // if (venue != "online") prefix = "at";
       venueElt = html`
         ${prefix} ${venue}
       `;
@@ -103,12 +103,12 @@ module.exports = filter => {
           <div class="thumbnail">${imageElt}</div>
           <div class="caption">
             <div class="collabs">${collabs}</div>
-            <div class="venue">${venueElt}</div>
             <div class="clearer"></div>
             <div><span class="title">${title}</span>, <span class="date">${date}</span></div>
             <div class="clearer"></div>
             <div class="type">${types}</div>
             <div class="topic">${topics}</div>
+            <div class="venue">${venueElt}</div>
             <div class="clearer"></div>
             <p class="desc">${desc}</p>
             <div class="clearer"></div>
