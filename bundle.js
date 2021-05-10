@@ -40,6 +40,7 @@ const sc = [
     type: ["installation"],
     topic: ["nails"],
     venue: "ctrl+space / Cologne Main Station (Germany)",
+    collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F210215-spektrum.jpg?v=1611426104304",
     desc: html`
 #spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stigma of "binariness" of autism.`
@@ -49,7 +50,7 @@ const sc = [
     title: "Hydra meetup #4",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/ded7bc3b-3878-467c-9524-bce0e27dfc1e%2Fposter4.png?v=1611315261539",
     desc: html`
@@ -61,7 +62,7 @@ const sc = [
     title: "Introduction to Hydra",
     type: ["workshop"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "CCFest (online)",
     image:
       "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-01-24-22h54m34s826.png?v=1611525647011",
@@ -75,7 +76,7 @@ const sc = [
     title: "TidalClub Solstice",
     type: ["performance", "net art"],
     topic: ["hydra", "livelab", "tidalcycles"],
-    collab: ["Flor de Fuego"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "TidalClub (online)",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201220-tidal.jpg?v=1608503105807",
@@ -90,7 +91,7 @@ const sc = [
     title: "GlitchMe Performance-Presentation",
     type: ["performance", "lecture", "net art"],
     topic: ["hydra", "livelab"],
-    collab: ["Flor de Fuego"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "CODAME (online)",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201218-codame.jpg?v=1608479114980",
@@ -104,6 +105,7 @@ const sc = [
     title: "Introduction to TidalCycles",
     type: ["workshop"],
     topic: ["tidalcycles"],
+    collab: ["Naoto Hieda"],
     venue: "Kunsthochschule für Medien Köln",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201215-tidal.jpg?v=1611416016009",
     desc: html`
@@ -115,7 +117,7 @@ const sc = [
     title: "Hydra meetup #3",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201212-hydra03.jpg?v=1611416284311",
     desc: html`
@@ -126,7 +128,7 @@ const sc = [
     start: new Date("December 6, 2020"),
     title: "Processing Community Hangout Japan 05",
     type: ["meetup"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     topic: ["processing", "japan"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201206-pchj05.png?v=1611416208142",
@@ -139,6 +141,7 @@ const sc = [
     title: "Hydra Exhibition",
     type: ["installation", "net art"],
     topic: ["hydra", "vr"],
+    collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-11-21-hydra-exhibition.png?v=1611415274524",
     desc: html`
@@ -154,7 +157,7 @@ const sc = [
     venue: "Theater Dortmund",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201106-theater.jpg?v=1611416466540",
     desc: html`
-      A project with Vivian Lu
+      Technical assistance
     `
   },
   {
@@ -162,6 +165,7 @@ const sc = [
     title: "Tech is Nonbinary",
     type: ["performance", "net art"],
     topic: ["hydra", "dance"],
+    collab: ["Naoto Hieda"],
     venue: "Creative Commons Global Summit (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-10-23-tech-is-nonbinary.png?v=1611415254316",
     desc: html`
@@ -216,7 +220,7 @@ const sc = [
     title: "Multidimensional Journey",
     type: ["performance", "net art"],
     topic: ["hubs", "miro", "green screen"],
-    collab: ["Nien Tzu Weng"],
+    collab: ["Nien Tzu Weng", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
@@ -233,7 +237,7 @@ const sc = [
     title: "Best Practices - Discussion",
     type: ["discussion"],
     topic: ["dance", "hydra"],
-    collab: ["Jorge Guevara"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
     yt: "YZfMBoFWFZY",
@@ -251,7 +255,7 @@ const sc = [
     title: "Best Practices in Contemporary Dance",
     type: ["performance", "net art"],
     topic: ["dance", "hydra"],
-    collab: ["Jorge Guevara"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
     yt: "wxXguzTYt_I",
@@ -270,7 +274,7 @@ const sc = [
     title: "Best Practices - Discussion",
     type: ["discussion"],
     topic: ["dance", "hydra"],
-    collab: ["Jorge Guevara"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg?v=1601987022036",
@@ -289,7 +293,7 @@ const sc = [
     title: "Hydra meetup #2",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
@@ -312,7 +316,7 @@ const sc = [
     topic: ["touchdesigner", "processing", "vvvv"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
-    collab: ["Yasushi Harada", "Yuki Narumi", "Takawo"],
+    collab: ["Yasushi Harada", "Yuki Narumi", "Shunsuke Takawo", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     desc: html`
       Tokyo Developers Study Weekend (TDSW) and Processing Community Japan (PCJ)
@@ -334,7 +338,7 @@ const sc = [
     title: "Low Frequency Skies",
     type: ["lunch", "meetup"],
     topic: ["food"],
-    collab: ["Raphaël de Courville", "Taru Muhonen"],
+    collab: ["Raphaël de Courville", "Taru Muhonen", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201003-02.jpg?v=1601728591081",
@@ -351,6 +355,7 @@ const sc = [
     title: "Choreographic Coding Labs Online",
     type: ["curation", "meetup"],
     topic: ["hydra", "dance", "food"],
+    collab: ["Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcconline.jpg?v=1611415565194",
     desc: html`
@@ -362,7 +367,7 @@ const sc = [
     title: "Online Hangs",
     type: ["meetup"],
     topic: [],
-    collab: ["Marie Claire LeBlanc Flanagan"],
+    collab: ["Marie Claire LeBlanc Flanagan", "Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200906-hangs.jpg?v=1611416834409",
     desc: html`
@@ -373,7 +378,7 @@ const sc = [
     title: "Processing Community Hangout Japan 03",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-08-30-processing-community-hangout-japan-3-neort.jpg?v=1611415232395",
     desc: html`
@@ -397,7 +402,7 @@ const sc = [
     title: "Hydra meetup #1",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fhydra-meetup1.png?v=1604872115474",
@@ -435,7 +440,7 @@ const sc = [
     title: "Processing Community Hangout Japan 02",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200705-pchj02.png?v=1611417003823",
     desc: html`
@@ -498,7 +503,7 @@ const sc = [
     title: "Processing Community Japan 30 Minute Coding 0",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-31-processing-community-japan-30min-coding-0-en.png?v=1611415150532",
     desc: html`
@@ -535,7 +540,7 @@ const sc = [
     title: "Processing Community Hangout Japan 01",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-16-processing-community-hangout-japan-1-1.png?v=1611415042036",
     desc: html`

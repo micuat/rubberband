@@ -39,6 +39,7 @@ const sc = [
     type: ["installation"],
     topic: ["nails"],
     venue: "ctrl+space / Cologne Main Station (Germany)",
+    collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F210215-spektrum.jpg?v=1611426104304",
     desc: html`
 #spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stigma of "binariness" of autism.`
@@ -48,7 +49,7 @@ const sc = [
     title: "Hydra meetup #4",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/ded7bc3b-3878-467c-9524-bce0e27dfc1e%2Fposter4.png?v=1611315261539",
     desc: html`
@@ -60,7 +61,7 @@ const sc = [
     title: "Introduction to Hydra",
     type: ["workshop"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "CCFest (online)",
     image:
       "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-01-24-22h54m34s826.png?v=1611525647011",
@@ -74,7 +75,7 @@ const sc = [
     title: "TidalClub Solstice",
     type: ["performance", "net art"],
     topic: ["hydra", "livelab", "tidalcycles"],
-    collab: ["Flor de Fuego"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "TidalClub (online)",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201220-tidal.jpg?v=1608503105807",
@@ -89,7 +90,7 @@ const sc = [
     title: "GlitchMe Performance-Presentation",
     type: ["performance", "lecture", "net art"],
     topic: ["hydra", "livelab"],
-    collab: ["Flor de Fuego"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "CODAME (online)",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201218-codame.jpg?v=1608479114980",
@@ -103,6 +104,7 @@ const sc = [
     title: "Introduction to TidalCycles",
     type: ["workshop"],
     topic: ["tidalcycles"],
+    collab: ["Naoto Hieda"],
     venue: "Kunsthochschule für Medien Köln",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201215-tidal.jpg?v=1611416016009",
     desc: html`
@@ -114,7 +116,7 @@ const sc = [
     title: "Hydra meetup #3",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201212-hydra03.jpg?v=1611416284311",
     desc: html`
@@ -125,7 +127,7 @@ const sc = [
     start: new Date("December 6, 2020"),
     title: "Processing Community Hangout Japan 05",
     type: ["meetup"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     topic: ["processing", "japan"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201206-pchj05.png?v=1611416208142",
@@ -138,6 +140,7 @@ const sc = [
     title: "Hydra Exhibition",
     type: ["installation", "net art"],
     topic: ["hydra", "vr"],
+    collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-11-21-hydra-exhibition.png?v=1611415274524",
     desc: html`
@@ -153,7 +156,7 @@ const sc = [
     venue: "Theater Dortmund",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201106-theater.jpg?v=1611416466540",
     desc: html`
-      A project with Vivian Lu
+      Technical assistance
     `
   },
   {
@@ -161,6 +164,7 @@ const sc = [
     title: "Tech is Nonbinary",
     type: ["performance", "net art"],
     topic: ["hydra", "dance"],
+    collab: ["Naoto Hieda"],
     venue: "Creative Commons Global Summit (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-10-23-tech-is-nonbinary.png?v=1611415254316",
     desc: html`
@@ -215,7 +219,7 @@ const sc = [
     title: "Multidimensional Journey",
     type: ["performance", "net art"],
     topic: ["hubs", "miro", "green screen"],
-    collab: ["Nien Tzu Weng"],
+    collab: ["Nien Tzu Weng", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F201007node.png?v=1603140395893",
@@ -232,7 +236,7 @@ const sc = [
     title: "Best Practices - Discussion",
     type: ["discussion"],
     topic: ["dance", "hydra"],
-    collab: ["Jorge Guevara"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fchat2.jpg?v=1601470552916",
     yt: "YZfMBoFWFZY",
@@ -250,7 +254,7 @@ const sc = [
     title: "Best Practices in Contemporary Dance",
     type: ["performance", "net art"],
     topic: ["dance", "hydra"],
-    collab: ["Jorge Guevara"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F2020-09-03-best-practices-session.png?v=1601461259001",
     yt: "wxXguzTYt_I",
@@ -269,7 +273,7 @@ const sc = [
     title: "Best Practices - Discussion",
     type: ["discussion"],
     topic: ["dance", "hydra"],
-    collab: ["Jorge Guevara"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201005chat.jpg?v=1601987022036",
@@ -288,7 +292,7 @@ const sc = [
     title: "Hydra meetup #2",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
@@ -311,7 +315,7 @@ const sc = [
     topic: ["touchdesigner", "processing", "vvvv"],
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fvernissage.jpg?v=1601987505096",
-    collab: ["Yasushi Harada", "Yuki Narumi", "Takawo"],
+    collab: ["Yasushi Harada", "Yuki Narumi", "Shunsuke Takawo", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     desc: html`
       Tokyo Developers Study Weekend (TDSW) and Processing Community Japan (PCJ)
@@ -333,7 +337,7 @@ const sc = [
     title: "Low Frequency Skies",
     type: ["lunch", "meetup"],
     topic: ["food"],
-    collab: ["Raphaël de Courville", "Taru Muhonen"],
+    collab: ["Raphaël de Courville", "Taru Muhonen", "Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2F201003-02.jpg?v=1601728591081",
@@ -350,6 +354,7 @@ const sc = [
     title: "Choreographic Coding Labs Online",
     type: ["curation", "meetup"],
     topic: ["hydra", "dance", "food"],
+    collab: ["Naoto Hieda"],
     venue: "NODE20 (Germany / online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcconline.jpg?v=1611415565194",
     desc: html`
@@ -361,7 +366,7 @@ const sc = [
     title: "Online Hangs",
     type: ["meetup"],
     topic: [],
-    collab: ["Marie Claire LeBlanc Flanagan"],
+    collab: ["Marie Claire LeBlanc Flanagan", "Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200906-hangs.jpg?v=1611416834409",
     desc: html`
@@ -372,7 +377,7 @@ const sc = [
     title: "Processing Community Hangout Japan 03",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-08-30-processing-community-hangout-japan-3-neort.jpg?v=1611415232395",
     desc: html`
@@ -396,7 +401,7 @@ const sc = [
     title: "Hydra meetup #1",
     type: ["meetup"],
     topic: ["hydra"],
-    collab: ["Flor de Fuego", "Ritsche", "Olivia Jack"],
+    collab: ["Flor de Fuego", "Ritsche", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fhydra-meetup1.png?v=1604872115474",
@@ -434,7 +439,7 @@ const sc = [
     title: "Processing Community Hangout Japan 02",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200705-pchj02.png?v=1611417003823",
     desc: html`
@@ -446,6 +451,7 @@ const sc = [
     title: "Virtual Exhibition 007",
     type: ["installation", "net art"],
     topic: ["vr"],
+    collab: ["Naoto Hieda"],
     venue: "nextmuseum.io (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-07-01-virtual-exhibition-007.png?v=1611413239494",
     desc: html`
@@ -457,7 +463,7 @@ const sc = [
     title: "Sortie de résidence #4 at CCOV",
     type: ["performance", "net art"],
     topic: ["zoom", "jitsi", "miro", "scratch", "hubs"],
-    collab: ["Nien Tzu Weng"],
+    collab: ["Nien Tzu Weng", "Naoto Hieda"],
     venue: "Centre de Création O Vertigo (online)",
     image:
       "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
@@ -478,7 +484,7 @@ const sc = [
     title: "CCOV Residency at a Distance",
     type: ["residency", "net art"],
     topic: ["jitsi", "miro", "cooking"],
-    collab: ["Nien Tzu Weng"],
+    collab: ["Nien Tzu Weng", "Naoto Hieda"],
     venue: "Centre de Création O Vertigo (online)",
     image:
       "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200601residence.png?v=1603140134648",
@@ -497,7 +503,7 @@ const sc = [
     title: "Processing Community Japan 30 Minute Coding 0",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-31-processing-community-japan-30min-coding-0-en.png?v=1611415150532",
     desc: html`
@@ -510,6 +516,7 @@ const sc = [
     title: "15s or less Showcase - Stories from HK",
     type: ["net art"],
     topic: ["instagram", "hong kong"],
+    collab: ["Naoto Hieda"],
     venue: "Umanesimo Artificiale (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-30-15s-or-less-filter.png?v=1611415171595",
     desc: html`
@@ -522,6 +529,7 @@ const sc = [
     title: "Algorithm | Degeneracy",
     type: ["performance", "net art"],
     topic: ["dance", "p-code"],
+    collab: ["Naoto Hieda"],
     venue: "NL_CL / iii (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh.png?v=1611415093981",
     desc: html`
@@ -534,7 +542,7 @@ const sc = [
     title: "Processing Community Hangout Japan 01",
     type: ["meetup"],
     topic: ["processing", "japan"],
-    collab: ["Takawo"],
+    collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-16-processing-community-hangout-japan-1-1.png?v=1611415042036",
     desc: html`
@@ -546,7 +554,7 @@ const sc = [
     title: "Processing Community Hangout 02",
     type: ["meetup"],
     topic: ["processing"],
-    collab: ["Saber Khan"],
+    collab: ["Naoto Hieda", "Saber Khan"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-09-processing-community-hangout-2-46.png?v=1611414960476",
     desc: html`
@@ -559,7 +567,7 @@ const sc = [
     title: "Processing Community Hangout 01",
     type: ["meetup"],
     topic: ["processing"],
-    collab: ["Saber Khan"],
+    collab: ["Naoto Hieda", "Saber Khan"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-04-05-processing-community-hangout-1-en.png?v=1611414930358",
     desc: html`
@@ -572,6 +580,7 @@ const sc = [
     title: "Yoshino Gypsum Art Foundation Fellowship",
     type: ["award"],
     topic: [],
+    collab: ["Naoto Hieda"],
     venue: "Yoshino Gypsum Art Foundation",
     desc: html`
     `
@@ -581,6 +590,7 @@ const sc = [
     title: "p-code Land",
     type: ["installation", "net art"],
     topic: ["p-code"],
+    collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-29-p-code-land.jpg?v=1611414784827",
     desc: html`
@@ -593,6 +603,7 @@ const sc = [
     title: "Tweet Processing Editor",
     type: ["net art"],
     topic: ["processing"],
+    collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-22-tweet-processing-editor.png?v=1611414830340",
     desc: html`
@@ -617,6 +628,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Virtual Exhibition 004",
     type: ["installation", "net art"],
     topic: ["vr"],
+    collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-11-virtual-exhibition-004.png?v=1611417051165",
     desc: html`
@@ -629,6 +641,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Virtual Exhibition 003",
     type: ["performance"],
     topic: ["dance", "p-code"],
+    collab: ["Naoto Hieda"],
     venue: "Kunsthochschule für Medien Köln",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-05-virtual-exhibition-003.png?v=1611414757005",
     desc: html`
@@ -664,6 +677,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Algorithm | Diversion",
     type: ["lecture"],
     topic: ["autism"],
+    collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F191228-ccc.jpg?v=1611417381810",
     desc: html`
       https://naotohieda.com/blog/36c3/
@@ -674,9 +688,10 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Hydra Book",
     type: ["tutorial"],
     topic: ["hydra"],
+    collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhydra-book.png?v=1611426374077",
     desc: html`
-      https://hydra-book.naotohieda.com/
+      https://hydra-book.glitch.com/
     `
   },
   {
@@ -684,6 +699,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Creative Code Köln",
     type: ["meetup"],
     topic: ["processing"],
+    collab: ["Naoto Hieda"],
     venue: "Akkuraum (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-12-05-cck-meetup-intro.jpg?v=1611414668474",
     desc: html`
@@ -707,7 +723,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Staebetanzen",
     type: ["performance"],
     topic: ["dance", "machine learning", "processing"],
-    collab: ["Raphael Hillebrand", "HKAPA Students"],
+    collab: ["Raphael Hillebrand", "Naoto Hieda", "HKAPA Students"],
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhkapa.jpg?v=1611413240992",
     desc: html`
@@ -719,7 +735,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Passing Light",
     type: ["installation"],
     topic: ["vvvv", "processing", "puredata", "raspberry pi", "projection"],
-    collab: ["Michael Montanaro", "Tatev Yesayan"],
+    collab: ["Michael Montanaro", "Naoto Hieda", "Tatev Yesayan"],
     venue: "CHAOSMOSIS mAchInes / University of Toronto (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
@@ -731,7 +747,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "HKAPA",
     type: ["residency", "workshop"],
     topic: ["dance", "machine learning", "processing"],
-    collab: ["Raphael Hillebrand"],
+    collab: ["Raphael Hillebrand", "Naoto Hieda"],
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-01-node-proposal-pathfinder-hkapa.jpg?v=1611414857759",
     desc: html`
@@ -755,7 +771,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Walk 4 Me",
     type: ["installation"],
     topic: ["dance", "processing"],
-    collab: ["Christopher Matthews"],
+    collab: ["Christopher Matthews", "Naoto Hieda"],
     venue: "Dance4 (UK)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-01-node-proposal-walk4me.jpg?v=1611417219559",
     desc: html`
@@ -767,6 +783,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Nails | Pixels | Stimming",
     type: ["installation"],
     topic: ["weaving"],
+    collab: ["Naoto Hieda"],
     venue: "Victoria and Albert Museum",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fnpsw.jpg?v=1611413846212",
     desc: html`
@@ -790,7 +807,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "11th Choreographic Coding Lab",
     type: ["meetup"],
     topic: ["dance"],
-    collab: [],
+    collab: ["Motion Bank"],
     venue: "Motion Bank",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh-ccl.png?v=1611415120197",
     desc: html`
@@ -813,7 +830,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Processing Community Day Tokyo 2019",
     type: ["meetup", "curation", "lecture"],
     topic: ["processing", "japan"],
-    collab: ["Ayumu Nagamatsu", "Yasuto Nakanishi"],
+    collab: ["Ayumu Nagamatsu", "Naoto Hieda", "Yasuto Nakanishi"],
     venue: "Yahoo! LODGE (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2.jpg?v=1611413240902",
     desc: html`
@@ -848,6 +865,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Algorithm | Diversion",
     type: ["lecture"],
     topic: ["dance", "autism", "processing"],
+    collab: ["Naoto Hieda"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     desc: html`
       at symposium "Technological flesh!"
@@ -858,6 +876,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Algorithm/Pattern/Diversity",
     type: ["lecture"],
     topic: ["autism", "processing"],
+    collab: ["Naoto Hieda"],
     venue: "CITEC, Bielefeld University (Germany)",
     desc: html`
       guest talk
@@ -868,6 +887,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "IMPACT18 - Matter in Movement",
     type: ["conference"],
     topic: ["autism"],
+    collab: ["PACT Zollverein"],
     venue: "PACT Zollverein (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F181107-impact.jpg?v=1611425497483",
     desc: html`
@@ -902,6 +922,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Processing and Generative Art",
     type: ["lecture", "workshop"],
     topic: ["processing"],
+    collab: ["Naoto Hieda"],
     venue: "Seoul National University of Education (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsnue-processing.jpg?v=1611429706839",
     desc: html`
@@ -913,7 +934,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Usine 108",
     type: ["performance"],
     topic: ["processing", "machine learning"],
-    collab: ["Evelyne Drouin"],
+    collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg2.jpg?v=1611413236868",
     desc: html`
@@ -925,6 +946,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Autistic View",
     type: ["installation"],
     topic: ["openframeworks"],
+    collab: ["Naoto Hieda"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fautistic.png?v=1611425982233",
     desc: html`
@@ -936,6 +958,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Mapping Party #3",
     type: ["meetup"],
     topic: ["processing"],
+    collab: ["Naoto Hieda"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fmapping-party-3.jpg?v=1611425966652",
     desc: html`
@@ -947,6 +970,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Mapping Party #2",
     type: ["meetup"],
     topic: ["processing"],
+    collab: ["Naoto Hieda"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fmapping-party-2.jpg?v=1611425950417",
     desc: html`
@@ -969,6 +993,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Mapping Party #1",
     type: ["meetup"],
     topic: ["processing"],
+    collab: ["Naoto Hieda"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg.png?v=1611413249718",
     desc: html`
@@ -980,7 +1005,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Call Stack",
     type: ["residency", "net art"],
     topic: ["processing"],
-    collab: ["Janine Harrington"],
+    collab: ["Janine Harrington", "Naoto Hieda"],
     venue: "Digitale Performance Web Residency / Favoriten Festival (Germany, online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcs.png?v=1611413234621",
     desc: html`
@@ -991,7 +1016,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Artist in Residence",
     type: ["residency"],
     topic: ["processing"],
-    collab: ["Evelyne Drouin"],
+    collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fusine.png?v=1611413241153",
     desc: html`
@@ -1013,7 +1038,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Choreographic Coding Lab + Pathfinder",
     type: ["workshop"],
     topic: ["processing", "pathfinder"],
-    collab: ["Christian Mio Loclair"],
+    collab: ["Christian Mio Loclair", "Naoto Hieda"],
     venue: "NOVA Festival / Point (Romania)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpathrefinder.jpg?v=1611413242207",
     desc: html`
@@ -1025,7 +1050,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Machine Learning for Artists",
     type: ["translation"],
     topic: ["machine learning"],
-    collab: ["Kenichi Yoneda"],
+    collab: ["Kenichi Yoneda", "Naoto Hieda"],
     venue: "online",
     desc: html`
     `
@@ -1035,6 +1060,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Pecha Kucha at TML #3",
     type: ["meetup"],
     topic: [],
+    collab: ["Topological Media Lab"],
     venue: "Topological Media Lab (Canada)",
     desc: html`
       I organized pecha kucha
@@ -1045,6 +1071,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Pecha Kucha at TML #2",
     type: ["meetup"],
     topic: [],
+    collab: ["Topological Media Lab"],
     venue: "Topological Media Lab (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpecha-kucha-2.png?v=1611427074334",
     desc: html`
@@ -1066,6 +1093,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Pecha Kucha at TML #1",
     type: ["meetup"],
     topic: [],
+    collab: ["Topological Media Lab"],
     venue: "Topological Media Lab (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpecha-kucha-1.jpg?v=1611427090222",
     desc: html`
@@ -1088,6 +1116,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Machine Learning Literacy",
     type: ["conference"],
     topic: ["machine learning"],
+    collab: "School for Poetic Computation",
     venue: "School for Poetic Computation (US)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F180215-sfpc-drawing.jpg?v=1611427045030",
     desc: html`
@@ -1099,7 +1128,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Performance",
     type: ["performance"],
     topic: ["raspberry pi"],
-    collab: ["Evelyne Drouin"],
+    collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Centre Clark (Canada)",
     desc: html`
     https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a
@@ -1110,7 +1139,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Artist in Residence",
     type: ["residency"],
     topic: ["dance"],
-    collab: ["Nien Tzu Weng"],
+    collab: ["Nien Tzu Weng", "Naoto Hieda"],
     venue: "Studio 303 (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpathrefinder.png?v=1611413251097",
     desc: html`
@@ -1122,7 +1151,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Beatdox",
     type: ["performance"],
     topic: ["dance", "eeg"],
-    collab: ["Olivier Lalonde"],
+    collab: ["Olivier Lalonde", "Naoto Hieda"],
     venue: "RIDM / Cinémathèque Québecoise (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fridm.jpg?v=1611431764686",
     desc: html`
@@ -1134,7 +1163,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "EEG Drawing",
     type: ["installation"],
     topic: ["eeg", "openFrameworks"],
-    collab: ["Evelyne Drouin"],
+    collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Cancerto (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fmuse.png?v=1611413236306",
     desc: html`
@@ -1145,9 +1174,10 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Mobile Brain-Computer Interface for Dance and Somatic Practice",
     type: ["installation"],
     topic: ["python", "eeg", "openFrameworks"],
+    collab: ["Naoto Hieda"],
     venue: "UIST (Canada)",
     desc: html`
-    
+  
     `
   },
   {
@@ -1155,6 +1185,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "EEG Drawing",
     type: ["installation"],
     topic: ["eeg", "openFrameworks"],
+    collab: ["Naoto Hieda"],
     venue: "NeuroTechTO / TAVES / Toronto Congress Centre (Canada)",
     desc: html`
     `
@@ -1164,7 +1195,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Passing Light",
     type: ["installation"],
     topic: ["vvvv", "processing", "puredata", "raspberry pi", "projection"],
-    collab: ["Michael Montanaro", "Tatev Yesayan"],
+    collab: ["Michael Montanaro", "Naoto Hieda", "Tatev Yesayan"],
     venue: "MAPP_MTL Invisible Exhibition Micro-Mapping / Never Apart (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
@@ -1176,7 +1207,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Seismic Session",
     type: ["performance"],
     topic: ["dance"],
-    collab: ["Doris Uhlich", "others"],
+    collab: ["Doris Uhlich"],
     venue: "ImPulsTanz / Secession (Austria)",
     desc: html`
       participation
@@ -1190,7 +1221,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Christopher Matthews"],
     venue: "Villa Empain (Belgium)",
     desc: html`
-      
+      as sound programmer
     `
   },
   {
@@ -1198,7 +1229,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Passing Light",
     type: ["installation"],
     topic: ["vvvv", "processing", "puredata", "raspberry pi", "projection"],
-    collab: ["Michael Montanaro", "Tatev Yesayan"],
+    collab: ["Michael Montanaro", "Jerome Delapierre", "Naoto Hieda", "Tatev Yesayan"],
     venue: "InTime / Topological Media Lab (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
@@ -1210,6 +1241,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Hack the Brain",
     type: ["meetup"],
     topic: ["dance"],
+    collab: ["Science Gallery Dublin"],
     venue: "Science Gallery Dublin (Ireland)",
     desc: html`
     hackathon group lead
@@ -1220,6 +1252,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "8th Choreographic Coding Lab",
     type: ["meetup"],
     topic: ["dance"],
+    collab: ["Motion Bank"],
     venue: "De Brakke Grond (Netherlands)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Feegccl.jpg?v=1611413244834",
     desc: html`
@@ -1235,7 +1268,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     venue: "Tangente (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fts.png?v=1611413246147",
     desc: html`
-    
+    as visual programmer
     `
   },
   {
@@ -1243,6 +1276,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Pola Art Foundation Fellowship",
     type: ["award"],
     topic: [],
+    collab: ["Naoto Hieda"],
     venue: "Pola Art Foundation",
     desc: html`
     `
@@ -1252,7 +1286,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Chorégraphie Cérébrale",
     type: ["performance"],
     topic: ["dance", "eeg"],
-    collab: ["Olivier Lalonde", "Marie-Noëlle De Sève"],
+    collab: ["Olivier Lalonde", "Naoto Hieda", "Marie-Noëlle De Sève"],
     venue: "Printemps Numeriques / Canadian Centre for Architecture (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcc.jpg?v=1611413239347",
     desc: html`
@@ -1274,7 +1308,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "Scènes Ouvertes",
     type: ["performance"],
     topic: ["scenic", "processing", "arduino"],
-    collab: ["Evelyne Drouin"],
+    collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Société des Arts Technologiques (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fso.jpg?v=1611413239746",
     desc: html`
@@ -1286,6 +1320,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "EEG Drawing",
     type: ["installation"],
     topic: ["openFrameworks"],
+    collab: ["Naoto Hieda"],
     venue: "TEDxMontreal (Canada)",
     desc: html`
     `
@@ -1295,6 +1330,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "EEG Drawing",
     type: ["installation"],
     topic: ["eeg", "openFrameworks"],
+    collab: ["Naoto Hieda"],
     venue: "World Maker Faire (US)",
     desc: html`
     `
@@ -1304,7 +1340,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "An Intelligent Floor Surface for Foot-based Exploration of Geospatial Data",
     type: ["conference", "lecture"],
     topic: ["haptics"],
-    collab: ["Jan Anlauff"],
+    collab: ["Naoto Hieda", "Jan Anlauff"],
     venue: "International Workshop on Multimedia Signal Processing (Canada)",
     desc: html`
     `
@@ -1324,6 +1360,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "That Choreographs Us!",
     type: ["performance"],
     topic: ["dance"],
+    collab: ["Benoit Lachambre"],
     venue: "ImPulsTanz (Austria)",
     desc: html`
     `
@@ -1333,6 +1370,7 @@ https://naotohieda.com/blog/tweet-processing-editor/
     title: "danceWEB",
     type: ["residency", "award"],
     topic: ["dance"],
+    collab: ["Naoto Hieda"],
     venue: "ImPulsTanz (Austria)",
     desc: html`
     `
