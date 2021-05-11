@@ -40,9 +40,9 @@ const sc = [
     topic: ["nails"],
     venue: "ctrl+space / Cologne Main Station (Germany)",
     collab: ["Naoto Hieda"],
-    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F210215-spektrum.jpg?v=1611426104304",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FNaoto-Hieda.jpg?v=1620718676073",
     desc: html`
-#spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stigma of "binariness" of autism.`
+#spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stereotype of "binariness" of autism.`
   },
   {
     start: new Date("February 13, 2021"),

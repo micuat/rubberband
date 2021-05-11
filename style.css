@@ -39,9 +39,7 @@ h1 {
 }
 
 .main {
-/*   position: fixed; */
   height: 100%;
-/*   overflow-y: auto; */
   display: flex;
   justify-content: center;
   width: 100%;
@@ -49,7 +47,6 @@ h1 {
 }
 
 .container {
-/*   max-width: 700px; */
   width: 100%;
   display: inline-block;
 }
@@ -67,13 +64,16 @@ header {
 
 .caption-holder {
   max-width: 700px;
+  width: 90%;
+  box-sizing:content-box;
   background-color: white;
   margin: 80px auto 200px auto;
 }
 
 .caption {
-  margin: 80px 5px 200px 5px;
+/*   margin: 80px 5px 200px 5px; */
   padding: 30px 10px 30px 10px;
+  box-sizing:content-box;
   box-shadow: 0 0.5px 2px #000;
   -webkit-box-shadow: 0 0.5px 2px #000;
 /*   overflow: hidden; */
@@ -157,7 +157,7 @@ section > .title {
   background-color: #ccc;
   display: table-cell;
   vertical-align: middle;
-	width:100vw;
+	width:100%;
   height:100px;
 }
 
@@ -165,45 +165,6 @@ section > .title {
 .rowimg > img {
   width: 100%;
   height: auto;
-}
-
-.imgcaption {
-  color: black;
-  background-color: plum;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  /* ...and now for the proper property */
-  transition: 0.5s;
-}
-
-.imgcaption:hover {
-  opacity: 80%;
-}
-
-.imgcaption > p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
-.rowimg {
-  border: solid mediumpurple;
-  padding: 0px;
-  position: relative;
 }
 
 .youtube-container {
