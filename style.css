@@ -223,3 +223,11 @@ a:hover {
   color: white;
   
 }
+
+.links {
+  margin-bottom: 50px;
+}
+
+.links > a {
+  margin-right: 50px;
+}

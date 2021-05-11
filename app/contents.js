@@ -8,9 +8,12 @@ const sc = [
     venue: "K20 (Germany)",
     collab: ["Raphael Hillebrand"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fk20.jpg?v=1620678722784",
+    links: ["https://www.instagram.com/p/CBm7isFnACw/"],
     desc: html`Choreography, interpretation and concept: Raphael Hillebrand<br>
-    camera: Naoto Hieda<br>
-    Exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (on the left)`
+    Music: Prolific the Rapper feat. John Trudell, It's not over<br>
+    Camera: Naoto Hieda<br>
+    Place: Academy of Performing Arts Hong Kong<br>
+    Recorded in 2019, exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (image on the left)`
   },
   {
     start: new Date("March 12, 2021"),

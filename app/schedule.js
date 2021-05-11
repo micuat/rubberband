@@ -16,7 +16,7 @@ module.exports = filter => {
     const dateYear = s.start.toLocaleDateString(undefined, {
       year: "numeric"
     });
-    const { title, topic, desc, type, image, yt, collab, venue } = s;
+    const { title, topic, desc, type, image, yt, collab, venue, links } = s;
 
     if (filter != undefined) {
       if (filter.tag != undefined) {
@@ -48,6 +48,14 @@ module.exports = filter => {
       // );
       let del = i < topic.length - 1 ? ', ' : '';
       topics.push(topic[i] + del);
+    }
+    let link = [];
+    for (let i = 0; links !== undefined && i < links.length; i++) {
+      let num = i;
+      if(links.length == 1) {
+        num = "";
+      }
+      link.push(html`<a href="${links[i]}>link${num}</a>`);
     }
     let collabs = [];
     if (collab != undefined) {
@@ -109,9 +117,8 @@ module.exports = filter => {
             <div class="clearer"></div>
             <div class="type">${types}; ${topics}</div>
             <div class="venue">${venueElt}</div>
-            <div class="clearer"></div>
             <p class="desc">${desc}</p>
-            <div class="clearer"></div>
+            <p class="links">${link}</p>
             ${ytElt}
           </div>
           </div>

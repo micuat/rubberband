@@ -9,8 +9,12 @@ const sc = [
     venue: "K20 (Germany)",
     collab: ["Raphael Hillebrand"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fk20.jpg?v=1620678722784",
-    desc: html`camera: Naoto Hieda<br>
-    Exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (on the left)`
+    links: ["https://www.instagram.com/p/CBm7isFnACw/"],
+    desc: html`Choreography, interpretation and concept: Raphael Hillebrand<br>
+    Music: Prolific the Rapper feat. John Trudell, It's not over<br>
+    Camera: Naoto Hieda<br>
+    Place: Academy of Performing Arts Hong Kong<br>
+    Recorded in 2019, exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (image on the left)`
   },
   {
     start: new Date("March 12, 2021"),
@@ -1749,7 +1753,7 @@ module.exports = filter => {
     const dateYear = s.start.toLocaleDateString(undefined, {
       year: "numeric"
     });
-    const { title, topic, desc, type, image, yt, collab, venue } = s;
+    const { title, topic, desc, type, image, yt, collab, venue, links } = s;
 
     if (filter != undefined) {
       if (filter.tag != undefined) {
@@ -1781,6 +1785,14 @@ module.exports = filter => {
       // );
       let del = i < topic.length - 1 ? ', ' : '';
       topics.push(topic[i] + del);
+    }
+    let link = [];
+    for (let i = 0; links !== undefined && i < links.length; i++) {
+      let num = i;
+      if(links.length == 1) {
+        num = "";
+      }
+      link.push(html`<a href="${links[i]}>link${num}</a>`);
     }
     let collabs = [];
     if (collab != undefined) {
@@ -1842,9 +1854,8 @@ module.exports = filter => {
             <div class="clearer"></div>
             <div class="type">${types}; ${topics}</div>
             <div class="venue">${venueElt}</div>
-            <div class="clearer"></div>
             <p class="desc">${desc}</p>
-            <div class="clearer"></div>
+            <p class="links">${link}</p>
             ${ytElt}
           </div>
           </div>
