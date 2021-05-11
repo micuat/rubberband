@@ -1423,8 +1423,8 @@ An editor with preview and minification of a p5.js sketch for Tweet Processing.
     topic: ["3D scan", "openFrameworks"],
     collab: ["Naoto Hieda"],
     venue: "Virtual Reality Hackathon (Canada)",
+    links: ["https://devpost.com/software/glitch-3d"],
     desc: html`
-    https://devpost.com/software/glitch-3d
     `
   },
   {
@@ -1434,8 +1434,9 @@ An editor with preview and minification of a p5.js sketch for Tweet Processing.
     topic: ["face tracking", "openFrameworks"],
     collab: ["Naoto Hieda"],
     venue: "Hack Day (Canada)",
+    links: ["https://vimeo.com/164074864"],
     desc: html`
-    https://vimeo.com/164074864
+    
     `
   },
   {
