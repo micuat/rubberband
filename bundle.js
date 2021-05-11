@@ -1836,6 +1836,7 @@ module.exports = filter => {
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
           <div class="caption">
+          <div class="caption-in">
             <div class="collabs">${collabs}</div>
             <div class="clearer"></div>
             <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
@@ -1846,6 +1847,7 @@ module.exports = filter => {
             <p class="desc">${desc}</p>
             <div class="clearer"></div>
             ${ytElt}
+          </div>
           </div>
           </div>
         </section>

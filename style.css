@@ -64,19 +64,22 @@ header {
 
 .caption-holder {
   max-width: 700px;
-  width: 90%;
   box-sizing:content-box;
   background-color: white;
   margin: 80px auto 200px auto;
 }
 
 .caption {
-/*   margin: 80px 5px 200px 5px; */
-  padding: 30px 10px 30px 10px;
-  box-sizing:content-box;
+  margin: 80px 5px 200px 5px;
+/*   padding: 30px 10px 30px 10px; */
+/*   box-sizing:content-box; */
   box-shadow: 0 0.5px 2px #000;
   -webkit-box-shadow: 0 0.5px 2px #000;
-/*   overflow: hidden; */
+}
+
+/* stupid safari */
+.caption-in {
+  margin: 30px 10px 30px 10px;
 }
 
 section {
@@ -157,7 +160,8 @@ section > .title {
   background-color: #ccc;
   display: table-cell;
   vertical-align: middle;
-	width:100%;
+  position: relative;
+	width:100vw;
   height:100px;
 }
 
