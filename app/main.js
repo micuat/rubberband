@@ -6,20 +6,6 @@ const filter = require("./filter.js");
 module.exports = function(state, emit) {
   emit("DOMTitleChange", `Works: Naoto Hieda`);
 
-  const counter = [];
-  for (const s of state.schedule) {
-    const types = [...s.type, "all"];
-    for (const t of types) {
-      const c = counter.find(el => el.t == t);
-      if (c == undefined) {
-        counter.push({ t, count: 0 });
-      } else {
-        c.count++;
-      }
-    }
-  }
-
-  const types = counter.sort((a, b) => a.count < b.count);
 
   const filters = [];
   if (state.filter === undefined) {
@@ -32,7 +18,7 @@ module.exports = function(state, emit) {
     }
   }
 
-  for (const t of types) {
+  for (const t of state.types) {
     const selected =
       state.filter.tag == undefined
         ? ""

@@ -1660,6 +1660,7 @@ module.exports = (list, filter) => {
         if (filter.year != "all time" && l.dateYear != filter.year) continue;
       }
     }
+    console.log(filter.tag, l.type)
     newList.push(l);
   }
   return newList;
@@ -1686,6 +1687,30 @@ function notFound() {
 
 app.state.schedule = require("./schedule.js")();
 
+const counter = [];
+for (const s of app.state.schedule) {
+  const types = [...s.type, "all"];
+  for (const t of types) {
+    const c = counter.find(el => el.t == t);
+    if (c == undefined) {
+      counter.push({ t, count: 1 });
+    } else {
+      c.count++;
+    }
+  }
+}
+
+console.log(counter)
+app.state.types = counter.sort((a, b) => {
+  if(a.count < b.count) {
+    return 1;
+  }
+  if(a.count == b.count) {
+    return 0;
+  }
+  return -1;
+});
+
 // import a template
 const main = require("./main.js");
 
@@ -1703,20 +1728,6 @@ const filter = require("./filter.js");
 module.exports = function(state, emit) {
   emit("DOMTitleChange", `Works: Naoto Hieda`);
 
-  const counter = [];
-  for (const s of state.schedule) {
-    const types = [...s.type, "all"];
-    for (const t of types) {
-      const c = counter.find(el => el.t == t);
-      if (c == undefined) {
-        counter.push({ t, count: 0 });
-      } else {
-        c.count++;
-      }
-    }
-  }
-
-  const types = counter.sort((a, b) => a.count < b.count);
 
   const filters = [];
   if (state.filter === undefined) {
@@ -1729,7 +1740,7 @@ module.exports = function(state, emit) {
     }
   }
 
-  for (const t of types) {
+  for (const t of state.types) {
     const selected =
       state.filter.tag == undefined
         ? ""

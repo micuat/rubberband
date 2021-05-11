@@ -76,7 +76,7 @@ module.exports = () => {
     }
 
     dates.push(
-      {type, dateYear, dom: html`
+      {type, title, dateYear, dom: html`
         <section>
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
