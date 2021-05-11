@@ -816,7 +816,7 @@ Visual programming and machine learning: Naoto Hieda
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F190620-oco.jpg?v=1611417273312",
     desc: html`
       Robotics: So Kanno, Naoto Hieda<br>
-      Interactive visuals: Naoto Hieda
+      Interactive visuals assistance: Naoto Hieda
     `
   },
   {
