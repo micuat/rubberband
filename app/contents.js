@@ -378,7 +378,7 @@ const sc = [
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200906-hangs.jpg?v=1611416834409",
     desc: html`
-    online hangs / poster by Marie
+    Poster: Marie Claire LeBlanc Flanagan
     `
   },  {
     start: new Date("August 30, 2020"),
@@ -389,7 +389,6 @@ const sc = [
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-08-30-processing-community-hangout-japan-3-neort.jpg?v=1611415232395",
     desc: html`
-      Japanese Processing meetup
     `
   },
   {
@@ -400,8 +399,9 @@ const sc = [
     collab: ["vc-study"],
     venue: "TidalClub (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-08-19-new-moon.png?v=1611415196073",
+    links: ["https://naotohieda.com/blog/new-moon/"],
     desc: html`
-      https://naotohieda.com/blog/new-moon/
+      
     `
   },
   {
@@ -451,8 +451,9 @@ const sc = [
     collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F200705-pchj02.png?v=1611417003823",
+    links: ["https://pchj02.peatix.com/"],
     desc: html`
-      Japanese Processing meetup https://pchj02.peatix.com/
+      Japanese Processing meetup
     `
   },
   {
@@ -463,8 +464,9 @@ const sc = [
     collab: ["Naoto Hieda"],
     venue: "nextmuseum.io (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-07-01-virtual-exhibition-007.png?v=1611413239494",
+    links: ["https://naotohieda.com/blog/virtual-exhibition-007/"],
     desc: html`
-      https://naotohieda.com/blog/virtual-exhibition-007/
+      
     `
   },
   {
@@ -476,6 +478,7 @@ const sc = [
     venue: "Centre de Création O Vertigo (online)",
     image:
       "https://cdn.glitch.com/e9f27e4f-87e5-46c9-8645-e03a6aedc236%2F200611ccov.jpg?v=1603140228336",
+    links: ["https://www.facebook.com/events/903037330168173/"],
     desc: html`
       Nien Tzu Weng and Naoto Hiéda, working in Montreal and Germany
       respectively, were the last artists to take part in a CCOV Residency at a
@@ -483,9 +486,6 @@ const sc = [
       in a Zoom room as they discuss the outcomes of their work, the
       difficulties met on the way, their strategies for creating remotely, and
       much more!
-      <a href="https://www.facebook.com/events/903037330168173/"
-        >facebook link</a
-      >
     `
   },
   {
@@ -515,9 +515,8 @@ const sc = [
     collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-31-processing-community-japan-30min-coding-0-en.png?v=1611415150532",
+    links: ["https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/"],
     desc: html`
-      Japanese Processing meetup
-      <a href="https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/">link</a>
     `
   },
   {
@@ -528,9 +527,9 @@ const sc = [
     collab: ["Naoto Hieda"],
     venue: "Umanesimo Artificiale (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-30-15s-or-less-filter.png?v=1611415171595",
+    links: ["https://naotohieda.com/blog/15s-or-less/"],
     desc: html`
     “Stories from HK” focused on protests in Hong Kong by creating a new work and curating works that are related to the digital culture in Hong Kong (but not limited to the protest).
-      https://naotohieda.com/blog/15s-or-less/
     `
   },
   {
@@ -541,9 +540,9 @@ const sc = [
     collab: ["Naoto Hieda"],
     venue: "NL_CL / iii (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh.png?v=1611415093981",
+    links: ["https://naotohieda.com/blog/nl-cl-2-flesh/"],
     desc: html`
     My movements are exhibited in the virtual gallery space, which is the concept of the performance “Algorithm | Degeneracy”.
-      https://naotohieda.com/blog/nl-cl-2-flesh/
     `
   },
   {
@@ -554,8 +553,8 @@ const sc = [
     collab: ["Naoto Hieda", "Shunsuke Takawo"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-16-processing-community-hangout-japan-1-1.png?v=1611415042036",
+    links: ["https://pchj01.peatix.com/"],
     desc: html`
-      Japanese Processing meetup https://pchj01.peatix.com/
     `
   },
   {
@@ -566,9 +565,8 @@ const sc = [
     collab: ["Naoto Hieda", "Saber Khan"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-09-processing-community-hangout-2-46.png?v=1611414960476",
+    links: ["https://naotohieda.com/blog/processing-community-hangout-2-en/"],
     desc: html`
-      Processing meetup
-      <a href="https://naotohieda.com/blog/processing-community-hangout-2-en/">link</a>
     `
   },
   {
@@ -579,9 +577,8 @@ const sc = [
     collab: ["Naoto Hieda", "Saber Khan"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-04-05-processing-community-hangout-1-en.png?v=1611414930358",
+    links: ["https://naotohieda.com/blog/processing-community-hangout-1-en/"],
     desc: html`
-      Processing meetup
-      <a href="https://naotohieda.com/blog/processing-community-hangout-1-en/">link</a>
     `
   },
   {
