@@ -5,78 +5,158 @@ var sc = require("./contents.js");
 
 // export module
 module.exports = function(state, emit) {
-  emit(
-    "DOMTitleChange",
-    `Naoto Hieda`
-  );
-  
+  emit("DOMTitleChange", `Naoto Hieda`);
+
   const counter = [];
-  for(const s of sc) {
+  for (const s of sc) {
     const types = [...s.type, "all"];
-    for(const t of types) {
-      const c = counter.find(el=>el.t == t);
-      if(c == undefined) {
-        counter.push({t, count: 0});
-      }
-      else {
+    for (const t of types) {
+      const c = counter.find(el => el.t == t);
+      if (c == undefined) {
+        counter.push({ t, count: 0 });
+      } else {
         c.count++;
       }
     }
   }
-  
-  const types = counter.sort((a, b) => a.count < b.count);
-  
-  const filters = [];
-  if(state.filter == undefined) state.filter = {tag: "all", year: "all time"};
 
-  for(const t of types) {
-    const selected = state.filter.tag == undefined ? "" : (state.filter.tag == t.t ? "selected" : "");
-    filters.push(html`<p onclick="${filterTag}" class="${t.t} ${selected}">${t.t}</p>`);
+  const types = counter.sort((a, b) => a.count < b.count);
+
+  const filters = [];
+  if (state.filter === undefined) {
+    state.filter = { tag: "all", year: "all time" };
+    if (state.query.tag !== undefined) {
+      state.filter.tag = state.query.tag;
+    }
+    if (state.query.year !== undefined) {
+      state.filter.year = state.query.year;
+    }
   }
-  
-  filters.push(html`<div class="clearer"></div>`);
+
+  for (const t of types) {
+    const selected =
+      state.filter.tag == undefined
+        ? ""
+        : state.filter.tag == t.t
+        ? "selected"
+        : "";
+    filters.push(
+      html`
+        <p onclick="${filterTag}" class="${t.t} ${selected}">${t.t}</p>
+      `
+    );
+  }
+
+  filters.push(
+    html`
+      <div class="clearer"></div>
+    `
+  );
 
   const filtersY = [];
-  for(const t of ["all time", "2021", "2020", "2019", "2018", "2017", "2016", "2015", "2014"]) {
-    const selected = state.filter.year == undefined ? "" : (state.filter.year == t ? "selected" : "");
-    filters.push(html`<p onclick="${filterYear}" class="${t} ${selected}">${t}</p>`);
+  for (const t of [
+    "all time",
+    "2021",
+    "2020",
+    "2019",
+    "2018",
+    "2017",
+    "2016",
+    "2015",
+    "2014"
+  ]) {
+    const selected =
+      state.filter.year == undefined
+        ? ""
+        : state.filter.year == t
+        ? "selected"
+        : "";
+    filters.push(
+      html`
+        <p onclick="${filterYear}" class="${t} ${selected}">${t}</p>
+      `
+    );
   }
 
   return html`
-<div>
-<div class="main">
-  <div class="container">
-  <header>
-    <h1> Works: Naoto Hieda </h1>
-    <p>
-      <a href="https://naotohieda.com">Naoto Hieda</a> (Japan, 1990-) is one of the most important figures in the field of the <a href="https://best-practices.glitch.me/">Best Practices in Contemporary Dance</a> and has been taking a crucial role in the <a href="https://bestchat.glitch.me/">Best Practices Chat</a> since 2020. This exhibition is an attempt not only to exhibit the important works by Hieda, but also to show early works and sketches to unveil the creativity of Hieda.
-    </p>
-    <p>
-    The exhibition is curated by Naoto Hieda and hosted by glitch.
-    </p>
-
     <div>
-    Filter by <div class="type">${filters}</div>
-    </div>
-  </header>
+      <div class="main">
+        <div class="container">
+          <header>
+            <h1>Works: Naoto Hieda</h1>
+            <p>
+              <a href="https://naotohieda.com">Naoto Hieda</a> (Japan, 1990-) is
+              one of the most important figures in the field of the
+              <a href="https://best-practices.glitch.me/"
+                >Best Practices in Contemporary Dance</a
+              >
+              and has been taking a crucial role in the
+              <a href="https://bestchat.glitch.me/">Best Practices Chat</a>
+              since 2020. This exhibition is an attempt not only to exhibit the
+              important works by Hieda, but also to show early works and
+              sketches to unveil the creativity of Hieda.
+            </p>
+            <p>
+              The exhibition is curated by Naoto Hieda and hosted by glitch.
+            </p>
 
-  ${schedule(state.filter)}
-  </div>
-</div>
-</div>`;
-  
-  function filterTag (e) {
+            <div>
+              Filter by
+              <div class="type">${filters}</div>
+            </div>
+          </header>
+
+          ${schedule(state.filter)}
+        </div>
+      </div>
+    </div>
+  `;
+
+  // https://stackoverflow.com/questions/5999118/how-can-i-add-or-update-a-query-string-parameter
+  function UpdateQueryString(key, value, url) {
+    if (!url) url = window.location.href;
+    var re = new RegExp("([?&])" + key + "=.*?(&|#|$)(.*)", "gi"),
+      hash;
+
+    if (re.test(url)) {
+      if (typeof value !== "undefined" && value !== null) {
+        return url.replace(re, "$1" + key + "=" + value + "$2$3");
+      } else {
+        hash = url.split("#");
+        url = hash[0].replace(re, "$1$3").replace(/(&|\?)$/, "");
+        if (typeof hash[1] !== "undefined" && hash[1] !== null) {
+          url += "#" + hash[1];
+        }
+        return url;
+      }
+    } else {
+      if (typeof value !== "undefined" && value !== null) {
+        var separator = url.indexOf("?") !== -1 ? "&" : "?";
+        hash = url.split("#");
+        url = hash[0] + separator + key + "=" + value;
+        if (typeof hash[1] !== "undefined" && hash[1] !== null) {
+          url += "#" + hash[1];
+        }
+        return url;
+      } else {
+        return url;
+      }
+    }
+  }
+  function filterTag(e) {
     // console.log(e.target.innerText);
     const tag = e.target.innerText;
     state.filter.tag = tag;
-    state.query.tag = tag;
-    emit('render');
+    const url = UpdateQueryString("tag", tag);
+    history.pushState(null, "", url);
+    emit("render");
   }
-  function filterYear (e) {
+  function filterYear(e) {
     // console.log(e.target.innerText);
     const year = e.target.innerText;
     state.filter.year = year;
-    state.query.year = year;
-    emit('render');
+    const url = UpdateQueryString("year", year);
+    history.pushState(null, "", url);
+    emit("render");
   }
 };
