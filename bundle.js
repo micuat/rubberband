@@ -673,8 +673,14 @@ An editor with preview and minification of a p5.js sketch for Tweet Processing.
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fthe-body-and-the-other-2048x862.jpg?v=1611417103032",
     links: ["https://vimeo.com/463813053"],
     desc: html`
-      Project by Eleonora Siarava
-    `
+Concept-choreography-artistic direction: Eleonora Siarava<br>
+Dancers: Mina Ananiadou, Yana Novotorova<br>
+Digital artist: Naoto Hieda<br>
+Technology Development: Mixed Reality and Visualization Team [MIREVI]<br>
+Sound Design: Jonas Knohl, MIREVI<br>
+Project Coordinator: Ivana Druzetic, MIREVI<br>
+Costumes-external eye: Anne Weyler<br>
+`
   },
   {
     start: new Date("December 28, 2019"),
@@ -684,8 +690,9 @@ An editor with preview and minification of a p5.js sketch for Tweet Processing.
     collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F191228-ccc.jpg?v=1611417381810",
     links: ["https://naotohieda.com/blog/36c3/"],
+    yt: "mh72oryqPYg",
     desc: html`
-      
+      Before media art has emerged, traditional art and dance are already applying algorithms to make sophisticated patterns in their textures or movements. Hieda is researching the use of algorithm through creation of media installations and dialog with artists, dancers, choreographers and musicians. He also presents his current interest in machine learning and art which potentially exclude (or already excluding) some populations due to the dataset and modality.
     `
   },
   {
@@ -885,6 +892,7 @@ An editor with preview and minification of a p5.js sketch for Tweet Processing.
     topic: ["autism", "processing"],
     collab: ["Naoto Hieda"],
     venue: "CITEC, Bielefeld University (Germany)",
+    links: ["https://cit-ec.de/de/events/guest-talk-naoto-hieda"],
     desc: html`
       guest talk
     `
@@ -1715,7 +1723,6 @@ module.exports = function(state, emit) {
     <div>
     Filter by <div class="type">${filters}</div>
     </div>
-    <div class="clearer"></div>
   </header>
 
   ${schedule(state.filter)}
@@ -1727,12 +1734,14 @@ module.exports = function(state, emit) {
     // console.log(e.target.innerText);
     const tag = e.target.innerText;
     state.filter.tag = tag;
+    state.query.tag = tag;
     emit('render');
   }
   function filterYear (e) {
     // console.log(e.target.innerText);
     const year = e.target.innerText;
     state.filter.year = year;
+    state.query.year = year;
     emit('render');
   }
 };
@@ -1767,25 +1776,13 @@ module.exports = filter => {
       }
     }
 
-    // console.log(desc)
-    
     let types = [];
     for (let i = 0; i < type.length; i++) {
-      // topics.push(
-      //   html`
-      //     <p class="${t}">${t}</p>
-      //   `
-      // );
       let del = i < type.length - 1 ? ', ' : '';
       types.push(type[i] + del);
     }
     let topics = [];
     for (let i = 0; i < topic.length; i++) {
-      // topics.push(
-      //   html`
-      //     <p class="${t}">${t}</p>
-      //   `
-      // );
       let del = i < topic.length - 1 ? ', ' : '';
       topics.push(topic[i] + del);
     }
@@ -1804,7 +1801,6 @@ module.exports = filter => {
     
     let collabs = [];
     if (collab != undefined) {
-      // if (collab.length > 0) collabs.push("with ");
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
@@ -1820,7 +1816,6 @@ module.exports = filter => {
     let venueElt;
     if (venue != undefined) {
       let prefix = "";
-      // if (venue != "online") prefix = "at";
       venueElt = html`
         ${prefix} ${venue}
       `;
@@ -1833,39 +1828,20 @@ module.exports = filter => {
     } else {
       imageElt = html`<p>The image is currently on loan</p>`
     }
-    let ytElt;
-    if (yt != undefined && false) {
-      // leave out videos for now
-      ytElt = html`
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/${yt}"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      `;
-    }
+
     dates.push(
       html`
         <section>
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
-          <div class="caption">
-            <div class="collabs">${collabs}</div>
-            <div class="clearer"></div>
-            <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
-            <div class="clearer"></div>
-            <div class="type">${types}; ${topics}</div>
-            <div class="venue">${venueElt}</div>
-            <p class="desc">${desc}</p>
-            <p class="links">${link}</p>
-            ${ytElt}
-          </div>
+            <div class="caption">
+              <div class="collabs">${collabs}</div>
+              <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
+              <div class="type">${types}; ${topics}</div>
+              <div class="venue">${venueElt}</div>
+              <p class="desc">${desc}</p>
+              <p class="links">${link}</p>
+            </div>
           </div>
         </section>
       `

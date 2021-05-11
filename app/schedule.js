@@ -27,25 +27,13 @@ module.exports = filter => {
       }
     }
 
-    // console.log(desc)
-    
     let types = [];
     for (let i = 0; i < type.length; i++) {
-      // topics.push(
-      //   html`
-      //     <p class="${t}">${t}</p>
-      //   `
-      // );
       let del = i < type.length - 1 ? ', ' : '';
       types.push(type[i] + del);
     }
     let topics = [];
     for (let i = 0; i < topic.length; i++) {
-      // topics.push(
-      //   html`
-      //     <p class="${t}">${t}</p>
-      //   `
-      // );
       let del = i < topic.length - 1 ? ', ' : '';
       topics.push(topic[i] + del);
     }
@@ -64,7 +52,6 @@ module.exports = filter => {
     
     let collabs = [];
     if (collab != undefined) {
-      // if (collab.length > 0) collabs.push("with ");
       let i = 0;
       for (const c of collab) {
         collabs.push(`${c}`);
@@ -80,7 +67,6 @@ module.exports = filter => {
     let venueElt;
     if (venue != undefined) {
       let prefix = "";
-      // if (venue != "online") prefix = "at";
       venueElt = html`
         ${prefix} ${venue}
       `;
@@ -93,39 +79,20 @@ module.exports = filter => {
     } else {
       imageElt = html`<p>The image is currently on loan</p>`
     }
-    let ytElt;
-    if (yt != undefined && false) {
-      // leave out videos for now
-      ytElt = html`
-        <div class="youtube-container">
-          <iframe
-            class="youtube-video"
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/${yt}"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      `;
-    }
+
     dates.push(
       html`
         <section>
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
-          <div class="caption">
-            <div class="collabs">${collabs}</div>
-            <div class="clearer"></div>
-            <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
-            <div class="clearer"></div>
-            <div class="type">${types}; ${topics}</div>
-            <div class="venue">${venueElt}</div>
-            <p class="desc">${desc}</p>
-            <p class="links">${link}</p>
-            ${ytElt}
-          </div>
+            <div class="caption">
+              <div class="collabs">${collabs}</div>
+              <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
+              <div class="type">${types}; ${topics}</div>
+              <div class="venue">${venueElt}</div>
+              <p class="desc">${desc}</p>
+              <p class="links">${link}</p>
+            </div>
           </div>
         </section>
       `

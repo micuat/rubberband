@@ -673,12 +673,13 @@ An editor with preview and minification of a p5.js sketch for Tweet Processing.
     links: ["https://vimeo.com/463813053"],
     desc: html`
 Concept-choreography-artistic direction: Eleonora Siarava<br>
-Dancers: Mina Ananiadou (GR), Yana Novotorova (DE/UKR)
-Digital artist: Naoto Hieda (DE/JPN)
-Technology Development: Mixed Reality and Visualization Team [MIREVI]
-Sound Design: Jonas Knohl, MIREVI
-Project Coordinator: Ivana Druzetic, MIREVI
-Costumes-external eye: Anne Weyler (DE)    `
+Dancers: Mina Ananiadou, Yana Novotorova<br>
+Digital artist: Naoto Hieda<br>
+Technology Development: Mixed Reality and Visualization Team [MIREVI]<br>
+Sound Design: Jonas Knohl, MIREVI<br>
+Project Coordinator: Ivana Druzetic, MIREVI<br>
+Costumes-external eye: Anne Weyler<br>
+`
   },
   {
     start: new Date("December 28, 2019"),
@@ -688,8 +689,9 @@ Costumes-external eye: Anne Weyler (DE)    `
     collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F191228-ccc.jpg?v=1611417381810",
     links: ["https://naotohieda.com/blog/36c3/"],
+    yt: "mh72oryqPYg",
     desc: html`
-      
+      Before media art has emerged, traditional art and dance are already applying algorithms to make sophisticated patterns in their textures or movements. Hieda is researching the use of algorithm through creation of media installations and dialog with artists, dancers, choreographers and musicians. He also presents his current interest in machine learning and art which potentially exclude (or already excluding) some populations due to the dataset and modality.
     `
   },
   {
@@ -889,6 +891,7 @@ Costumes-external eye: Anne Weyler (DE)    `
     topic: ["autism", "processing"],
     collab: ["Naoto Hieda"],
     venue: "CITEC, Bielefeld University (Germany)",
+    links: ["https://cit-ec.de/de/events/guest-talk-naoto-hieda"],
     desc: html`
       guest talk
     `

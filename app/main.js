@@ -58,7 +58,6 @@ module.exports = function(state, emit) {
     <div>
     Filter by <div class="type">${filters}</div>
     </div>
-    <div class="clearer"></div>
   </header>
 
   ${schedule(state.filter)}
@@ -70,12 +69,14 @@ module.exports = function(state, emit) {
     // console.log(e.target.innerText);
     const tag = e.target.innerText;
     state.filter.tag = tag;
+    state.query.tag = tag;
     emit('render');
   }
   function filterYear (e) {
     // console.log(e.target.innerText);
     const year = e.target.innerText;
     state.filter.year = year;
+    state.query.year = year;
     emit('render');
   }
 };
