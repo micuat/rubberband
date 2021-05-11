@@ -4,11 +4,12 @@ const sc = [
     start: new Date("March 27, 2021"),
     title: "Video Loop of Decolonial Resistance",
     type: ["installation"],
-    topic: ["video"],
+    topic: ["4:56-min video"],
     venue: "K20 (Germany)",
     collab: ["Raphael Hillebrand"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fk20.jpg?v=1620678722784",
-    desc: html`camera: Naoto Hieda<br>
+    desc: html`Choreography, interpretation and concept: Raphael Hillebrand<br>
+    camera: Naoto Hieda<br>
     Exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (on the left)`
   },
   {
