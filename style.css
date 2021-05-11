@@ -211,6 +211,7 @@ section > .title {
 
 .desc {
   font-size: 12pt;
+  margin-bottom: 50px;
 /*   text-align: justify; */
 }
 
@@ -225,9 +226,9 @@ a:hover {
 }
 
 .links {
-  margin-bottom: 50px;
+  font-size: 12pt;
 }
 
 .links > a {
-  margin-right: 50px;
+  margin-right: 20px;
 }

@@ -33,9 +33,10 @@ const sc = [
     venue: "online",
     collab: ["PCD Tokyo"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2021ogp.png?v=1612740183557",
-    desc: html`report and video links <a href="https://naotohieda.com/blog/processing-community-day-japan-2021-en/">here</a><br>
-    organization, curation, talk and workshop<br>
-    poster by hina nakamura`
+    links: ["https://naotohieda.com/blog/processing-community-day-japan-2021-en/"],
+    desc: html`Organization, curation, talk and workshop: Naoto Hieda<br>
+    Poster and website: Hina Nakamura<br>
+    Full credit in the link`
   },
   {
     start: new Date("February 15, 2021"),
@@ -45,6 +46,7 @@ const sc = [
     venue: "ctrl+space / Cologne Main Station (Germany)",
     collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FNaoto-Hieda.jpg?v=1620718676073",
+    links: ["https://www.khm.de/studentische_arbeiten/id.30115.public-space-video-im-hbf-koln/"],
     desc: html`
 #spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stereotype of "binariness" of autism.`
   },
@@ -56,8 +58,9 @@ const sc = [
     collab: ["Flor de Fuego", "Ritchse", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/ded7bc3b-3878-467c-9524-bce0e27dfc1e%2Fposter4.png?v=1611315261539",
+    links: ["https://hydra-meetup-4.glitch.me/"],
     desc: html`
-      hydra meetup / poster by Ritchse
+      Poster: Ritchse
     `
   },
   {
@@ -69,9 +72,8 @@ const sc = [
     venue: "CCFest (online)",
     image:
       "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-01-24-22h54m34s826.png?v=1611525647011",
+    links: ["https://ccfest-2021-glitchme.glitch.me/", "https://ccfest.rocks/register"],
     desc: html`
-      A workshop - register <a href="https://ccfest.rocks/register">here</a>!<br />
-      Material can be found <a href="https://ccfest-2021-glitchme.glitch.me/">here</a>.
     `
   },
   {

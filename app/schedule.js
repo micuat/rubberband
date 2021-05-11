@@ -49,14 +49,19 @@ module.exports = filter => {
       let del = i < topic.length - 1 ? ', ' : '';
       topics.push(topic[i] + del);
     }
+    
     let link = [];
+    if (yt != undefined) {
+      link.push(html`<a href="https://youtu.be/${yt}">Video</a>`);
+    }
     for (let i = 0; links !== undefined && i < links.length; i++) {
-      let num = i;
+      let num = i + 1;
       if(links.length == 1) {
         num = "";
       }
-      link.push(html`<a href="${links[i]}>link${num}</a>`);
+      link.push(html`<a href="${links[i]}">Link ${num}</a>`);
     }
+    
     let collabs = [];
     if (collab != undefined) {
       // if (collab.length > 0) collabs.push("with ");
