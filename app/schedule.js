@@ -1,7 +1,6 @@
-var html = require("choo/html");
-var sc = require("./contents.js");
+const html = require("choo/html");
 
-module.exports = filter => {
+module.exports = (sc, filter) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   const dates = [];
@@ -17,7 +16,7 @@ module.exports = filter => {
       year: "numeric"
     });
     let { title, topic, desc, type, image, yt, collab, venue, links } = s;
-      console.log("oi", title)
+      console.log("oi", title, desc.parentNode)
     if(desc.parentNode !== undefined && desc.parentNode !== null) {
       desc = desc.parentNode.removeChild(desc);
     }

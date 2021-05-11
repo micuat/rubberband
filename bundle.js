@@ -1,5 +1,5 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-var html = require("choo/html");
+const html = require("choo/html");
 const sc = [
   {
     start: new Date("March 27, 2021"),
@@ -1650,10 +1650,10 @@ module.exports = sc;
 
 },{"choo/html":6}],2:[function(require,module,exports){
 // import choo
-var choo = require("choo");
-var html = require("choo/html");
+const choo = require("choo");
+const html = require("choo/html");
 // initialize choo
-var app = choo({ hash: true });
+const app = choo({ hash: true });
 
 app.route("/*", notFound);
 
@@ -1668,7 +1668,7 @@ function notFound() {
 }
 
 // import a template
-var main = require("./main.js");
+const main = require("./main.js");
 
 app.route("/", main);
 
@@ -1677,26 +1677,26 @@ app.mount("#choomount");
 
 },{"./main.js":3,"choo":7,"choo/html":6}],3:[function(require,module,exports){
 // import choo's template helper
-var html = require("choo/html");
-var schedule = require("./schedule.js");
-var sc = require("./contents.js");
+const html = require("choo/html");
+const schedule = require("./schedule.js");
+const sc = require("./contents.js");
 
 // export module
 module.exports = function(state, emit) {
   emit("DOMTitleChange", `Works: Naoto Hieda`);
 
   const counter = [];
-  // for (const s of sc) {
-  //   const types = [...s.type, "all"];
-  //   for (const t of types) {
-  //     const c = counter.find(el => el.t == t);
-  //     if (c == undefined) {
-  //       counter.push({ t, count: 0 });
-  //     } else {
-  //       c.count++;
-  //     }
-  //   }
-  // }
+  for (const s of sc) {
+    const types = [...s.type, "all"];
+    for (const t of types) {
+      const c = counter.find(el => el.t == t);
+      if (c == undefined) {
+        counter.push({ t, count: 0 });
+      } else {
+        c.count++;
+      }
+    }
+  }
 
   const types = counter.sort((a, b) => a.count < b.count);
 
@@ -1775,7 +1775,7 @@ module.exports = function(state, emit) {
               sketches to unveil the creativity of Hieda.
             </p>
             <p class="note">
-              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy. Unlike museum captions, the year is not the year of production but of exhibition.
+              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy. Unlike museum captions, the year is not the year of production but that of exhibition.
             </p>
 
             <div>
@@ -1784,7 +1784,7 @@ module.exports = function(state, emit) {
             </div>
           </header>
 
-          ${schedule(state.filter)}
+          ${schedule(sc, state.filter)}
         </div>
       </div>
     </div>
@@ -1840,10 +1840,9 @@ module.exports = function(state, emit) {
 };
 
 },{"./contents.js":1,"./schedule.js":4,"choo/html":6}],4:[function(require,module,exports){
-var html = require("choo/html");
-var sc = require("./contents.js");
+const html = require("choo/html");
 
-module.exports = filter => {
+module.exports = (sc, filter) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   const dates = [];
@@ -1859,7 +1858,7 @@ module.exports = filter => {
       year: "numeric"
     });
     let { title, topic, desc, type, image, yt, collab, venue, links } = s;
-      console.log("oi", title)
+      console.log("oi", title, desc.parentNode)
     if(desc.parentNode !== undefined && desc.parentNode !== null) {
       desc = desc.parentNode.removeChild(desc);
     }
@@ -1948,7 +1947,7 @@ module.exports = filter => {
   return dates;
 };
 
-},{"./contents.js":1,"choo/html":6}],5:[function(require,module,exports){
+},{"choo/html":6}],5:[function(require,module,exports){
 var assert = require('assert')
 var LRU = require('nanolru')
 

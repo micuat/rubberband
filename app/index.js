@@ -1,8 +1,8 @@
 // import choo
-var choo = require("choo");
-var html = require("choo/html");
+const choo = require("choo");
+const html = require("choo/html");
 // initialize choo
-var app = choo({ hash: true });
+const app = choo({ hash: true });
 
 app.route("/*", notFound);
 
@@ -17,7 +17,7 @@ function notFound() {
 }
 
 // import a template
-var main = require("./main.js");
+const main = require("./main.js");
 
 app.route("/", main);
 

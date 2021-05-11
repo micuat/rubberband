@@ -1,24 +1,24 @@
 // import choo's template helper
-var html = require("choo/html");
-var schedule = require("./schedule.js");
-// var sc = require("./contents.js");
+const html = require("choo/html");
+const schedule = require("./schedule.js");
+const sc = require("./contents.js");
 
 // export module
 module.exports = function(state, emit) {
   emit("DOMTitleChange", `Works: Naoto Hieda`);
 
   const counter = [];
-  // for (const s of sc) {
-  //   const types = [...s.type, "all"];
-  //   for (const t of types) {
-  //     const c = counter.find(el => el.t == t);
-  //     if (c == undefined) {
-  //       counter.push({ t, count: 0 });
-  //     } else {
-  //       c.count++;
-  //     }
-  //   }
-  // }
+  for (const s of sc) {
+    const types = [...s.type, "all"];
+    for (const t of types) {
+      const c = counter.find(el => el.t == t);
+      if (c == undefined) {
+        counter.push({ t, count: 0 });
+      } else {
+        c.count++;
+      }
+    }
+  }
 
   const types = counter.sort((a, b) => a.count < b.count);
 
@@ -97,7 +97,7 @@ module.exports = function(state, emit) {
               sketches to unveil the creativity of Hieda.
             </p>
             <p class="note">
-              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy. Unlike museum captions, the year is not the year of production but of exhibition.
+              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy. Unlike museum captions, the year is not the year of production but that of exhibition.
             </p>
 
             <div>
@@ -106,7 +106,7 @@ module.exports = function(state, emit) {
             </div>
           </header>
 
-          ${schedule(state.filter)}
+          ${schedule(sc, state.filter)}
         </div>
       </div>
     </div>
