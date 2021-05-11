@@ -933,7 +933,7 @@ image from tanzhaus nrw
     collab: ["Matilda"],
     venue: "Mikimoto (Japan)",
     desc: html`
-      Development of face morphing display
+      Visual programming: Naoto Hieda
     `
   },
   {
@@ -945,7 +945,7 @@ image from tanzhaus nrw
     venue: "Seoul National University of Education (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsnue-processing.jpg?v=1611429706839",
     desc: html`
-      guest talk invited by Woosung
+      Guest talk at SNUE invited by Woosung Jung
     `
   },
   {
@@ -969,7 +969,7 @@ image from tanzhaus nrw
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fautistic.png?v=1611425982233",
     desc: html`
-    an installation with sauna receipts and shots on streets
+    An installation with sauna receipts and shots on streets
     `
   },
   {
@@ -1005,6 +1005,7 @@ image from tanzhaus nrw
     venue: "Solar Decathlon (China)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsolar-decathlon.png?v=1611426495269",
     desc: html`
+      Visuals, interaction programming: Naoto Hieda
     `
   },
   {
@@ -1049,7 +1050,7 @@ image from tanzhaus nrw
     collab: ["Matilda"],
     venue: "Swatch (Japan)",
     desc: html`
-      Face morphing
+      Visual programming: Naoto Hieda
     `
   },
   {
@@ -1082,7 +1083,7 @@ image from tanzhaus nrw
     collab: ["Topological Media Lab"],
     venue: "Topological Media Lab (Canada)",
     desc: html`
-      I organized pecha kucha
+      Organizer: Naoto Hieda
     `
   },
   {
@@ -1094,7 +1095,7 @@ image from tanzhaus nrw
     venue: "Topological Media Lab (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpecha-kucha-2.png?v=1611427074334",
     desc: html`
-      I organized pecha kucha
+      Organizer: Naoto Hieda
     `
   },
   {
@@ -1116,7 +1117,7 @@ image from tanzhaus nrw
     venue: "Topological Media Lab (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpecha-kucha-1.jpg?v=1611427090222",
     desc: html`
-      I presented at pecha kucha
+      Talk: Naoto Hieda
     `
   },
   {
@@ -1139,7 +1140,6 @@ image from tanzhaus nrw
     venue: "School for Poetic Computation (US)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F180215-sfpc-drawing.jpg?v=1611427045030",
     desc: html`
-    participation
     `
   },
   {
@@ -1151,6 +1151,8 @@ image from tanzhaus nrw
     venue: "Centre Clark (Canada)",
     links: ["https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a"],
     desc: html`
+      Composition and performance: Evelyne Drouin<br>
+      Development: Naoto Hieda
     `
   },
   {
@@ -1218,7 +1220,9 @@ image from tanzhaus nrw
     venue: "MAPP_MTL Invisible Exhibition Micro-Mapping / Never Apart (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
-    
+      Concept and direction: Michael Montanaro<br>
+      Visual programming: Naoto Hieda<br>
+      Fabrication: Tatev Yesayan
     `
   },
   {
@@ -1229,7 +1233,6 @@ image from tanzhaus nrw
     collab: ["Doris Uhlich"],
     venue: "ImPulsTanz / Secession (Austria)",
     desc: html`
-      participation
     `
   },
   {
@@ -1240,7 +1243,7 @@ image from tanzhaus nrw
     collab: ["Christopher Matthews"],
     venue: "Villa Empain (Belgium)",
     desc: html`
-      as sound programmer
+      Sound programming: Naoto Hieda
     `
   },
   {
@@ -1252,7 +1255,9 @@ image from tanzhaus nrw
     venue: "InTime / Topological Media Lab (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
     desc: html`
-    
+      Concept and direction: Michael Montanaro, Jerome Delapierre<br>
+      Visual programming: Jerome Delapierre, Naoto Hieda<br>
+      Fabrication: Tatev Yesayan
     `
   },
   {
@@ -1286,8 +1291,12 @@ image from tanzhaus nrw
     collab: ["Akiko Kitamura", "Navid Navab"],
     venue: "Tangente (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fts.png?v=1611413246147",
+    links: ["https://vimeo.com/238534871", "https://naotohieda.com/blog/transenses/"],
     desc: html`
-    as visual programmer
+    Ideation, artistic direction and dramaturgy : NAVIKO (Akiko Kitamura + Navid Navab)<br>
+    Choreography and performance : Akiko Kitamura<br>
+    Audiovisual composition, gestural sound and interactive scenography : Navid Navab<br>
+    Visual programming: Naoto Hieda, Evan Montpellier
     `
   },
   {
@@ -1765,8 +1774,8 @@ module.exports = function(state, emit) {
               important works by Hieda, but also to show early works and
               sketches to unveil the creativity of Hieda.
             </p>
-            <p>
-              The exhibition is curated by Naoto Hieda and hosted by glitch.
+            <p class="note">
+              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy.
             </p>
 
             <div>

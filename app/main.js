@@ -96,8 +96,8 @@ module.exports = function(state, emit) {
               important works by Hieda, but also to show early works and
               sketches to unveil the creativity of Hieda.
             </p>
-            <p>
-              The exhibition is curated by Naoto Hieda and hosted by glitch.
+            <p class="note">
+              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy.
             </p>
 
             <div>

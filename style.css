@@ -54,9 +54,16 @@ h1 {
 header > p {
   text-align: justify;
 }
+header > p.note {
+  text-align: justify;
+  font-size: 12pt;
+}
 @media only screen and (max-width: 600px) {
   header > p {
     font-size: 12pt;
+  }
+  header > p.note {
+    font-size: 10pt;
   }
 }
 
