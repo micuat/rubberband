@@ -599,9 +599,9 @@ const sc = [
     collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-29-p-code-land.jpg?v=1611414784827",
+    links: ["https://naotohieda.com/blog/p-code-land/"],
     desc: html`
     p-code Land is an experimental virtual space for collective music live-coding. The syntax is based on <a href="https://github.com/p-code-magazine/p-code">p-code</a> but numbers denote MIDI notes not frequencies, and some features are added.
-      https://naotohieda.com/blog/p-code-land/
     `
   },
   {
@@ -612,9 +612,9 @@ const sc = [
     collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-22-tweet-processing-editor.png?v=1611414830340",
+    links: ["https://naotohieda.com/blog/tweet-processing-editor/"],
     desc: html`
 An editor with preview and minification of a p5.js sketch for Tweet Processing.
-https://naotohieda.com/blog/tweet-processing-editor/
     `
   },
   {
@@ -625,8 +625,8 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Utopian Council at KHM"],
     venue: "Kunsthochschule für Medien Köln",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-14-utopian-council.png?v=1611414807270",
+    links: ["https://naotohieda.com/blog/utopian-council/"],
     desc: html`
-      https://naotohieda.com/blog/utopian-council/
     `
   },
   {
@@ -637,9 +637,8 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Naoto Hieda"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-11-virtual-exhibition-004.png?v=1611417051165",
+    links: ["https://naotohieda.com/blog/virtual-exhibition-004/", "https://blog.glitch.com/post/drag-and-drop-your-art-to-the-virtual-world"],
     desc: html`
-      https://naotohieda.com/blog/virtual-exhibition-004/
-      https://blog.glitch.com/post/drag-and-drop-your-art-to-the-virtual-world
     `
   },
   {
@@ -650,8 +649,8 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Naoto Hieda"],
     venue: "Kunsthochschule für Medien Köln",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-05-virtual-exhibition-003.png?v=1611414757005",
+    links: ["https://naotohieda.com/blog/virtual-exhibition-003/"],
     desc: html`
-      Informal presentation https://naotohieda.com/blog/virtual-exhibition-003/
     `
   },
   {
@@ -662,8 +661,8 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["PCD Tokyo"],
     venue: "Yahoo! LODGE (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-02-01-processing-community-day-tokyo-2020-kids.jpg?v=1611414728601",
+    links: ["https://pcd-tokyo.github.io/2020/"],
     desc: html`
-      Japanese Processing meetup
     `
   },
   {
@@ -674,8 +673,9 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Eleonora Siarava"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fthe-body-and-the-other-2048x862.jpg?v=1611417103032",
+    links: ["https://vimeo.com/463813053"],
     desc: html`
-      Project by Eleonora Siarava https://vimeo.com/463813053
+      Project by Eleonora Siarava
     `
   },
   {
@@ -685,8 +685,9 @@ https://naotohieda.com/blog/tweet-processing-editor/
     topic: ["autism"],
     collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F191228-ccc.jpg?v=1611417381810",
+    links: ["https://naotohieda.com/blog/36c3/"],
     desc: html`
-      https://naotohieda.com/blog/36c3/
+      
     `
   },
   {
@@ -696,8 +697,9 @@ https://naotohieda.com/blog/tweet-processing-editor/
     topic: ["hydra"],
     collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhydra-book.png?v=1611426374077",
+    links: ["https://hydra-book.glitch.com/"],
     desc: html`
-      https://hydra-book.glitch.com/
+      
     `
   },
   {
@@ -708,8 +710,9 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Naoto Hieda"],
     venue: "Akkuraum (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-12-05-cck-meetup-intro.jpg?v=1611414668474",
+    links: ["https://naotohieda.com/blog/creative-code-koeln-1/"],
     desc: html`
-      meetup -Feb 27, 2020 https://naotohieda.com/blog/creative-code-koeln-1/
+      meetup -Feb 27, 2020
     `
   },
   {
@@ -744,8 +747,8 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Michael Montanaro", "Naoto Hieda", "Tatev Yesayan"],
     venue: "CHAOSMOSIS mAchInes / University of Toronto (Canada)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpl.png?v=1611413247644",
+    links: ["https://www.cdtps.utoronto.ca/events/chaosmosis-machines"],
     desc: html`
-      <a href="https://www.cdtps.utoronto.ca/events/chaosmosis-machines">link</a>
     `
   },
   {
@@ -943,8 +946,8 @@ https://naotohieda.com/blog/tweet-processing-editor/
     collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Seoul Art Space Geumcheon (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsasg2.jpg?v=1611413236868",
+    links: ["https://blog.naver.com/sas_g/221428126204"],
     desc: html`
-    <a href="https://blog.naver.com/sas_g/221428126204">review</a>
     `
   },
   {
@@ -1136,8 +1139,8 @@ https://naotohieda.com/blog/tweet-processing-editor/
     topic: ["raspberry pi"],
     collab: ["Evelyne Drouin", "Naoto Hieda"],
     venue: "Centre Clark (Canada)",
+    links: ["https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a"],
     desc: html`
-    <a href="https://medium.com/@naoto_hieda/raspberry-pi-zero-for-interactive-sound-performance-at-centre-clark-8ebe96da1f2a">link</a>
     `
   },
   {
