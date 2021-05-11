@@ -125,8 +125,9 @@ const sc = [
     collab: ["Flor de Fuego", "Ritchse", "Naoto Hieda", "Olivia Jack"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201212-hydra03.jpg?v=1611416284311",
+    links: ["https://hydra-meetup-3.glitch.me/"],
     desc: html`
-      hydra meetup / poster by Flor de Fuego
+      Poster: Flor de Fuego
     `
   },
   {
@@ -137,8 +138,8 @@ const sc = [
     topic: ["processing", "japan"],
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201206-pchj05.png?v=1611416208142",
+    links: ["https://pchj05.peatix.com/"],
     desc: html`
-      Japanese Processing meetup https://pchj05.peatix.com/
     `
   },
   {
@@ -150,7 +151,6 @@ const sc = [
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-11-21-hydra-exhibition.png?v=1611415274524",
     desc: html`
-      net art
     `
   },
   {
@@ -173,6 +173,7 @@ const sc = [
     collab: ["Naoto Hieda"],
     venue: "Creative Commons Global Summit (online)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-10-23-tech-is-nonbinary.png?v=1611415254316",
+    yt: "z78i9_cHUeo",
     desc: html`
       live coding performance
     `
@@ -302,6 +303,7 @@ const sc = [
     venue: "online",
     image:
       "https://cdn.glitch.com/598358d5-7bf3-4992-8998-933254c78f4b%2Fhydra.jpg?v=1601986689294",
+    links: ["https://hydra-meetup-2.glitch.me/"],
     yt: "xTL0BjtBq5k",
     // yt: "7ioV6D_OStY",
     desc: html`
@@ -411,6 +413,7 @@ const sc = [
     venue: "online",
     image:
       "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2Fhydra-meetup1.png?v=1604872115474",
+    links: ["https://hydra-meetup-0.glitch.me/"],
     desc: html`
       The first hydra meetup was held online on 1st August (Saturday) 18:00 UTC
       (20:00 CEST / 14:00 EDT).
