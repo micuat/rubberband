@@ -13,7 +13,8 @@ const sc = [
     Music: Prolific the Rapper feat. John Trudell, It's not over<br>
     Camera: Naoto Hieda<br>
     Place: Academy of Performing Arts Hong Kong<br>
-    Recorded in 2019, exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (image on the left)`
+    Exhibited at <a href="https://www.kunstsammlung.de/en/exhibitions/joseph-beuys-jeder-mensch-ist-ein-kuenstler-en">"Everyone Is an Artist" Cosmopolitical Exercises with Joseph Beuys</a> (image on the left)<br>
+    Recorded in 2019`
   },
   {
     start: new Date("March 12, 2021"),
