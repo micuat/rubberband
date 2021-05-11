@@ -1683,20 +1683,20 @@ var sc = require("./contents.js");
 
 // export module
 module.exports = function(state, emit) {
-  emit("DOMTitleChange", `Naoto Hieda`);
+  emit("DOMTitleChange", `Works: Naoto Hieda`);
 
   const counter = [];
-  for (const s of sc) {
-    const types = [...s.type, "all"];
-    for (const t of types) {
-      const c = counter.find(el => el.t == t);
-      if (c == undefined) {
-        counter.push({ t, count: 0 });
-      } else {
-        c.count++;
-      }
-    }
-  }
+  // for (const s of sc) {
+  //   const types = [...s.type, "all"];
+  //   for (const t of types) {
+  //     const c = counter.find(el => el.t == t);
+  //     if (c == undefined) {
+  //       counter.push({ t, count: 0 });
+  //     } else {
+  //       c.count++;
+  //     }
+  //   }
+  // }
 
   const types = counter.sort((a, b) => a.count < b.count);
 
@@ -1859,6 +1859,7 @@ module.exports = filter => {
       year: "numeric"
     });
     let { title, topic, desc, type, image, yt, collab, venue, links } = s;
+      console.log("oi", title)
     if(desc.parentNode !== undefined && desc.parentNode !== null) {
       desc = desc.parentNode.removeChild(desc);
     }

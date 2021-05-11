@@ -17,6 +17,7 @@ module.exports = filter => {
       year: "numeric"
     });
     let { title, topic, desc, type, image, yt, collab, venue, links } = s;
+      console.log("oi", title)
     if(desc.parentNode !== undefined && desc.parentNode !== null) {
       desc = desc.parentNode.removeChild(desc);
     }
