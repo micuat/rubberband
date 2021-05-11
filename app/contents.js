@@ -716,7 +716,6 @@ Costumes-external eye: Anne Weyler<br>
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-12-05-cck-meetup-intro.jpg?v=1611414668474",
     links: ["https://naotohieda.com/blog/creative-code-koeln-1/"],
     desc: html`
-      meetup -Feb 27, 2020
     `
   },
   {
@@ -728,7 +727,6 @@ Costumes-external eye: Anne Weyler<br>
     venue: "CNRS (France)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2019-11-15-articulation.png?v=1611414638191",
     desc: html`
-      Participation
     `
   },
   {
@@ -739,8 +737,11 @@ Costumes-external eye: Anne Weyler<br>
     collab: ["Raphael Hillebrand", "Naoto Hieda", "HKAPA Students"],
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhkapa.jpg?v=1611413240992",
+    links: ["https://vimeo.com/366438999"],
     desc: html`
-      HKAPA
+    "Stäbetanz" is originally a choreography by Oskar Schlemmer. It is part of the Bauhaus dances. In honor of 100 years anniversary of Bauhaus we created a 21st century version of the "Stäbetanz". This time the poles (Stäbe) are created by a motiontracking system created by Naoto Hieda. The residency programm which made this possible is supported by the Hong Kong Academy of Performing Arts and the Goethe Institut.<br>
+Choreography: Raphael Hillebrand<br>
+Visual programming and machine learning: Naoto Hieda
     `
   },
   {
@@ -764,7 +765,6 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Hong Kong Academy for Performing Arts (Hong Kong)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-01-node-proposal-pathfinder-hkapa.jpg?v=1611414857759",
     desc: html`
-      HKAPA
     `
   },
   {
@@ -776,7 +776,8 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Ito-En (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-12-financing-as-an-artist-2020-en.jpg?v=1611425599212",
     desc: html`
-      Ingress visualizer installed in Tokyo, Sendai, Kyoto and Osaka
+      Ingress visualizer installed in Tokyo, Sendai, Kyoto and Osaka<br>
+      Visual programming: Naoto Hieda
     `
   },
   {
@@ -788,7 +789,8 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Dance4 (UK)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-03-01-node-proposal-walk4me.jpg?v=1611417219559",
     desc: html`
-      Collaborative work on performative video game work
+    Concept, video: Christopher Matthews<br>
+    Interaction programming: Naoto Hieda
     `
   },
   {
@@ -812,7 +814,8 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Jewish Museum Berlin",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F190620-oco.jpg?v=1611417273312",
     desc: html`
-      Assistant of robotics with So Kanno / Assistant of interactive visuals
+      Robotics: So Kanno, Naoto Hieda<br>
+      Interactive visuals: Naoto Hieda
     `
   },
   {
@@ -824,7 +827,6 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Motion Bank",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-24-nl-cl-2-flesh-ccl.png?v=1611415120197",
     desc: html`
-      Participation
     `
   },
   {
@@ -835,7 +837,7 @@ Costumes-external eye: Anne Weyler<br>
     collab: ["Shiseido", "R/GA"],
     venue: "S/PARK (Japan)",
     desc: html`
-      Assistant of visual components
+      Visual programming assistance: Naoto Hieda
     `
   },
   {
@@ -843,11 +845,13 @@ Costumes-external eye: Anne Weyler<br>
     title: "Processing Community Day Tokyo 2019",
     type: ["meetup", "curation", "lecture"],
     topic: ["processing", "japan"],
-    collab: ["Ayumu Nagamatsu", "Naoto Hieda", "Yasuto Nakanishi"],
+    collab: ["PCD Tokyo"],
     venue: "Yahoo! LODGE (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2.jpg?v=1611413240902",
+    links: ["https://naotohieda.com/blog/processing-community-day-tokyo-2019/"],
     desc: html`
-      Organization, curation and talks
+      Organization, curation and talks: Naoto Hieda<br>
+      Full credits in the link
     `
   },
   {
@@ -858,7 +862,7 @@ Costumes-external eye: Anne Weyler<br>
     collab: ["Choy Ka Fai"],
     venue: "tanzhaus nrw (Germany)",
     desc: html`
-      participated in work-in-progress creation
+      Visual programming (work-in-progress): Naoto Hieda
     `
   },
   {
@@ -870,7 +874,8 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fdanceclinic.jpg?v=1611431554115",
     desc: html`
-      visual, interaction programming / image from tanzhaus nrw
+      Visual, interaction programming: Naoto Hieda<br>
+image from tanzhaus nrw
     `
   },
   {
@@ -881,7 +886,7 @@ Costumes-external eye: Anne Weyler<br>
     collab: ["Naoto Hieda"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     desc: html`
-      at symposium "Technological flesh!"
+      Talk at symposium "Technological flesh!"
     `
   },
   {
@@ -893,7 +898,6 @@ Costumes-external eye: Anne Weyler<br>
     venue: "CITEC, Bielefeld University (Germany)",
     links: ["https://cit-ec.de/de/events/guest-talk-naoto-hieda"],
     desc: html`
-      guest talk
     `
   },
   {
@@ -905,7 +909,6 @@ Costumes-external eye: Anne Weyler<br>
     venue: "PACT Zollverein (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F181107-impact.jpg?v=1611425497483",
     desc: html`
-    participation
     `
   },
   {
@@ -917,7 +920,8 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Ito-En (Japan)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F181101-xmprofiler.jpg?v=1611425554192",
     desc: html`
-      Ingress visualizer installed in Tokyo, Sendai, Kyoto and Osaka
+      Ingress visualizer installed in Tokyo, Sendai, Kyoto and Osaka<br>
+      Visual programming: Naoto Hieda
     `
   },
   {
@@ -928,7 +932,7 @@ Costumes-external eye: Anne Weyler<br>
     collab: ["Matilda"],
     venue: "Mikimoto (Japan)",
     desc: html`
-      Development of face morphing display
+      Visual programming: Naoto Hieda
     `
   },
   {
@@ -940,7 +944,7 @@ Costumes-external eye: Anne Weyler<br>
     venue: "Seoul National University of Education (Korea)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsnue-processing.jpg?v=1611429706839",
     desc: html`
-      guest talk invited by Woosung
+      Guest talk at SNUE invited by Woosung Jung
     `
   },
   {
