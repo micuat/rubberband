@@ -9,7 +9,7 @@ module.exports = (list, filter) => {
         if (filter.year != "all time" && l.dateYear != filter.year) continue;
       }
     }
-    console.log(filter.tag, l.type, l.title)
+    // console.log(filter.tag, l.type, l.dom, l.title)
     newList.push(l);
   }
   return newList;

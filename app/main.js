@@ -62,11 +62,12 @@ module.exports = function(state, emit) {
       `
     );
   }
+  // console.log(state.schedule.length, "entries")
   const contents = filter(state.schedule, state.filter).map(e => e.dom);//schedule(state.schedule, state.filter);
   return html`
     <div>
-      <div class="main">
-        <div class="container">
+      <div id="main">
+        <div id="container">
           <header>
             <h1>Works: Naoto Hieda</h1>
             <p>
@@ -133,6 +134,7 @@ module.exports = function(state, emit) {
   }
   function filterTag(e) {
     const tag = e.target.innerText;
+    if(state.filter.tag === tag) return;
     state.filter.tag = tag;
     const url = UpdateQueryString("tag", tag);
     history.pushState(null, "", url);
@@ -141,6 +143,7 @@ module.exports = function(state, emit) {
   function filterYear(e) {
     // console.log(e.target.innerText);
     const year = e.target.innerText;
+    if(state.filter.year === year) return;
     state.filter.year = year;
     const url = UpdateQueryString("year", year);
     history.pushState(null, "", url);

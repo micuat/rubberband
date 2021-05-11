@@ -1660,7 +1660,7 @@ module.exports = (list, filter) => {
         if (filter.year != "all time" && l.dateYear != filter.year) continue;
       }
     }
-    console.log(filter.tag, l.type)
+    // console.log(filter.tag, l.type, l.dom, l.title)
     newList.push(l);
   }
   return newList;
@@ -1784,11 +1784,12 @@ module.exports = function(state, emit) {
       `
     );
   }
+  // console.log(state.schedule.length, "entries")
   const contents = filter(state.schedule, state.filter).map(e => e.dom);//schedule(state.schedule, state.filter);
   return html`
     <div>
-      <div class="main">
-        <div class="container">
+      <div id="main">
+        <div id="container">
           <header>
             <h1>Works: Naoto Hieda</h1>
             <p>
@@ -1855,6 +1856,7 @@ module.exports = function(state, emit) {
   }
   function filterTag(e) {
     const tag = e.target.innerText;
+    if(state.filter.tag === tag) return;
     state.filter.tag = tag;
     const url = UpdateQueryString("tag", tag);
     history.pushState(null, "", url);
@@ -1863,6 +1865,7 @@ module.exports = function(state, emit) {
   function filterYear(e) {
     // console.log(e.target.innerText);
     const year = e.target.innerText;
+    if(state.filter.year === year) return;
     state.filter.year = year;
     const url = UpdateQueryString("year", year);
     history.pushState(null, "", url);
@@ -1949,7 +1952,7 @@ module.exports = () => {
     }
 
     dates.push(
-      {type, dateYear, dom: html`
+      {type, title, dateYear, dom: html`
         <section>
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
