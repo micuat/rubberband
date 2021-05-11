@@ -54,6 +54,11 @@ h1 {
 header > p {
   text-align: justify;
 }
+@media only screen and (max-width: 600px) {
+  header > p {
+    font-size: 12pt;
+  }
+}
 
 header {
   max-width: 700px;
@@ -70,16 +75,13 @@ header {
 }
 
 .caption {
-  margin: 80px 5px 200px 5px;
+  margin: 80px auto 200px auto;
+  width: 90%;
 /*   padding: 30px 10px 30px 10px; */
 /*   box-sizing:content-box; */
   box-shadow: 0 0.5px 2px #000;
   -webkit-box-shadow: 0 0.5px 2px #000;
-}
-
-/* stupid safari */
-.caption-in {
-  margin: 30px 10px 30px 10px;
+  padding: 30px 10px 30px 10px;
 }
 
 section {
@@ -209,7 +211,7 @@ section > .title {
 
 .desc {
   font-size: 12pt;
-  text-align: justify;
+/*   text-align: justify; */
 }
 
 a {

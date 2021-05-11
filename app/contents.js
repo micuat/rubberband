@@ -508,7 +508,7 @@ const sc = [
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-31-processing-community-japan-30min-coding-0-en.png?v=1611415150532",
     desc: html`
       Japanese Processing meetup
-      https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/
+      <a href="https://naotohieda.com/blog/processing-community-japan-30min-coding-0-en/">link</a>
     `
   },
   {
@@ -559,7 +559,7 @@ const sc = [
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-05-09-processing-community-hangout-2-46.png?v=1611414960476",
     desc: html`
       Processing meetup
-      https://naotohieda.com/blog/processing-community-hangout-2-en/
+      <a href="https://naotohieda.com/blog/processing-community-hangout-2-en/">link</a>
     `
   },
   {
@@ -572,7 +572,7 @@ const sc = [
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-04-05-processing-community-hangout-1-en.png?v=1611414930358",
     desc: html`
       Processing meetup
-      https://naotohieda.com/blog/processing-community-hangout-1-en/
+      <a href="https://naotohieda.com/blog/processing-community-hangout-1-en/">link</a>
     `
   },
   {
