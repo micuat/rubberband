@@ -1,6 +1,6 @@
 const html = require("choo/html");
 
-module.exports = (sc, filter) => {
+module.exports = (sc) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   const dates = [];
@@ -16,19 +16,10 @@ module.exports = (sc, filter) => {
       year: "numeric"
     });
     let { title, topic, desc, type, image, yt, collab, venue, links } = s;
-      console.log("oi", title, desc.parentNode)
-    if(desc.parentNode !== undefined && desc.parentNode !== null) {
-      desc = desc.parentNode.removeChild(desc);
-    }
-
-    if (filter != undefined) {
-      if (filter.tag != undefined) {
-        if (filter.tag != "all" && type.indexOf(filter.tag) < 0) continue;
-      }
-      if (filter.year != undefined) {
-        if (filter.year != "all time" && dateYear != filter.year) continue;
-      }
-    }
+    //   console.log("oi", title, desc.parentNode)
+    // if(desc.parentNode !== undefined && desc.parentNode !== null) {
+    //   desc = desc.parentNode.removeChild(desc);
+    // }
 
     let types = [];
     for (let i = 0; i < type.length; i++) {
@@ -84,7 +75,7 @@ module.exports = (sc, filter) => {
     }
 
     dates.push(
-      html`
+      {dom: html`
         <section>
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
@@ -99,7 +90,7 @@ module.exports = (sc, filter) => {
           </div>
         </section>
       `
-    );
+      });
   }
 
   return dates;

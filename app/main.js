@@ -1,14 +1,13 @@
 // import choo's template helper
 const html = require("choo/html");
 const schedule = require("./schedule.js");
-const sc = require("./contents.js");
 
 // export module
 module.exports = function(state, emit) {
   emit("DOMTitleChange", `Works: Naoto Hieda`);
 
   const counter = [];
-  for (const s of sc) {
+  for (const s of state.schedule) {
     const types = [...s.type, "all"];
     for (const t of types) {
       const c = counter.find(el => el.t == t);
@@ -77,7 +76,7 @@ module.exports = function(state, emit) {
       `
     );
   }
-
+  const contents = schedule(state.schedule, state.filter);
   return html`
     <div>
       <div class="main">
@@ -97,7 +96,10 @@ module.exports = function(state, emit) {
               sketches to unveil the creativity of Hieda.
             </p>
             <p class="note">
-              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy. Unlike museum captions, the year is not the year of production but that of exhibition.
+              The exhibition is curated by Naoto Hieda and hosted by glitch.
+              Note that some works do not show full credits not because of
+              disrespect but Naoto being sloppy. Unlike museum captions, the
+              year is not the year of production but that of exhibition.
             </p>
 
             <div>
@@ -106,7 +108,7 @@ module.exports = function(state, emit) {
             </div>
           </header>
 
-          ${schedule(sc, state.filter)}
+          ${contents}
         </div>
       </div>
     </div>
@@ -144,7 +146,6 @@ module.exports = function(state, emit) {
     }
   }
   function filterTag(e) {
-    // console.log(e.target.innerText);
     const tag = e.target.innerText;
     state.filter.tag = tag;
     const url = UpdateQueryString("tag", tag);

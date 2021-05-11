@@ -1667,6 +1667,8 @@ function notFound() {
   `;
 }
 
+app.state.schedule = require("./contents.js");
+
 // import a template
 const main = require("./main.js");
 
@@ -1675,18 +1677,17 @@ app.route("/", main);
 // start app
 app.mount("#choomount");
 
-},{"./main.js":3,"choo":7,"choo/html":6}],3:[function(require,module,exports){
+},{"./contents.js":1,"./main.js":3,"choo":7,"choo/html":6}],3:[function(require,module,exports){
 // import choo's template helper
 const html = require("choo/html");
 const schedule = require("./schedule.js");
-const sc = require("./contents.js");
 
 // export module
 module.exports = function(state, emit) {
   emit("DOMTitleChange", `Works: Naoto Hieda`);
 
   const counter = [];
-  for (const s of sc) {
+  for (const s of state.schedule) {
     const types = [...s.type, "all"];
     for (const t of types) {
       const c = counter.find(el => el.t == t);
@@ -1755,7 +1756,7 @@ module.exports = function(state, emit) {
       `
     );
   }
-
+  const contents = schedule(state.schedule, state.filter);
   return html`
     <div>
       <div class="main">
@@ -1775,7 +1776,10 @@ module.exports = function(state, emit) {
               sketches to unveil the creativity of Hieda.
             </p>
             <p class="note">
-              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy. Unlike museum captions, the year is not the year of production but that of exhibition.
+              The exhibition is curated by Naoto Hieda and hosted by glitch.
+              Note that some works do not show full credits not because of
+              disrespect but Naoto being sloppy. Unlike museum captions, the
+              year is not the year of production but that of exhibition.
             </p>
 
             <div>
@@ -1784,7 +1788,7 @@ module.exports = function(state, emit) {
             </div>
           </header>
 
-          ${schedule(sc, state.filter)}
+          ${contents}
         </div>
       </div>
     </div>
@@ -1822,7 +1826,6 @@ module.exports = function(state, emit) {
     }
   }
   function filterTag(e) {
-    // console.log(e.target.innerText);
     const tag = e.target.innerText;
     state.filter.tag = tag;
     const url = UpdateQueryString("tag", tag);
@@ -1839,10 +1842,10 @@ module.exports = function(state, emit) {
   }
 };
 
-},{"./contents.js":1,"./schedule.js":4,"choo/html":6}],4:[function(require,module,exports){
+},{"./schedule.js":4,"choo/html":6}],4:[function(require,module,exports){
 const html = require("choo/html");
 
-module.exports = (sc, filter) => {
+module.exports = (sc) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   const dates = [];
@@ -1858,19 +1861,10 @@ module.exports = (sc, filter) => {
       year: "numeric"
     });
     let { title, topic, desc, type, image, yt, collab, venue, links } = s;
-      console.log("oi", title, desc.parentNode)
-    if(desc.parentNode !== undefined && desc.parentNode !== null) {
-      desc = desc.parentNode.removeChild(desc);
-    }
-
-    if (filter != undefined) {
-      if (filter.tag != undefined) {
-        if (filter.tag != "all" && type.indexOf(filter.tag) < 0) continue;
-      }
-      if (filter.year != undefined) {
-        if (filter.year != "all time" && dateYear != filter.year) continue;
-      }
-    }
+    //   console.log("oi", title, desc.parentNode)
+    // if(desc.parentNode !== undefined && desc.parentNode !== null) {
+    //   desc = desc.parentNode.removeChild(desc);
+    // }
 
     let types = [];
     for (let i = 0; i < type.length; i++) {
@@ -1926,7 +1920,7 @@ module.exports = (sc, filter) => {
     }
 
     dates.push(
-      html`
+      {dom: html`
         <section>
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
@@ -1941,7 +1935,7 @@ module.exports = (sc, filter) => {
           </div>
         </section>
       `
-    );
+      });
   }
 
   return dates;

@@ -16,6 +16,8 @@ function notFound() {
   `;
 }
 
+app.state.schedule = require("./contents.js");
+
 // import a template
 const main = require("./main.js");
 
