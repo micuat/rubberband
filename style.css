@@ -110,11 +110,15 @@ section > .title {
   float: left;
   background-color: #5ef177;
   color: #000;
-  padding: 0.6em;
+  padding: 0.3em;
   border: solid rgba(255, 255, 255, 0);
 }
 
-.type .meetup {
+.type > p.year {
+  background-color: cornflowerblue;
+}
+
+/* .type .meetup {
   background-color: hotpink;
 }
 
@@ -134,7 +138,7 @@ section > .title {
   background-color: black;
   color: white;
 }
-
+ */
 .type .selected {
   border: solid rgba(0, 0, 0, 1);
 }

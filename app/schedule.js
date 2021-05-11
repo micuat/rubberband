@@ -16,7 +16,10 @@ module.exports = filter => {
     const dateYear = s.start.toLocaleDateString(undefined, {
       year: "numeric"
     });
-    const { title, topic, desc, type, image, yt, collab, venue, links } = s;
+    let { title, topic, desc, type, image, yt, collab, venue, links } = s;
+    if(desc.parentNode !== undefined && desc.parentNode !== null) {
+      desc = desc.parentNode.removeChild(desc);
+    }
 
     if (filter != undefined) {
       if (filter.tag != undefined) {

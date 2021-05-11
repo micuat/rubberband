@@ -73,7 +73,7 @@ module.exports = function(state, emit) {
         : "";
     filters.push(
       html`
-        <p onclick="${filterYear}" class="${t} ${selected}">${t}</p>
+        <p onclick="${filterYear}" class="${t} ${selected} year">${t}</p>
       `
     );
   }
@@ -97,7 +97,7 @@ module.exports = function(state, emit) {
               sketches to unveil the creativity of Hieda.
             </p>
             <p class="note">
-              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy.
+              The exhibition is curated by Naoto Hieda and hosted by glitch. Note that some works do not show full credits not because of disrespect but Naoto being sloppy. Unlike museum captions, the year is not the year of production but of exhibition.
             </p>
 
             <div>
