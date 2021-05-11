@@ -91,7 +91,7 @@ module.exports = filter => {
         <img src="${image}" loading="lazy" />
       `;
     } else {
-      imageElt = html`<p>The work is currently on loan</p>`
+      imageElt = html`<p>The image is currently on loan</p>`
     }
     let ytElt;
     if (yt != undefined && false) {
