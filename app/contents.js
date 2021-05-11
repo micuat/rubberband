@@ -4,7 +4,7 @@ const sc = [
     start: new Date("March 27, 2021"),
     title: "Video Loop of Decolonial Resistance",
     type: ["installation"],
-    topic: ["4:56-min video"],
+    topic: ["4 min 56 sec video"],
     venue: "K20 (Germany)",
     collab: ["Raphael Hillebrand"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fk20.jpg?v=1620678722784",
@@ -18,13 +18,13 @@ const sc = [
   },
   {
     start: new Date("March 12, 2021"),
-    title: "TidalCycles Workshop",
+    title: `TidalCycles Workshop "Hearing Code"`,
     type: ["workshop"],
     topic: ["tidalcycles"],
     venue: "online",
     collab: ["Naoto Hieda"],
     // image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fpcd2021ogp.png?v=1612740183557",
-    desc: html`Workshop at SUNY`
+    desc: html`Workshop at SUNY invited by Lee Tusman`
   },
   {
     start: new Date("February 20, 2021"),
@@ -37,19 +37,20 @@ const sc = [
     links: ["https://naotohieda.com/blog/processing-community-day-japan-2021-en/"],
     desc: html`Organization, curation, talk and workshop: Naoto Hieda<br>
     Poster and website: Hina Nakamura<br>
-    Full credit in the link`
+    Full credits in the link`
   },
   {
     start: new Date("February 15, 2021"),
     title: "#spektrum",
     type: ["installation"],
-    topic: ["nails"],
-    venue: "ctrl+space / Cologne Main Station (Germany)",
+    topic: ["10 sec video", "nail polish"],
+    venue: "Cologne Main Station (Germany)",
     collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FNaoto-Hieda.jpg?v=1620718676073",
     links: ["https://www.khm.de/studentische_arbeiten/id.30115.public-space-video-im-hbf-koln/"],
     desc: html`
-#spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stereotype of "binariness" of autism.`
+#spektrum is a convolution of identity questions that we face, including, but not only, the gender spectrum and autism spectrum. The fingers as an analog, imperfect medium with a color spectrum of nail polish count binary numbers mimicking a self-stimulatory behavior (stimming) to provoke and to challenge the stereotype of "binariness" of autism.<br>
+Exhibited as part of "ctrl+space" by Christian Sievers`
   },
   {
     start: new Date("February 13, 2021"),
@@ -115,7 +116,7 @@ const sc = [
     venue: "Kunsthochschule für Medien Köln",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201215-tidal.jpg?v=1611416016009",
     desc: html`
-    Workshop at "Sound und..." seminar
+    Workshop at "Sound und..." by Tobias Hartmann
     `
   },
   {
@@ -152,6 +153,7 @@ const sc = [
     venue: "online",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-11-21-hydra-exhibition.png?v=1611415274524",
     desc: html`
+    Currently closed due to Twitter API
     `
   },
   {
@@ -163,7 +165,7 @@ const sc = [
     venue: "Theater Dortmund",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201106-theater.jpg?v=1611416466540",
     desc: html`
-      Technical assistance
+      Visual and interaction programming: Naoto Hieda
     `
   },
   {
@@ -176,7 +178,7 @@ const sc = [
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F2020-10-23-tech-is-nonbinary.png?v=1611415254316",
     yt: "z78i9_cHUeo",
     desc: html`
-      live coding performance
+      
     `
   },
   {
@@ -188,7 +190,7 @@ const sc = [
     venue: "Deutscher Tanzpreis / Aalto Theater (Germany)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F201017-tanzpreis.png?v=1611415944571",
     desc: html`
-    as camera operator
+    Camera operator: Naoto Hieda
     `
   },
   {
@@ -211,7 +213,7 @@ const sc = [
       visible and if so how?”, guide the project, which is also a concrete
       example of a remotely activated multilingual collaborative artistic
       research. DM comes to NODE20 as a one-off welcoming everyone.<br />
-      15-min performance. The session will take place on
+      15-min performance. The session take place on
       <a
         href="https://zoom.us/j/99499279292?pwd=cnJWb1B6anN6bC96Vk5xZjZLQmZlZz09"
         >Zoom</a
@@ -219,7 +221,8 @@ const sc = [
       and streamed to
       <a href="https://hub.greenhousenaxos.com/tPxg6Vq/stage"
         >GreenHouse NAXOS</a
-      >. Please arrive on time if you are going to participate.
+      >.<br>
+      Curated by Naoto Hieda
     `
   },
   {
