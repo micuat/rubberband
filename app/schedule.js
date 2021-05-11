@@ -1,12 +1,13 @@
 const html = require("choo/html");
+const contents = require("./contents.js");
 
-module.exports = (sc) => {
+module.exports = () => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
-  for (let i = 0; i < sc.length; i++) {
-    const s = sc[i];
+  for (let i = 0; i < contents.length; i++) {
+    const s = contents[i];
     const date = s.start.toLocaleDateString(undefined, {
       month: "long",
       day: "numeric",
@@ -75,7 +76,7 @@ module.exports = (sc) => {
     }
 
     dates.push(
-      {dom: html`
+      {type, dateYear, dom: html`
         <section>
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">

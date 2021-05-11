@@ -1,6 +1,6 @@
 // import choo's template helper
 const html = require("choo/html");
-const schedule = require("./schedule.js");
+const filter = require("./filter.js");
 
 // export module
 module.exports = function(state, emit) {
@@ -76,7 +76,7 @@ module.exports = function(state, emit) {
       `
     );
   }
-  const contents = schedule(state.schedule, state.filter);
+  const contents = filter(state.schedule, state.filter).map(e => e.dom);//schedule(state.schedule, state.filter);
   return html`
     <div>
       <div class="main">
