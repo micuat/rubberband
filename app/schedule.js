@@ -59,7 +59,7 @@ module.exports = filter => {
       if(links.length == 1) {
         num = "";
       }
-      link.push(html`<a href="${links[i]}">Link ${num}</a>`);
+      link.push(html`<div><a href="${links[i]}">Link ${num}</a></div>`);
     }
     
     let collabs = [];
