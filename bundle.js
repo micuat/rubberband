@@ -1793,7 +1793,7 @@ module.exports = function(state, emit) {
           <header>
             <h1>Works: Naoto Hieda</h1>
             <p>
-              <a href="https://naotohieda.com">Naoto Hieda</a> (Japan, 1990-) is
+              <a href="https://naotohieda.com">Naoto Hieda</a> (1990, Japan) is
               one of the most important figures in the field of the
               <a href="https://best-practices.glitch.me/"
                 >Best Practices in Contemporary Dance</a
