@@ -1,6 +1,17 @@
 const html = require("choo/html");
 const sc = [
   {
+    start: new Date("June 5, 2021"),
+    title: "Live Coding Online Workshop",
+    type: ["workshop"],
+    topic: ["hydra"],
+    venue: "CityLeaks Festival (Germany)",
+    collab: ["Naoto Hieda", "Cylvester"],
+    image: "https://img.glitches.me/images/2021/06/08/B68D82AB-F6B1-416D-9755-6D2288FF2639.jpg",
+    links: ["https://allyourbase.art/event/live-coding-workshop-with-naoto-hieda/"],
+    desc: html`photo credit @konstantinjohanneshehl`
+  },
+  {
     start: new Date("March 27, 2021"),
     title: "Video Loop of Decolonial Resistance",
     type: ["installation"],
