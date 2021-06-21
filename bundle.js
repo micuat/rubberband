@@ -2,6 +2,23 @@
 const html = require("choo/html");
 const sc = [
   {
+    start: new Date("June 21, 2021"),
+    title: "Six Small Sketches",
+    type: ["publication"],
+    topic: ["hydra", "html"],
+    venue: "Taper #6",
+    collab: ["Naoto Hieda"],
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Findex.png?v=1624302741890",
+    links: ["https://taper.badquar.to/6/six_small_sketches.html"],
+    desc: html`“Six Small Sketches” is a collection of 6 small sketches that is
+inspired by Olivia Jack's Hydra live coding environment. Each sketch
+is a code snippet representing the number in a geometric form, loaded
+in a random sequence. The code fills, alters and paints the grid of
+pixels, creating different patterns depending upon the order of
+sketches.<br>
+Published by Bad Quarto`
+  },
+  {
     start: new Date("June 5, 2021"),
     title: "Live Coding Online Workshop",
     type: ["workshop"],
