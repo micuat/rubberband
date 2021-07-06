@@ -1176,7 +1176,7 @@ image from tanzhaus nrw
     title: "Machine Learning Literacy",
     type: ["conference"],
     topic: ["machine learning"],
-    collab: "School for Poetic Computation",
+    collab: ["School for Poetic Computation"],
     venue: "School for Poetic Computation (US)",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2F180215-sfpc-drawing.jpg?v=1611427045030",
     desc: html`
