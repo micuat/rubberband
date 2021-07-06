@@ -920,13 +920,15 @@ image from tanzhaus nrw
   },
   {
     start: new Date("January 15, 2019"),
-    title: "Algorithm | Diversion",
-    type: ["lecture"],
-    topic: ["dance", "autism", "processing"],
+    title: "fragility.jpg",
+    type: ["installation"],
+    topic: ["processing"],
     collab: ["Naoto Hieda"],
-    venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
+    venue: "Asia Culture Center (Korea)",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Frwg2.jpg?v=1625565841620",
+    links: ["http://thisweekendroom.com/wp/rwg2/"],
     desc: html`
-      Talk at symposium "Technological flesh!"
+      Screened in the frame of RECENT WORK GALLERY Ⅱ
     `
   },
   {
