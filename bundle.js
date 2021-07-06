@@ -919,6 +919,17 @@ image from tanzhaus nrw
     `
   },
   {
+    start: new Date("January 15, 2019"),
+    title: "Algorithm | Diversion",
+    type: ["lecture"],
+    topic: ["dance", "autism", "processing"],
+    collab: ["Naoto Hieda"],
+    venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
+    desc: html`
+      Talk at symposium "Technological flesh!"
+    `
+  },
+  {
     start: new Date("November 22, 2018"),
     title: "Algorithm/Pattern/Diversity",
     type: ["lecture"],
