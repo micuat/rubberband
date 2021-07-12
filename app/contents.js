@@ -1,6 +1,40 @@
 const html = require("choo/html");
 const sc = [
   {
+    start: new Date("July 21, 2021"),
+    title: "Best Practices in Under Construction",
+    type: ["installation"],
+    topic: ["hydra", "dance"],
+    venue: "KHM Open",
+    collab: ["Naoto Hieda", "Jorge Guevara"],
+    image: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657",
+    links: ["http://khmn.khm.de"],
+    desc: html`Naoto Hieda and Jorge Guevara have been practicing over a year, and for the first #bestpracticesincontemporarydance exhibition, they installed a triptych of their practice featuring variety of #underconstruction gifs in a construction site.`
+  },
+  {
+    start: new Date("July 21, 2021"),
+    title: "netze.khm.de",
+    type: ["net art"],
+    topic: ["discord"],
+    venue: "KHM Open",
+    collab: ["Naoto Hieda"],
+    image: "https://img.glitches.me/images/2021/07/09/imagecd997762728c4992.png",
+    links: ["http://netze.khm.de"],
+    desc: html`The poems, pictures and films are a collection of artworks electronically posted on Netze Discord, which is open for any artist to participate. Since the curatorial team is taking a vacation and failed to deliver meticulously selected artworks, all the latest artworks on Discord are indiscriminately exhibited in the gallery below and updated in real time by a competent bot.`
+  },
+  {
+    start: new Date("June 25, 2021"),
+    title: "Lads",
+    type: ["installation"],
+    topic: ["dance", "openFrameworks", "max"],
+    collab: ["Christopher Matthews"],
+    venue: "Sadler's Wells Theater",
+    links: ["https://www.sadlerswells.com/whats-on/2021/wild-card-christopher-matthews-formed-view-my-bodys-an-exhibition/"],
+    desc: html`
+      Sound programming: Naoto Hieda
+    `
+  },
+  {
     start: new Date("June 21, 2021"),
     title: "Six Small Sketches",
     type: ["publication"],
