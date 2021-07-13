@@ -164,7 +164,8 @@ section > .title {
 
 .thumbnail {
   width: 100%;
-/*   min-width: 700px; */
+	align-items: baseline;
+  /*   min-width: 700px; */
   display: flex;
   justify-content: center;
 }
