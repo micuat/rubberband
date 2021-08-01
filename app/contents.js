@@ -1,13 +1,40 @@
 const html = require("choo/html");
 const sc = [
   {
+    start: new Date("July 31, 2021"),
+    title: "Best Practices in Contemporary Dance",
+    type: ["performance", "net art"],
+    topic: ["dance", "hydra"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
+    image:
+      "https://img.glitches.me/images/2021/08/01/vlcsnap-2021-08-01-13h30m13s605.jpg",
+    yt: "44Oaa1MMZhc",
+    venue: "IDOCDE/ImPulsTanz (Austria)",
+    desc: html`
+    #bestpracticesincontemporarydance is a framework to practice a queer form of conversation between technology and bodies.
+    `
+  },
+  {
+    start: new Date("July 21, 2021"),
+    title: "Silicon Friend Camp",
+    type: ["installation"],
+    topic: ["hydra", "dance"],
+    venue: "KHM Open",
+    collab: ["Naoto Hieda", "Jorge Guevara"],
+    // image: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsebastian-avatars2.jpeg?v=1627824868766",
+    links: ["https://cwc.radical-openness.org/siliconfriendcamp/"],
+    desc: html``
+  },
+  {
     start: new Date("July 21, 2021"),
     title: "Best Practices in Under Construction",
     type: ["installation"],
     topic: ["hydra", "dance"],
     venue: "KHM Open",
     collab: ["Naoto Hieda", "Jorge Guevara"],
-    image: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657",
+    // image: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657",
+    image: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Funderconstruction.jpg?v=1627822787268",
     links: ["http://khmn.khm.de"],
     desc: html`Naoto Hieda and Jorge Guevara have been practicing over a year, and for the first #bestpracticesincontemporarydance exhibition, they installed a triptych of their practice featuring variety of #underconstruction gifs in a construction site.`
   },
