@@ -16,10 +16,21 @@ const sc = [
   },
   {
     start: new Date("July 21, 2021"),
+    title: "Change Your Back Lookout Point",
+    type: ["installation"],
+    topic: ["json"],
+    venue: "Gosau (Austria)",
+    collab: ["Naoto Hieda"],
+    // image: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657",
+    image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FIMG_7631.jpg?v=1628102343861",
+    desc: html`Exhibition design: Rosi Grillmair`
+  },
+  {
+    start: new Date("July 21, 2021"),
     title: "Silicon Friend Camp",
     type: ["residency"],
     topic: ["net art"],
-    venue: "servus.at",
+    venue: "servus.at (Austria)",
     collab: ["Silicon Friends"],
     // image: "https://cdn.glitch.com/c872ab9a-264e-4ce2-91db-721811e90193%2Fnbaustelle.jpg?v=1625779632657",
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fsebastian-avatars2.jpeg?v=1627824868766",
