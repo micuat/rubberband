@@ -2,6 +2,19 @@
 const html = require("choo/html");
 const sc = [
   {
+    start: new Date("August 27, 2021"),
+    title: "Die Urbane. Eine HipHop Partei",
+    type: ["performance"],
+    topic: ["dance"],
+    collab: ["Raphael Hillebrand"],
+    image:
+      "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Frh.png?v=1630336603964",
+    yt: "6jxm8a3hoQE",
+    venue: "Dusseldorfer Schauspielhaus (Germany)",
+    desc: html`Camera: Naoto Hieda
+    `
+  },
+  {
     start: new Date("July 31, 2021"),
     title: "Best Practices in Contemporary Dance",
     type: ["performance", "net art"],
