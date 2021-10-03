@@ -32,7 +32,7 @@ const sc = [
   {
     start: new Date("September 18, 2021"),
     title: "Best Practices in Contemporary Dance: Chat",
-    type: ["discussion", "net art"],
+    type: ["discussion", "conference", "net art"],
     topic: ["dance", "hydra"],
     collab: ["Jorge Guevara", "Naoto Hieda"],
     image:
