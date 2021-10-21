@@ -1,6 +1,20 @@
 const html = require("choo/html");
 const sc = [
   {
+    start: new Date("October 3, 2021"),
+    title: "Circles",
+    type: ["performance"],
+    topic: ["web"],
+    collab: ["Amir Shpilman"],
+    venue: "Die Irritierte Stadt (Germany)",
+    links: ["https://www.irritiertestadt.de/"],
+    image: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcircles-stuttgarter-hymnuschorknaben-c-armin-burkhardt.jpg?v=1634855769515",
+    desc: html`
+      Web app: Naoto Hieda<br>
+      Credit: Armin Burkhardt
+    `
+  },
+  {
     start: new Date("September 28, 2021"),
     title: "Best Practices in Contemporary Dance",
     type: ["performance", "net art"],
@@ -1100,6 +1114,7 @@ image from tanzhaus nrw
     topic: ["openFrameworks"],
     collab: ["Matilda"],
     venue: "Mikimoto (Japan)",
+    image: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FIMG_4349.JPG?v=1634855386589",
     desc: html`
       Visual programming: Naoto Hieda
     `
@@ -1217,6 +1232,7 @@ image from tanzhaus nrw
     topic: ["openFrameworks"],
     collab: ["Matilda"],
     venue: "Swatch (Japan)",
+    image: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2FIMG_2495.JPG?v=1634855384659",
     desc: html`
       Visual programming: Naoto Hieda
     `
