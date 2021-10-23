@@ -1,5 +1,5 @@
-const html = require("choo/html");
-const sc = [
+// const html = require("choo/html");
+var sc = [
   {
     start: new Date("October 3, 2021"),
     title: "Circles",
@@ -11,7 +11,7 @@ const sc = [
     image: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fcircles-stuttgarter-hymnuschorknaben-c-armin-burkhardt.jpg?v=1634855769515",
     desc: html`
       Web app: Naoto Hieda<br>
-      Credit: Armin Burkhardt
+      Photo credit: Armin Burkhardt
     `
   },
   {
@@ -1830,4 +1830,5 @@ image from tanzhaus nrw
   },
 ];
 
-module.exports = sc;
+// module.exports = sc;
+window.contents = sc;
