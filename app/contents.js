@@ -1,4 +1,4 @@
-// const html = require("choo/html");
+const html = require("choo/html");
 var sc = [
   {
     start: new Date("October 3, 2021"),
@@ -1830,5 +1830,5 @@ image from tanzhaus nrw
   },
 ];
 
-// module.exports = sc;
-window.contents = sc;
+module.exports = sc;
+// window.contents = sc;

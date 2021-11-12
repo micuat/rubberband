@@ -1,5 +1,6 @@
 const html = require("choo/html");
-const contents = window.contents;//require("./contents.js");
+const contents = require("./contents.js");
+// const contents = window.contents;
 
 module.exports = () => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
