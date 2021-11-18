@@ -1,6 +1,45 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("November 19, 2021"),
+    title: "Leewa",
+    type: ["performance"],
+    topic: ["web"],
+    collab: ["Ekheo"],
+    venue: "Conversations with Computers (Austria)",
+    links: ["https://cwc.radical-openness.org/"],
+    image: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-11-18-10h55m20s617.png?v=1637200592768",
+    desc: html`
+      Video: Naoto Hieda
+    `
+  },
+  {
+    start: new Date("November 10, 2021"),
+    title: "Naoto's Laptop",
+    type: ["installation"],
+    topic: ["hydra"],
+    collab: ["Naoto Hieda"],
+    venue: "Conversations with Computers (Austria)",
+    links: ["https://cwc.radical-openness.org/"],
+    image: "https://cdn.glitch.me/f61e9156-1be6-44f2-84b8-d6fa7844ff0e%2Fopening01.jpg?v=1636606139598",
+    desc: html`
+      A laptop installation and a banner
+    `
+  },
+  {
+    start: new Date("October 28, 2021"),
+    title: "Empty Mind",
+    type: ["performance"],
+    topic: ["web"],
+    collab: ["MAXLab"],
+    venue: "Royal Academy of Fine Arts Antwerp (Belgium)",
+    links: ["https://empty-minds.vercel.app/"],
+    image: "https://empty-minds.vercel.app/assets/og.png",
+    desc: html`
+      Platform & UI development: Naoto Hieda
+    `
+  },
+  {
     start: new Date("October 3, 2021"),
     title: "Circles",
     type: ["performance"],
