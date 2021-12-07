@@ -1,6 +1,20 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("November 20, 2021"),
+    title: "Glitch Vacations",
+    type: ["performance", "net art"],
+    topic: ["hydra"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    image:
+      "https://img.glitches.me/images/2021/09/20/vlcsnap-2021-09-20-19h11m28s562.jpg",
+    yt: "d0KMUUOrUvs",
+    venue: "Piksel 21 (Norway)",
+    desc: html`
+    Glitch Vacations is an audiovisual performance by Flor de Fuego and Naoto Hieda - a journey through open webpages and platforms created by the artists and the community members. The generative video and sound consist of minimal elements - geometric shapes and sinusoidal waves - yet the modulation and collision of each element result in complex forms, namely a glitch. In the livestream, the artists perform as navigating through web pages, which are interlinked with each other; optionally, audience members can open a provided URL to participate in an interactive experience on their browser.
+    `
+  },
+  {
     start: new Date("November 19, 2021"),
     title: "Leewa",
     type: ["performance"],
