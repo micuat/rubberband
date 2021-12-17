@@ -1,6 +1,46 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("December 17, 2021"),
+    title: "Leewa",
+    type: ["performance"],
+    topic: ["web"],
+    collab: ["Ekheo"],
+    venue: "Hijack Crack Bellmer (Germany)",
+    image: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-11-18-10h55m20s617.png?v=1637200592768",
+    desc: html`
+      Video: Naoto Hieda
+    `
+  },
+  {
+    start: new Date("December 15, 2021"),
+    title: "#bestpracticesincontemporarydance",
+    type: ["performance", "net art"],
+    topic: ["dance", "hydra"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
+    image:
+      "https://img.glitches.me/images/2021/09/29/vlcsnap-2021-09-29-08h51m47s569.jpg",
+    venue: "ICLC (online)",
+    links: ["https://iclc.toplap.org/2021/exhibition.html"],
+    desc: html`
+    #bestpracticesincontemporarydance is a framework to practice a queer form of conversation between technology and bodies.
+    `
+  },
+  {
+    start: new Date("December 15, 2021"),
+    title: "GlitchMe Installation",
+    type: ["net art"],
+    topic: ["hydra", "web"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "ICLC (online)",
+    links: ["https://iclc.toplap.org/2021/exhibition.html"],
+    image:
+      "https://cdn.glitch.com/9b37fb18-5c29-4916-b8ad-624764fa77cb%2F201218-codame.jpg?v=1608479114980",
+    yt: "Fas_pGA2tvk",
+    desc: html`
+    `
+  },
+  {
     start: new Date("November 20, 2021"),
     title: "Glitch Vacations",
     type: ["performance", "net art"],
