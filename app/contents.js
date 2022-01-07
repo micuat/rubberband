@@ -1,10 +1,23 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("January 6, 2022"),
+    title: "#BestPracticesInContemporaryDance",
+    type: ["installation"],
+    topic: ["web", "dance", "hydra"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
+    venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/Photo%202022-01-06%2018%2045%2049.jpg?v=1641551753828",
+    desc: html`
+    
+    <a href="https://best-ux.glitch.me/" target="_blank">link</a>
+    `
+  },
+  {
     start: new Date("December 17, 2021"),
     title: "Leewa",
     type: ["performance"],
-    topic: ["web"],
+    topic: ["web", "hydra"],
     collab: ["Ekheo"],
     venue: "Hijack Crack Bellmer (Germany)",
     image: "https://cdn.glitch.me/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fvlcsnap-2021-11-18-10h55m20s617.png?v=1637200592768",
