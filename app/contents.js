@@ -8,9 +8,9 @@ var sc = [
     collab: ["Jorge Guevara", "Naoto Hieda"],
     venue: "Festival Temps d'Images / tanzhaus nrw (Germany)",
     image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/Photo%202022-01-06%2018%2045%2049.jpg?v=1641551753828",
+    links: ["https://best-ux.glitch.me/", "https://tanzhaus-nrw.de/en/event/2022/01/installations"],
     desc: html`
-    
-    <a href="https://best-ux.glitch.me/" target="_blank">link</a>
+    Concept, artistic direction: Jorge Guevara, Naoto Hieda. Dance, choreography, coding: the public.
     `
   },
   {
