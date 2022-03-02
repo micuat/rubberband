@@ -1,6 +1,28 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("February 17, 2022"),
+    title: "ICADE",
+    type: ["installation"],
+    topic: ["web"],
+    collab: ["KHM"],
+    venue: "KHM (Germany)",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/icade.jpg?v=1646209286429",
+    desc: html`
+Atelier Netze präsentiert die Online- und Offline-Ausstellung „[  ]ICADE“ mit Arbeiten von Mary Mikaelyan, Ji Su Kang-Gatto, Jacob Höfle, Anne Arndt, Julia Maja Funke, Hyeseon Jeong, Yannick Westphal, Naoto Hieda. „[   ]ICADE“ entstand als Reaktion auf unbegrüJacob Höfle, Nahia Garcia de Andoin, Anton Linus Jehle, Conrad Weise, Matthias Grund, Maxim Diehl, Jeanne van Eeden / ndete Zensurmaßnahmen im Rahmen der universitätsübergreifenden ICADE-Ausstellung der Academy of Arts & Design der Tsinghua University, an der die Netze-Gruppe teilgenommen hatte. Online zu finden unter https://icade-test.glitch.me    `
+  },
+  {
+    start: new Date("February 17, 2022"),
+    title: "feature request: add Japanese",
+    type: ["book"],
+    topic: ["javascript"],
+    collab: ["Naoto Hieda"],
+    venue: "KHM (Germany)",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/japaneseBook.jpg?v=1646209611810",
+    desc: html`Photo: Doerthe Boxberg
+    `
+  },
+  {
     start: new Date("February 11, 2022"),
     title: "#NaotoHieda",
     type: ["installation"],
