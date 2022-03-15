@@ -1,6 +1,20 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("March 10, 2022"),
+    title: "riso.glitches.me",
+    type: ["installation"],
+    topic: ["risograph"],
+    collab: ["Naoto Hieda"],
+    venue: "Art Fair Tokyo 2022 (Japan)",
+    image: "https://img.glitches.me/images/2022/03/15/riso_.jpg",
+    desc: html`
+<a href="https://riso.glitches.me/" target="_blank">riso.glitches.me</a> is an artwork consisting of risograph prints of the artist’s brain and a custom-made computer program.<br />
+
+Image processing is applied to an MRI scan pattern of the brain, and the output is printed as 2-color risograph. The image processing is sophisticatedly designed so that the printing offset of risograph generates different shading for each print from the same set of master patterns. 
+`
+  },
+  {
     start: new Date("February 17, 2022"),
     title: "ICADE",
     type: ["installation"],
