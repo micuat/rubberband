@@ -1037,7 +1037,7 @@ Costumes-external eye: Anne Weyler<br>
   {
     start: new Date("December 22, 2019"),
     title: "Hydra Book",
-    type: ["tutorial"],
+    type: ["tutorial", "book"],
     topic: ["hydra"],
     collab: ["Naoto Hieda"],
     image: "https://cdn.glitch.com/cada0ae2-f902-428d-81e3-6a68f5e589e5%2Fhydra-book.png?v=1611426374077",
