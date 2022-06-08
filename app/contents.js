@@ -1,5 +1,50 @@
 const html = require("choo/html");
-var sc = [
+var sc = [ //ual
+  {
+    start: new Date("June 4, 2022"),
+    title: "GlitchMe3D at Time Window",
+    type: ["performance"],
+    topic: ["web", "hydra"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "Time Window (The Netherlands)",
+    image: "https://dl.airtable.com/.attachmentThumbnails/40800e90d9a402f9110608af07eb746d/7374e05b?ts=1654679725&userId=usrgkCoIPRrdc044Z&cs=78c4042e5596b3a4",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("May 12, 2022"),
+    title: "Live Coding Sessions",
+    type: ["performance"],
+    topic: ["web", "hydra"],
+    collab: ["Jobi", "Naoto Hieda"],
+    venue: "Doka (The Netherlands)",
+    image: "https://dl.airtable.com/.attachmentThumbnails/30d4415bec77610fa916230d265725a6/df9d872e?ts=1654679728&userId=usrgkCoIPRrdc044Z&cs=52365f892e87f849",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("April 28, 2022"),
+    title: "Leewa",
+    type: ["performance"],
+    topic: ["web", "hydra"],
+    collab: ["Ekheo"],
+    venue: "La Gaîté Lyrique (France)",
+    image: "https://dl.airtable.com/.attachmentThumbnails/a2b60f985a4cfab81043752cb1236355/2097b764?ts=1654679729&userId=usrgkCoIPRrdc044Z&cs=0afc1549a018a025",
+    desc: html`
+      Video: Flor de Fuego & Naoto Hieda
+    `
+  },
+  {
+    start: new Date("March 22, 2022"),
+    title: "Algorave Jam",
+    type: ["performance"],
+    topic: ["web", "hydra"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "online",
+    image: "https://dl.airtable.com/.attachmentThumbnails/8355e39282a783f9668bc06ee2c79322/be072968?ts=1654679731&userId=usrgkCoIPRrdc044Z&cs=59004fa86f5be8f8",
+    desc: html`
+    `
+  },
   {
     start: new Date("March 10, 2022"),
     title: "riso.glitches.me",
@@ -13,6 +58,17 @@ var sc = [
 
 Image processing is applied to an MRI scan pattern of the brain, and the output is printed as 2-color risograph. The image processing is sophisticatedly designed so that the printing offset of risograph generates different shading for each print from the same set of master patterns. 
 `
+  },
+  {
+    start: new Date("March 8, 2022"),
+    title: "Livecodera",
+    type: ["performance"],
+    topic: ["web", "hydra"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "online",
+    image: "https://dl.airtable.com/.attachmentThumbnails/b3d9db307baa418e24e333c3f347fc51/1c306b96?ts=1654679732&userId=usrgkCoIPRrdc044Z&cs=66cffa907278ad79",
+    desc: html`
+    `
   },
   {
     start: new Date("February 17, 2022"),
