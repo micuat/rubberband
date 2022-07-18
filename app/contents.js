@@ -1,5 +1,40 @@
 const html = require("choo/html");
-var sc = [ // exmedia, bremen, gm final, hauptsache frei
+var sc = [ // paf
+  {
+    start: new Date("July 12, 2022"),
+    title: "Best Practices Workshop",
+    type: ["workshop"],
+    topic: ["hydra", "livelab"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
+    venue: "PerformingArtsForum (France)",
+    image: "https://bild.glitches.me/images/2022/07/13/vlcsnap-2022-07-13-18h26m57s507.png",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("June 26, 2022"),
+    title: "Best Practices Workshop",
+    type: ["workshop"],
+    topic: ["hydra", "livelab"],
+    collab: ["Jorge Guevara", "Naoto Hieda"],
+    venue: "Hauptsache Frei (Germany)",
+    image: "https://bild.glitches.me/images/2022/07/18/D4A9BCF5-6D73-4E3E-9033-5606CF9F686E.jpg",
+    desc: html`
+    Workshop and presentation in the frame of Beyond Digital Lab<br />
+    Photo by Jeanne Charlotte Vogt
+    `
+  },
+  {
+    start: new Date("June 24, 2022"),
+    title: "OpenLab",
+    type: ["performance"],
+    topic: ["hydra", "livelab"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "Academy for Theater and Digitality (Germany)",
+    image: "https://dl.airtable.com/.attachmentThumbnails/d6a6ed0b27fc88a3d32bcb6cc21fe833/3bc54d08?ts=1658147201&userId=usrgkCoIPRrdc044Z&cs=57f8701ccea73636",
+    desc: html`
+    `
+  },
   {
     start: new Date("June 21, 2022"),
     title: "Science Kitchen: Decompositions of algorithms and glitched worlds",
@@ -10,7 +45,7 @@ var sc = [ // exmedia, bremen, gm final, hauptsache frei
     image: "https://dl.airtable.com/.attachmentThumbnails/0d9c3be4809e9887fc1a8a89357c3fb2/809928d1?ts=1658147202&userId=usrgkCoIPRrdc044Z&cs=e22b69e8573fea73",
     links: ["https://exmedia.khm.de/science-kitchen-decompositions-of-algorithms-and-glitched-worlds/"],
     desc: html`
-    Invited 
+    Invited and organized by Karin Lingnau and Jaqueline Hen
     `
   },
   {
