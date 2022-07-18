@@ -1,14 +1,64 @@
 const html = require("choo/html");
-var sc = [ //ual
+var sc = [ // exmedia, bremen, gm final, hauptsache frei
+  {
+    start: new Date("June 21, 2022"),
+    title: "Science Kitchen: Decompositions of algorithms and glitched worlds",
+    type: ["lecture"],
+    topic: ["hydra"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "KHM exMedia Lab (Germany)",
+    image: "https://dl.airtable.com/.attachmentThumbnails/0d9c3be4809e9887fc1a8a89357c3fb2/809928d1?ts=1658147202&userId=usrgkCoIPRrdc044Z&cs=e22b69e8573fea73",
+    links: ["https://exmedia.khm.de/science-kitchen-decompositions-of-algorithms-and-glitched-worlds/"],
+    desc: html`
+    Invited 
+    `
+  },
+  {
+    start: new Date("June 17, 2022"),
+    title: "Live Coding Performance",
+    type: ["performance"],
+    topic: ["tidalcycles", "hydra"],
+    collab: ["Flor de Fuego", "Alexandra Cárdenas"],
+    venue: "Werk (Germany)",
+    image: "https://dl.airtable.com/.attachmentThumbnails/bfb7e33fc275517f181343d9fd29620c/70a9d1a6?ts=1658147202&userId=usrgkCoIPRrdc044Z&cs=b9e85efa00cfecd3",
+    desc: html`
+    Camera footage by Naoto Hieda
+    `
+  },
+  {
+    start: new Date("June 11, 2022"),
+    title: "Hydra in the Dome",
+    type: ["workshop"],
+    topic: ["hydra"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "Dortmunder U (Germany)",
+    image:
+      "https://dl.airtable.com/.attachmentThumbnails/dfc43658e40d92cf944171fc233c33cd/9c992ff1?ts=1658147203&userId=usrgkCoIPRrdc044Z&cs=3eb433273fbf3f47",
+    desc: html`
+    Supported by Academy for Theater and Digitality and StoryLab kiU
+    `
+  },
   {
     start: new Date("June 4, 2022"),
     title: "GlitchMe3D at Time Window",
     type: ["performance"],
     topic: ["web", "hydra"],
-    collab: ["Flor de Fuego", "Naoto Hieda"],
+    collab: ["Flor de Fuego", "Terror Kittens", "Naoto Hieda"],
     venue: "Time Window (The Netherlands)",
     image: "https://dl.airtable.com/.attachmentThumbnails/40800e90d9a402f9110608af07eb746d/7374e05b?ts=1654679725&userId=usrgkCoIPRrdc044Z&cs=78c4042e5596b3a4",
     desc: html`
+    `
+  },
+  {
+    start: new Date("May 31, 2022"),
+    title: "MidTermReview",
+    type: ["performance"],
+    topic: ["movement"],
+    collab: ["Flor de Fuego", "Jorge Guevara", "Naoto Hieda"],
+    venue: "KHM (Germany)",
+    image: "https://dl.airtable.com/.attachmentThumbnails/81128fb5aaf5708405c34b9c219c579f/b3015b0b?ts=1658147205&userId=usrgkCoIPRrdc044Z&cs=bf543a25c0218c9b",
+    desc: html`
+    Sharing in the frame of MidTermReview organized by Christian Sievers
     `
   },
   {
@@ -43,6 +93,17 @@ var sc = [ //ual
     venue: "online",
     image: "https://dl.airtable.com/.attachmentThumbnails/8355e39282a783f9668bc06ee2c79322/be072968?ts=1654679731&userId=usrgkCoIPRrdc044Z&cs=59004fa86f5be8f8",
     desc: html`
+    `
+  },
+  {
+    start: new Date("March 11, 2022"),
+    title: "Guest Lecture at Creative Coding Computing",
+    type: ["lecture"],
+    topic: ["community"],
+    collab: ["Naoto Hieda"],
+    venue: "University of the Arts London (online)",
+    desc: html`
+      Invited by Joana Chicau
     `
   },
   {
