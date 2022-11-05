@@ -22,6 +22,10 @@ body {
   display: flex;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 h1 {
   text-align: center;
 /*   font-style: italic; */
