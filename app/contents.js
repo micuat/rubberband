@@ -1,13 +1,35 @@
 const html = require("choo/html");
 var sc = [ // paf
   {
+    start: new Date("November 4, 2022"),
+    title: "Lulogear",
+    type: ["installation"],
+    topic: ["processing", "lithography"],
+    collab: ["Naoto Hieda"],
+    venue: "National University of Colombia (Colombia)",
+    image: "https://bild.glitches.me/images/2022/11/05/IMG_4392.jpg",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("October 10, 2022"),
+    title: "Glitch me on glitch me",
+    type: ["installation", "net art"],
+    topic: ["hydra", "livelab"],
+    collab: ["Flor de Fuego", "Naoto Hieda"],
+    venue: "Festival de la Imagen (Colombia)",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/openlab.png?v=1667690004142",
+    desc: html`
+    `
+  },
+  {
     start: new Date("July 12, 2022"),
     title: "Best Practices Workshop",
     type: ["workshop"],
     topic: ["hydra", "livelab"],
     collab: ["Jorge Guevara", "Naoto Hieda"],
     venue: "PerformingArtsForum (France)",
-    image: "https://bild.glitches.me/images/2022/07/13/vlcsnap-2022-07-13-18h26m57s507.png",
+    // image: "https://bild.glitches.me/images/2022/07/13/vlcsnap-2022-07-13-18h26m57s507.png",
     desc: html`
     `
   },
@@ -18,7 +40,7 @@ var sc = [ // paf
     topic: ["hydra", "livelab"],
     collab: ["Jorge Guevara", "Naoto Hieda"],
     venue: "Hauptsache Frei (Germany)",
-    image: "https://bild.glitches.me/images/2022/07/18/D4A9BCF5-6D73-4E3E-9033-5606CF9F686E.jpg",
+    // image: "https://bild.glitches.me/images/2022/07/18/D4A9BCF5-6D73-4E3E-9033-5606CF9F686E.jpg",
     desc: html`
     Workshop and presentation in the frame of Beyond Digital Lab<br />
     Photo by Jeanne Charlotte Vogt
@@ -31,7 +53,7 @@ var sc = [ // paf
     topic: ["hydra", "livelab"],
     collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "Academy for Theater and Digitality (Germany)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/d6a6ed0b27fc88a3d32bcb6cc21fe833/3bc54d08?ts=1658147201&userId=usrgkCoIPRrdc044Z&cs=57f8701ccea73636",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/openlab.png?v=1667690004142",
     desc: html`
     `
   },
@@ -42,7 +64,7 @@ var sc = [ // paf
     topic: ["hydra"],
     collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "KHM exMedia Lab (Germany)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/0d9c3be4809e9887fc1a8a89357c3fb2/809928d1?ts=1658147202&userId=usrgkCoIPRrdc044Z&cs=e22b69e8573fea73",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/scikitchen.jpg?v=1667690001577",
     links: ["https://exmedia.khm.de/science-kitchen-decompositions-of-algorithms-and-glitched-worlds/"],
     desc: html`
     Invited and organized by Karin Lingnau and Jaqueline Hen
@@ -55,7 +77,7 @@ var sc = [ // paf
     topic: ["tidalcycles", "hydra"],
     collab: ["Flor de Fuego", "Alexandra Cárdenas"],
     venue: "Werk (Germany)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/bfb7e33fc275517f181343d9fd29620c/70a9d1a6?ts=1658147202&userId=usrgkCoIPRrdc044Z&cs=b9e85efa00cfecd3",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/werkperformance.jpg?v=1667689999845",
     desc: html`
     Camera footage by Naoto Hieda
     `
@@ -68,7 +90,7 @@ var sc = [ // paf
     collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "Dortmunder U (Germany)",
     image:
-      "https://dl.airtable.com/.attachmentThumbnails/dfc43658e40d92cf944171fc233c33cd/9c992ff1?ts=1658147203&userId=usrgkCoIPRrdc044Z&cs=3eb433273fbf3f47",
+      "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/domeworkshop.jpg?v=1667689998296",
     desc: html`
     Supported by Academy for Theater and Digitality and StoryLab kiU
     `
@@ -80,7 +102,7 @@ var sc = [ // paf
     topic: ["web", "hydra"],
     collab: ["Flor de Fuego", "Terror Kittens", "Naoto Hieda"],
     venue: "Time Window (The Netherlands)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/40800e90d9a402f9110608af07eb746d/7374e05b?ts=1654679725&userId=usrgkCoIPRrdc044Z&cs=78c4042e5596b3a4",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/timewindow.jpg?v=1667689997509",
     desc: html`
     `
   },
@@ -91,7 +113,7 @@ var sc = [ // paf
     topic: ["movement"],
     collab: ["Flor de Fuego", "Jorge Guevara", "Naoto Hieda"],
     venue: "KHM (Germany)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/81128fb5aaf5708405c34b9c219c579f/b3015b0b?ts=1658147205&userId=usrgkCoIPRrdc044Z&cs=bf543a25c0218c9b",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/midtermreview.png?v=1667690024337",
     desc: html`
     Sharing in the frame of MidTermReview organized by Christian Sievers
     `
@@ -103,7 +125,7 @@ var sc = [ // paf
     topic: ["web", "hydra"],
     collab: ["Jobi", "Naoto Hieda"],
     venue: "Doka (The Netherlands)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/30d4415bec77610fa916230d265725a6/df9d872e?ts=1654679728&userId=usrgkCoIPRrdc044Z&cs=52365f892e87f849",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/dokaperformance.jpg?v=1667690022255",
     desc: html`
     `
   },
@@ -114,7 +136,7 @@ var sc = [ // paf
     topic: ["web", "hydra"],
     collab: ["Ekheo"],
     venue: "La Gaîté Lyrique (France)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/a2b60f985a4cfab81043752cb1236355/2097b764?ts=1654679729&userId=usrgkCoIPRrdc044Z&cs=0afc1549a018a025",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/gaitelyrique.jpg?v=1667690020125",
     desc: html`
       Video: Flor de Fuego & Naoto Hieda
     `
@@ -126,7 +148,7 @@ var sc = [ // paf
     topic: ["web", "hydra"],
     collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "online",
-    image: "https://dl.airtable.com/.attachmentThumbnails/8355e39282a783f9668bc06ee2c79322/be072968?ts=1654679731&userId=usrgkCoIPRrdc044Z&cs=59004fa86f5be8f8",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/algorave.png?v=1667690017911",
     desc: html`
     `
   },
@@ -162,7 +184,7 @@ Image processing is applied to an MRI scan pattern of the brain, and the output 
     topic: ["web", "hydra"],
     collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "online",
-    image: "https://dl.airtable.com/.attachmentThumbnails/b3d9db307baa418e24e333c3f347fc51/1c306b96?ts=1654679732&userId=usrgkCoIPRrdc044Z&cs=66cffa907278ad79",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/livecodera.png?v=1667690016217",
     desc: html`
     `
   },
@@ -212,7 +234,7 @@ Sponsored by Processing Community Japan (PCJ)
     topic: ["web", "hydra"],
     collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "Academy for Theater and Digitality (Germany)",
-    image: "https://dl.airtable.com/.attachmentThumbnails/ea375118ab14cb5b1c1aac2dfd3fb69e/f22487ec",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/fellowshipflok.png?v=1667690014399",
     desc: html`
     `
   },
