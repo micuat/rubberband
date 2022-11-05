@@ -12,13 +12,47 @@ var sc = [ // paf
     `
   },
   {
-    start: new Date("October 10, 2022"),
+    start: new Date("October 17, 2022"),
     title: "Glitch me on glitch me",
     type: ["installation", "net art"],
     topic: ["hydra", "livelab"],
     collab: ["Flor de Fuego", "Naoto Hieda"],
     venue: "Festival de la Imagen (Colombia)",
-    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/openlab.png?v=1667690004142",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/IMG_3869.JPG?v=1667690441654",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("October 11, 2022"),
+    title: "solo.glitches.me",
+    type: ["performance"],
+    topic: ["body", "language"],
+    collab: ["Naoto Hieda"],
+    venue: "National University of Colombia (Colombia)",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/solo.jpg?v=1667690772642",
+    links: ["https://www.youtube.com/watch?v=Zov0zYYLDwQ"],
+    desc: html`
+    `
+  },
+  {
+    start: new Date("September 23, 2022"),
+    title: "Granadilla-Croissant",
+    type: ["installation"],
+    topic: ["hydra", "lithography"],
+    collab: ["Naoto Hieda"],
+    venue: "National University of Colombia (Colombia)",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/2022-09-23-IMG_3145.jpg?v=1667690523635",
+    desc: html`
+    `
+  },
+  {
+    start: new Date("August 8, 2022"),
+    title: "Exchange at Maestría interdisciplinar en Teatro y Artes vivas",
+    type: ["residency"],
+    topic: ["body", "language"],
+    collab: ["Naoto Hieda"],
+    venue: "National University of Colombia (Colombia)",
+    image: "https://img.glitches.me/images/2022/09/12/IMG_2335.jpg",
     desc: html`
     `
   },
