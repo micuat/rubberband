@@ -30,7 +30,7 @@ var sc = [ // paf
     collab: ["Naoto Hieda"],
     venue: "National University of Colombia (Colombia)",
     image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/solo.jpg?v=1667690772642",
-    links: ["https://www.youtube.com/watch?v=Zov0zYYLDwQ"],
+    yt: "Zov0zYYLDwQ",
     desc: html`
     `
   },
