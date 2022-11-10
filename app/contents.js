@@ -7,7 +7,7 @@ var sc = [
     topic: ["body", "language"],
     collab: ["Naoto Hieda"],
     venue: "National University of Colombia (Colombia)",
-    // image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/solo.jpg?v=1667690772642",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/Screenshot%202022-11-10%20at%2011-50-59%202022%2011%2008%20Solo.png?v=1668099073252",
     yt: "B7vzLTwjzTM",
     desc: html`
     `
@@ -75,7 +75,7 @@ var sc = [
     topic: ["hydra", "livelab"],
     collab: ["Jorge Guevara", "Naoto Hieda"],
     venue: "PerformingArtsForum (France)",
-    // image: "https://bild.glitches.me/images/2022/07/13/vlcsnap-2022-07-13-18h26m57s507.png",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/Screenshot%202022-11-10%20at%2011-47-42%202022%2007%2012%20Best%20Practices%20Workshop%20(Participants%20at%20PAF%20%40Jorge%20Guevara%20%26%20Naoto%20Hieda).png?v=1668098896237",
     desc: html`
     `
   },
