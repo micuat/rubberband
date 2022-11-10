@@ -4,7 +4,7 @@ var sc = [
     start: new Date("November 8, 2022"),
     title: "solo.glitches.me",
     type: ["performance"],
-    topic: ["body", "language"],
+    topic: ["body", "dance"],
     collab: ["Naoto Hieda"],
     venue: "National University of Colombia (Colombia)",
     image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/Screenshot%202022-11-10%20at%2011-50-59%202022%2011%2008%20Solo.png?v=1668099073252",
