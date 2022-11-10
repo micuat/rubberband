@@ -1,5 +1,17 @@
 const html = require("choo/html");
-var sc = [ // paf
+var sc = [
+  {
+    start: new Date("November 8, 2022"),
+    title: "solo.glitches.me",
+    type: ["performance"],
+    topic: ["body", "language"],
+    collab: ["Naoto Hieda"],
+    venue: "National University of Colombia (Colombia)",
+    // image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/solo.jpg?v=1667690772642",
+    yt: "B7vzLTwjzTM",
+    desc: html`
+    `
+  },
   {
     start: new Date("November 4, 2022"),
     title: "Lulogear",
@@ -74,7 +86,7 @@ var sc = [ // paf
     topic: ["hydra", "livelab"],
     collab: ["Jorge Guevara", "Naoto Hieda"],
     venue: "Hauptsache Frei (Germany)",
-    // image: "https://bild.glitches.me/images/2022/07/18/D4A9BCF5-6D73-4E3E-9033-5606CF9F686E.jpg",
+    image: "https://cdn.glitch.global/cada0ae2-f902-428d-81e3-6a68f5e589e5/3419B84D-C89F-460E-B646-26F6E3FF4621.jpeg?v=1668098470397",
     desc: html`
     Workshop and presentation in the frame of Beyond Digital Lab<br />
     Photo by Jeanne Charlotte Vogt
