@@ -1,6 +1,18 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("November 29, 2022"),
+    title: "solo.glitches.me",
+    type: ["performance"],
+    topic: ["body", "dance"],
+    collab: ["Naoto Hieda"],
+    venue: "National University of Colombia (Colombia)",
+    image: "https://bild.glitches.me/images/2022/11/27/mitav-naoto-poster.png",
+    links: ["https://solo.glitches.me/"],
+    desc: html`
+    `
+  },
+  {
     start: new Date("November 8, 2022"),
     title: "solo.glitches.me",
     type: ["performance"],

@@ -36,14 +36,14 @@ module.exports = () => {
     
     let link = [];
     if (yt != undefined) {
-      link.push(html`<a href="https://youtu.be/${yt}">Video</a>`);
+      link.push(html`<a target="_blank" href="https://youtu.be/${yt}">Video</a>`);
     }
     for (let i = 0; links !== undefined && i < links.length; i++) {
       let num = i + 1;
       if(links.length == 1) {
         num = "";
       }
-      link.push(html`<div><a href="${links[i]}">Link ${num}</a></div>`);
+      link.push(html`<div><a target="_blank" href="${links[i]}">Link ${num}</a></div>`);
     }
     
     let collabs = [];
