@@ -84,7 +84,7 @@ module.exports = function(state, emit) {
               sketches to unveil the creativity of Hieda.
             </p>
             <p class="note">
-              The exhibition is curated by Naoto Hieda and hosted by glitch.
+              The exhibition is curated by Naoto Hieda and hosted by glitch. Design by <a href="https://glitches.me/" target="_blank">glitches.me</a>.
               Note that some works do not show full credits not because of
               disrespect but Naoto being sloppy. Unlike museum captions, the
               year is not the year of production but that of exhibition.
