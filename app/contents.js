@@ -1,6 +1,30 @@
 const html = require("choo/html");
 var sc = [
   {
+    start: new Date("March 1, 2023"),
+    title: "soup.glitches.me",
+    type: ["installation"],
+    topic: ["net art"],
+    collab: ["Naoto Hieda"],
+    venue: "Freiraum (Germany)",
+    image: "https://bild.glitches.me/images/2023/03/03/4CCFE8FB-180D-462A-A43F-0050132863A2.md.jpg",
+    links: ["https://www.benjriepe.com/in-progress/freiraum-digital/"],
+    desc: html`
+    `
+  },
+  {
+    start: new Date("February 17, 2023"),
+    title: "festival.naotohieda.com",
+    type: ["performance", "installation"],
+    topic: ["body", "dance"],
+    collab: ["Naoto Hieda"],
+    venue: "Teatro de Garaje (Colombia)",
+    image: "https://bild.glitches.me/images/2023/02/17/AD5CFFAC-99B4-4E8E-B06F-565B85A2EEDF.md.jpg",
+    links: ["https://festival.naotohieda.com/"],
+    desc: html`
+    `
+  },
+  {
     start: new Date("November 29, 2022"),
     title: "solo.glitches.me",
     type: ["performance"],
