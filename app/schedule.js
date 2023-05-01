@@ -84,7 +84,7 @@ module.exports = () => {
             <div class="caption">
               <div class="collabs">${collabs}</div>
               <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
-              <div class="type">${types}; ${topics}</div>
+              <div class="type">${types} ${topics}</div>
               <div class="venue">${venueElt}</div>
               <p class="desc">${desc}</p>
               <p class="links">${link}</p>
