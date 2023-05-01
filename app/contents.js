@@ -1,7 +1,7 @@
 const html = require("choo/html");
 var sc = [
   {
-    start: new Date("March 1, 2023"),
+    start: new Date("March 1, 2022"),
     title: "nail.glitches.me",
     type: ["mixed media"],
     topic: [""],
@@ -25,7 +25,7 @@ var sc = [
     `
   },
   {
-    start: new Date("March 1, 2023"),
+    start: new Date("March 1, 2022"),
     title: "watch.glitches.me",
     type: ["installation"],
     topic: [""],

@@ -51,8 +51,13 @@ app.route("/", main);
 // start app
 app.mount("#choomount");
 
-setInterval(() => {
-  let N = contents.length;
-  let index = (Math.random() * N) | 0;
-  document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
-}, 3000)
+const urlParams = new URLSearchParams(window.location.search);
+const autoMode = urlParams.get("auto") !== null;
+
+if (autoMode) {
+  setInterval(() => {
+    let N = contents.length;
+    let index = (Math.random() * N) | 0;
+    document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
+  }, 3000);
+}
