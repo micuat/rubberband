@@ -76,6 +76,7 @@ module.exports = () => {
       imageElt = html`<p>The image is currently on loan</p>`
     }
               // <div class="collabs">${collabs}</div>
+              // <div class="type">${types} ${topics}</div>
 
     dates.push(
       {type, title, dateYear, dom: html`
@@ -85,7 +86,7 @@ module.exports = () => {
             <div class="caption">
               <div><span class="title">${title}</span></div>
               <div><span class="date">${dateYear}</span></div>
-              <div class="type">${types} ${topics}</div>
+              <div class="type">Mixed media</div>
               <p class="desc">${desc}</p>
             </div>
           </div>
