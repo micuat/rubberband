@@ -6,9 +6,9 @@ var sc = [
     type: ["mixed media"],
     topic: [""],
     collab: ["Naoto Hieda"],
-    venue: "Freiraum (Germany)",
-    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9025.jpeg?v=1682929539655",
-    links: ["https://www.benjriepe.com/in-progress/freiraum-digital/"],
+    venue: "",
+    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9025.jpeg?v=1682930416921",
+    links: [],
     desc: html`
     `
   },
@@ -18,9 +18,9 @@ var sc = [
     type: ["installation"],
     topic: ["net art"],
     collab: ["Naoto Hieda"],
-    venue: "Freiraum (Germany)",
-    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9024.jpeg?v=1682929543406",
-    links: ["https://www.benjriepe.com/in-progress/freiraum-digital/"],
+    venue: "",
+    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9024.jpeg?v=1682930416189",
+    links: [],
     desc: html`
     `
   },
@@ -30,9 +30,9 @@ var sc = [
     type: ["installation"],
     topic: ["net art"],
     collab: ["Naoto Hieda"],
-    venue: "Freiraum (Germany)",
-    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9020.jpeg?v=1682929549548",
-    links: ["https://www.benjriepe.com/in-progress/freiraum-digital/"],
+    venue: "",
+    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9020.jpeg?v=1682930411602",
+    links: [],
     desc: html`
     `
   },
@@ -42,9 +42,9 @@ var sc = [
     type: ["installation"],
     topic: ["net art"],
     collab: ["Naoto Hieda"],
-    venue: "Freiraum (Germany)",
-    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9023.jpeg?v=1682929553267",
-    links: ["https://www.benjriepe.com/in-progress/freiraum-digital/"],
+    venue: "",
+    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9023.jpeg?v=1682930415187",
+    links: [],
     desc: html`
     `
   },
@@ -54,9 +54,9 @@ var sc = [
     type: ["installation"],
     topic: ["net art"],
     collab: ["Naoto Hieda"],
-    venue: "Freiraum (Germany)",
-    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9021.jpeg?v=1682929560637",
-    links: ["https://www.benjriepe.com/in-progress/freiraum-digital/"],
+    venue: "",
+    image: "https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/IMG_9021.jpeg?v=1682930413682",
+    links: [],
     desc: html`
     `
   },

@@ -70,11 +70,12 @@ module.exports = () => {
     let imageElt;
     if (image != undefined) {
       imageElt = html`
-        <img src="${image}" loading="lazy" />
+        <img style="object-fit: cover;aspect-ratio: 1/1" src="${image}" loading="lazy" />
       `;
     } else {
       imageElt = html`<p>The image is currently on loan</p>`
     }
+              // <div class="collabs">${collabs}</div>
 
     dates.push(
       {type, title, dateYear, dom: html`
@@ -82,12 +83,10 @@ module.exports = () => {
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">
             <div class="caption">
-              <div class="collabs">${collabs}</div>
-              <div><span class="title">${title}</span>, <span class="date">${dateYear}</span></div>
+              <div><span class="title">${title}</span></div>
+              <div><span class="date">${dateYear}</span></div>
               <div class="type">${types} ${topics}</div>
-              <div class="venue">${venueElt}</div>
               <p class="desc">${desc}</p>
-              <p class="links">${link}</p>
             </div>
           </div>
         </section>
