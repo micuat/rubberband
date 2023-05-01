@@ -3,6 +3,7 @@ const choo = require("choo");
 const html = require("choo/html");
 // initialize choo
 const app = choo({ hash: true });
+const contents = require("./contents.js");
 
 app.route("/*", notFound);
 
@@ -49,3 +50,9 @@ app.route("/", main);
 
 // start app
 app.mount("#choomount");
+
+setInterval(() => {
+  let N = contents.length;
+  let index = (Math.random() * N) | 0;
+  document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
+}, 3000)

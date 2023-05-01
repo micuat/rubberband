@@ -90,10 +90,6 @@ module.exports = function(state, emit) {
               year is not the year of production but that of exhibition.
             </p>
 
-            <div>
-              Filter by
-              <div class="type">${filters}</div>
-            </div>
           </header>
 
           ${contents}
