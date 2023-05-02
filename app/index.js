@@ -143,6 +143,7 @@ airtableLoader.load(
     const autoMode = urlParams.get("auto") !== null;
 
     if (autoMode) {
+      document.querySelector("body").style = "cursor: none"
       setInterval(() => {
         let N = airdata.length + 5;
         let index = (Math.random() * N) | 0;
