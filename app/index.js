@@ -144,9 +144,14 @@ airtableLoader.load(
 
     if (autoMode) {
       setInterval(() => {
-        let N = contents.length;
+        let N = airdata.length + 5;
         let index = (Math.random() * N) | 0;
-        document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
+        if (index < airdata.length) {
+          document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
+        }
+        else {
+          document.getElementById(`container`).scrollIntoView({behavior:"smooth"});
+        }
       }, 3000);
     }
 
