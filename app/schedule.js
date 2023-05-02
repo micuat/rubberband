@@ -2,9 +2,97 @@ const html = require("choo/html");
 const contents = require("./contents.js");
 // const contents = window.contents;
 
+const Airtable = require("airtable");
+
+
+class AirtableLoader {
+  constructor(key, baseName) {
+    this.elements = [];
+    this.base = new Airtable({ apiKey: key }).base(baseName);
+  }
+  load(loadCallback, doneCallback) {
+    let first = true;
+
+    this.base("Table 1")
+    .select({
+      pageSize: 100,
+      view: "Gallery",
+    })
+    .eachPage(
+      (records, fetchNextPage) => {
+        // records.forEach((record) => {
+        //   console.log(record.fields);
+        // });
+
+        const r = records.map((e) => {
+          const el = {};
+          el.id = e.id;
+          // el.name = e.fields.Name;
+          // // el.created = new Date(e.fields.Created);
+          // el.notes = e.fields.Notes === undefined ? "" : e.fields.Notes;
+
+          // el.youtube = e.fields.Youtube;
+          for (const key of Object.keys(e.fields)) {
+            el[key.toLocaleLowerCase()] = e.fields[key] === undefined ? "" : e.fields[key];
+          }
+          el.attachment = "";
+          if (e.fields.Attachments) {
+            for (let i = 0; i < e.fields.Attachments.length; i++) {
+              el.attachmentType = e.fields.Attachments[i].type;
+              el.attachment = e.fields.Attachments[i].url;
+              if (e.fields.Attachments[i].thumbnails !== undefined) {
+                if (e.fields.Attachments[i].thumbnails.large) {
+                  el.attachment = e.fields.Attachments[i].thumbnails.large.url;
+                  break;
+                }
+              }
+            }
+          }
+          console.log(el)
+          return el;
+        });
+        this.elements.push(...r);
+        if (loadCallback !== undefined) {
+          loadCallback(r);
+        }
+
+        // emitter.emit("tablePageLoaded")
+        if (first) {
+          first = false;
+        }
+        fetchNextPage();
+      },
+      (err) => {
+        if (doneCallback !== undefined) {
+          doneCallback();
+        }
+        if (err) {
+          console.error(err);
+          return;
+        }
+      }
+    );
+  }
+}
+
 module.exports = () => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
+  
+//   this.airtableLoader = new AirtableLoader("key1S3rtGoYU17uqC", "appkzmGcC7NR7yR24");
+//   this.airtableLoader.load(
+//     // every
+//     (r) => {
+//       for (const el of r) {
+//         console.log(el)
+//       }
+//     },
+//     // done
+//     () => {
+//     }
+//   );
+  
+  
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < contents.length; i++) {
