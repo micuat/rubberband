@@ -98,8 +98,9 @@ airtableLoader.load(
   // every
   (r) => {
     for (const el of r) {
-      console.log(el.attachments[0].thumbnails.large.url, el.notes, el.name, el.year)
-      airdata.push(el);
+      if (el.enabled) {
+        airdata.push(el);
+      }
     }
   },
   // done
