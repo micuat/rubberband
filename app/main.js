@@ -18,51 +18,51 @@ module.exports = function(state, emit) {
     }
   }
 
-  for (const t of state.types) {
-    const selected =
-      state.filter.tag == undefined
-        ? ""
-        : state.filter.tag == t.t
-        ? "selected"
-        : "";
-    filters.push(
-      html`
-        <p onclick="${filterTag}" class="${t.t} ${selected}">${t.t}</p>
-      `
-    );
-  }
+//   for (const t of state.types) {
+//     const selected =
+//       state.filter.tag == undefined
+//         ? ""
+//         : state.filter.tag == t.t
+//         ? "selected"
+//         : "";
+//     filters.push(
+//       html`
+//         <p onclick="${filterTag}" class="${t.t} ${selected}">${t.t}</p>
+//       `
+//     );
+//   }
 
-  filters.push(
-    html`
-      <div class="clearer"></div>
-    `
-  );
+//   filters.push(
+//     html`
+//       <div class="clearer"></div>
+//     `
+//   );
 
-  const filtersY = [];
-  for (const t of [
-    "all time",
-    "2022",
-    "2021",
-    "2020",
-    "2019",
-    "2018",
-    "2017",
-    "2016",
-    "2015",
-    "2014"
-  ]) {
-    const selected =
-      state.filter.year == undefined
-        ? ""
-        : state.filter.year == t
-        ? "selected"
-        : "";
-    filters.push(
-      html`
-        <p onclick="${filterYear}" class="${t} ${selected} year">${t}</p>
-      `
-    );
-  }
+  // const filtersY = [];
+  // for (const t of [
+  //   "all time",
+  //   "2022",
+  //   "2021",
+  //   "2020",
+  //   "2019",
+  //   "2018",
+  //   "2017",
+  //   "2016",
+  //   "2015",
+  //   "2014"
+  // ]) {
+  //   const selected =
+  //     state.filter.year == undefined
+  //       ? ""
+  //       : state.filter.year == t
+  //       ? "selected"
+  //       : "";
+  //   filters.push(
+  //     html`
+  //       <p onclick="${filterYear}" class="${t} ${selected} year">${t}</p>
+  //     `
+  //   );
+  // }
   // console.log(state.schedule.length, "entries")
   const contents = filter(state.schedule, state.filter).map(e => e.dom);//schedule(state.schedule, state.filter);
   return html`

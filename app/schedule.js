@@ -5,21 +5,21 @@ const html = require("choo/html");
 module.exports = (contents) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-  
+  console.log(contents, "io")
   
   
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < contents.length; i++) {
     const s = contents[i];
-    const date = s.start.toLocaleDateString(undefined, {
-      month: "long",
-      day: "numeric",
-      year: "numeric"
-    });
-    const dateYear = s.start.toLocaleDateString(undefined, {
-      year: "numeric"
-    });
+    // const date = s.start.toLocaleDateString(undefined, {
+    //   month: "long",
+    //   day: "numeric",
+    //   year: "numeric"
+    // });
+    // const dateYear = s.start.toLocaleDateString(undefined, {
+    //   year: "numeric"
+    // });
     let { topic, type, yt, collab, venue, links } = s;
     //   console.log("oi", title, desc.parentNode)
     // if(desc.parentNode !== undefined && desc.parentNode !== null) {
@@ -29,50 +29,50 @@ module.exports = (contents) => {
     let image = s.attachments[0].thumbnails.large.url;
     let desc = s.notes;
 
-    let types = [];
-    for (let i = 0; i < type.length; i++) {
-      let del = i < type.length - 1 ? ', ' : '';
-      types.push(type[i] + del);
-    }
-    let topics = [];
-    for (let i = 0; i < topic.length; i++) {
-      let del = i < topic.length - 1 ? ', ' : '';
-      topics.push(topic[i] + del);
-    }
+//     let types = [];
+//     for (let i = 0; i < type.length; i++) {
+//       let del = i < type.length - 1 ? ', ' : '';
+//       types.push(type[i] + del);
+//     }
+//     let topics = [];
+//     for (let i = 0; i < topic.length; i++) {
+//       let del = i < topic.length - 1 ? ', ' : '';
+//       topics.push(topic[i] + del);
+//     }
     
-    let link = [];
-    if (yt != undefined) {
-      link.push(html`<a target="_blank" href="https://youtu.be/${yt}">Video</a>`);
-    }
-    for (let i = 0; links !== undefined && i < links.length; i++) {
-      let num = i + 1;
-      if(links.length == 1) {
-        num = "";
-      }
-      link.push(html`<div><a target="_blank" href="${links[i]}">Link ${num}</a></div>`);
-    }
+//     let link = [];
+//     if (yt != undefined) {
+//       link.push(html`<a target="_blank" href="https://youtu.be/${yt}">Video</a>`);
+//     }
+//     for (let i = 0; links !== undefined && i < links.length; i++) {
+//       let num = i + 1;
+//       if(links.length == 1) {
+//         num = "";
+//       }
+//       link.push(html`<div><a target="_blank" href="${links[i]}">Link ${num}</a></div>`);
+//     }
     
-    let collabs = [];
-    if (collab != undefined) {
-      let i = 0;
-      for (const c of collab) {
-        collabs.push(`${c}`);
-        if (i == collab.length - 2) {
-          collabs.push(` and `);
-        }
-        else if (i < collab.length - 1) {
-          collabs.push(`, `);
-        }
-        i++;
-      }
-    }
-    let venueElt;
-    if (venue != undefined) {
-      let prefix = "";
-      venueElt = html`
-        ${prefix} ${venue}
-      `;
-    }
+//     let collabs = [];
+//     if (collab != undefined) {
+//       let i = 0;
+//       for (const c of collab) {
+//         collabs.push(`${c}`);
+//         if (i == collab.length - 2) {
+//           collabs.push(` and `);
+//         }
+//         else if (i < collab.length - 1) {
+//           collabs.push(`, `);
+//         }
+//         i++;
+//       }
+//     }
+//     let venueElt;
+//     if (venue != undefined) {
+//       let prefix = "";
+//       venueElt = html`
+//         ${prefix} ${venue}
+//       `;
+//     }
     let imageElt;
     if (image != undefined) {
       imageElt = html`
@@ -85,7 +85,7 @@ module.exports = (contents) => {
               // <div class="type">${types} ${topics}</div>
 
     dates.push(
-      {type, title, dateYear, dom: html`
+      {type, title, dateYear: 0, dom: html`
         <section id="section-${i}">
           <div class="thumbnail">${imageElt}</div>
           <div class="caption-holder">

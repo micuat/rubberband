@@ -119,8 +119,8 @@ section > .title {
 }
 
 .type {
-  position: absolute;
-  bottom: 0.5em;
+/*   position: absolute;
+  bottom: 0.5em; */
 }
 
 .type > p {
@@ -248,7 +248,7 @@ section > .title {
 
 .desc {
   font-size: 12pt;
-  margin-bottom: 50px;
+/*   margin-bottom: 50px; */
 /*   text-align: justify; */
 }
 
