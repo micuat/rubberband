@@ -16,10 +16,8 @@ function notFound() {
   `;
 }
 
-require("./airtable-loader.js")
-
 const airdata = [];
-let airtableLoader = new require("./airtable-loader.js")("key1S3rtGoYU17uqC", "appkzmGcC7NR7yR24");
+let airtableLoader = new require("./AirtableLoader.js")("key1S3rtGoYU17uqC", "appkzmGcC7NR7yR24");
 airtableLoader.load(
   // every
   (r) => {
@@ -32,7 +30,6 @@ airtableLoader.load(
   // done
   () => {
     app.state.schedule = require("./schedule.js")(airdata);
-    console.log(app.state.schedule)
 
 //     const counter = [];
 //     for (const s of app.state.schedule) {
