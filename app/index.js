@@ -16,6 +16,7 @@ function notFound() {
   `;
 }
 
+require("./contents.js")
 const airdata = [];
 let airtableLoader = new require("./airtable-loader.js")("key1S3rtGoYU17uqC", "appkzmGcC7NR7yR24");
 airtableLoader.load(
