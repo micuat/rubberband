@@ -1,4 +1,4 @@
-const Airtable = require("airtable.js");
+// const Airtable = require("airtable.js");
 
 class AirtableLoader {
   constructor(key, baseName) {
@@ -22,11 +22,6 @@ class AirtableLoader {
         const r = records.map((e) => {
           const el = {};
           el.id = e.id;
-          // el.name = e.fields.Name;
-          // // el.created = new Date(e.fields.Created);
-          // el.notes = e.fields.Notes === undefined ? "" : e.fields.Notes;
-
-          // el.youtube = e.fields.Youtube;
           for (const key of Object.keys(e.fields)) {
             el[key.toLocaleLowerCase()] = e.fields[key] === undefined ? "" : e.fields[key];
           }
@@ -43,7 +38,6 @@ class AirtableLoader {
               }
             }
           }
-          console.log(el)
           return el;
         });
         this.elements.push(...r);

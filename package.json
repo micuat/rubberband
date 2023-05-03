@@ -8,20 +8,12 @@
     "start": "npm run watch & npm run serve",
     "watch": "watchify app/index.js -o build/bundle.js"
   },
-  "scriptsa": {
-    "start": "vite",
-    "build": "vite build",
-    "serve": "vite preview"
-  },
   "dependencies": {
     "static-server": "^3.0.0",
     "watchify": "^4.0.0",
     "choo": "^7.1.0",
     "hydra-synth": "1.2.*",
     "airtable": "^0.11.6"
-  },
-  "devDependencies": {
-    "vite": "^4.0.0"
   },
   "engines": {
     "node": "14.x"
