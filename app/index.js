@@ -17,7 +17,7 @@ function notFound() {
 }
 
 const airdata = [];
-let airtableLoader = new require("./AirtableLoader.js")("key1S3rtGoYU17uqC", "appkzmGcC7NR7yR24");
+let airtableLoader = new require("./airtable-loader.js")("key1S3rtGoYU17uqC", "appkzmGcC7NR7yR24");
 airtableLoader.load(
   // every
   (r) => {
