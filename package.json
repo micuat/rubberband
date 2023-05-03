@@ -4,13 +4,13 @@
   "description": "What am I about?",
   "main": "index.html",
   "scripts": {
-    "serve": "static-server -n index.html -p 8000 build",
+    "serve": "static-server -n index.html -p 8080 build",
     "start": "npm run watch & npm run serve",
     "watch": "watchify app/index.js -o build/bundle.js"
   },
   "dependencies": {
     "static-server": "^3.0.0",
-    "watchify": "^3.11.1",
+    "watchify": "^4.0.0",
     "choo": "^7.1.0",
     "hydra-synth": "1.2.*",
     "airtable": "^0.11.6"
