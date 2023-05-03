@@ -39,14 +39,10 @@ airtableLoader.load(
   },
   // done
   () => {
-    console.log(app)
     app.state.schedule = require("./schedule.js")(airdata);
     app.emit('render')
 
-    const urlParams = new URLSearchParams(window.location.search);
-    const autoMode = urlParams.get("auto") !== null;
-
-    if (autoMode) {
+    if (app.state.query.auto) {
       document.querySelector("body").style = "cursor: none"
       setInterval(() => {
         let N = airdata.length + 5;

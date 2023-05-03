@@ -5,8 +5,7 @@ const html = require("choo/html");
 module.exports = function(state, emit) {
   emit("DOMTitleChange", `Works: Naoto Hieda`);
 
-  const contents = state.schedule;
-  console.log(contents)
+  const contents = state.schedule?.map(e => e.dom);
   return html`
     <div>
       <div id="main">
