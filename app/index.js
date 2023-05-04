@@ -45,6 +45,8 @@ airtableLoader.load(
     app.state.schedule = require("./schedule.js")(app.state, airdata);
     app.emit('render')
     
+    let lastone = -1;
+    
     if (app.state.query.auto) {
       document.querySelector("body").style = "cursor: none"
       const next = () => {
@@ -52,13 +54,21 @@ airtableLoader.load(
         let index = (Math.random() * N) | 0;
         if (index < airdata.length) {
           // document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
-          scrollIntoView(document.getElementById(`section-${index}`), { time: 2000 }, () => {
+          scrollIntoView(document.getElementById(`section-${index}`), {
+            time: Math.abs(lastone - index) * 500 + 100,
+            ease: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
+          }, () => {
             setTimeout(next, 3000);
+            lastone = index;
           })
         }
         else {
-          scrollIntoView(document.getElementById(`container`), { time: 2000 }, () => {
+          scrollIntoView(document.getElementById(`container`), {
+            time: Math.abs(lastone - index) * 500 + 100,
+            ease: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
+          }, () => {
             setTimeout(next, 3000);
+            lastone = -1;
           })
         }
       }
