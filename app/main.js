@@ -1,5 +1,6 @@
 // import choo's template helper
 const html = require("choo/html");
+const Hydra = require('./hydra-canvas.js')
 
 // export module
 module.exports = function(state, emit) {
@@ -11,6 +12,7 @@ module.exports = function(state, emit) {
       <div id="main">
         <div id="container">
           <header>
+          ${state.cache(Hydra, 'my-hydra').render()}
             <h1>Works: Naoto Hieda</h1>
             <p>
               <a href="https://naotohieda.com">Naoto Hieda</a> (1990, Japan) is

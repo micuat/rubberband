@@ -7,7 +7,7 @@ module.exports = (contents) => {
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < contents.length; i++) {
     const s = contents[i];
-    let image = s.attachments[0].thumbnails.large.url;
+    let image = s.attachments[0].thumbnails.full.url;
     let imageElt;
     if (image != undefined) {
       imageElt = html`
