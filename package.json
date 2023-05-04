@@ -13,7 +13,8 @@
     "watchify": "^4.0.0",
     "choo": "^7.1.0",
     "hydra-synth": "1.2.*",
-    "airtable": "^0.11.6"
+    "airtable": "^0.11.6",
+    "scroll-into-view": "^1.16.2"
   },
   "engines": {
     "node": "14.x"

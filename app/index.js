@@ -1,6 +1,9 @@
 // import choo
 const choo = require("choo");
 const html = require("choo/html");
+
+const scrollIntoView = require('scroll-into-view');
+
 // initialize choo
 const app = choo({ hash: true });
 
@@ -48,10 +51,11 @@ airtableLoader.load(
         let N = airdata.length + 5;
         let index = (Math.random() * N) | 0;
         if (index < airdata.length) {
-          document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
+          // document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
+          scrollIntoView(document.getElementById(`section-${index}`), { time: 3000 })
         }
         else {
-          document.getElementById(`container`).scrollIntoView({behavior:"smooth"});
+          scrollIntoView(document.getElementById(`container`), { time: 3000 })
         }
       }, 3000);
     }
