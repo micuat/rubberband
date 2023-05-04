@@ -1,20 +1,24 @@
 const html = require("choo/html");
+const Hydra = require('./hydra-canvas.js')
 
-module.exports = (contents) => {
+module.exports = (state, contents) => {
   const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
   const dates = [];
   const dateOptions = { hour: "2-digit", minute: "2-digit" };
   for (let i = 0; i < contents.length; i++) {
     const s = contents[i];
-    let image = s.attachments[0].thumbnails.full.url;
+    let image;
+    if (s.attachments) {
+      image = s.attachments[0].thumbnails.full.url;
+    }
     let imageElt;
     if (image != undefined) {
       imageElt = html`
         <img style="object-fit: cover;aspect-ratio: 1/1" src="${image}" loading="lazy" />
       `;
-    } else {
-      imageElt = html`<p>The image is currently on loan</p>`
+    } else if (s.name == "You") {
+      imageElt = state.cache(Hydra, 'my-hydra').render()//html`<p>The image is currently on loan</p>`
     }
     dates.push(
       {dom: html`

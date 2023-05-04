@@ -32,7 +32,15 @@ module.exports = class extends Component {
     } else {
       hydra = this.state.hydra;
     }
-    osc().out()
+    // osc().out()
+    s0.initCam();
+    src(s0).saturate(2).scale(1,-4/3).layer(
+      src(o0).mask(osc(1,5).pixelate(1,1).thresh(.01,0))
+      
+    )
+      .modulatePixelate(noise().pixelate(8,8).thresh(.6),-1000,1008)
+      .out(o0);
+
   }
 
   update() {

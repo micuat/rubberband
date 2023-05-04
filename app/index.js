@@ -39,9 +39,9 @@ airtableLoader.load(
   },
   // done
   () => {
-    app.state.schedule = require("./schedule.js")(airdata);
+    app.state.schedule = require("./schedule.js")(app.state, airdata);
     app.emit('render')
-
+    
     if (app.state.query.auto) {
       document.querySelector("body").style = "cursor: none"
       setInterval(() => {
