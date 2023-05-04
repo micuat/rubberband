@@ -47,17 +47,22 @@ airtableLoader.load(
     
     if (app.state.query.auto) {
       document.querySelector("body").style = "cursor: none"
-      setInterval(() => {
+      const next = () => {
         let N = airdata.length + 5;
         let index = (Math.random() * N) | 0;
         if (index < airdata.length) {
           // document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
-          scrollIntoView(document.getElementById(`section-${index}`), { time: 3000 })
+          scrollIntoView(document.getElementById(`section-${index}`), { time: 2000 }, () => {
+            setTimeout(next, 3000);
+          })
         }
         else {
-          scrollIntoView(document.getElementById(`container`), { time: 3000 })
+          scrollIntoView(document.getElementById(`container`), { time: 2000 }, () => {
+            setTimeout(next, 3000);
+          })
         }
-      }, 3000);
+      }
+      setTimeout(next, 3000);
     }
 
   }
