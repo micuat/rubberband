@@ -48,7 +48,12 @@ airtableLoader.load(
     let lastone = -1;
     
     if (app.state.query.auto && false) {
-      document.querySelector("body").style = "cursor: none"
+      // document.querySelector("body").style = "cursor: none";
+      let lastMove = -1;
+      addEventListener('mousemove', () => {
+        let t = +new Date / 1000;
+        lastMove = t;
+      }, false);
       const next = () => {
         let N = airdata.length + 5;
         let index = (Math.random() * N) | 0;
