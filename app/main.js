@@ -8,6 +8,14 @@ module.exports = function(state, emit) {
   const contents = state.schedule?.map(e => e.dom);
   return html`
     <div>
+      <img style="
+        position: fixed;
+        width: 200px;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        ${ state.query.auto ? "display: block" : "display: none" };"
+        src="https://cdn.glitch.global/94071be9-32ff-4e53-9cde-593c4e7bf2cd/frame.png?v=1683487038207" />
       <div id="main">
         <div id="container">
           <header>

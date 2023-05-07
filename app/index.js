@@ -47,7 +47,7 @@ airtableLoader.load(
     
     let lastone = -1;
     
-    if (app.state.query.auto) {
+    if (app.state.query.auto && false) {
       document.querySelector("body").style = "cursor: none"
       const next = () => {
         let N = airdata.length + 5;
