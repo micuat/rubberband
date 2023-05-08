@@ -47,7 +47,7 @@ airtableLoader.load(
     
     let lastone = -1;
     
-    if (app.state.query.auto && false) {
+    if (app.state.query.auto) {
       // document.querySelector("body").style = "cursor: none";
       let lastMove = -1;
       addEventListener('mousemove', () => {
@@ -81,6 +81,7 @@ airtableLoader.load(
       
       setInterval(() => {
         let t = +new Date / 1000;
+        console.log(t - lastMove)
         if (t - lastMove < 15) return;
         
         let N = airdata.length + 5;
@@ -91,7 +92,7 @@ airtableLoader.load(
             time: Math.abs(lastone - index) * 500 + 100,
             ease: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
           }, () => {
-            setTimeout(next, 3000);
+            // setTimeout(next, 3000);
             lastone = index;
           })
         }
@@ -100,7 +101,7 @@ airtableLoader.load(
             time: Math.abs(lastone - index) * 500 + 100,
             ease: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
           }, () => {
-            setTimeout(next, 3000);
+            // setTimeout(next, 3000);
             lastone = -1;
           })
         }
