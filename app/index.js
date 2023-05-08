@@ -54,6 +54,10 @@ airtableLoader.load(
         let t = +new Date / 1000;
         lastMove = t;
       }, false);
+      addEventListener('wheel', () => {
+        let t = +new Date / 1000;
+        lastMove = t;
+      }, false);
       const next = () => {
         let N = airdata.length + 5;
         let index = (Math.random() * N) | 0;
@@ -82,7 +86,7 @@ airtableLoader.load(
       setInterval(() => {
         let t = +new Date / 1000;
         console.log(t - lastMove)
-        if (t - lastMove < 15) return;
+        if (t - lastMove < 60) return;
         
         let N = airdata.length + 5;
         let index = (Math.random() * N) | 0;
