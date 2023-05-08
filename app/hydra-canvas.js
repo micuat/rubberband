@@ -20,6 +20,7 @@ module.exports = class extends Component {
     const canvas = document.createElement("canvas");
     canvas.width = hydraCanvas.width;
     canvas.height = hydraCanvas.height;
+    canvas.style = "max-width: 100%;"
 
     if (this.state.hydra == undefined) {
       var hydra = new Hydra({
@@ -59,7 +60,7 @@ module.exports = class extends Component {
       this.canvas = this.state.canvas;
     }
     return html`
-      <div id="hydra-holder">
+      <div style="max-width: 100%; " id="hydra-holder">
         ${this.canvas}
       </div>
     `;

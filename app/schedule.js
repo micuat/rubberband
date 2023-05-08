@@ -37,9 +37,12 @@ module.exports = (state, contents) => {
     let imageElt;
     if (image != undefined) {
       imageElt = html`
-        <img style="object-fit: cover;aspect-ratio: 1/1" src="${image}" loading="lazy" />
+        <img style="max-width: 100%; object-fit: cover;aspect-ratio: 1/1" src="${image}" loading="lazy" />
       `;
     } else if (s.name == "You") {
+      if (isMobile) {
+        continue;
+      }
       imageElt = state.cache(Hydra, 'my-hydra').render()//html`<p>The image is currently on loan</p>`
     }
     dates.push(
