@@ -105,7 +105,7 @@ airtableLoader.load(
             lastone = -1;
           })
         }
-      }, 5000);
+      }, 10 * 1000);
     }
 
   }
