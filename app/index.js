@@ -77,7 +77,34 @@ airtableLoader.load(
           })
         }
       }
-      setTimeout(next, 3000);
+      // setTimeout(next, 3000);
+      
+      setInterval(() => {
+        let t = +new Date / 1000;
+        if (t - lastMove < 15) return;
+        
+        let N = airdata.length + 5;
+        let index = (Math.random() * N) | 0;
+        if (index < airdata.length) {
+          // document.getElementById(`section-${index}`).scrollIntoView({behavior:"smooth"});
+          scrollIntoView(document.getElementById(`section-${index}`), {
+            time: Math.abs(lastone - index) * 500 + 100,
+            ease: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
+          }, () => {
+            setTimeout(next, 3000);
+            lastone = index;
+          })
+        }
+        else {
+          scrollIntoView(document.getElementById(`container`), {
+            time: Math.abs(lastone - index) * 500 + 100,
+            ease: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
+          }, () => {
+            setTimeout(next, 3000);
+            lastone = -1;
+          })
+        }
+      }, 5000);
     }
 
   }
