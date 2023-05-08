@@ -37,7 +37,7 @@ module.exports = (state, contents) => {
     let imageElt;
     if (image != undefined) {
       imageElt = html`
-        <img style="max-width: 100%; object-fit: cover;aspect-ratio: 1/1" src="${image}" loading="lazy" />
+        <img class="el" style="max-width: 600px; width: 100%; object-fit: cover;aspect-ratio: 1/1" src="${image}" loading="lazy" />
       `;
     } else if (s.name == "You") {
       if (isMobile) {
