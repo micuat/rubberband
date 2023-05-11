@@ -1,4 +1,4 @@
-easy portfolio
+choo + css test
 ========
 
 by naoto

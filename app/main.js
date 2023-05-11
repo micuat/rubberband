@@ -11,8 +11,8 @@ module.exports = function(state, emit) {
     text-align: center;
     padding: 5px;
     &:hover {
-      background-color: grey;
-      color: green;
+      background-color: lightgrey;
+      color: black;
     }
   `;
   const mainCss = css`
