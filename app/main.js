@@ -46,11 +46,15 @@ export default function(state, emit) {
   `;
   
   function hoverin(ev) {
-    osc(30,0.1,1.5).out()
+    src(o0).modulate(
+      osc(6,0,1.5).brightness(-.5).modulate(noise(3).sub(gradient()),1),0.01)
+      .out()
     state.hover = true;
+    emit("render");
   }
   function hoverout(ev) {
-    osc().out()
+    osc(30,0.1,1.5).out()
     state.hover = false;
+    emit("render");
   }
 };

@@ -26,7 +26,7 @@ app.route("/", main);
 app.mount("#choomount");
 
 app.emitter.on("DOMContentLoaded", () => {
-  osc().out();
+  osc(30,0.1,1.5).out()
 });
 
 
