@@ -6,7 +6,9 @@ export default defineConfig({
   root: 'app',
   build: {
     outDir: "build",
-    target: "es2015"
+    rollupOptions: {
+      file: 'bundle.js',
+    },
   },
   server: {
     host:"0.0.0.0",

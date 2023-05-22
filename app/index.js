@@ -1,6 +1,6 @@
 // import choo
-const choo = require("choo");
-const html = require("choo/html");
+import choo from "choo";
+import html from "choo/html";
 
 // initialize choo
 const app = choo({ hash: true });
@@ -18,7 +18,7 @@ function notFound() {
 }
 
 // import a template
-const main = require("./main.js");
+import main from "./main.js";
 
 app.route("/", main);
 
