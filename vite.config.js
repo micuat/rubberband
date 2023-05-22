@@ -4,6 +4,9 @@ import { defineConfig } from "vite";
 export default defineConfig({
   plugins: [],
   root: 'app',
+  define: {
+    global: {} // fix for right-now in hydra-synth
+  },
   build: {
     outDir: "build",
     rollupOptions: {
