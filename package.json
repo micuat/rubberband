@@ -9,16 +9,16 @@
     "watch": "watchify app/index.js -o build/bundle.js"
   },
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "serve": "vite preview"
   },
   "dependencies": {
     "static-server": "^3.0.0",
     "watchify": "^4.0.0",
     "choo": "^7.1.0",
     "@emotion/css": "^11.11.0",
-    "esbuild": "^0.17.19"
+    "vite": "^4.3.8"
   },
   "engines": {
     "node": "14.x"
