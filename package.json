@@ -3,16 +3,22 @@
   "version": "0.0.1",
   "description": "What am I about?",
   "main": "index.html",
-  "scripts": {
+  "2scripts": {
     "serve": "static-server -n index.html -p 8000 build",
     "start": "npm run watch & npm run serve",
     "watch": "watchify app/index.js -o build/bundle.js"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "static-server": "^3.0.0",
     "watchify": "^4.0.0",
     "choo": "^7.1.0",
-    "@emotion/css": "^11.11.0"
+    "@emotion/css": "^11.11.0",
+    "esbuild": "^0.17.19"
   },
   "engines": {
     "node": "14.x"
