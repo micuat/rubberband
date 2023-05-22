@@ -25,4 +25,13 @@ app.route("/", main);
 // start app
 app.mount("#choomount");
 
+app.emitter.on("DOMContentLoaded", () => {
+  if (Math.random() > 0.5) {
+    osc().out();
+  }
+  else {
+    osc(30,0.1,1.5).out();
+  }
+});
+
 

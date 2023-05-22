@@ -30,12 +30,16 @@ export default function(state, emit) {
         color: black;
       }
     }
+    canvas {
+      position: absolute;
+    
+    }
   `;
   
   return html`
     <div class=${ mainCss }>
       <div class="msg">
-        hello beautiful world
+        hello beautiful people
       </div>
       ${ state.cache(HydraCanvas, 'my-hydra').render() }
     </div>
