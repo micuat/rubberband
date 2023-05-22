@@ -7,6 +7,12 @@ const mainCss = css`
 position: absolute;
 top: 0px;
 left: 0px;
+width: 100%;
+height: 100%;
+canvas {
+  width: 100%;
+  height: 100%;
+}
 `;
 
 export default class Map extends Component {
@@ -26,7 +32,7 @@ export default class Map extends Component {
 
     if (this.state.hydra == undefined) {
       this.state.hydra = new Hydra({
-        canvas: this.canvas,
+        canvas: hydraCanvas,
         detectAudio: false,
         width: hydraCanvas.width,
         height: hydraCanvas.height
@@ -42,8 +48,8 @@ export default class Map extends Component {
 
   createElement(center) {
     return html`
-      <div class="hydra-holder">
-        <canvas class="hydra-canvas ${ mainCss }"></canvas>
+      <div class="hydra-holder ${ mainCss }">
+        <canvas class="hydra-canvas"></canvas>
       </div>
     `;
   }
