@@ -5,7 +5,10 @@ export default defineConfig({
   plugins: [],
   root: 'app',
   define: {
-    global: {} // fix for right-now in hydra-synth
+    // fix for hydra-synth
+    global: {
+      window: {}
+    }
   },
   build: {
     outDir: "build",

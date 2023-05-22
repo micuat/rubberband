@@ -3,11 +3,6 @@
   "version": "0.0.1",
   "description": "What am I about?",
   "main": "index.html",
-  "2scripts": {
-    "serve": "static-server -n index.html -p 8000 build",
-    "start": "npm run watch & npm run serve",
-    "watch": "watchify app/index.js -o build/bundle.js"
-  },
   "scripts": {
     "start": "vite",
     "build": "vite build",

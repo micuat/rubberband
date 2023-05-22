@@ -4,6 +4,8 @@
 import html from "choo/html";
 import { css } from "@emotion/css";
 
+import HydraCanvas from "./hydra-canvas.js";
+
 // export module
 export default function(state, emit) {
 
@@ -17,7 +19,7 @@ export default function(state, emit) {
     justify-content: center;
     align-items: center;
     align-content: center;
-    div {
+    div.msg {
       color: pink;
       font-size: 1.3em;
       border: solid black;
@@ -32,9 +34,10 @@ export default function(state, emit) {
   
   return html`
     <div class=${ mainCss }>
-      <div>
+      <div class="msg">
         hello beautiful world
       </div>
+      ${ state.cache(HydraCanvas, 'my-hydra').render() }
     </div>
   `;
 };
