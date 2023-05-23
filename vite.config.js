@@ -25,9 +25,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       ...commonConfig,
       define: {
         // fix for hydra-synth
-        global: {
-          window: {}
-        }
+        global: "window"
       },  
     }
   } else {
