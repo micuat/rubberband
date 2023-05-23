@@ -1,3 +1,4 @@
+import main from "./main.js";
 // import choo
 import choo from "choo";
 import html from "choo/html";
@@ -18,7 +19,6 @@ function notFound() {
 }
 
 // import a template
-import main from "./main.js";
 
 app.route("/", main);
 

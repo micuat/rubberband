@@ -1,10 +1,7 @@
-// import choo's template helper
-// const html = require("choo/html");
-// const { css } = require("@emotion/css");
-import html from "choo/html";
 import { css } from "@emotion/css";
+import html from "choo/html";
 
-import HydraCanvas from "./hydra-canvas.js";
+// import HydraCanvas from "./hydra-canvas.js";
 
 const mainCss = css`
   width: 100%;
@@ -38,23 +35,30 @@ export default function(state, emit) {
   let msg = state.hover ? "hello beautiful people" : "hover over me"
   return html`
     <div class=${ mainCss }>
-      <div class="msg" onmouseover=${ hoverin } onmouseout=${ hoverout }>
+      <div class="msg" >
         ${ msg }
       </div>
-      ${ state.cache(HydraCanvas, 'my-hydra').render(state, emit) }
     </div>
   `;
+//   return html`
+//     <div class=${ mainCss }>
+//       <div class="msg" onmouseover=${ hoverin } onmouseout=${ hoverout }>
+//         ${ msg }
+//       </div>
+//       ${ state.cache(HydraCanvas, 'my-hydra').render(state, emit) }
+//     </div>
+//   `;
   
-  function hoverin(ev) {
-    src(o0).modulate(
-      osc(6,0,1.5).brightness(-.5).modulate(noise(3).sub(gradient()),1),0.01)
-      .out()
-    state.hover = true;
-    emit("render");
-  }
-  function hoverout(ev) {
-    osc(30,0.1,1.5).out()
-    state.hover = false;
-    emit("render");
-  }
+//   function hoverin(ev) {
+//     src(o0).modulate(
+//       osc(6,0,1.5).brightness(-.5).modulate(noise(3).sub(gradient()),1),0.01)
+//       .out()
+//     state.hover = true;
+//     emit("render");
+//   }
+//   function hoverout(ev) {
+//     osc(30,0.1,1.5).out()
+//     state.hover = false;
+//     emit("render");
+//   }
 };
