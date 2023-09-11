@@ -1,6 +1,4 @@
 // import choo's template helper
-// const html = require("choo/html");
-// const { css } = require("@emotion/css");
 import html from "choo/html";
 import { css } from "@emotion/css";
 
