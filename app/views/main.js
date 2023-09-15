@@ -2,7 +2,7 @@
 import html from "choo/html";
 import { css } from "@emotion/css";
 
-import HydraCanvas from "./hydra-canvas.js";
+import HydraCanvas from "../components/hydra-canvas.js";
 
 const mainCss = css`
   width: 100%;
