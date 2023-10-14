@@ -5,9 +5,9 @@ import html from "choo/html";
 // initialize choo
 const app = choo({ hash: true });
 
-import game from "./stores/game";
+import machine from "./stores/machine";
 
-app.use(game);
+app.use(machine);
 
 app.route("/*", notFound);
 

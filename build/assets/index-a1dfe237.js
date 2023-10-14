@@ -1982,7 +1982,7 @@ var dom = function(document2) {
 var browser$1 = dom(document);
 var html = browser$1;
 const html$1 = /* @__PURE__ */ getDefaultExportFromCjs(html);
-function game(state, emitter) {
+function machine(state, emitter) {
   state.prompt = "hola";
 }
 const __viteBrowserExternal = {};
@@ -15293,8 +15293,8 @@ class Map extends Component {
 function main(state, emit) {
   return html$1`
     <div class="absolute left-0 top-0 w-screen h-screen">
-      <div class="absolute left-0 top-0 w-full h-full z-10">
-        <div class="text-4xl font-bold">
+      <div class="absolute left-0 top-0 w-full h-full z-10 flex items-center justify-center">
+        <div class="text-4xl font-bold bg-white/80">
           ${state.prompt}
         </h1>
       </div>
@@ -15303,7 +15303,7 @@ function main(state, emit) {
   `;
 }
 const app = choo$1({ hash: true });
-app.use(game);
+app.use(machine);
 app.route("/*", notFound);
 function notFound() {
   return html$1`
