@@ -14,9 +14,11 @@ const mainCss = css`
 
 // export module
 export default function(state, emit) {
-  let msg = state.hover ? "hello beautiful people" : "hover over me"
   return html`
     <div class=${ mainCss }>
+      <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
       ${ state.cache(HydraCanvas, 'my-hydra').render(state, emit) }
     </div>
   `;

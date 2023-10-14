@@ -16433,9 +16433,11 @@ const mainCss = css`
   }
 `;
 function main(state, emit) {
-  state.hover ? "hello beautiful people" : "hover over me";
   return html$1`
     <div class=${mainCss}>
+      <h1 class="text-3xl font-bold underline">
+        Hello world!
+      </h1>
       ${state.cache(Map, "my-hydra").render(state, emit)}
     </div>
   `;
