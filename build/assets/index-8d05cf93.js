@@ -5084,7 +5084,7 @@ function formatArguments(transform2, startIndex, synthContext) {
   const defaultArgs = transform2.transform.inputs;
   const userArgs = transform2.userArgs;
   const { generators } = transform2.synth;
-  const { src: src2 } = generators;
+  const { src } = generators;
   return defaultArgs.map((input, index) => {
     const typedArg = {
       value: input.default,
@@ -5155,7 +5155,7 @@ function formatArguments(transform2, startIndex, synthContext) {
       } else {
         if (typedArg.value.getTexture && input.type === "vec4") {
           var x1 = typedArg.value;
-          typedArg.value = src2(x1);
+          typedArg.value = src(x1);
           typedArg.isUniform = false;
         }
       }
@@ -11606,8 +11606,8 @@ var regl$1 = { exports: {} };
           code.push('"', name, '":', procedures[name].toString(), ",");
         });
         code.push("}");
-        var src2 = join(code).replace(/;/g, ";\n").replace(/}/g, "}\n").replace(/{/g, "{\n");
-        var proc2 = Function.apply(null, linkedNames.concat(src2));
+        var src = join(code).replace(/;/g, ";\n").replace(/}/g, "}\n").replace(/{/g, "{\n");
+        var proc2 = Function.apply(null, linkedNames.concat(src));
         return proc2.apply(null, linkedValues);
       }
       return {
@@ -16428,52 +16428,17 @@ class Map extends Component {
 const mainCss = css`
   width: 100%;
   height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  div.msg {
-    color: pink;
-    background-color: white;
-    font-size: 1.3em;
-    border: solid black;
-    text-align: center;
-    padding: 5px;
-    &:hover {
-      background-color: lightgrey;
-      color: black;
-    }
-  }
   .hydra-holder {
     z-index: -1;
   }
 `;
 function main(state, emit) {
-  let msg = state.hover ? "hello beautiful people" : "hover over me";
+  state.hover ? "hello beautiful people" : "hover over me";
   return html$1`
     <div class=${mainCss}>
-      <div class="msg" onmouseover=${hoverin} onmouseout=${hoverout}>
-        ${msg}
-      </div>
       ${state.cache(Map, "my-hydra").render(state, emit)}
     </div>
   `;
-  function hoverin(ev) {
-    src(o0).modulate(
-      osc(6, 0, 1.5).brightness(-0.5).modulate(noise(3).sub(gradient()), 1),
-      0.01
-    ).out();
-    state.hover = true;
-    emit("render");
-  }
-  function hoverout(ev) {
-    osc(30, 0.1, 1.5).out();
-    state.hover = false;
-    emit("render");
-  }
 }
 const app = choo$1({ hash: true });
 app.route("/*", notFound);

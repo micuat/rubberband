@@ -4,10 +4,10 @@ import { defineConfig } from "vite";
 export default defineConfig(({ command, mode, ssrBuild }) => {
   const commonConfig = {
     plugins: [],
-    root: 'app',
+    root: '.',
     build: {
       minify: false,
-      outDir: "../build",
+      outDir: "build",
       commonjsOptions: {
       }
     },
