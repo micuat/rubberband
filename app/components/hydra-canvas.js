@@ -1,19 +1,6 @@
 import html from "choo/html";
 import Component from "choo/component";
 import Hydra from "hydra-synth";
-import { css } from "@emotion/css";
-
-const mainCss = css`
-position: absolute;
-top: 0px;
-left: 0px;
-width: 100%;
-height: 100%;
-canvas {
-  width: 100%;
-  height: 100%;
-}
-`;
 
 export default class Map extends Component {
   constructor(id, state, emit) {
@@ -48,8 +35,8 @@ export default class Map extends Component {
 
   createElement(center) {
     return html`
-      <div class="hydra-holder ${ mainCss }">
-        <canvas class="hydra-canvas"></canvas>
+      <div class="absolute left-0 top-0 w-screen h-screen z-0">
+        <canvas class="absolute w-full h-full z-0"></canvas>
       </div>
     `;
   }

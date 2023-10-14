@@ -5,6 +5,10 @@ import html from "choo/html";
 // initialize choo
 const app = choo({ hash: true });
 
+import game from "./stores/game";
+
+app.use(game);
+
 app.route("/*", notFound);
 
 function notFound() {
@@ -18,7 +22,7 @@ function notFound() {
 }
 
 // import a template
-import main from "./views/main.js";
+import main from "./views/main";
 
 app.route("/", main);
 

@@ -1,24 +1,18 @@
 // import choo's template helper
 import html from "choo/html";
-import { css } from "@emotion/css";
 
 import HydraCanvas from "../components/hydra-canvas.js";
 
-const mainCss = css`
-  width: 100%;
-  height: 100vh;
-  .hydra-holder {
-    z-index: -1;
-  }
-`;
-
 // export module
 export default function(state, emit) {
+  
   return html`
-    <div class=${ mainCss }>
-      <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+    <div class="absolute left-0 top-0 w-screen h-screen">
+      <div class="absolute left-0 top-0 w-full h-full z-10">
+        <div class="text-4xl font-bold">
+          ${ state.prompt }
+        </h1>
+      </div>
       ${ state.cache(HydraCanvas, 'my-hydra').render(state, emit) }
     </div>
   `;

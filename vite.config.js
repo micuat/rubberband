@@ -11,10 +11,6 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
       commonjsOptions: {
       }
     },
-    content: [
-      "./index.html",
-      "./app/**/*.{js,ts,jsx,tsx}",
-    ],
     server: {
       host: "0.0.0.0",
       port: 3000,
