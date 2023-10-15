@@ -11,7 +11,7 @@ export default function(state, emit) {
       <div class="absolute left-0 top-0 w-full h-full z-10 flex items-center justify-center">
         <div class="text-4xl font-bold bg-white/80">
           ${ state.prompt }
-        </h1>
+        </div>
       </div>
       ${ state.cache(HydraCanvas, 'my-hydra').render(state, emit) }
     </div>
