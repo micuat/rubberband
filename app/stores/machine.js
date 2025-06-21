@@ -59,6 +59,13 @@ export default function(state, emitter) {
     renderHydra();
   });
 
+  emitter.on("set asset", (i) => {
+    curIndex = i % state.assets.length;
+    state.currentAsset = state.assets[curIndex];
+    emitter.emit("render");
+    renderHydra();
+  });
+
   function renderHydra() {
     s0.initImage(state.currentAsset.color);
     s1.initImage(state.currentAsset.edge);

@@ -2,6 +2,7 @@
 import html from "choo/html";
 
 import HydraCanvas from "../components/hydra-canvas.js";
+import DrawerElement from "../components/drawer.js";
 
 // export module
 export default function(state, emit) {
@@ -13,6 +14,7 @@ export default function(state, emit) {
           ${ state.currentAsset.name }
         </div>
         ${ state.cache(HydraCanvas, 'my-hydra').render(state, emit) }
+        ${ state.cache(DrawerElement, 'my-draw').render(state, emit) }
       </div>
       <button class="border-2 border-black" onclick=${ next }>next</button>
     </div>
