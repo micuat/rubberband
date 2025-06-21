@@ -35,8 +35,8 @@ export default class Map extends Component {
 
   createElement(center) {
     return html`
-      <div class="absolute left-0 top-0 w-screen h-screen z-0">
-        <canvas class="absolute w-full h-full z-0"></canvas>
+      <div class="relative z-0">
+        <canvas class="w-128 h-128 z-0"></canvas>
       </div>
     `;
   }
