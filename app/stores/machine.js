@@ -62,10 +62,12 @@ export default function(state, emitter) {
   function renderHydra() {
     s0.initImage(state.currentAsset.color);
     s1.initImage(state.currentAsset.edge);
-    src(s0).layer(
-      src(s1).invert().luma(0.6).invert()
-      .mask(shape(4,1,0)).modulateScale(
-        noise(3).mult(osc(3,-0.4).thresh(.5,.2).kaleid(999)),0.04
+    src(s0).layer(src(s1).saturate(0)).layer(
+      src(s1).invert().luma(0.4).invert()
+      .mask(shape(4,1,0).mult(osc(3,-0.4).thresh(.5,.4).kaleid(999)))
+      .modulateScale(
+        osc(6,0,1.6).modulate(noise(.1).sub(gradient()),1)
+        .mult(osc(3,-0.4).thresh(.5,.4).kaleid(999)),1
       )
     ).out()
   }
