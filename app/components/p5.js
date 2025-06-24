@@ -26,7 +26,6 @@ export default class extends Component {
         // p.resizeCanvas(400, 400);
         p.parentElement = element;
         // p.canvas.style = "";
-        p.canvas.style("position", "absolute")
       }
     }
     polling();

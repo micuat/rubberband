@@ -1869,86 +1869,6 @@ var dom = function(document2) {
 var browser$1 = dom(document);
 var html = browser$1;
 const html$1 = /* @__PURE__ */ getDefaultExportFromCjs(html);
-function machine(state, emitter) {
-  state.prompt = "hola";
-  state.centroid = { x: 0, y: 0 };
-  state.assets = [
-    {
-      color: "/0_IMG_5996.JPG",
-      edge: "/e0_IMG_5996.JPG",
-      name: "pool tension"
-    },
-    {
-      color: "/1_IMG_6022.JPG",
-      edge: "/e1_IMG_6022.JPG",
-      name: "quadruple tension"
-    },
-    {
-      color: "/2_IMG_5991.JPG",
-      edge: "/e2_IMG_5991.JPG",
-      name: "disturbed tension"
-    },
-    {
-      color: "/3_IMG_6010.JPG",
-      edge: "/e3_IMG_6010.JPG",
-      name: "grounded tension"
-    },
-    {
-      color: "/5_IMG_6019.JPG",
-      edge: "/e5_IMG_6019.JPG",
-      name: "classic tension"
-    },
-    {
-      color: "/4_IMG_6013.JPG",
-      edge: "/e4_IMG_6013.JPG",
-      name: "kinky tension"
-    },
-    {
-      color: "/6_IMG_6005.JPG",
-      edge: "/e6_IMG_6005.JPG",
-      name: "clean double tension"
-    },
-    {
-      color: "/7_IMG_6012.JPG",
-      edge: "/e7_IMG_6012.JPG",
-      name: "rubberband tension"
-    },
-    {
-      color: "/8_IMG_6004.JPG",
-      edge: "/e8_IMG_6004.JPG",
-      name: "intension"
-    }
-  ];
-  let curIndex = 0;
-  state.currentAsset = state.assets[curIndex];
-  emitter.on("next asset", () => {
-    curIndex = (curIndex + 1) % state.assets.length;
-    state.currentAsset = state.assets[curIndex];
-    emitter.emit("render");
-    renderHydra();
-  });
-  emitter.on("set asset", (i) => {
-    curIndex = i % state.assets.length;
-    state.currentAsset = state.assets[curIndex];
-    emitter.emit("render");
-    renderHydra();
-  });
-  function renderHydra() {
-    s0.initImage(state.currentAsset.color);
-    s1.initImage(state.currentAsset.edge);
-    src(o1).blend(s0, 0.03).out(o1);
-    src(o2).blend(s1, 0.03).out(o2);
-    src(o1).layer(src(o2).saturate(0)).layer(
-      src(s1).invert().luma(0.4).invert().mask(shape(4, 0, 0.7).modulate(solid(() => -state.centroid.x, () => -state.centroid.y), 1)).modulate(
-        osc(6, 0, 1.6).modulate(noise(0.1, 0.01).sub(gradient()), 1).mult(osc(10, -0.1).thresh(0.5, 0.4).kaleid(999).modulate(solid(() => -state.centroid.x, () => -state.centroid.y), 1)),
-        0.1
-      )
-    ).scale(1, () => window.innerHeight / window.innerWidth).out();
-  }
-  emitter.on("DOMContentLoaded", () => {
-    renderHydra();
-  });
-}
 const __viteBrowserExternal = {};
 const __viteBrowserExternal$1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
@@ -2218,6 +2138,169 @@ Nanocomponent.prototype.update = function() {
 };
 var component = nanocomponent;
 const Component = /* @__PURE__ */ getDefaultExportFromCjs(component);
+class TextTweenElement extends Component {
+  constructor(id, state, emit) {
+    super(id);
+    this.local = state.components[id] = {};
+    this.state = state;
+    this.emit = emit;
+  }
+  load(element) {
+    this.span = element.querySelector("span");
+  }
+  update({ prompt, fontSize }) {
+    return false;
+  }
+  createElement({ prompt, fontSize = "1em" } = {}) {
+    this.prompt = prompt;
+    return html$1`<div style="font-size: ${fontSize}">
+    <span></span>
+    </div>`;
+  }
+  textTween(target, { fontSize, fontFamily, rotate, posY } = {}) {
+    let safetySwitch = false;
+    if (this.tweening == true) {
+      safetySwitch = true;
+      this.state.killSwitch = true;
+    }
+    const org = this.span.innerText;
+    let text = org;
+    this.tweening = true;
+    let state = "delete";
+    const step = () => {
+      if (safetySwitch != true && this.state.killSwitch) {
+        this.state.killSwitch = false;
+        this.tweening = false;
+        return;
+      }
+      if (state === "delete") {
+        text = text.substring(0, text.length - 1);
+        if (text.length == 0) {
+          if (fontSize) {
+            this.span.style.fontSize = fontSize;
+          }
+          if (fontFamily) {
+            this.span.style.fontFamily = fontFamily;
+          }
+          if (rotate) {
+            if (posY == "bottom") {
+              this.span.style.transform = `translate(0, 50vh) translate(0, -${fontSize}) translate(-50%, -50%) rotate(${rotate})`;
+            } else if (posY == "top") {
+              this.span.style.transform = `translate(0, -50vh) translate(0, ${fontSize}) translate(-50%, -50%) rotate(${rotate})`;
+            } else {
+              this.span.style.transform = `translate(-50%, -50%) rotate(${rotate})`;
+            }
+          }
+          state = "type";
+          if (target.length == 0) {
+            state = "done";
+            this.tweening = false;
+            if (this.doneCallback) {
+              this.doneCallback();
+            }
+          }
+        }
+      } else if (state === "type") {
+        text = text + target[text.length];
+        if (text.length == target.length) {
+          state = "done";
+          this.tweening = false;
+          if (this.doneCallback) {
+            this.doneCallback();
+          }
+        }
+      }
+      this.span.innerText = text;
+      this.emit("DOMTitleChange", text.length ? text : "　");
+      if (state !== "done") {
+        setTimeout(step, state === "type" ? 50 : 20);
+      }
+    };
+    setTimeout(step, 30);
+  }
+}
+function machine(state, emitter) {
+  state.prompt = "hola";
+  state.centroid = { x: 0, y: 0 };
+  state.assets = [
+    {
+      color: "/0_IMG_5996.JPG",
+      edge: "/e0_IMG_5996.JPG",
+      name: "pool tension"
+    },
+    {
+      color: "/1_IMG_6022.JPG",
+      edge: "/e1_IMG_6022.JPG",
+      name: "quadruple tension"
+    },
+    {
+      color: "/2_IMG_5991.JPG",
+      edge: "/e2_IMG_5991.JPG",
+      name: "disturbed tension"
+    },
+    {
+      color: "/3_IMG_6010.JPG",
+      edge: "/e3_IMG_6010.JPG",
+      name: "grounded tension"
+    },
+    {
+      color: "/5_IMG_6019.JPG",
+      edge: "/e5_IMG_6019.JPG",
+      name: "classic tension"
+    },
+    {
+      color: "/4_IMG_6013.JPG",
+      edge: "/e4_IMG_6013.JPG",
+      name: "kinky tension"
+    },
+    {
+      color: "/6_IMG_6005.JPG",
+      edge: "/e6_IMG_6005.JPG",
+      name: "clean double tension"
+    },
+    {
+      color: "/7_IMG_6012.JPG",
+      edge: "/e7_IMG_6012.JPG",
+      name: "rubberband tension"
+    },
+    {
+      color: "/8_IMG_6004.JPG",
+      edge: "/e8_IMG_6004.JPG",
+      name: "intension"
+    }
+  ];
+  let curIndex = 0;
+  state.currentAsset = state.assets[curIndex];
+  emitter.on("next asset", () => {
+    curIndex = (curIndex + 1) % state.assets.length;
+    state.currentAsset = state.assets[curIndex];
+    state.cache(TextTweenElement, "my-text").textTween(state.currentAsset.name);
+    emitter.emit("render");
+    renderHydra();
+  });
+  emitter.on("set asset", (i) => {
+    curIndex = i % state.assets.length;
+    state.currentAsset = state.assets[curIndex];
+    state.cache(TextTweenElement, "my-text").textTween(state.currentAsset.name);
+    emitter.emit("render");
+    renderHydra();
+  });
+  function renderHydra() {
+    s0.initImage(state.currentAsset.color);
+    s1.initImage(state.currentAsset.edge);
+    src(o1).blend(s0, 0.03).out(o1);
+    src(o2).blend(s1, 0.03).out(o2);
+    src(o1).layer(src(o2).saturate(0)).layer(
+      src(s1).invert().luma(0.4).invert().mask(shape(4, 0, 0.7).modulate(solid(() => -state.centroid.x, () => -state.centroid.y), 1)).modulate(
+        osc(6, 0, 1.6).modulate(noise(0.1, 0.01).sub(gradient()), 1).mult(osc(10, -0.1).thresh(0.5, 0.4).kaleid(999).modulate(solid(() => -state.centroid.x, () => -state.centroid.y), 1)),
+        0.1
+      )
+    ).scale(1, () => window.innerHeight / window.innerWidth).out();
+  }
+  emitter.on("DOMContentLoaded", () => {
+    renderHydra();
+  });
+}
 var Output = function({ regl: regl2, precision, label = "", width, height }) {
   this.regl = regl2;
   this.precision = precision;
@@ -31932,7 +32015,6 @@ class P5Element extends Component {
       } else {
         element.appendChild(p.canvas);
         p.parentElement = element;
-        p.canvas.style("position", "absolute");
       }
     };
     polling();
@@ -32148,7 +32230,6 @@ class DrawerElement extends P5Element {
         if (centroid !== void 0 && centroid.dist(m) * R < 30) {
           captured = points.length;
           centroidLast = m;
-          console.log("oi");
           return;
         }
         for (let i = 0; i < points.length; i++) {
@@ -32204,7 +32285,7 @@ function main(state, emit) {
       </div>
       <div class="w-full flex flex-col items-center text-center justify-end h-screen">
         <div class="text-4xl font-bold bg-white/80 mb-24 uppercase">
-          ${state.currentAsset.name}
+          ${state.cache(TextTweenElement, "my-text").render(state, emit)}
         </div>
       </div>
     </div>

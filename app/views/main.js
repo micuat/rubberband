@@ -3,6 +3,7 @@ import html from "choo/html";
 
 import HydraCanvas from "../components/hydra-canvas.js";
 import DrawerElement from "../components/drawer.js";
+import TextTweenElement from "../components/text-tween-element.js";
 
 // export module
 export default function(state, emit) {
@@ -17,7 +18,7 @@ export default function(state, emit) {
       </div>
       <div class="w-full flex flex-col items-center text-center justify-end h-screen">
         <div class="text-4xl font-bold bg-white/80 mb-24 uppercase">
-          ${ state.currentAsset.name }
+          ${ state.cache(TextTweenElement, 'my-text').render(state, emit) }
         </div>
       </div>
     </div>

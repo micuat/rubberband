@@ -186,7 +186,6 @@ export default class extends P5Element {
         if (centroid !== undefined && centroid.dist(m) * R < 30) {
           captured = points.length;
           centroidLast = m;
-          console.log("oi")
           return;
         }
         for (let i = 0; i < points.length; i++) {

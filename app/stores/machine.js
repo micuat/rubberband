@@ -1,3 +1,5 @@
+import TextTweenElement from "../components/text-tween-element.js";
+
 export default function(state, emitter) {
   state.prompt = "hola"
   state.centroid = {x: 0, y: 0};
@@ -56,6 +58,7 @@ export default function(state, emitter) {
   emitter.on("next asset", () => {
     curIndex = (curIndex + 1) % state.assets.length;
     state.currentAsset = state.assets[curIndex];
+    state.cache(TextTweenElement, 'my-text').textTween(state.currentAsset.name);
     emitter.emit("render");
     renderHydra();
   });
@@ -63,6 +66,7 @@ export default function(state, emitter) {
   emitter.on("set asset", (i) => {
     curIndex = i % state.assets.length;
     state.currentAsset = state.assets[curIndex];
+    state.cache(TextTweenElement, 'my-text').textTween(state.currentAsset.name);
     emitter.emit("render");
     renderHydra();
   });
