@@ -23,9 +23,10 @@ export default class extends Component {
       }
       else {
         element.appendChild(p.canvas);
-        p.resizeCanvas(400, 400);
+        // p.resizeCanvas(400, 400);
         p.parentElement = element;
-        p.canvas.style = "";
+        // p.canvas.style = "";
+        p.canvas.style("position", "absolute")
       }
     }
     polling();
@@ -53,7 +54,9 @@ export default class extends Component {
 
   createElement({ width = window.innerWidth, height = window.innerHeight } = {}) {
 
-    return html`<div class="w-128 h-128">
-    </div>`
+    return html`
+      <div class="relative z-0 w-screen h-screen">
+      </div>
+    `
   }
 }

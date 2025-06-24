@@ -1,5 +1,6 @@
 export default function(state, emitter) {
   state.prompt = "hola"
+  state.centroid = {x: 0, y: 0};
 
   state.assets = [
     {
@@ -23,14 +24,14 @@ export default function(state, emitter) {
       name: "grounded tension",
     },
     {
-      color: "/4_IMG_6013.JPG",
-      edge: "/e4_IMG_6013.JPG",
-      name: "kinky tension",
-    },
-    {
       color: "/5_IMG_6019.JPG",
       edge: "/e5_IMG_6019.JPG",
       name: "classic tension",
+    },
+    {
+      color: "/4_IMG_6013.JPG",
+      edge: "/e4_IMG_6013.JPG",
+      name: "kinky tension",
     },
     {
       color: "/6_IMG_6005.JPG",
@@ -69,14 +70,23 @@ export default function(state, emitter) {
   function renderHydra() {
     s0.initImage(state.currentAsset.color);
     s1.initImage(state.currentAsset.edge);
-    src(s0).layer(src(s1).saturate(0)).layer(
+
+    src(o1).blend(s0,0.03).out(o1)
+    src(o2).blend(s1,0.03).out(o2)
+
+    src(o1).layer(src(o2).saturate(0)).layer(
       src(s1).invert().luma(0.4).invert()
-      .mask(shape(4,1,0).mult(osc(3,-0.4).thresh(.5,.4).kaleid(999)))
-      .modulateScale(
-        osc(6,0,1.6).modulate(noise(.1).sub(gradient()),1)
-        .mult(osc(3,-0.4).thresh(.5,.4).kaleid(999)),1
+      .mask(shape(4,0,0.7)
+      //.mult(osc(10,-0.1).thresh(.5,.4).kaleid(999)
+        .modulate(solid(()=>-state.centroid.x, ()=>-state.centroid.y), 1))
+      //)
+      .modulate(
+        osc(6,0,1.6).modulate(noise(.1,0.01).sub(gradient()),1)
+        .mult(osc(10,-0.1).thresh(.5,.4).kaleid(999).modulate(solid(()=>-state.centroid.x, ()=>-state.centroid.y), 1)),0.1
       )
-    ).out()
+    )
+    .scale(1, ()=>window.innerHeight/window.innerWidth)
+    .out()
   }
 
   emitter.on("DOMContentLoaded", () => {

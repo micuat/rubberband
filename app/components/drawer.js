@@ -25,20 +25,23 @@ export default class extends P5Element {
     const parent = pointsData.map(e => e.parent);
     
     let captured = -1;
+    let centroid;
+    let centroidLast;
 
     let hIndex = 0;
 
     const s = ( p ) => {
       p.setup = () => {
-        const canvas = p.createCanvas(400, 400);
+        const canvas = p.createCanvas(window.innerWidth, window.innerHeight);
         p.pixelDensity(1);
 
-        initialPoints.push(...pointsData.map(pt => p.createVector(pt.x, pt.y)))
-        points.push(...pointsData.map(pt => p.createVector(pt.x, pt.y)))      
+        const sc = 0.3;
+        initialPoints.push(...pointsData.map(pt => p.createVector(pt.x*sc, pt.y*sc)))
+        points.push(...pointsData.map(pt => p.createVector(pt.x*sc, pt.y*sc)))      
       };
 
       p.draw = () => {
-        p.background(100);
+        p.clear()
 	
         const T = p.millis() * 0.001;
         p.curveTightness(0);
@@ -46,8 +49,8 @@ export default class extends P5Element {
         p.translate(p.width / 2, p.height / 2);
         
         for (let i = 0; i < points.length; i++) {
-          const nv = p5.Vector.fromAngle(((p.noise(T, i * 0.1)-0.5) * Math.PI * 2));
-          nv.setMag((p.noise(i * 0.1, T) - 0.5) * 0.001)
+          const nv = p5.Vector.fromAngle(((p.noise(T*0.3, i * 0.1)-0.5) * Math.PI * 2));
+          nv.setMag((p.noise(i * 0.1, T*0.3) - 0.5) * 0.001)
           initialPoints[i].add(nv);
           
           const m = 0.45;
@@ -57,12 +60,13 @@ export default class extends P5Element {
           if (initialPoints[i].y < -m) initialPoints[i].y = -m;
           
           const v = p5.Vector.sub(points[i], initialPoints[i]);
-          v.limit(0.001);
+          v.limit(0.0008);
           points[i].sub(v);
         }
         
-        const centroid = stems.reduce((acc, cur) => p5.Vector.add(acc, points[cur]), p.createVector(0, 0))
+        centroid = stems.reduce((acc, cur) => p5.Vector.add(acc, points[cur]), p.createVector(0, 0))
         centroid.div(stems.length);
+        p.chooState.centroid = {x: centroid.x, y: centroid.y};
         
         p.push(); {
           const gradient = p.drawingContext
@@ -70,12 +74,14 @@ export default class extends P5Element {
                                   points[0].x * R, points[0].y * R, R);
       
           // Add three color stops
-          gradient.addColorStop(0, `hsl(${(T*10)%360}deg 100% 50%)`);
+          gradient.addColorStop(0, `hsl(${(hIndex*40)%360}deg, 100%, 50%, 0.9)`);
           // gradient.addColorStop(0.5, "blue");
-          gradient.addColorStop(1, `hsl(${(T*10+90)%360}deg 100% 50%)`);
+          gradient.addColorStop(1, `hsl(${(hIndex*40+90)%360}deg, 100%, 50%, 0.2)`);
       
           // Set the fill style and draw a rectangle
           p.drawingContext.fillStyle = gradient;
+          p.stroke(0);
+          p.strokeWeight(2);
       
           p.beginShape();
           let first;
@@ -99,41 +105,42 @@ export default class extends P5Element {
               vv.rotate((a1 - a0) / 2)
               vc.rotate(-Math.PI/2);
             }
+            const thickness = 0.02
             vv.rotate(-Math.PI/2);
-            p.curveVertex((pt.x + vv.x * 0.1) * R,
-                        (pt.y + vv.y * 0.1) * R);
+            p.curveVertex((pt.x + vv.x * thickness) * R,
+                        (pt.y + vv.y * thickness) * R);
             if (first === undefined) {
-              first = p.createVector((pt.x + vv.x * 0.1) * R,
-                                     (pt.y + vv.y * 0.1) * R);
+              first = p.createVector((pt.x + vv.x * thickness) * R,
+                                     (pt.y + vv.y * thickness) * R);
             }
             vv.rotate(Math.PI/2);
             if (childP !== undefined) {
-              p.curveVertex((childP.x + vc.x * 0.1) * R,
-                            (childP.y + vc.y * 0.1) * R);			
+              p.curveVertex((childP.x + vc.x * thickness) * R,
+                            (childP.y + vc.y * thickness) * R);			
               if (second === undefined) {
-                second = p.createVector((childP.x + vc.x * 0.1) * R,
-                                        (childP.y + vc.y * 0.1) * R);
+                second = p.createVector((childP.x + vc.x * thickness) * R,
+                                        (childP.y + vc.y * thickness) * R);
               }
               vc.rotate(Math.PI/2)
-              p.curveVertex((childP.x + vc.x * 0.1) * R,
-                            (childP.y + vc.y * 0.1) * R);			
+              p.curveVertex((childP.x + vc.x * thickness) * R,
+                            (childP.y + vc.y * thickness) * R);			
               if (third === undefined) {
-                third = p.createVector((childP.x + vc.x * 0.1) * R,
-                                       (childP.y + vc.y * 0.1) * R);
+                third = p.createVector((childP.x + vc.x * thickness) * R,
+                                       (childP.y + vc.y * thickness) * R);
               }
               vc.rotate(Math.PI/2)
-              p.curveVertex((childP.x + vc.x * 0.1) * R,
-                            (childP.y + vc.y * 0.1) * R);			
+              p.curveVertex((childP.x + vc.x * thickness) * R,
+                            (childP.y + vc.y * thickness) * R);			
             }
             else {
-              p.curveVertex((pt.x + vv.x * 0.1) * R,
-                            (pt.y + vv.y * 0.1) * R);
+              p.curveVertex((pt.x + vv.x * thickness) * R,
+                            (pt.y + vv.y * thickness) * R);
             }
             vv.rotate(Math.PI/2);
-            p.curveVertex((pt.x + vv.x * 0.1) * R,
-                          (pt.y + vv.y * 0.1) * R);
-            // last = p.createVector((pt.x + vv.x * 0.1) * R,
-            //                       (pt.y + vv.y * 0.1) * R);
+            p.curveVertex((pt.x + vv.x * thickness) * R,
+                          (pt.y + vv.y * thickness) * R);
+            // last = p.createVector((pt.x + vv.x * thickness) * R,
+            //                       (pt.y + vv.y * thickness) * R);
       
           }
           p.curveVertex(first.x, first.y);
@@ -146,7 +153,7 @@ export default class extends P5Element {
           p.noStroke();
           const x = pt.x * R;
           const y = pt.y * R;
-          p.circle(x, y, R*0.03);
+          p.circle(x, y, R*0.02);
         }
         p.push(); {
           p.noStroke();
@@ -160,7 +167,9 @@ export default class extends P5Element {
           p.circle(0, 0, r);
         } p.pop();
 
-        let ii = Math.floor(p.map(points[2].x, -0.5, 0.5, 0, 9, true));
+        let _ii = Math.floor(p.map(centroid.x, -0.5, 0.5, 0, 3, true));
+        let _jj = Math.floor(p.map(centroid.y, -0.5, 0.5, 0, 3, true));
+        let ii = _ii + _jj * 3;
         if (hIndex !== ii) {
           hIndex = ii;
           this.emit("set asset", hIndex);
@@ -168,12 +177,18 @@ export default class extends P5Element {
       };
       
       p.windowResized = () => {
-        // p.resizeCanvas(p.parentElement.clientWidth, p.parentElement.clientHeight);
+        p.resizeCanvas(p.parentElement.clientWidth, p.parentElement.clientHeight);
       }
 
       function pressed() {
         const R = Math.min(p.width, p.height);
         const m = p.createVector((p.mouseX - p.width/2) / R, (p.mouseY - p.height/2) / R);
+        if (centroid !== undefined && centroid.dist(m) * R < 30) {
+          captured = points.length;
+          centroidLast = m;
+          console.log("oi")
+          return;
+        }
         for (let i = 0; i < points.length; i++) {
           if (points[i].dist(m) * R < 30) {
             captured = i;
@@ -194,7 +209,13 @@ export default class extends P5Element {
       function moved() {
         const R = Math.min(p.width, p.height);
         const m = p.createVector((p.mouseX - p.width/2) / R, (p.mouseY - p.height/2) / R);
-        if (captured >= 0) {
+        if (captured == points.length) {
+          for (let i = 0; i < points.length; i++) {
+            points[i].add(p5.Vector.sub(m, centroidLast));
+          }
+          centroidLast = m;
+        }
+        else if (captured >= 0) {
           points[captured].set(m.x, m.y);
         }
       }

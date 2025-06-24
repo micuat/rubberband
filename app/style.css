@@ -18,6 +18,9 @@ html,
 body {
   font-family: "HK Grotesk", arial, sans-serif;
   margin: 0em;
+  user-select: none;
+  touch-action: none;
+  -webkit-user-select: none;
 }
 
 * {
