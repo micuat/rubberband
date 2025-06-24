@@ -3,7 +3,8 @@ import TextTweenElement from "../components/text-tween-element.js";
 export default function(state, emitter) {
   state.prompt = "hola"
   state.centroid = {x: 0, y: 0};
-
+  state.showModal = true;
+  
   state.assets = [
     {
       color: "/0_IMG_5996.JPG",

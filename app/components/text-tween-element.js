@@ -63,9 +63,9 @@ export default class extends Component {
           if (fontSize) {
             this.span.style.fontSize = fontSize;
           }
-          if (fontFamily) {
-            this.span.style.fontFamily = fontFamily;
-          }
+          // if (fontFamily) {
+          //   this.span.style.fontFamily = fontFamily;
+          // }
           if (rotate) {
             if (posY == "bottom") {
               this.span.style.transform = `translate(0, 50vh) translate(0, -${ fontSize }) translate(-50%, -50%) rotate(${ rotate })`;

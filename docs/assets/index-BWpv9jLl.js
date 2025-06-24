@@ -2179,9 +2179,6 @@ class TextTweenElement extends Component {
           if (fontSize) {
             this.span.style.fontSize = fontSize;
           }
-          if (fontFamily) {
-            this.span.style.fontFamily = fontFamily;
-          }
           if (rotate) {
             if (posY == "bottom") {
               this.span.style.transform = `translate(0, 50vh) translate(0, -${fontSize}) translate(-50%, -50%) rotate(${rotate})`;
@@ -2222,6 +2219,7 @@ class TextTweenElement extends Component {
 function machine(state, emitter) {
   state.prompt = "hola";
   state.centroid = { x: 0, y: 0 };
+  state.showModal = true;
   state.assets = [
     {
       color: "/0_IMG_5996.JPG",
@@ -32283,13 +32281,39 @@ function main(state, emit) {
       <div class="absolute left-0 top-0 z-[-1] w-screen h-screen">
         ${state.cache(DrawerElement, "my-draw").render(state, emit)}
       </div>
+      <button class="absolute left-2 top-2 text-xl" onclick=${question}>ℹ️</button>
       <div class="w-full flex flex-col items-center text-center justify-end h-screen">
         <div class="text-4xl font-bold bg-white/80 mb-24 uppercase">
           ${state.cache(TextTweenElement, "my-text").render(state, emit)}
         </div>
       </div>
+      <div class="absolute left-0 top-0 z-10 border-2 border-black bg-white m-2 p-2 ${state.showModal ? "" : "hidden"}">
+        <button class="text-xl" onclick=${hideModal}>❎</button>
+        <div class="font-bold">Rubber Band Tensions</div>
+        <div>Drag the blobby body to explore tensions :)</div>
+        <div class="font-bold">Content by:</div>
+        <div><a href="https://annabrynskov.com/" target="_blank">Anna Brynskov</a></div>
+        <div><a href="https://joanachicau.com/" target="_blank">Joana Chicau</a></div>
+        <div>Sophie Grimme</div>
+        <div><a href="https://naotohieda.com" target="_blank">Naoto Hieda</a></div>
+        <div class="font-bold">Web version by:</div>
+        <div><a href="https://naotohieda.com" target="_blank">Naoto Hieda</a></div>
+        <div class="font-bold">Made at:</div>
+        <div><a href="https://bodypoliticschi.wordpress.com/" target="_blank">Body Politics Workshop 2025</a></div>
+      </div>
     </div>
   `;
+  function question(e2) {
+    e2.preventDefault();
+    state.showModal = !state.showModal;
+    emit("render");
+  }
+  function hideModal(e2) {
+    if (state.showModal) {
+      state.showModal = false;
+      emit("render");
+    }
+  }
 }
 const app = choo$1({ hash: true });
 app.use(machine);
