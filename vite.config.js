@@ -7,7 +7,7 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
     root: '.',
     build: {
       minify: false,
-      outDir: "build",
+      outDir: "docs",
       commonjsOptions: {
       }
     },
