@@ -34,7 +34,7 @@ export default function(state, emit) {
         <div class="font-bold">Web version by:</div>
         <div><a href="https://naotohieda.com" target="_blank">Naoto Hieda</a></div>
         <div class="font-bold">Made at:</div>
-        <div><a href="https://bodypoliticschi.wordpress.com/" target="_blank">Body Politics Workshop 2025</a></div>
+        <div><a href="https://bodypoliticschi.wordpress.com/" target="_blank">Body Politics Workshop at CHI 2025</a></div>
       </div>
     </div>
   `;
